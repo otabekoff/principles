@@ -46,6 +46,9 @@ class BankAccount {
 }
 ```
 
+### Existential Types in Programming Theory
+In type theory, encapsulation is formalized through **existential types** (written as $\exists X . T(X)$). An existential type allows a module to hide its concrete data type representations while exposing a set of interface operations. Callers only know that *some* type exists that supports these operations, but they are mathematically blocked from inspecting or manipulating its internal bits.
+
 ---
 
 ## 2. Information Hiding: Hiding Design Decisions
