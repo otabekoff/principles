@@ -161,6 +161,12 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
     image="/cards/decorator.png"
   />
   <Card
+    title="Findability"
+    description="Ensure website information is easily retrieved from both outside and inside."
+    href="/pragmatic/findability"
+    image="/cards/command.png"
+  />
+  <Card
     title="WET Principle"
     description="Write Everything Twice; avoid hasty and coupled abstractions."
     href="/pragmatic/wet-principle"

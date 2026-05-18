@@ -15,13 +15,13 @@ This learning tour explains how the Programming Principles documentation is stru
 
 ## What's Covered
 
-The documentation covers **over 49 foundational programming principles, laws, and aphorisms** across six key categories:
+The documentation covers **over 50 foundational programming principles, laws, and aphorisms** across six key categories:
 
 | Category                   | Count | Focus                                                                                                  |
 | :------------------------- | :---- | :----------------------------------------------------------------------------------------------------- |
 | **SOLID Principles**       | 5     | The gold standard of Object-Oriented Design (SRP, OCP, LSP, ISP, DIP).                                 |
 | **General Principles**     | 11    | Real-world rules of thumb to avoid over-engineering (DRY, KISS, YAGNI, SoC, etc.).                     |
-| **Pragmatic & Clean Code** | 9     | Tactical rules for clean, malleable codebases (Boy Scout, WET, Abstraction levels).                    |
+| **Pragmatic & Clean Code** | 10    | Tactical rules for clean, malleable codebases (Boy Scout, WET, Abstraction levels).                    |
 | **Testing & Quality**      | 3     | Pragmatic strategies for fully testable and high-quality software (TDD, ZOMBIES).                      |
 | **Software Architecture**  | 10    | High-level paradigms, separations, and structural metrics (Cohesion, Core/Shell, CQS).                 |
 | **Laws & Aphorisms**       | 13    | Classical software engineering laws, aphorisms, and design philosophies (Gall's Law, Worse is Better). |

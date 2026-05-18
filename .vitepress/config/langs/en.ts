@@ -111,6 +111,7 @@ export const en = {
           { text: 'Avoid Premature Optimization', link: '/pragmatic/premature-optimization' },
           { text: 'The Boy Scout Rule', link: '/pragmatic/boy-scout-rule' },
           { text: 'Discoverability', link: '/pragmatic/discoverability' },
+          { text: 'Findability', link: '/pragmatic/findability' },
           { text: 'WET (Write Everything Twice)', link: '/pragmatic/wet-principle' },
           { text: 'Levels of Abstraction', link: '/pragmatic/level-of-abstraction' },
           { text: 'Make it Work, Right, Fast', link: '/pragmatic/make-it-work-right-fast' },

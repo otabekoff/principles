@@ -8,6 +8,13 @@ icon: ZapOff
 
 A classic architectural dilemma is deciding how to respond when a minor system error or state anomaly is detected. The **Fail-Fast** principle suggests that a system should immediately stop execution and raise an error as soon as it detects any anomaly, rather than trying to proceed in an undefined, corrupted state.
 
+Now, the internal data structure is completely hidden. We can change the Map to a database query or an array, and the rest of the application remains completely unaffected because they only interact with the stable public method `getProduct(id)`.
+
+## Summary
+
+- **Encapsulation**: Put your variables and actions in a box.
+- **Information Hiding**: Tape the box shut and only expose a small slot to interact with it.
+
 ---
 
 ## 1. Local Fail-Fast vs. Global Fault-Tolerance
@@ -26,9 +33,10 @@ It is common to think that crashing an application is the opposite of building a
 ```
 
 If a system attempts to silently ignore errors or apply fuzzy fallbacks (defensive over-kill):
-* It will proceed to write corrupted data to a production database.
-* It will send incorrect payments to third-party bank gates.
-* Finding the root cause of these silent bugs becomes a production nightmare.
+
+- It will proceed to write corrupted data to a production database.
+- It will send incorrect payments to third-party bank gates.
+- Finding the root cause of these silent bugs becomes a production nightmare.
 
 By **Failing-Fast**, the local component raises an exception, preventing damage. A high-level **Supervisor** (like PM2, Kubernetes, or Docker) catches the crash, terminates the container, and spins up a clean, freshly initialized process.
 
@@ -37,6 +45,7 @@ By **Failing-Fast**, the local component raises an exception, preventing damage.
 ## 2. Core Programming Patterns in Fail-Fast
 
 ### A. OOP Constructor Invariant Validation
+
 Never allow an object to be instantiated in an invalid state. Validate all parameters inside the constructor, throwing exceptions immediately before saving references:
 
 ```ts
@@ -50,7 +59,9 @@ class Account {
       throw new Error("[Validation Failure] Invalid email address format.");
     }
     if (initialBalance < 0) {
-      throw new Error("[Validation Failure] Initial balance cannot be negative.");
+      throw new Error(
+        "[Validation Failure] Initial balance cannot be negative.",
+      );
     }
     this.email = email;
     this.balance = initialBalance;
@@ -61,13 +72,16 @@ class Account {
 ---
 
 ### B. Eager Initialization vs. Lazy Gotchas
-**Lazy Initialization** is the practice of delaying the initialization of a resource (e.g. a database connection or a configuration file read) until the moment it is first requested. 
+
+**Lazy Initialization** is the practice of delaying the initialization of a resource (e.g. a database connection or a configuration file read) until the moment it is first requested.
 
 While it can improve initial boot times, lazy initialization is a **major fail-fast gotcha**:
-* If a critical configuration key is missing, a lazily initialized system will boot successfully and look healthy.
-* Hours later, when a user triggers the specific request that accesses the missing config, the system will suddenly crash in production.
+
+- If a critical configuration key is missing, a lazily initialized system will boot successfully and look healthy.
+- Hours later, when a user triggers the specific request that accesses the missing config, the system will suddenly crash in production.
 
 #### The Eager Fail-Fast Solution:
+
 Validate all configuration keys, environment variables, and external connections **at application startup (Eagerly)**:
 
 ```ts
@@ -78,7 +92,9 @@ class AppConfig {
     for (const key of requiredKeys) {
       if (!process.env[key]) {
         // Crash immediately during startup, preventing a broken container from deploying!
-        throw new Error(`[FATAL STARTUP ERROR] Missing environment variable: ${key}`);
+        throw new Error(
+          `[FATAL STARTUP ERROR] Missing environment variable: ${key}`,
+        );
       }
     }
   }
@@ -88,7 +104,8 @@ class AppConfig {
 ---
 
 ### C. Fail-Fast Iterators
-In multi-threaded environments, a collection's structure can change while it is being iterated over. A **Fail-Fast Iterator** detects structural modifications (e.g. elements added or deleted by another thread) and immediately throws a `ConcurrentModificationException`. 
+
+In multi-threaded environments, a collection's structure can change while it is being iterated over. A **Fail-Fast Iterator** detects structural modifications (e.g. elements added or deleted by another thread) and immediately throws a `ConcurrentModificationException`.
 
 This prevents the system from entering infinite loops or returning partially corrupted iterations.
 
@@ -112,5 +129,5 @@ while (iterator.hasNext()) {
 
 The Fail-Fast philosophy extends beyond software into business development and startups. The popular silicon valley mantra **"Fail Fast, Fail Often"** represents the exact same logic applied to product validation:
 
-* **Traditional Strategy (Waterfall)**: A company spends millions of dollars and two years building a product in secret, only to discover at launch that no one wants to buy it. This is a slow, fatal failure.
-* **Fail-Fast Strategy (Lean Startup)**: The company builds a basic prototype (Minimum Viable Product / MVP) and tests it with customers in week one. If the product idea is bad, they "fail" instantly, saving millions of dollars, allowing them to pivot quickly to a viable strategy.
+- **Traditional Strategy (Waterfall)**: A company spends millions of dollars and two years building a product in secret, only to discover at launch that no one wants to buy it. This is a slow, fatal failure.
+- **Fail-Fast Strategy (Lean Startup)**: The company builds a basic prototype (Minimum Viable Product / MVP) and tests it with customers in week one. If the product idea is bad, they "fail" instantly, saving millions of dollars, allowing them to pivot quickly to a viable strategy.
