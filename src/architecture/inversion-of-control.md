@@ -1,6 +1,6 @@
 ---
 title: Inversion of Control (IoC)
-description: Master Inversion of Control (IoC) and learn how to decouple your modules using the Hollywood Principle.
+description: Master Inversion of Control (IoC), the Hollywood Principle, its rich history in systems programming, and its dual meanings in modern software architectures.
 icon: RefreshCw
 ---
 
@@ -8,77 +8,174 @@ icon: RefreshCw
 
 > "Don't call us, we'll call you." — The Hollywood Principle
 
-**Inversion of Control (IoC)** is a core software design philosophy in which the control flow of a program is inverted compared to traditional imperative programming. Instead of your custom code directly calling library methods and managing class instances, a framework or runtime container takes control and calls *your* code when needed.
+**Inversion of Control (IoC)** is a fundamental software design philosophy in which custom-written portions of a computer program receive their flow of control from an external source (such as a reusable software framework). 
 
----
-
-## Traditional Flow vs. Inverted Flow
-
-### 1. Traditional Control Flow
-In a traditional flow, your custom application code is the driver. It instantiates dependencies, calls database connections, and drives the execution sequence.
+The term "inversion" is historical: in traditional procedural programming, the custom application code is in control, calling reusable library functions to perform generic tasks. In an IoC architecture, this control flow is inverted: **the framework drives the execution timing and lifecycle, calling the developer's custom callbacks or pluggable subroutines when needed.**
 
 ```
-  ┌────────────────────────────────────────────────────────┐
-  │                 YOUR CUSTOM MAIN CODE                  │
-  └───────────────────────────┬────────────────────────────┘
-                              │
-                              ▼ [Creates & Calls]
-  ┌────────────────────────────────────────────────────────┐
-  │               DATABASE / NETWORK LIBRARY               │
-  └────────────────────────────────────────────────────────┘
-```
+   TRADITIONAL PROCEDURAL FLOW:
+   ┌────────────────────────────────────────────────────────┐
+   │                  Custom Application Code               │
+   └───────────────────────────┬────────────────────────────┘
+                               │ (Calls library)
+                               ▼
+   ┌────────────────────────────────────────────────────────┐
+   │                    Reusable Library                    │
+   └────────────────────────────────────────────────────────┘
 
-```ts
-// ❌ Traditional Flow (Main code drives everything, hard to test or extend)
-class App {
-  start() {
-    const db = new MySQLDatabase(); // App manages database lifecycle!
-    db.connect();
-    const server = new HTTPServer();
-    server.listen(8080);
-  }
-}
-```
-
-### 2. Inverted Control Flow (IoC)
-In an inverted flow, a generic framework acts as the driver. It manages class lifecycles and instantiates dependencies. Your custom code is registered as a plugin or event listener, and the framework calls your methods.
-
-```
-  ┌────────────────────────────────────────────────────────┐
-  │                  FRAMEWORK / IoC CONTAINER             │
-  │                  (Manages lifecycle, drives flow)       │
-  └───────────────────────────┬────────────────────────────┘
-                              │
-                              ▼ [Injects & Calls]
-  ┌────────────────────────────────────────────────────────┐
-  │                 YOUR CUSTOM PLUGINS/CODE               │
-  └────────────────────────────────────────────────────────┘
-```
-
-```ts
-//  Inverted Flow (IoC via Dependency Injection)
-class App {
-  constructor(private db: Database, private server: Server) {} // Lifecycle managed externally!
-
-  start() {
-    this.db.connect();
-    this.server.listen(8080);
-  }
-}
+   INVERTED CONTROL FLOW (IoC):
+   ┌────────────────────────────────────────────────────────┐
+   │                   Reusable Framework                   │
+   └───────────────────────────┬────────────────────────────┘
+                               │ (Calls custom hook/callback)
+                               ▼
+   ┌────────────────────────────────────────────────────────┐
+   │                  Custom Application Code               │
+   └────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Forms of Inversion of Control
+## 1. History and Etymology
 
-IoC is a broad architectural umbrella that includes several concrete patterns:
+The conceptual roots of Inversion of Control date back to the 1970s and 1980s:
+* **Program Inversion (1970s)**: Software pioneer **Michael Jackson** described "program inversion" in his Jackson Structured Programming (JSP) methodology, demonstrating how to decouple sequential processes (like a parser and its consumer) by swapping which process controls the execution stack.
+* **The Parser Analogy**: A bottom-up parser is a classic example of inversion compared to a top-down parser. In a top-down parser, the parser controls execution flow, whereas in a bottom-up parser, control is inverted and lies with the receiving application.
+* **Mesa, Visual Basic, and Avalon (1980s–1990s)**: The phrase's etymology is traced back to a 1988 paper, with early GUI environments like the Mesa Programming Environment for XDE (1985) and classic Visual Basic (1991) implementing IoC for UI windowing loops. In 1999, **Stefano Mazzocchi** popularized the term in the Apache Software Foundation's **Avalon** project to refer to a parent object controlling a child object's lifecycle and passing in its dependencies.
+* **Fowler and Martin (2004)**: The term was further popularized by **Robert C. Martin** and **Martin Fowler**, the latter of whom clarified the distinction between IoC as framework-driven execution flow and the specific pattern of Dependency Injection.
 
-1. **Dependency Injection (DI)**: Passing dependencies (abstractions) to a class constructor rather than letting the class instantiate them directly (e.g., using containers like NestJS, Spring, or simple constructor passing).
-2. **Event Listeners / Pub-Sub**: The system raises an event, and registered callback functions are executed. The callers don't know who is listening.
-3. **Template Method Pattern**: A parent class defines the skeleton of an algorithm, and subclasses override specific hook methods to provide custom details.
+---
 
-## Summary of Benefits
+## 2. The Traditional vs. IoC Paradigm Shift
 
-- **Loose Coupling**: Classes are completely decoupled from concrete dependencies.
-- **Easy Mocking & Testing**: Since dependencies are injected, they can be easily replaced with mocks in unit tests.
-- **Flexibility**: You can swap out a module implementation (e.g., swapping a MySQL database driver for MongoDB) without changing your main application orchestration.
+The difference between traditional procedural flow and Inversion of Control is best understood through the design of a user interface:
+
+### The Traditional (Blocking / Procedural) Menu
+In a traditional text-based command-line interface, the custom `main()` function drives the flow. It prints the menu options, blocks the execution thread, and waits for a user keypress:
+
+```ts
+// Traditional Flow: Custom code drives the sequence and blocks
+class CommandLineApp {
+  start() {
+    printMenu("1: Check Mail, 2: Send Mail, 3: Exit");
+    const choice = blockingReadInput(); // Thread blocks here waiting for user!
+    
+    if (choice === 1) {
+      this.checkMail();
+    } else if (choice === 2) {
+      this.sendMail();
+    }
+  }
+}
+```
+
+### The Inverted (Event-Driven / Framework) Interface
+Under Inversion of Control, a graphical windowing framework manages the complex event loop, keyboard, mouse movements, toolbars, and network events. The framework is completely agnostic about what a "spreadsheet" or "mail client" is. 
+
+Instead of writing blocking loops, the developer simply registers custom subroutines (listeners) with the framework:
+
+```ts
+// IoC Flow: Framework manages the loop; custom code registers handlers
+class GraphicalMailApp {
+  setup(framework: GraphicalFramework) {
+    // Custom code "fills in the blanks" for the framework
+    framework.registerMenu("Check Mail", () => this.checkMail());
+    framework.registerMenu("Send Mail", () => this.sendMail());
+    
+    // Framework drives execution, listens to network ports, and fires
+    // callbacks concurrently without blocking the main application thread.
+  }
+}
+```
+
+---
+
+## 3. The Dual Meanings of IoC
+
+In modern software development, Inversion of Control has come to represent two distinct (though related) concepts:
+
+```
+                            THE IoC PARADIGM SPLIT:
+   ┌───────────────────────────────────┬──────────────────────────────────┐
+   │        1. CONTROL OF FLOW         │    2. CONTROL OF DEPENDENCIES    │
+   │       (The Classical Sense)       │        (The Container Sense)     │
+   ├───────────────────────────────────┼──────────────────────────────────┤
+   │ Framework governs execution       │ Container governs instance       │
+   │ timing, loops, and callbacks.     │ creation and injects concrete    │
+   │                                   │ class implementations at runtime.│
+   │ * Example: Event loops, DOM clicks│ * Example: DI, Service Locators  │
+   └───────────────────────────────────┴──────────────────────────────────┘
+```
+
+---
+
+## 4. Practical Code Examples
+
+### A. DOM Event Listeners (Control of Flow)
+Web browsers implement Inversion of Control for the DOM. Application developers do not write loops to monitor mouse coordinates; they register a callback:
+
+```html
+<!-- DOM Level 2 Event Handler conforming to IoC -->
+<h1>DOM Event Handler</h1>     
+<div id="output"></div>
+
+<script>
+  // Custom callback function
+  const clickListener = function () {
+    document.getElementById("output").innerHTML = "<p>Callback invoked by the browser!</p>";
+  };
+  
+  // Register callback with browser's event loop
+  document.addEventListener("click", clickListener, true);
+  // The browser now dictates when and how this subroutine is executed.
+</script>
+```
+
+### B. Web Application Endpoints (Routing)
+Modern web server frameworks implement IoC. Developers create an host builder, map routes to custom handler endpoints, and then hand over total execution control to the framework's HTTP listening engine (`app.Run()`):
+
+```ts
+// ASP.NET Core style IoC Host
+const builder = WebApplication.CreateBuilder(args);
+const app = builder.Build();
+
+// Custom code maps endpoints
+app.MapGet("/", () => "Hello World!");
+
+// Invert control: Hand over execution thread to the host engine
+app.Run(); 
+```
+
+### C. The Template Method Pattern
+In pure object-oriented design, the **Template Method Pattern** is a classic micro-level application of IoC:
+
+```ts
+abstract class DataImporter {
+  // The framework/parent class controls the structure of the algorithm
+  public import() {
+    this.readData();
+    this.parseData(); // Calls custom subclass hook
+    this.saveData();
+  }
+
+  private readData() { console.log("Reading raw bytes..."); }
+  private saveData() { console.log("Saving records to DB..."); }
+
+  // Custom subclasses must implement the hook
+  protected abstract parseData(): void;
+}
+
+class XMLImporter extends DataImporter {
+  protected parseData() {
+    console.log("Parsing custom XML nodes...");
+  }
+}
+```
+
+---
+
+## 5. Summary of Benefits
+
+* **Strict Decoupling**: Reusable framework code and problem-specific custom code are developed, tested, and optimized independently.
+* **High Extensibility**: Frameworks act as skeletons, letting application developers extend behavior effortlessly by registering custom pluggable components without modifying the framework internals.
+* **Clean Life-cycle Management**: Systems avoid distributed state synchronization bugs by letting a central container coordinate object creation, scoping, and teardown.
