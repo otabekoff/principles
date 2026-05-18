@@ -17,11 +17,11 @@ icon: Lock
 While variations of the phrase existed in regional American vernacular, the expression was officially coined and popularized globally by **Thomas Bertram "Bert" Lance** (June 3, 1931 – August 15, 2013).
 
 ```
-                 BERT LANCE & THE POPULARIZATION TIMELINE:
-  ┌───────────────────────┐     ┌────────────────────────┐     ┌───────────────────────┐
-  │   State Highway Dir.  │────►│  Director of the OMB   │────►│  "If it ain't broke,  │
-  │   (Under Gov. Carter)  │     │ (Carter Administration)│     │     don't fix it!"    │
-  └───────────────────────┘     └────────────────────────┘     └───────────────────────┘
+                  BERT LANCE & THE POPULARIZATION TIMELINE:
+   ┌───────────────────────┐     ┌────────────────────────┐     ┌───────────────────────┐
+   │   State Highway Dir.  │────►│  Director of the OMB   │────►│  "If it ain't broke,  │
+   │   (Under Gov. Carter)  │     │ (Carter Administration)│     │     don't fix it!"    │
+   └───────────────────────┘     └────────────────────────┘     └───────────────────────┘
 ```
 
 A prominent Georgia businessman and bank president, Lance served as the **Director of the Office of Management and Budget (OMB)** under President Jimmy Carter in 1977. He famously quoted the phrase in the May 1977 issue of the magazine *Nation's Business* to describe his approach to federal administration and spending. 
@@ -48,7 +48,7 @@ To balance this adage with the **Boy Scout Rule** (which encourages leaving file
 ```
                             THE DECISION TREE:
                            Is the code working?
-                                   │
+                                    │
                     ┌──────────────┴──────────────┐
                     YES                           NO
                     │                             │
@@ -61,10 +61,17 @@ To balance this adage with the **Boy Scout Rule** (which encourages leaving file
                          Boy Scout refactoring
 ```
 
-### Safe Guidelines:
-* **Deep Rewrites**: If a module is old, messy, or written in outdated syntax, but runs flawlessly in production with **zero active bug tickets**, do not touch it. Leave it alone.
-* **Library Upgrades**: Do not upgrade major stable dependency libraries just to increment a version number if it requires rewriting large portions of your stable system. Only upgrade if the old version has critical security vulnerabilities or blocks a key feature.
-* **Micro-Optimizations**: Never optimize code for performance based on guessing. If a profiler does not show a function to be a bottleneck, "fixing" it to run faster is a waste of engineering resources.
+### Actionable Refactoring Guidelines:
+
+| Action | When to Avoid ("Don't Fix It") | When to Proceed ("Leave it Better") |
+| :--- | :--- | :--- |
+| **Deep Refactoring / Rewrite** | The file is old, messy, but works flawlessly and **no one needs to change it**. Leave it completely alone. | You are actively in the file to add a new feature or fix a bug. Perform **opportunistic refactoring** around your change. |
+| **Dependency Upgrade** | Upgrading a major stable library just to have the latest version number, requiring rewriting large parts of your working app. | The old library version has active, critical security vulnerabilities or is blocking major features. |
+| **Clever Optimizations** | Trying to micro-optimize a function that is not showing up as a bottleneck in your profilers. | Profiling proves this specific module is taking up 40% of the application's frame time. |
+
+### Summary
+* **Value Stability**: Stable, boring code is beautiful code because it generates business value with zero maintenance cost.
+* **Pragmatic Refactoring**: Only modify working code when you have a clear, immediate reason to touch it. Never refactor just for the sake of aesthetic purity.
 
 ---
 
