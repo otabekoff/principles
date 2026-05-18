@@ -119,6 +119,7 @@ export const en = {
           { text: 'Levels of Abstraction', link: '/pragmatic/level-of-abstraction' },
           { text: 'Make it Work, Right, Fast', link: '/pragmatic/make-it-work-right-fast' },
           { text: 'Good Code is Easy to Delete', link: '/pragmatic/easy-to-delete' },
+          { text: 'Technical Debt', link: '/pragmatic/technical-debt' },
           { text: 'Make Non-Breaking Changes', link: '/pragmatic/non-breaking-changes' },
           { text: 'Future Developers Will Copy You', link: '/pragmatic/future-developers' },
           { text: 'Type-Driven Development', link: '/pragmatic/type-driven-development' }
@@ -133,6 +134,7 @@ export const en = {
           { text: 'GRASP', link: '/architecture/grasp' },
           { text: 'Law of Demeter', link: '/architecture/law-of-demeter' },
           { text: 'Composition over Inheritance', link: '/architecture/composition-over-inheritance' },
+          { text: 'Design by Contract (DbC)', link: '/architecture/design-by-contract' },
           { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
           { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
           { text: 'Inversion of Control (IoC)', link: '/architecture/inversion-of-control' },

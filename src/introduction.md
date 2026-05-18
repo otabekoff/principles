@@ -177,6 +177,12 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
     image="/cards/composite.png"
   />
   <Card
+    title="Technical Debt"
+    description="Ward Cunningham's financial metaphor for managing design shortcuts and cruft."
+    href="/pragmatic/technical-debt"
+    image="/cards/flyweight.png"
+  />
+  <Card
     title="Make Non-Breaking Changes"
     description="Introduce new logic alongside deprecated code to avoid build stalls."
     href="/pragmatic/non-breaking-changes"
@@ -226,6 +232,12 @@ High-level design paradigms, architectural separations, and safety-critical rule
     description="Favor composing reusable behaviors over inheriting rigid trees."
     href="/architecture/composition-over-inheritance"
     image="/cards/decorator.png"
+  />
+  <Card
+    title="Design by Contract (DbC)"
+    description="Bertrand Meyer's methodology of preconditions, postconditions, and class invariants."
+    href="/architecture/design-by-contract"
+    image="/cards/abstract-factory.png"
   />
   <Card
     title="Encapsulation & Info Hiding"
