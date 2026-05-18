@@ -80,6 +80,12 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     image="/cards/box.png"
   />
   <Card
+    title="Code Reuse"
+    description="Leverage existing well-tested code assets to build new software."
+    href="/general/code-reuse"
+    image="/cards/iterator.png"
+  />
+  <Card
     title="DRY (Don't Repeat Yourself)"
     description="Ensure every piece of knowledge has a single representation."
     href="/general/dry"
@@ -147,6 +153,12 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
     description="Always leave the codebase cleaner than you found it."
     href="/pragmatic/boy-scout-rule"
     image="/cards/facade.png"
+  />
+  <Card
+    title="Discoverability"
+    description="Ensure product features and API options are easy for consumers to find."
+    href="/pragmatic/discoverability"
+    image="/cards/decorator.png"
   />
   <Card
     title="WET Principle"
@@ -284,6 +296,12 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     image="/cards/compass.png"
   />
   <Card
+    title="Deutsch Limit"
+    description="Coined by L. Peter Deutsch, visual programming graphs should not exceed fifty elements."
+    href="/laws/deutsch-limit"
+    image="/cards/memento.png"
+  />
+  <Card
     title="Gall's Law"
     description="A complex working system invariably evolved from a simple working system."
     href="/laws/galls-law"
@@ -330,6 +348,12 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     description="Separate core system capabilities from behavioral business rules."
     href="/laws/mechanism-policy"
     image="/cards/repository.png"
+  />
+  <Card
+    title="Pristine Sources"
+    description="Release management policy stating upstream code tarballs must be kept unmodified."
+    href="/laws/pristine-sources"
+    image="/cards/template-method.png"
   />
   <Card
     title="The Zen of Python"
