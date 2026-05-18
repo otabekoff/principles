@@ -100,6 +100,43 @@ export const en = {
           { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' },
           { text: 'GRASP', link: '/general/grasp' }
         ]
+      },
+      {
+        text: 'Pragmatic & Clean Code',
+        collapsed: true,
+        items: [
+          { text: 'Avoid Premature Optimization', link: '/pragmatic/premature-optimization' },
+          { text: 'The Boy Scout Rule', link: '/pragmatic/boy-scout-rule' },
+          { text: 'WET (Write Everything Twice)', link: '/pragmatic/wet-principle' },
+          { text: 'Levels of Abstraction', link: '/pragmatic/level-of-abstraction' },
+          { text: 'Make it Work, Right, Fast', link: '/pragmatic/make-it-work-right-fast' },
+          { text: 'Good Code is Easy to Delete', link: '/pragmatic/easy-to-delete' },
+          { text: 'Make Non-Breaking Changes', link: '/pragmatic/non-breaking-changes' },
+          { text: 'Future Developers Will Copy You', link: '/pragmatic/future-developers' }
+        ]
+      },
+      {
+        text: 'Testing & Quality',
+        collapsed: true,
+        items: [
+          { text: 'Pass the Tests & Testability', link: '/testing/pass-the-tests' },
+          { text: 'Test-Driven Development (TDD)', link: '/testing/test-driven-development' },
+          { text: 'The ZOMBIES Strategy', link: '/testing/zombies-strategy' }
+        ]
+      },
+      {
+        text: 'Software Architecture',
+        collapsed: true,
+        items: [
+          { text: 'Coupling and Cohesion', link: '/architecture/coupling-cohesion' },
+          { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
+          { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
+          { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },
+          { text: 'Inversion of Control (IoC)', link: '/architecture/inversion-of-control' },
+          { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
+          { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
+          { text: 'Reveal Intentions', link: '/architecture/reveal-intentions' }
+        ]
       }
     ],
     footer: {

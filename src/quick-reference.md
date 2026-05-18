@@ -1,6 +1,6 @@
 ---
 title: Quick Reference
-description: A concise cheat sheet and guide for all key SOLID, General, and GRASP programming principles.
+description: A concise cheat sheet and guide for all key SOLID, General, Clean Code, Testing, and Software Architecture principles.
 icon: BookMarked
 ---
 
@@ -27,7 +27,7 @@ A quick reference cheat sheet for the most important programming principles. Use
 
 ---
 
-## General & Pragmatic Principles
+## General Principles
 
 | Principle | Core Intent | Key Code Smell / Violation | Best Solution |
 | :--- | :--- | :--- | :--- |
@@ -38,6 +38,48 @@ A quick reference cheat sheet for the most important programming principles. Use
 | **Separation of Concerns** (SoC) | Separate a program into distinct sections representing different concerns. | Tangled code mixing presentation, SQL queries, and business rules. | Use layered architectures (e.g., MVC, Clean Architecture, or vertical slices). |
 | **Composition over Inheritance** | Achieve reuse by composing objects rather than subclassing. | Deep, rigid inheritance trees; trying to inherit from multiple parent classes. | Reference components via interfaces and delegate behaviors. |
 | **Principle of Least Astonishment** | APIs and interfaces must behave exactly as expected. | Getters with side-effects (e.g. `getValue()` modifying database), inconsistent naming. | Consistent naming, pure functions, side-effect-free getters, and strong typing. |
+
+---
+
+## Pragmatic & Clean Code Cheat Sheet
+
+| Principle | Core Intent | Key Code Smell / Violation | Best Solution / Strategy |
+| :--- | :--- | :--- | :--- |
+| **Avoid Premature Optimization** | Don't optimize your algorithm at an early stage. | Building highly complex custom data structures or byte buffers without profiling. | Keep code simple, profile first, and only optimize verified bottlenecks. |
+| **The Boy Scout Rule** | Always leave the codebase cleaner than you found it. | Leaving unformatted files, dead code, or confusing variable names in your path. | Perform opportunistic refactoring. Clean up variables, rename, and add tests. |
+| **WET** (Write Everything Twice) | delay abstraction until you have sufficient information. | Creating a complex, generic shared helper function for only two callers. | Delay abstraction. Duplicate code once, refactor to an abstraction on the third time. |
+| **Levels of Abstraction** | Every statement in a function should be on the same level. | Mixing raw database connections or string parsers directly inside business rules. | Delegate technical implementations to helpers or low-level components. |
+| **Make it Work, Right, Fast** | Kent Beck's three-stage engineering workflow. | Trying to write highly clean, optimized code on the first attempt (paralysis). | 1. Make it work (solve it). 2. Make it right (clean up). 3. Make it fast (optimize). |
+| **Good Code is Easy to Delete** | Prioritize deleting logic easily over writing reusable blocks. | Tight coupling between components where removing one feature breaks dozens of files. | Encapsulate features behind clean, event-based, or interface boundaries. |
+| **Make Non-Breaking Changes** | Avoid broad modifications that break callers. | Modifying a component's signature, causing hundreds of compiler errors. | Keep old logic, mark as `@deprecated`, and add new signature concurrently. |
+| **Future Developers Will Copy You** | The templates you commit will be copied by future maintainers. | Adding a hacky, untested function without a warning comment. | Set a high example. If writing a hack, write a loud comment explaining why. |
+
+---
+
+## Testing & Quality Cheat Sheet
+
+| Principle / Strategy | Core Intent | Key Code Smell / Violation | Best Solution / Strategy |
+| :--- | :--- | :--- | :--- |
+| **Pass the Tests** | Every piece of logic should be backed by tests. | Pushing untested code to production; lack of confidence. | Write unit tests for core domain logic. |
+| **Tests Accrete** | Organic test growth over time. | Dropping feature development to write a massive, low-value test suite. | Write tests as you discover bugs and implement new features. |
+| **Make it Easy to Test** | Minimize testing DX friction. | Brittle test configurations, slow compilation, complex mocking boilerplate. | Maintain fast compilation, simple scripts, and high-quality mock utilities. |
+| **TDD (Red-Green-Refactor)** | Write failing test, implement minimal code, refactor. | Writing code first, and then struggle to write tests later (often skipping them). | 1. 🔴 Write failing test. 2. 🟢 Make it pass. 3. 🔵 Refactor clean. |
+| **ZOMBIES Strategy** | Mnemonic checklist for incremental problem solving. | Getting overwhelmed by complex requirements and forgetting edge cases. | Walk through **Z**ero, **O**ne, **M**any, **B**oundaries, **I**nterfaces, **E**xceptions, **S**imple. |
+
+---
+
+## Software Architecture Cheat Sheet
+
+| Principle | Core Intent | Key Code Smell / Violation | Best Solution / Strategy |
+| :--- | :--- | :--- | :--- |
+| **Coupling & Cohesion** | Minimize module interdependency, maximize focus. | Swiss Army Knife classes (low cohesion), direct instantiations (tight coupling). | Build dedicated, focused classes (high cohesion) interacting via interfaces (low coupling). |
+| **Functional Core, Imperative Shell** | Separate pure business logic from impure side-effects. | Raw database queries, HTTP fetches, and time checks inside domain classes. | Keep domain functions side-effect-free (Core). Coordinate DB/Network in the Shell. |
+| **CQS** (Command-Query Separation) | A method should do something or answer something, never both. | Getter methods that secretly increment a view counter or mutate databases. | Commands return `void` (mutator). Queries return `data` (side-effect free read). |
+| **Defensive & Offensive** | Validate untrusted boundaries, fail-fast inside domain. | Over-defending internal parameters, causing silent logical bugs. | Defensive validation at boundaries (requests/forms). Assert/crash loudly inside internal core. |
+| **Inversion of Control (IoC)** | Invert the control flow of your system. | Main code directly instantiating libraries, hardcoding dependencies. | Use Dependency Injection (DI) to pass abstract dependencies to classes. |
+| **Encapsulation & Info Hiding** | Group data, hide internal design choices. | Directly exposing Map or Array properties of a catalog to callers. | Keep fields private, and expose stable, public CRUD methods. |
+| **Fail-Fast & Robustness** | Crash early locally, recover gracefully globally. | Tolerating corrupted states, saving invalid data, silent errors. | Assert parameters early. Use process managers and rollback safety globally. |
+| **Reveal Intentions** | Code should be clear and self-documenting. | Cryptic variables (`x`, `t`), redundant "what" comments explaining simple code. | Use intent-revealing names. Use comments only to explain "why", not "what". |
 
 ---
 

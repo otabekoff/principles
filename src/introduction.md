@@ -13,7 +13,7 @@ icon: Palette
 
 **Programming principles** are fundamental guidelines and rules of thumb that help developers design clean, robust, and maintainable software. They are not structural design pattern recipes that you copy-paste — they are foundational design philosophies that you apply with judgment. A principle guides your everyday decisions, helps prevent over-engineering, and provides a shared vocabulary for high-quality software craft.
 
-This reference covers the most critical software development principles, grouped into three categories: **SOLID**, **General/Pragmatic**, and **GRASP**.
+This reference covers the most critical software development principles, grouped into five categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, and **Software Architecture**.
 
 ---
 
@@ -62,7 +62,7 @@ The gold standard of object-oriented design, compiled by Robert C. Martin. These
 
 ---
 
-## General & Pragmatic Principles
+## General Principles
 
 These principles focus on everyday code cleanliness, simplicity, and protecting codebases from premature abstractions and complexity bloat.
 
@@ -114,6 +114,147 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     description="Craig Larman's nine guidelines for responsibility assignment."
     href="/general/grasp"
     image="/cards/command.png"
+  />
+</Cards>
+
+---
+
+## Pragmatic & Clean Code
+
+Tactical guidelines for maintaining an agile, clean, and highly maneuverable codebase during rapid development cycles.
+
+<Cards>
+  <Card
+    title="Avoid Premature Optimization"
+    description="Optimization is the root of all evil early in development."
+    href="/pragmatic/premature-optimization"
+    image="/cards/flyweight.png"
+  />
+  <Card
+    title="The Boy Scout Rule"
+    description="Always leave the codebase cleaner than you found it."
+    href="/pragmatic/boy-scout-rule"
+    image="/cards/facade.png"
+  />
+  <Card
+    title="WET Principle"
+    description="Write Everything Twice; avoid hasty and coupled abstractions."
+    href="/pragmatic/wet-principle"
+    image="/cards/builder.png"
+  />
+  <Card
+    title="Levels of Abstraction"
+    description="Keep every block of code inside a function on the same level."
+    href="/pragmatic/level-of-abstraction"
+    image="/cards/bridge.png"
+  />
+  <Card
+    title="Make it Work, Right, Fast"
+    description="Kent Beck's disciplined workflow for building software."
+    href="/pragmatic/make-it-work-right-fast"
+    image="/cards/memento.png"
+  />
+  <Card
+    title="Good Code is Easy to Delete"
+    description="Modularity means writing code that is simple to completely tear out."
+    href="/pragmatic/easy-to-delete"
+    image="/cards/composite.png"
+  />
+  <Card
+    title="Make Non-Breaking Changes"
+    description="Introduce new logic alongside deprecated code to avoid build stalls."
+    href="/pragmatic/non-breaking-changes"
+    image="/cards/adapter.png"
+  />
+  <Card
+    title="Future Developers Will Copy You"
+    description="Setting templates and standards that future maintainers will mimic."
+    href="/pragmatic/future-developers"
+    image="/cards/prototype.png"
+  />
+</Cards>
+
+---
+
+## Testing & Quality
+
+Pragmatic workflows and strategies for building high-quality, fully testable, and reliable software.
+
+<Cards>
+  <Card
+    title="Pass the Tests & Testability"
+    description="Organic test growth, DX friction reduction, and testable design."
+    href="/testing/pass-the-tests"
+    image="/cards/chain-of-responsibility.png"
+  />
+  <Card
+    title="Test-Driven Development (TDD)"
+    description="Mastering the cycle of Red, Green, and Refactor."
+    href="/testing/test-driven-development"
+    image="/cards/visitor.png"
+  />
+  <Card
+    title="The ZOMBIES Strategy"
+    description="A systematic test-driven problem-solving and boundary checklist."
+    href="/testing/zombies-strategy"
+    image="/cards/state.png"
+  />
+</Cards>
+
+---
+
+## Software Architecture
+
+High-level design paradigms, architectural separations, and safety-critical rules.
+
+<Cards>
+  <Card
+    title="Coupling and Cohesion"
+    description="The core structural quality metrics of high-end software designs."
+    href="/architecture/coupling-cohesion"
+    image="/cards/mvc.png"
+  />
+  <Card
+    title="Functional Core, Imperative Shell"
+    description="Keeping pure business rules safely isolated from side-effects."
+    href="/architecture/functional-core-imperative-shell"
+    image="/cards/mvvm.png"
+  />
+  <Card
+    title="Command-Query Separation (CQS)"
+    description="Ensure methods do something or answer something, but never both."
+    href="/architecture/cqs"
+    image="/cards/cqrs.png"
+  />
+  <Card
+    title="Defensive & Offensive Programming"
+    description="Protecting system boundaries while failing-fast internally."
+    href="/architecture/defensive-offensive-programming"
+    image="/cards/active-record.png"
+  />
+  <Card
+    title="Inversion of Control (IoC)"
+    description="Delegating control flow and lifecycle management to containers."
+    href="/architecture/inversion-of-control"
+    image="/cards/dependency-injection.png"
+  />
+  <Card
+    title="Encapsulation & Info Hiding"
+    description="Bundling state while shielding internal design decisions."
+    href="/architecture/encapsulation-information-hiding"
+    image="/cards/data-mapper.png"
+  />
+  <Card
+    title="Fail-Fast & Robustness"
+    description="Crashing early locally while maintaining global resilience."
+    href="/architecture/fail-fast-robustness"
+    image="/cards/read-write-lock.png"
+  />
+  <Card
+    title="Reveal Intentions"
+    description="Self-documenting code through meaningful, intent-revealing names."
+    href="/architecture/reveal-intentions"
+    image="/cards/service-locator.png"
   />
 </Cards>
 

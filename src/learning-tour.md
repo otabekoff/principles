@@ -15,17 +15,21 @@ This learning tour explains how the Programming Principles documentation is stru
 
 ## What's Covered
 
-The documentation covers **14 foundational programming principles** across three key categories:
+The documentation covers **over 30 foundational programming principles** across five key categories:
 
 | Category | Count | Focus |
 | :--- | :--- | :--- |
 | **SOLID Principles** | 5 | The gold standard of Object-Oriented Design (SRP, OCP, LSP, ISP, DIP). |
-| **General & Pragmatic Principles** | 8 | Real-world rules of thumb to avoid over-engineering (DRY, KISS, YAGNI, Law of Demeter, SoC, etc.). |
-| **GRASP Principles** | 9 (in one overview) | General Responsibility Assignment Software Patterns (Larman's 9 guideposts). |
+| **General Principles** | 8 | Real-world rules of thumb to avoid over-engineering (DRY, KISS, YAGNI, SoC, etc.). |
+| **Pragmatic & Clean Code** | 8 | Tactical rules for clean, malleable codebases (Boy Scout, WET, Abstraction levels). |
+| **Testing & Quality** | 3 | Pragmatic strategies for fully testable and high-quality software (TDD, ZOMBIES). |
+| **Software Architecture** | 8 | High-level paradigms, separations, and structural metrics (Cohesion, Core/Shell, CQS). |
+
+---
 
 ## Anatomy of a Principle Page
 
-Every principle page follows a clean, highly structured layout to make it easy to scan or study in-depth:
+Every principle page follows a clean, highly structured layout to make it easy to study in-depth:
 
 ```
 Overview       — The core definition and intent in simple language.
@@ -35,6 +39,8 @@ Solution       — A clean, refactored solution adhering to the principle.
 Tradeoffs      — Honest analysis of when the principle adds unnecessary overhead.
 Pragmatism     — Real-world guidance on when to relax or ignore the rule.
 ```
+
+---
 
 ## How to Navigate
 
@@ -46,6 +52,8 @@ If you are facing a specific design problem but aren't sure which principle appl
 
 Use the search bar (`Cmd+K` on Mac, `Ctrl+K` on Windows) to instantly search for principles by name, synonyms, key concepts, or terms like "coupling", "cohesion", or "duplication".
 
+---
+
 ## Suggested Learning Paths
 
 How you explore this site depends on your experience level.
@@ -54,14 +62,17 @@ How you explore this site depends on your experience level.
 
 1. Start with the [Core Concepts](/core-concepts) page to understand what a "principle" is and how it differs from a "design pattern".
 2. Study **KISS** (Keep It Simple) and **DRY** (Don't Repeat Yourself) first — they are the easiest to apply immediately to any codebase.
-3. Move on to **YAGNI** (You Aren't Gonna Need It) to protect yourself from the common trap of over-engineering.
-4. Begin your **SOLID** journey starting with the **Single Responsibility Principle (SRP)**.
+3. Move on to **YAGNI** (You Aren't Gonna Need It) and the **Boy Scout Rule** to protect yourself from complexity bloat and maintain cleanliness.
+4. Learn the value of testing via **Pass the Tests & Testability**.
+5. Begin your **SOLID** journey starting with the **Single Responsibility Principle (SRP)**.
 
 ### Mid-Level & Senior Developers
 
 1. Study **Liskov Substitution Principle (LSP)** and **Dependency Inversion Principle (DIP)** in-depth. These are the two most frequently misunderstood SOLID principles.
 2. Read the **Composition over Inheritance** page to learn how to break out of rigid class inheritance trees.
-3. Review the **GRASP** principles to improve your design intuition regarding responsibility assignment, low coupling, and high cohesion.
+3. Master **Functional Core, Imperative Shell** and **Command-Query Separation (CQS)** to write highly decoupled architectures.
+4. Learn the **ZOMBIES Strategy** to systematically test complex code blocks and edge cases.
+5. Review the **GRASP** principles to improve your design intuition regarding responsibility assignment, low coupling, and high cohesion.
 
 ---
 
