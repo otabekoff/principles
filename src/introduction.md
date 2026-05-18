@@ -74,6 +74,18 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     href="/general/least-astonishment"
     image="/cards/proxy.png"
   />
+  <Card
+    title="Single Source of Truth (SSOT)"
+    description="Ensure every data element is stored exactly once to prevent synchronization issues."
+    href="/general/single-source-of-truth"
+    image="/cards/target.png"
+  />
+  <Card
+    title="Principle of Least Privilege"
+    description="Restrict access rights to only those absolutely necessary for a component."
+    href="/general/least-privilege"
+    image="/cards/proxy.png"
+  />
 </Cards>
 
 ---
@@ -257,6 +269,18 @@ High-level design paradigms, architectural separations, and safety-critical rule
     href="/architecture/reveal-intentions"
     image="/cards/service-locator.png"
   />
+  <Card
+    title="Event-Driven Architecture (EDA)"
+    description="Decouple and scale systems asynchronously using publishers, subscribers, and events."
+    href="/architecture/event-driven-architecture"
+    image="/cards/mvc.png"
+  />
+  <Card
+    title="Strangler Fig Pattern"
+    description="Safely migrate legacy systems incrementally by strangling old endpoints."
+    href="/architecture/strangler-fig"
+    image="/cards/bridge.png"
+  />
 </Cards>
 
 ---
@@ -282,6 +306,24 @@ Pragmatic workflows and strategies for building high-quality, fully testable, an
     title="The ZOMBIES Strategy"
     description="A systematic test-driven problem-solving and boundary checklist."
     href="/testing/zombies-strategy"
+    image="/cards/state.png"
+  />
+  <Card
+    title="The Test Pyramid"
+    description="Structure test suites with thousands of unit tests and minimal browser E2E tests."
+    href="/testing/test-pyramid"
+    image="/cards/iterator.png"
+  />
+  <Card
+    title="Behavior-Driven Development (BDD)"
+    description="Align developers and business stakeholders via Given-When-Then human specs."
+    href="/testing/behavior-driven-development"
+    image="/cards/strategy.png"
+  />
+  <Card
+    title="Property-Based Testing"
+    description="Assert universal system invariants across thousands of generative inputs."
+    href="/testing/property-based-testing"
     image="/cards/state.png"
   />
 </Cards>
@@ -370,6 +412,42 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     description="Pragmatic software adage advising stability over unnecessary rewrites."
     href="/laws/if-it-aint-broke"
     image="/cards/proxy.png"
+  />
+  <Card
+    title="Conway's Law"
+    description="Any organization that designs a system will duplicate their communication structure."
+    href="/laws/conways-law"
+    image="/cards/memento.png"
+  />
+  <Card
+    title="Brooks's Law"
+    description="Adding human resources to a late software project makes it later."
+    href="/laws/brookss-law"
+    image="/cards/flyweight.png"
+  />
+  <Card
+    title="Hyrum's Law"
+    description="Once an API has enough users, all observable behaviors will be depended upon."
+    href="/laws/hyrums-law"
+    image="/cards/observer.png"
+  />
+  <Card
+    title="Hofstadter's Law"
+    description="It always takes longer than you expect, even when you take into account the law."
+    href="/laws/hofstadters-law"
+    image="/cards/scheduler.png"
+  />
+  <Card
+    title="Chesterton's Fence"
+    description="Do not modify or remove a piece of code until you understand why it's there."
+    href="/laws/chestertons-fence"
+    image="/cards/compass.png"
+  />
+  <Card
+    title="The Unix Philosophy"
+    description="Write programs that do one thing and do it well, communicating via text streams."
+    href="/laws/unix-philosophy"
+    image="/cards/command.png"
   />
 </Cards>
 

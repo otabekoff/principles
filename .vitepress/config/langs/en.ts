@@ -83,6 +83,7 @@ export const en = {
           { text: 'Black Box', link: '/general/black-box' },
           { text: 'Code Reuse', link: '/general/code-reuse' },
           { text: 'DRY vs WET', link: '/general/dry-wet' },
+          { text: 'Single Source of Truth (SSOT)', link: '/general/single-source-of-truth' },
           { text: 'KISS (Keep It Simple, Stupid)', link: '/general/kiss' },
           { text: 'YAGNI (You Aren\'t Gonna Need It)', link: '/general/yagni' },
           { text: 'Do The Simplest Thing That Could Possibly Work', link: '/general/do-simplest-thing' },
@@ -90,6 +91,7 @@ export const en = {
           { text: 'Orthogonality', link: '/general/orthogonality' },
           { text: 'Robustness Principle (Postel\'s Law)', link: '/general/robustness-principle' },
           { text: 'Encapsulate What Changes', link: '/general/encapsulate-what-changes' },
+          { text: 'Principle of Least Privilege', link: '/general/least-privilege' },
           { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' }
         ]
       },
@@ -135,6 +137,8 @@ export const en = {
           { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
           { text: 'Functional Purity', link: '/architecture/functional-purity' },
           { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
+          { text: 'Event-Driven Architecture', link: '/architecture/event-driven-architecture' },
+          { text: 'Strangler Fig Pattern', link: '/architecture/strangler-fig' },
           { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },
           { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
           { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
@@ -147,8 +151,11 @@ export const en = {
         items: [
           { text: 'FIRST Principles of Testing', link: '/testing/first-principles' },
           { text: 'Arrange, Act, Assert (3A)', link: '/testing/arrange-act-assert' },
+          { text: 'The Test Pyramid', link: '/testing/test-pyramid' },
           { text: 'Pass the Tests & Testability', link: '/testing/pass-the-tests' },
           { text: 'Test-Driven Development (TDD)', link: '/testing/test-driven-development' },
+          { text: 'Behavior-Driven Development (BDD)', link: '/testing/behavior-driven-development' },
+          { text: 'Property-Based Testing', link: '/testing/property-based-testing' },
           { text: 'The ZOMBIES Strategy', link: '/testing/zombies-strategy' }
         ]
       },
@@ -160,8 +167,14 @@ export const en = {
           { text: 'Curly\'s Law', link: '/laws/curlys-law' },
           { text: 'Deutsch Limit', link: '/laws/deutsch-limit' },
           { text: 'Gall\'s Law', link: '/laws/galls-law' },
+          { text: 'Conway\'s Law', link: '/laws/conways-law' },
+          { text: 'Brooks\'s Law', link: '/laws/brookss-law' },
+          { text: 'Hyrum\'s Law', link: '/laws/hyrums-law' },
+          { text: 'Hofstadter\'s Law', link: '/laws/hofstadters-law' },
+          { text: 'Chesterton\'s Fence', link: '/laws/chestertons-fence' },
           { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },
           { text: 'Worse is Better', link: '/laws/worse-is-better' },
+          { text: 'The Unix Philosophy', link: '/laws/unix-philosophy' },
           { text: 'Rule of Three', link: '/laws/rule-of-three' },
           { text: 'Zero-One-Infinity Rule', link: '/laws/zero-one-infinity' },
           { text: 'Uniform Access Principle', link: '/laws/uniform-access' },
