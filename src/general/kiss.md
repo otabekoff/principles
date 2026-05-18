@@ -108,6 +108,16 @@ Writing complex code is easy; writing simple code is remarkably difficult. It re
 
 ---
 
+## KISS vs. "Do The Simplest Thing That Could Possibly Work" (DTSTTCPW)
+
+While both principles advocate for extreme simplicity, they originate from different design paradigms and operate at different levels of abstraction:
+* **KISS** is a high-level **system philosophy** that guides design across all disciplines (engineering, architecture, writing). It warns against over-cleverness and unnecessary conceptual complexity globally.
+* **DTSTTCPW** is a tactical **Extreme Programming (XP) constraint** that governs daily coding tasks. It asks you to focus strictly on implementing only the immediate required feature without guessing future needs, and then refactoring to a clean design once it works.
+
+In short, **KISS** is the philosophical goal (simplicity), whereas **DTSTTCPW** is the tactical software-engineering practice used to achieve it.
+
+---
+
 ## Resources & Deep Dive
 
 * [KISS Principle on Wikipedia](https://en.wikipedia.org/wiki/KISS_principle)

@@ -34,6 +34,9 @@ The term "inversion" is historical: in traditional procedural programming, the c
    └────────────────────────────────────────────────────────┘
 ```
 
+> [!NOTE]
+> **Inversion of Control (IoC) vs. Dependency Inversion Principle (DIP)**: While closely related, they are not the same. Inversion of Control is a broad architectural mechanism where a reusable framework drives the flow of control, whereas the Dependency Inversion Principle (DIP) is a high-level design guideline advocating that modules should depend on abstractions rather than concrete details. IoC is frequently utilized to implement DIP through techniques like Dependency Injection (DI). For a complete breakdown of DIP, read the [Dependency Inversion Principle (DIP) guide](/solid/dip).
+
 ---
 
 ## 1. History and Etymology

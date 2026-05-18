@@ -25,7 +25,7 @@ The **Dependency Inversion Principle (DIP)** represents the **D** in the **SOLID
 ## How to Apply It
 
 * **Depend on Abstractions, Not Concretions**: Define clean interfaces that capture behavior, and use them to specify the dependencies of your classes rather than concrete types.
-* **Use Inversion of Control (IoC)**: Combine DIP with [Inversion of Control (IoC)](/solid/inversion-of-control) and patterns like **Dependency Injection (DI)**, **Factory**, or **Service Locator** to resolve runtime instances dynamically.
+* **Use Inversion of Control (IoC)**: Combine DIP with [Inversion of Control (IoC)](/architecture/inversion-of-control) and patterns like **Dependency Injection (DI)**, **Factory**, or **Service Locator** to resolve runtime instances dynamically.
 
 ---
 

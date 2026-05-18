@@ -104,8 +104,7 @@ export const en = {
           { text: 'Open-Closed Principle (OCP)', link: '/solid/ocp' },
           { text: 'Liskov Substitution Principle (LSP)', link: '/solid/lsp' },
           { text: 'Interface Segregation Principle (ISP)', link: '/solid/isp' },
-          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' },
-          { text: 'Inversion of Control (IoC)', link: '/solid/inversion-of-control' }
+          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' }
         ]
       },
       {
@@ -134,13 +133,14 @@ export const en = {
           { text: 'GRASP', link: '/architecture/grasp' },
           { text: 'Law of Demeter', link: '/architecture/law-of-demeter' },
           { text: 'Composition over Inheritance', link: '/architecture/composition-over-inheritance' },
+          { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
+          { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
+          { text: 'Inversion of Control (IoC)', link: '/architecture/inversion-of-control' },
           { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
           { text: 'Functional Purity', link: '/architecture/functional-purity' },
-          { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
           { text: 'Event-Driven Architecture', link: '/architecture/event-driven-architecture' },
-          { text: 'Strangler Fig Pattern', link: '/architecture/strangler-fig' },
+          { text: 'Strangler Fig', link: '/architecture/strangler-fig' },
           { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },
-          { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
           { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
           { text: 'Reveal Intentions', link: '/architecture/reveal-intentions' }
         ]
@@ -164,25 +164,25 @@ export const en = {
         collapsed: true,
         items: [
           { text: 'Booch Method', link: '/laws/booch-method' },
+          { text: 'Brooks\'s Law', link: '/laws/brookss-law' },
+          { text: 'Chesterton\'s Fence', link: '/laws/chestertons-fence' },
+          { text: 'Conway\'s Law', link: '/laws/conways-law' },
           { text: 'Curly\'s Law', link: '/laws/curlys-law' },
           { text: 'Deutsch Limit', link: '/laws/deutsch-limit' },
           { text: 'Gall\'s Law', link: '/laws/galls-law' },
-          { text: 'Conway\'s Law', link: '/laws/conways-law' },
-          { text: 'Brooks\'s Law', link: '/laws/brookss-law' },
-          { text: 'Hyrum\'s Law', link: '/laws/hyrums-law' },
           { text: 'Hofstadter\'s Law', link: '/laws/hofstadters-law' },
-          { text: 'Chesterton\'s Fence', link: '/laws/chestertons-fence' },
-          { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },
-          { text: 'Worse is Better', link: '/laws/worse-is-better' },
-          { text: 'The Unix Philosophy', link: '/laws/unix-philosophy' },
-          { text: 'Rule of Three', link: '/laws/rule-of-three' },
-          { text: 'Zero-One-Infinity Rule', link: '/laws/zero-one-infinity' },
-          { text: 'Uniform Access Principle', link: '/laws/uniform-access' },
-          { text: 'The Power of 10 Safety Rules', link: '/laws/power-of-10' },
+          { text: 'Hyrum\'s Law', link: '/laws/hyrums-law' },
+          { text: 'If It Ain\'t Broke, Don\'t Fix It', link: '/laws/if-it-aint-broke' },
           { text: 'Mechanism and Policy', link: '/laws/mechanism-policy' },
           { text: 'Pristine Sources', link: '/laws/pristine-sources' },
+          { text: 'Rule of Three', link: '/laws/rule-of-three' },
+          { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },
+          { text: 'The Power of 10 Safety Rules', link: '/laws/power-of-10' },
+          { text: 'The Unix Philosophy', link: '/laws/unix-philosophy' },
           { text: 'The Zen of Python', link: '/laws/zen-of-python' },
-          { text: 'If It Ain\'t Broke, Don\'t Fix It', link: '/laws/if-it-aint-broke' }
+          { text: 'Uniform Access Principle', link: '/laws/uniform-access' },
+          { text: 'Worse is Better', link: '/laws/worse-is-better' },
+          { text: 'Zero-One-Infinity Rule', link: '/laws/zero-one-infinity' }
         ]
       }
     ],

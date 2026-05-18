@@ -131,12 +131,6 @@ The gold standard of object-oriented design, compiled by Robert C. Martin. These
     href="/solid/dip"
     image="/cards/dependency-injection.png"
   />
-  <Card
-    title="Inversion of Control (IoC)"
-    description="Delegating control flow and lifecycle management to containers."
-    href="/solid/inversion-of-control"
-    image="/cards/dependency-injection.png"
-  />
 </Cards>
 
 ---
@@ -234,10 +228,10 @@ High-level design paradigms, architectural separations, and safety-critical rule
     image="/cards/decorator.png"
   />
   <Card
-    title="Functional Core, Imperative Shell"
-    description="Keeping pure business rules safely isolated from side-effects."
-    href="/architecture/functional-core-imperative-shell"
-    image="/cards/mvvm.png"
+    title="Encapsulation & Info Hiding"
+    description="Bundling state while shielding internal design decisions."
+    href="/architecture/encapsulation-information-hiding"
+    image="/cards/data-mapper.png"
   />
   <Card
     title="Command-Query Separation (CQS)"
@@ -246,16 +240,40 @@ High-level design paradigms, architectural separations, and safety-critical rule
     image="/cards/cqrs.png"
   />
   <Card
+    title="Inversion of Control (IoC)"
+    description="Delegating control flow and lifecycle management to reusable frameworks."
+    href="/architecture/inversion-of-control"
+    image="/cards/dependency-injection.png"
+  />
+  <Card
+    title="Functional Core, Imperative Shell"
+    description="Keeping pure business rules safely isolated from side-effects."
+    href="/architecture/functional-core-imperative-shell"
+    image="/cards/mvvm.png"
+  />
+  <Card
+    title="Functional Purity"
+    description="Ensuring predictable, side-effect-free code through pure mathematical functions."
+    href="/architecture/functional-purity"
+    image="/cards/visitor.png"
+  />
+  <Card
+    title="Event-Driven Architecture (EDA)"
+    description="Decouple and scale systems asynchronously using publishers, subscribers, and events."
+    href="/architecture/event-driven-architecture"
+    image="/cards/mvc.png"
+  />
+  <Card
+    title="Strangler Fig"
+    description="Safely migrate legacy systems incrementally by strangling old endpoints."
+    href="/architecture/strangler-fig"
+    image="/cards/bridge.png"
+  />
+  <Card
     title="Defensive & Offensive Programming"
     description="Protecting system boundaries while failing-fast internally."
     href="/architecture/defensive-offensive-programming"
     image="/cards/active-record.png"
-  />
-  <Card
-    title="Encapsulation & Info Hiding"
-    description="Bundling state while shielding internal design decisions."
-    href="/architecture/encapsulation-information-hiding"
-    image="/cards/data-mapper.png"
   />
   <Card
     title="Fail-Fast & Robustness"
@@ -268,18 +286,6 @@ High-level design paradigms, architectural separations, and safety-critical rule
     description="Self-documenting code through meaningful, intent-revealing names."
     href="/architecture/reveal-intentions"
     image="/cards/service-locator.png"
-  />
-  <Card
-    title="Event-Driven Architecture (EDA)"
-    description="Decouple and scale systems asynchronously using publishers, subscribers, and events."
-    href="/architecture/event-driven-architecture"
-    image="/cards/mvc.png"
-  />
-  <Card
-    title="Strangler Fig Pattern"
-    description="Safely migrate legacy systems incrementally by strangling old endpoints."
-    href="/architecture/strangler-fig"
-    image="/cards/bridge.png"
   />
 </Cards>
 
@@ -342,6 +348,30 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     image="/cards/compass.png"
   />
   <Card
+    title="Brooks's Law"
+    description="Adding human resources to a late software project makes it later."
+    href="/laws/brookss-law"
+    image="/cards/flyweight.png"
+  />
+  <Card
+    title="Chesterton's Fence"
+    description="Do not modify or remove a piece of code until you understand why it's there."
+    href="/laws/chestertons-fence"
+    image="/cards/compass.png"
+  />
+  <Card
+    title="Conway's Law"
+    description="Any organization that designs a system will duplicate their communication structure."
+    href="/laws/conways-law"
+    image="/cards/memento.png"
+  />
+  <Card
+    title="Curly's Law"
+    description="A software entity should mean one thing, and only one thing."
+    href="/laws/curlys-law"
+    image="/cards/singleton.png"
+  />
+  <Card
     title="Deutsch Limit"
     description="Coined by L. Peter Deutsch, visual programming graphs should not exceed fifty elements."
     href="/laws/deutsch-limit"
@@ -354,40 +384,22 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     image="/cards/identity-map.png"
   />
   <Card
-    title="The Ninety-Ninety Rule"
-    description="A humorous but accurate law regarding project time estimations."
-    href="/laws/ninety-ninety-rule"
+    title="Hofstadter's Law"
+    description="It always takes longer than you expect, even when you take into account the law."
+    href="/laws/hofstadters-law"
     image="/cards/scheduler.png"
   />
   <Card
-    title="Worse is Better"
-    description="Simplicity of implementation is more important than completeness."
-    href="/laws/worse-is-better"
-    image="/cards/command.png"
+    title="Hyrum's Law"
+    description="Once an API has enough users, all observable behaviors will be depended upon."
+    href="/laws/hyrums-law"
+    image="/cards/observer.png"
   />
   <Card
-    title="Rule of Three"
-    description="Three strikes and you refactor to avoid premature DRYing."
-    href="/laws/rule-of-three"
-    image="/cards/null-object.png"
-  />
-  <Card
-    title="Zero-One-Infinity Rule"
-    description="A system should not allow arbitrary limits on entity instances."
-    href="/laws/zero-one-infinity"
-    image="/cards/interpreter.png"
-  />
-  <Card
-    title="Uniform Access Principle"
-    description="Access methods and properties through a unified identical notation."
-    href="/laws/uniform-access"
-    image="/cards/unit-of-work.png"
-  />
-  <Card
-    title="The Power of 10 Safety Rules"
-    description="Gerard J. Holzmann's strict guidelines for safety-critical coding."
-    href="/laws/power-of-10"
-    image="/cards/read-write-lock.png"
+    title="If It Ain't Broke, Don't Fix It"
+    description="Pragmatic software adage advising stability over unnecessary rewrites."
+    href="/laws/if-it-aint-broke"
+    image="/cards/proxy.png"
   />
   <Card
     title="Mechanism and Policy"
@@ -402,52 +414,52 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     image="/cards/template-method.png"
   />
   <Card
-    title="The Zen of Python"
-    description="Universal aphorisms for simplicity, clarity, and readability."
-    href="/laws/zen-of-python"
-    image="/cards/observer.png"
+    title="Rule of Three"
+    description="Three strikes and you refactor to avoid premature DRYing."
+    href="/laws/rule-of-three"
+    image="/cards/null-object.png"
   />
   <Card
-    title="If It Ain't Broke, Don't Fix It"
-    description="Pragmatic software adage advising stability over unnecessary rewrites."
-    href="/laws/if-it-aint-broke"
-    image="/cards/proxy.png"
-  />
-  <Card
-    title="Conway's Law"
-    description="Any organization that designs a system will duplicate their communication structure."
-    href="/laws/conways-law"
-    image="/cards/memento.png"
-  />
-  <Card
-    title="Brooks's Law"
-    description="Adding human resources to a late software project makes it later."
-    href="/laws/brookss-law"
-    image="/cards/flyweight.png"
-  />
-  <Card
-    title="Hyrum's Law"
-    description="Once an API has enough users, all observable behaviors will be depended upon."
-    href="/laws/hyrums-law"
-    image="/cards/observer.png"
-  />
-  <Card
-    title="Hofstadter's Law"
-    description="It always takes longer than you expect, even when you take into account the law."
-    href="/laws/hofstadters-law"
+    title="The Ninety-Ninety Rule"
+    description="A humorous but accurate law regarding project time estimations."
+    href="/laws/ninety-ninety-rule"
     image="/cards/scheduler.png"
   />
   <Card
-    title="Chesterton's Fence"
-    description="Do not modify or remove a piece of code until you understand why it's there."
-    href="/laws/chestertons-fence"
-    image="/cards/compass.png"
+    title="The Power of 10 Safety Rules"
+    description="Gerard J. Holzmann's strict guidelines for safety-critical coding."
+    href="/laws/power-of-10"
+    image="/cards/read-write-lock.png"
   />
   <Card
     title="The Unix Philosophy"
     description="Write programs that do one thing and do it well, communicating via text streams."
     href="/laws/unix-philosophy"
     image="/cards/command.png"
+  />
+  <Card
+    title="The Zen of Python"
+    description="Universal aphorisms for simplicity, clarity, and readability."
+    href="/laws/zen-of-python"
+    image="/cards/observer.png"
+  />
+  <Card
+    title="Uniform Access Principle"
+    description="Access methods and properties through a unified identical notation."
+    href="/laws/uniform-access"
+    image="/cards/unit-of-work.png"
+  />
+  <Card
+    title="Worse is Better"
+    description="Simplicity of implementation is more important than completeness."
+    href="/laws/worse-is-better"
+    image="/cards/command.png"
+  />
+  <Card
+    title="Zero-One-Infinity Rule"
+    description="A system should not allow arbitrary limits on entity instances."
+    href="/laws/zero-one-infinity"
+    image="/cards/interpreter.png"
   />
 </Cards>
 
