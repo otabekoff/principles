@@ -13,7 +13,11 @@ icon: Palette
 
 **Programming principles** are fundamental guidelines and rules of thumb that help developers design clean, robust, and maintainable software. They are not structural design pattern recipes that you copy-paste — they are foundational design philosophies that you apply with judgment. A principle guides your everyday decisions, helps prevent over-engineering, and provides a shared vocabulary for high-quality software craft.
 
-This reference covers the most critical software development principles, grouped into six categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, **Software Architecture**, and **Laws & Aphorisms**.
+Every programmer benefits from understanding programming principles and design patterns. This comprehensive reference is designed to serve as a practical guide during system design, discussion, or code review. The list is naturally incomplete, and trade-offs must frequently be made between conflicting principles. However, higher-ranked principles usually guide the system more effectively than lower-ranked ones.
+
+This guide was originally inspired by the classic post [The Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531). We have enriched it with thorough architectural reasoning, practical TypeScript code comparisons, modern engineering trade-offs, and curated deep-dive resources.
+
+Currently, the reference covers the most critical software development principles, grouped into six categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, **Software Architecture**, and **Laws & Aphorisms**.
 
 ---
 
