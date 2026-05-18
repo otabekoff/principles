@@ -16,10 +16,8 @@ If a block of code is easy to delete without breaking other parts of the applica
 
 In a fast-growing application, features are constantly added, tested, and discarded. If a feature fails or becomes obsolete, you want to be able to completely purge it from the codebase.
 
-- **Badly Designed Code**: Has deep hooks, global variables, and multiple other components that directly reference internal methods of the feature. Deleting this feature requires a massive, painful refactoring across dozens of files.
-- **Well-Designed Code**: Is completely isolated inside a self-contained folder or module behind a clear interface. Deleting it is as simple as deleting the folder and removing a single line of configuration.
-
-Even if you write a messy, complex function inside a module, as long as it is wrapped behind a clean boundary, it is **good code** because it is easy to delete and replace with a cleaner implementation without any ripple effects.
+* **Well-Designed Code**: Is completely isolated inside a self-contained folder or module behind a clear interface. It doesn't matter if you write a hairy, arcane function that is complex and hard to understand (especially if it is backed by tests!) — as long as it is easy to delete and replace with an alternative implementation without any ripple effects, it is **exceptionally well-designed code**.
+* **Badly Designed Code**: Is hard to delete because other parts of the application are directly relying on that specific function to do a task, creating a complex, tangled web of dependencies across dozens of files. Deleting it requires a massive, risky refactoring.
 
 ### Code Smell: Tight Coupling
 

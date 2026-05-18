@@ -55,9 +55,10 @@ function calculateActiveTotal(transactions: Transaction[]): number {
 
 ## Benefits of the Boy Scout Rule
 
-1. **Prevents Code Decay**: Minor daily cleanups compound over weeks and months, turning a messy legacy codebase into a clean, modern one.
-2. **Promotes a Culture of Excellence**: When the team observes everyone contributing to cleanliness, it raises the bar and increases collective ownership of the code.
-3. **Reduces Technical Debt**: Eliminates small annoyances before they turn into major architectural blockers.
+1. **Prevents Code Decay**: Minor daily cleanups compound over weeks and months, turning a messy legacy codebase into a clean, modern one, stopping code rot before it cascades.
+2. **Promotes a Culture of Excellence**: When everyone on the team adopts this rule and takes collective ownership of the cleanliness of the files they touch, it naturally elevates the standard of work across the entire project.
+3. **Reduces Technical Debt**: Eliminates small architectural debt items, confusing variables, and dead code before they turn into major system blockers.
+4. **Use Tools and Automation**: Leverage automatic refactoring tools, formatters (like Prettier, Black, or rustfmt), and linters. Having styling and formatting automated ensures consistency and frees up your mental energy to focus on clean designs.
 
 ::: warning Keep Scopes Reasonable
 Do not let the Boy Scout Rule lead to massive scope creep. Clean up the immediate neighborhood of your change, but do not refactor completely unrelated files or rewrite entire systems in a single pull request. Keep your PRs easy to review!

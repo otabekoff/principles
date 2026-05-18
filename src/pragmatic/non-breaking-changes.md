@@ -56,7 +56,11 @@ export function Avatar({ url, imageUrl }: AvatarProps) {
 }
 ```
 
-Now, your build remains 100% green. VS Code will highlight `<Avatar url="..." />` calls with a strikethrough, prompting developers to update them at their own pace. You can periodically search for `url` props and safely delete them when none remain.
+Now, your build remains 100% green. VS Code will highlight `<Avatar url="..." />` calls with a strikethrough, prompting developers to update them at their own pace. 
+
+This gradual approach might mean that over time you have `MyWidget1` (deprecated), `MyWidget2` (deprecated), and `MyWidget3` (current) living in your project simultaneously. **This is absolutely fine.** You can periodically scan the codebase to see which deprecated components or props are still in use, and go through and safely delete them once their active references hit zero. 
+
+While you might worry that this leaves the codebase temporarily messy, the alternative is forever running in the mud of massive, stalled "refactor sprints" that block deployment.
 
 ## Benefits
 
