@@ -12,14 +12,16 @@ The principle of **Levels of Abstraction** suggests that every statement in a fu
 
 ## The Core Concept
 
-Make sure that each function, class, and file is kept strictly on the same level of abstraction. A system is vastly easier to read when we cleanly segregate high-level business rules from low-level technical technologies:
+Make sure that each function, class, and file is kept strictly on the **same level of abstraction**. We can divide programming concerns into three distinct tiers:
 
-* **High-Level (Business Logic)**: If a function is handling business logic, then every line in there should be easy to understand by a non-developer who knows your business. 
-  - *Example*: You should read `isEmpty(post)` instead of checking low-level raw details like `post.body === ''`.
-* **Low-Level (Web/Database Technologies)**: The same rules apply the other way around: if a function is handling web technologies, serialization, or network protocols, then every line should be easy to understand by a web developer who does not necessarily know your business.
-  - *Example*: You must **never** mix a business validation check like `post.body === ''` into a technical helper function whose sole job is to dispatch a raw AJAX request.
+1. **High-Level (Domain & Business Rules)**: Speaks the language of the business. If a function is handling business rules, then every line inside it should be easy to understand by a non-developer who knows your business.
+   - *Example*: Checking if a post is empty using a high-level helper: `isEmpty(post)` (instead of low-level primitive checks like `post.body === ''`).
+2. **Mid-Level (Component & Service Coordination)**: Coordinates different components and services to execute a workflow. It delegates actions to execute a process without performing low-level technical implementation details directly.
+   - *Example*: Fetching a record, calling validators, saving state, or invoking an API client (e.g., `this.apiClient.sendPost(post)`).
+3. **Low-Level (Technical & Web/Database Technologies)**: Speaks the language of the computer, database, or network protocol. If a function is handling technical or web technologies, then every line should be easy to understand by a technical developer who does not necessarily know your business.
+   - *Example*: Manipulating DOM nodes, performing raw string parsing, or configuring HTTP headers. You must **never** mix a business validation check like `post.body === ''` into a low-level technical helper whose sole job is to dispatch a raw AJAX request.
 
-Mixing different levels of abstraction inside the same function forces the reader's brain to constantly shift gears between high-level business intents and low-level computer operations.
+Mixing different levels of abstraction inside the same function forces the reader's brain to constantly shift gears between high-level business intents, coordinating workflows, and low-level transport mechanisms.
 
 ### Code Smell: Tangled Abstraction Levels
 

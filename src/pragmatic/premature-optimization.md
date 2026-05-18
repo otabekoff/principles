@@ -6,18 +6,22 @@ icon: ZapOff
 
 # Avoid Premature Optimization
 
-> "Premature optimization is the root of all evil (or at least most of it) in programming." — Donald Knuth
+> "Premature optimization is the root of all evil in programming." — Donald Knuth
 
-The principle of **Avoiding Premature Optimization** suggests that developers should not spend significant time and effort trying to speed up their program or algorithm at an early stage of development, before they have concrete evidence that a bottleneck actually exists.
+Optimization indeed helps in speeding up a program or algorithm, but according to this principle, you do not need to optimize your algorithm at an early stage of development. 
+
+If you perform premature optimization, you won't be able to know where a program’s actual bottlenecks will be, and maintenance will become significantly harder for you. If you optimize your code in the beginning and requirements change later, all of your efforts will be wasted and your code will go straight to the garbage. It is far better to optimize the algorithm at the right time to get the right benefit from it.
+
+---
 
 ## The Core Concept
 
-Optimization is a good thing, but *when* you optimize matters enormously. 
+Optimization is a powerful tool, but *when* you choose to optimize matters enormously. 
 
-If you optimize code in the very beginning:
-1. **You don't know where the actual bottleneck is**: Humans are notoriously bad at guessing which part of a program will be slow. Often, 90% of the execution time is spent in 10% of the code. If you optimize the other 90%, you waste effort for a 0% real-world speedup.
-2. **Maintenance becomes harder**: Optimized code is almost always more complex, more verbose, and harder to read. Hard-to-read code is harder to refactor when requirements change.
-3. **Wasted effort**: If the business requirements change or the feature is discarded, all the hours spent writing micro-optimizations go straight to the garbage.
+If you attempt to optimize code early in the development lifecycle:
+1. **You don't know where the actual bottlenecks are**: Humans are notoriously bad at guessing which part of a program will run slowly. Without real runtime data under a production-like load, you won't be able to know where the program's bottlenecks actually reside. If you optimize the wrong 90% of the code, you get a 0% real-world speedup.
+2. **Maintenance becomes significantly harder**: Highly optimized code is almost always more complex, verbose, and mathematically intricate. This makes it far harder for you and your team to read, debug, and maintain.
+3. **Efforts go straight to the garbage**: If a client's business requirements change next week, all the time spent writing clever micro-optimizations is completely wasted as the code is rewritten or discarded.
 
 ### Code Smell: Complex algorithms for unverified needs
 

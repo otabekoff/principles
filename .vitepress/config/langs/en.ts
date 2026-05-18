@@ -100,6 +100,7 @@ export const en = {
           { text: 'Law of Demeter', link: '/general/law-of-demeter' },
           { text: 'Separation of Concerns (SoC)', link: '/general/soc' },
           { text: 'Composition over Inheritance', link: '/general/composition-over-inheritance' },
+          { text: 'Encapsulate What Changes', link: '/general/encapsulate-what-changes' },
           { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' },
           { text: 'GRASP', link: '/general/grasp' }
         ]
