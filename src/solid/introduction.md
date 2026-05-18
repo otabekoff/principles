@@ -1,27 +1,68 @@
 ---
 title: Introduction to SOLID
-description: An introduction to the five core principles of object-oriented design and programming.
+description: "A complete guide to the SOLID principles of object-oriented design, their 2000 origin under Robert C. Martin, and Michael Feathers' 2004 mnemonic coin."
 icon: Grid
 ---
 
 # Introduction to SOLID
 
-SOLID is an acronym for five core principles of object-oriented design and programming compiled by Robert C. Martin (Uncle Bob) in the early 2000s. These principles are a set of rules and best practices to follow while designing a class structure.
+> "The SOLID principles are a set of rules and best practices to follow while designing class structures, intended to combat software rot." — Robert C. Martin
 
-The five principles are:
+In software engineering, **SOLID** is a famous mnemonic acronym representing five design principles of object-oriented programming (OOP). When applied together, these five principles are designed to make source code significantly more **understandable, flexible, and maintainable**. 
 
-1. **[Single Responsibility Principle (SRP)](/solid/srp)**: A class should have only one reason to change.
-2. **[Open-Closed Principle (OCP)](/solid/ocp)**: Software entities should be open for extension, but closed for modification.
-3. **[Liskov Substitution Principle (LSP)](/solid/lsp)**: Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.
-4. **[Interface Segregation Principle (ISP)](/solid/isp)**: A client should never be forced to depend on methods it does not use.
-5. **[Dependency Inversion Principle (DIP)](/solid/dip)**: High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Beyond basic OOP, these principles form the core technical philosophy behind modern agile software engineering and adaptive systems development.
 
-## Why SOLID Matters
+---
 
-SOLID principles help developers:
-- Avoid tight coupling and rigidity.
-- Create systems that are easy to test and maintain.
-- Design modular systems where components can be replaced or updated independently.
-- Foster teamwork by making codebases cleaner and more predictable.
+## 1. History: Combating Software Rot
 
-Over the following chapters, we will dive deep into each principle with real-world examples, diagrams, and concrete code implementations.
+The core concepts behind SOLID were first introduced in **2000** by the software engineer and author **Robert C. Martin** (popularly known as "Uncle Bob") in his landmark paper, ***Design Principles and Design Patterns***. 
+
+Martin formulated these principles to battle what he termed **"Software Rot"**—the gradual decay of a codebase characterized by:
+* **Rigidity**: A system is rigid if a single change causes a cascade of downstream modifications across the entire application.
+* **Fragility**: A system is fragile if making a change in one module breaks completely unrelated parts of the codebase.
+* **Immobility**: A system suffers from immobility if a module cannot be reused in another project because it is tightly tangled with local dependencies.
+* **Viscosity**: Viscosity is high when it is far easier for a developer to write a hacky, coupled solution than to follow the system's intended, clean architecture.
+
+```
+                           THE SOFTWARE ROT BATTLE:
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │                            SOFTWARE ROT                                │
+   ├──────────────────┬──────────────────┬──────────────────┬───────────────┤
+   │    RIGIDITY      │    FRAGILITY     │   IMMOBILITY     │   VISCOSITY   │
+   │ Cascading edits  │ Breaks unrelated │ Cannot reuse any │ Hacky shortcuts│
+   │  everywhere!     │ modules!         │ class code!      │ are easier!   │
+   └──────────────────┴──────────────────┴──────────────────┴───────────────┘
+                    ▲                  ▲                  ▲
+                    └──────────────────┼──────────────────┘
+                                       │
+                      Mitigated by the SOLID system.
+```
+
+### The Mnemonic Coining:
+Although Robert C. Martin collected and published the five principles, they were initially scattered in different orders. The memorable **SOLID** acronym was coined around **2004** by the software engineer **Michael Feathers**, who recognized that arranging the principles in this specific order created a powerful, unified memory key.
+
+---
+
+## 2. The Five SOLID Principles at a Glance
+
+Each letter of the acronym represents one structural design rule:
+
+| Principle | Description | Primary Goal |
+| :--- | :--- | :--- |
+| **[S] Single Responsibility (SRP)** | A class should have only one reason to change, serving a single actor. | High Cohesion & Low Risk |
+| **[O] Open-Closed (OCP)** | Software entities should be open for extension but closed for modification. | Zero-Regression Features |
+| **[L] Liskov Substitution (LSP)** | Derived classes must be completely substitutable for their base classes. | Reliable Polymorphism |
+| **[I] Interface Segregation (ISP)** | Clients should not be forced to depend on interface methods they do not use. | Decoupling & Modular APIs |
+| **[D] Dependency Inversion (DIP)** | Depend on abstractions (interfaces) rather than concrete implementations. | High Architectural Flexibility |
+
+---
+
+## 3. Why SOLID Matters in Modern Development
+
+In real-world engineering, code is read far more often than it is written, and requirements evolve continuously. Adhering to the SOLID framework delivers distinct business advantages:
+
+1. **Enhanced Maintainability**: Highly isolated modules mean developers can modify, debug, or refactor a class in isolation without fearing unintended side-effects.
+2. **Simplified Unit Testing**: By decoupling classes from external database engines or web servers using abstractions, developers can easily write fast, mock-free unit tests.
+3. **Seamless Extensibility**: New features are added by writing fresh, independent files (e.g. extending an interface) rather than modifying fragile legacy source code files.
+4. **Resilience to Technical Debt**: Embodying SOLID prevents codebases from decaying into "sphaghetti code" as features are added rapidly by separate developers.
