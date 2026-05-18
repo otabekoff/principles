@@ -108,6 +108,7 @@ export const en = {
         text: 'Pragmatic & Clean Code',
         collapsed: true,
         items: [
+          { text: 'Coding Standards & Specs', link: '/pragmatic/coding-standards' },
           { text: 'Avoid Premature Optimization', link: '/pragmatic/premature-optimization' },
           { text: 'The Boy Scout Rule', link: '/pragmatic/boy-scout-rule' },
           { text: 'Discoverability', link: '/pragmatic/discoverability' },
