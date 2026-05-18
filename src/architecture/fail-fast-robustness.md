@@ -8,12 +8,7 @@ icon: ZapOff
 
 A classic architectural dilemma is deciding how to respond when a minor system error or state anomaly is detected. The **Fail-Fast** principle suggests that a system should immediately stop execution and raise an error as soon as it detects any anomaly, rather than trying to proceed in an undefined, corrupted state.
 
-Now, the internal data structure is completely hidden. We can change the Map to a database query or an array, and the rest of the application remains completely unaffected because they only interact with the stable public method `getProduct(id)`.
-
-## Summary
-
-- **Encapsulation**: Put your variables and actions in a box.
-- **Information Hiding**: Tape the box shut and only expose a small slot to interact with it.
+This stands in creative harmony with the **Robustness Principle (Postel's Law)**, which advises being liberal in what you accept from others. A resilient system achieves its strength by applying both: failing fast internally on programming errors and configuration anomalies to prevent state corruption, while handling external system boundary errors and user inputs gracefully through validation, exception handling, and error boundaries.
 
 ---
 
