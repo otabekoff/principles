@@ -132,6 +132,8 @@ export const en = {
         text: 'Testing & Quality',
         collapsed: true,
         items: [
+          { text: 'FIRST Principles of Testing', link: '/testing/first-principles' },
+          { text: 'Arrange, Act, Assert (3A)', link: '/testing/arrange-act-assert' },
           { text: 'Pass the Tests & Testability', link: '/testing/pass-the-tests' },
           { text: 'Test-Driven Development (TDD)', link: '/testing/test-driven-development' },
           { text: 'The ZOMBIES Strategy', link: '/testing/zombies-strategy' }
