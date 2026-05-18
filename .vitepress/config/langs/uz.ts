@@ -92,11 +92,17 @@ export const uz = {
           { text: 'DRY (Takrorlamang)', link: '/uz/general/dry' },
           { text: 'KISS (Oddiy saqlang)', link: '/uz/general/kiss' },
           { text: 'YAGNI (Sizga bu kerak bo\'lmaydi)', link: '/uz/general/yagni' },
-          { text: 'Demetra qonuni', link: '/uz/general/law-of-demeter' },
           { text: 'Mas\'uliyatlarni ajratish (SoC)', link: '/uz/general/soc' },
-          { text: 'Meros o\'rniga kompozitsiya', link: '/uz/general/composition-over-inheritance' },
-          { text: 'Eng kam ajablantirish tamoyili', link: '/uz/general/least-astonishment' },
-          { text: 'GRASP', link: '/uz/general/grasp' }
+          { text: 'Eng kam ajablantirish tamoyili', link: '/uz/general/least-astonishment' }
+        ]
+      },
+      {
+        text: 'Dasturiy ta\'minot arxitekturasi',
+        collapsed: true,
+        items: [
+          { text: 'GRASP tamoyillari', link: '/uz/architecture/grasp' },
+          { text: 'Demetra qonuni', link: '/uz/architecture/law-of-demeter' },
+          { text: 'Meros o\'rniga kompozitsiya', link: '/uz/architecture/composition-over-inheritance' }
         ]
       }
     ],

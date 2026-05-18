@@ -86,22 +86,10 @@ Ushbu tamoyillar kodning kundalik tozaligi va soddaligiga qaratilgan bo'lib, loy
     image="/cards/null-object.png"
   />
   <Card
-    title="Demetra qonuni"
-    description="Faqat o'z do'stlaringiz bilan gaplashing; bog'liqlikni kamaytiring."
-    href="/uz/general/law-of-demeter"
-    image="/cards/observer.png"
-  />
-  <Card
     title="Mas'uliyatlarni ajratish (SoC)"
     description="Dasturni alohida vazifalarni bajaruvchi mustaqil qismlarga bo'ling."
     href="/uz/general/soc"
     image="/cards/mvc.png"
-  />
-  <Card
-    title="Meros o'rniga kompozitsiya"
-    description="Merosxo'rlikdan ko'ra ob'ektlarni kompozitsiya qilishni afzal ko'ring."
-    href="/uz/general/composition-over-inheritance"
-    image="/cards/decorator.png"
   />
   <Card
     title="Eng kam ajablanish (POLA)"
@@ -109,11 +97,32 @@ Ushbu tamoyillar kodning kundalik tozaligi va soddaligiga qaratilgan bo'lib, loy
     href="/uz/general/least-astonishment"
     image="/cards/proxy.png"
   />
+</Cards>
+
+---
+
+## Dasturiy ta'minot arxitekturasi
+
+Kattaroq tizimlarni loyihalashda qo'llaniladigan arxitektura tamoyillari, bog'liqliklarni kamaytirish va mas'uliyatlarni taqsimlash qoidalari.
+
+<Cards>
   <Card
     title="GRASP tamoyillari"
     description="Mas'uliyatlarni ob'ektlar orasida taqsimlashning 9 ta ko'rsatmasi."
-    href="/uz/general/grasp"
+    href="/uz/architecture/grasp"
     image="/cards/command.png"
+  />
+  <Card
+    title="Demetra qonuni"
+    description="Faqat o'z do'stlaringiz bilan gaplashing; bog'liqlikni kamaytiring."
+    href="/uz/architecture/law-of-demeter"
+    image="/cards/observer.png"
+  />
+  <Card
+    title="Meros o'rniga kompozitsiya"
+    description="Merosxo'rlikdan ko'ra ob'ektlarni kompozitsiya qilishni afzal ko'ring."
+    href="/uz/architecture/composition-over-inheritance"
+    image="/cards/decorator.png"
   />
 </Cards>
 

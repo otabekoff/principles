@@ -63,34 +63,16 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     image="/cards/null-object.png"
   />
   <Card
-    title="Law of Demeter"
-    description="Only talk to your immediate friends; reduce object coupling."
-    href="/general/law-of-demeter"
-    image="/cards/observer.png"
-  />
-  <Card
     title="Separation of Concerns (SoC)"
     description="Divide a program into sections addressing distinct duties."
     href="/general/soc"
     image="/cards/mvc.png"
   />
   <Card
-    title="Composition over Inheritance"
-    description="Favor composing reusable behaviors over inheriting rigid trees."
-    href="/general/composition-over-inheritance"
-    image="/cards/decorator.png"
-  />
-  <Card
     title="Least Astonishment (POLA)"
     description="Ensure APIs and modules behave exactly as expected."
     href="/general/least-astonishment"
     image="/cards/proxy.png"
-  />
-  <Card
-    title="GRASP Principles"
-    description="Craig Larman's nine guidelines for responsibility assignment."
-    href="/general/grasp"
-    image="/cards/command.png"
   />
 </Cards>
 
@@ -135,6 +117,12 @@ The gold standard of object-oriented design, compiled by Robert C. Martin. These
     title="Dependency Inversion (DIP)"
     description="Depend on abstractions, not concrete details."
     href="/solid/dip"
+    image="/cards/dependency-injection.png"
+  />
+  <Card
+    title="Inversion of Control (IoC)"
+    description="Delegating control flow and lifecycle management to containers."
+    href="/solid/inversion-of-control"
     image="/cards/dependency-injection.png"
   />
 </Cards>
@@ -216,6 +204,24 @@ High-level design paradigms, architectural separations, and safety-critical rule
     image="/cards/shield.png"
   />
   <Card
+    title="GRASP Principles"
+    description="Craig Larman's nine guidelines for responsibility assignment."
+    href="/architecture/grasp"
+    image="/cards/command.png"
+  />
+  <Card
+    title="Law of Demeter"
+    description="Only talk to your immediate friends; reduce object coupling."
+    href="/architecture/law-of-demeter"
+    image="/cards/observer.png"
+  />
+  <Card
+    title="Composition over Inheritance"
+    description="Favor composing reusable behaviors over inheriting rigid trees."
+    href="/architecture/composition-over-inheritance"
+    image="/cards/decorator.png"
+  />
+  <Card
     title="Functional Core, Imperative Shell"
     description="Keeping pure business rules safely isolated from side-effects."
     href="/architecture/functional-core-imperative-shell"
@@ -232,12 +238,6 @@ High-level design paradigms, architectural separations, and safety-critical rule
     description="Protecting system boundaries while failing-fast internally."
     href="/architecture/defensive-offensive-programming"
     image="/cards/active-record.png"
-  />
-  <Card
-    title="Inversion of Control (IoC)"
-    description="Delegating control flow and lifecycle management to containers."
-    href="/architecture/inversion-of-control"
-    image="/cards/dependency-injection.png"
   />
   <Card
     title="Encapsulation & Info Hiding"

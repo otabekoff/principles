@@ -86,14 +86,11 @@ export const en = {
           { text: 'KISS (Keep It Simple, Stupid)', link: '/general/kiss' },
           { text: 'YAGNI (You Aren\'t Gonna Need It)', link: '/general/yagni' },
           { text: 'Do The Simplest Thing That Could Possibly Work', link: '/general/do-simplest-thing' },
-          { text: 'Law of Demeter', link: '/general/law-of-demeter' },
           { text: 'Separation of Concerns (SoC)', link: '/general/soc' },
-          { text: 'Composition over Inheritance', link: '/general/composition-over-inheritance' },
           { text: 'Orthogonality', link: '/general/orthogonality' },
           { text: 'Robustness Principle (Postel\'s Law)', link: '/general/robustness-principle' },
           { text: 'Encapsulate What Changes', link: '/general/encapsulate-what-changes' },
-          { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' },
-          { text: 'GRASP', link: '/general/grasp' }
+          { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' }
         ]
       },
       {
@@ -105,7 +102,8 @@ export const en = {
           { text: 'Open-Closed Principle (OCP)', link: '/solid/ocp' },
           { text: 'Liskov Substitution Principle (LSP)', link: '/solid/lsp' },
           { text: 'Interface Segregation Principle (ISP)', link: '/solid/isp' },
-          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' }
+          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' },
+          { text: 'Inversion of Control (IoC)', link: '/solid/inversion-of-control' }
         ]
       },
       {
@@ -131,11 +129,13 @@ export const en = {
         items: [
           { text: 'Coupling', link: '/architecture/coupling' },
           { text: 'Cohesion', link: '/architecture/cohesion' },
+          { text: 'GRASP', link: '/architecture/grasp' },
+          { text: 'Law of Demeter', link: '/architecture/law-of-demeter' },
+          { text: 'Composition over Inheritance', link: '/architecture/composition-over-inheritance' },
           { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
           { text: 'Functional Purity', link: '/architecture/functional-purity' },
           { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
           { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },
-          { text: 'Inversion of Control (IoC)', link: '/architecture/inversion-of-control' },
           { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
           { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
           { text: 'Reveal Intentions', link: '/architecture/reveal-intentions' }
