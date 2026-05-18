@@ -118,7 +118,8 @@ export const en = {
           { text: 'Make it Work, Right, Fast', link: '/pragmatic/make-it-work-right-fast' },
           { text: 'Good Code is Easy to Delete', link: '/pragmatic/easy-to-delete' },
           { text: 'Make Non-Breaking Changes', link: '/pragmatic/non-breaking-changes' },
-          { text: 'Future Developers Will Copy You', link: '/pragmatic/future-developers' }
+          { text: 'Future Developers Will Copy You', link: '/pragmatic/future-developers' },
+          { text: 'Type-Driven Development', link: '/pragmatic/type-driven-development' }
         ]
       },
       {
@@ -138,6 +139,7 @@ export const en = {
           { text: 'Coupling', link: '/architecture/coupling' },
           { text: 'Cohesion', link: '/architecture/cohesion' },
           { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
+          { text: 'Functional Purity', link: '/architecture/functional-purity' },
           { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
           { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },
           { text: 'Inversion of Control (IoC)', link: '/architecture/inversion-of-control' },

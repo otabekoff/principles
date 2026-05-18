@@ -61,6 +61,12 @@ Before you write a single line of implementation, you must formulate your ideas 
 
 If a class is hard to write a test for, it means the class design itself is coupled and complex. By ensuring testability first, you naturally steer the codebase towards modular, clean abstractions.
 
+### TDD is WET and YAGNI on a Code Level
+
+This basically is **YAGNI (You Aren't Gonna Need It)** and **WET (Write Everything Twice)** on a code level:
+1. **Understand the problem**: First, think about what you need, understand the core problem, and formulate it strictly as a test.
+2. **Just solve this test**: Then just solve this test. Write the absolute simplest code to pass. **Do not create unnecessary abstractions or add pre-emptive features.** Only when duplication emerges or new tests force refactoring should you introduce abstractions.
+
 ## Pragmatism: Don't Let Perfect Be the Enemy of Good
 
 TDD is incredibly powerful, but it should be applied pragmatically. 

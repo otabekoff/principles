@@ -23,9 +23,10 @@ WET suggests a simple rule of thumb: **"Write everything twice (or even thrice) 
 
 ## The Rule of Three
 
-1. **First time**: Just solve the problem in the simplest, most direct way. No abstraction.
-2. **Second time**: Solve the problem again. If it is similar to the first, **duplicate the code**. Duplication is fine at this stage because the requirement is still evolving.
-3. **Third time**: When you are about to write it a third time, **stop**. You now have three concrete examples of how this logic is used. The commonalities and differences are now obvious. You can now build a clean, correct abstraction that will actually stand the test of time.
+Don't create an abstraction that you don't need yet.
+1. **Need to solve a problem?** Just solve it. No abstraction.
+2. **Need to solve it again?** Just solve it again. Duplication of code is perfectly fine here because you do not yet have enough context on how the feature will evolve.
+3. **Need to solve it a third time?** Now, instead of writing the same code a third time, refactor the existing two instances to use a clean abstraction, and reuse this abstraction for the third time you need it. You now have three concrete examples of the behavior to design a correct, robust abstraction.
 
 ### Code Smell: The Hasty Shared Helper
 
