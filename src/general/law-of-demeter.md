@@ -8,7 +8,7 @@ icon: GitPullRequest
 
 > "Talk only to your immediate friends; never talk to strangers."
 
-The **Law of Demeter (LoD)**, or the **Principle of Least Knowledge**, is a fundamental software design guideline for developing loosely coupled, maintainable systems. Rather than a formal law, it is a pragmatic rule of thumb that limits how deeply an object can traverse the internal structures of other objects.
+The **Law of Demeter (LoD)**—also known as the **Principle of Least Knowledge**—is a fundamental software design guideline for developing loosely coupled, maintainable systems. Rather than a formal law, it is a pragmatic rule of thumb that limits how deeply an object can traverse the internal structures of other objects.
 
 ---
 
