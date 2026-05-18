@@ -51,19 +51,28 @@ In type theory, encapsulation is formalized through **existential types** (writt
 
 ---
 
-## 2. Information Hiding: Hiding Design Decisions
+## 2. Information Hiding (Hide Implementation Details)
 
-Introduced by computer scientist **David Parnas** in his landmark 1972 papers, **Information Hiding** is a broader, architectural design rule:
+Introduced by computer scientist **David Parnas** in his landmark 1972 papers, **Information Hiding** (or hiding implementation details) is a crucial software design guideline:
 
-> "A module should hide a difficult design decision or a volatile implementation choice behind a stable, abstract interface."
+> **"A software module hides information (i.e. implementation details) by providing a stable interface, and does not leak any unnecessary details."**
 
-Before Parnas, modularity was discussed by researchers like Richard Gauthier and Stephen Pont in 1970, but Parnas formalized information hiding as the ultimate segregation criterion. 
+---
 
-* **The Design Principle vs. The Technique**: A powerful school of thought states that **Information Hiding is the design principle (the "what")**, while **Encapsulation is the technique (the "how")**. A software module hides information by encapsulating its data structures and presenting a stable, public interface.
+### Why Hide Implementation Details?
 
-### The Architectural Benefits of Information Hiding:
-1. **Shielding Volatile Choices**: Identify design decisions most likely to change (e.g. database schemas, network protocols, third-party libraries, or storage formats) and wrap them behind a stable interface, protecting the rest of the application from ripple-effect refactorings.
-2. **Abstracting Storage Structures**: The physical storage layout of data should be hidden. For example, if a 3D point $(x, y, z)$ is initially represented with three floating-point scalar variables and later refactored into a single coordinates array `float coords[3]`, the client code must remain completely unaware and unaffected.
+* **Protection from Interface Instability**: When internal implementation decisions change, the abstract public interface that client applications are utilizing **does not have to change**. This completely isolates changes and halts cascade edits.
+
+---
+
+### How to Hide Implementation Details
+
+* **Minimize Class and Member Accessibility**: Keep classes, properties, and methods as restricted as possible (e.g. use `private` or `protected` scope by default).
+* **Do Not Expose Member Data in Public**: Avoid exposing raw fields or mutable data structures directly in public properties. Route all state inspections or interactions through well-defined methods.
+* **Avoid Leaking Private Details in the Interface**: Ensure public method signatures do not contain types or parameters that belong to internal implementation libraries.
+* **Decrease Coupling**: Reducing overall dependencies naturally makes it easier to hide complex implementation details within separate, isolated modules.
+
+---
 
 ---
 
@@ -197,3 +206,9 @@ Under this model:
 * There are no ambient authority privileges (like `globalThis` or global files).
 * A piece of code can only perform an action if it holds a direct, private reference to an object representing that **capability**.
 * By locking down capabilities behind strict object encapsulation, systems prevent security exploits (such as malicious third-party packages stealing credentials or accessing the disk).
+
+---
+
+## Resources & Deep Dive
+
+* [Information Hiding on Wikipedia](https://en.wikipedia.org/wiki/Information_hiding)

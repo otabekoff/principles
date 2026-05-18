@@ -6,11 +6,11 @@ icon: Repeat
 
 # Liskov Substitution Principle (LSP)
 
-> "Let $\phi(x)$ be a property provable about objects $x$ of type $T$. Then $\phi(y)$ should be true for objects $y$ of type $S$ where $S$ is a subtype of $T$." — Barbara Liskov & Jeannette Wing, 1994
+> **"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."** — *Barbara Liskov*
 
-The **Liskov Substitution Principle (LSP)** is the "L" in the **SOLID** principles of object-oriented design. It formalizes a mathematical definition of subtyping called **strong behavioral subtyping**. 
+The **Liskov Substitution Principle (LSP)** represents the **L** in the **SOLID** programming principles. It focuses entirely on the expected behavioral semantics of object hierarchies, ensuring that subclass polymorphism does not silently introduce bugs or alter program correctness.
 
-LSP dictates that objects of a supertype in a program must be completely replaceable with objects of its subtypes without altering the correctness, semantics, or expected behavior of that program.
+---
 
 ---
 
@@ -145,3 +145,10 @@ Since `Square` and `Rectangle` both implement `Shape`, they are perfectly interc
 * **Bulletproof Polymorphism**: Conforming to LSP guarantees that calling code can rely on polymorphic interfaces safely without writing explicit type checks or instanceof assertions.
 * **Fewer Bugs (RFC vs WMC)**: In a landmark 1996 empirical study, Basili et al. demonstrated that a lower **Response For a Class (RFC)** reduces bug rates. LSP-conforming systems naturally segment their interfaces, yielding a lower RFC. However, the study also warned that an increase in **Weighted Methods per Class (WMC)** can lead to bugs. Developers must keep subclasses focused and avoid bloating them with unnecessary wrapper methods.
 * **Composition over Inheritance**: LSP serves as the ultimate warning sign against shallow code reuse via inheritance. If a subclass cannot fulfill all invariants of its parent, favor composition.
+
+---
+
+## Resources & Deep Dive
+
+* [Liskov Substitution Principle on Wikipedia](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
+* [The Liskov Substitution Principle Explained on Reflectoring.io](https://reflectoring.io/lsp-explained/)

@@ -4,13 +4,27 @@ description: "A deep dive into the types, metrics, advantages, and trade-offs of
 icon: Shield
 ---
 
-# Cohesion (Computer Science)
+# Maximise Cohesion
 
-> "Cohesion refers to the degree to which the elements inside a module belong together." — Larry Constantine
+> **"Cohesion of a single module or component is the degree to which its responsibilities form a meaningful unit. Higher cohesion is always better."**
 
 In software engineering, **cohesion** is a qualitative metric that measures how focused, unified, and closely related the responsibilities inside a single module, class, package, or function are. First formalized by Larry Constantine in the late 1960s as part of *Structured Design*, cohesion serves as one of the primary pillars of software quality.
 
-Cohesion is typically described as being **"high" (preferable)** or **"low" (undesirable)**. Highly cohesive systems are more robust, understandable, reusable, and maintainable.
+---
+
+## Why Maximise Cohesion?
+
+* **Reduced Module Complexity**: When a module is highly cohesive, its internal complexity drops dramatically because it is not burdened by unrelated actions, fields, or states.
+* **Increased System Maintainability**: Logical changes in the domain affect fewer modules, and changes in one module require fewer changes in other modules.
+* **Increased Module Reusability**: Application developers will find the component they need much more easily among the cohesive, well-bounded set of operations provided by the module.
+
+---
+
+## How to Cohesively Design
+
+* **Group Related Functionalities**: Keep methods, functions, and data structures that share a single responsibility together (e.g. in a single module or class), separating out anything that varies for different reasons.
+
+---
 
 ---
 
@@ -257,3 +271,10 @@ If every class only has one single-line method:
 
 > [!TIP]
 > **The Pragmatic Balance**: Group elements together into **Functional** or **Communicational** modules to keep cohesion high while preventing system complexity from exploding into a millions-of-tiny-files nightmare.
+
+---
+
+## Resources & Deep Dive
+
+* [Cohesion on Wikipedia](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
+* [Coupling and Cohesion on the C2 Wiki](https://wiki.c2.com/?CouplingAndCohesion)

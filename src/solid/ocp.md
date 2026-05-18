@@ -6,9 +6,24 @@ icon: Unlock
 
 # Open-Closed Principle (OCP)
 
-> "Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification." — Bertrand Meyer, 1988
+> **"Software entities (such as classes, modules, and functions) should be open for extension, but closed for modification."** — *Bertrand Meyer*
 
-The **Open-Closed Principle (OCP)** is the structural cornerstone of modern object-oriented design and is the "O" in the **SOLID** acronym. It describes an elegant architectural goal: you should be able to extend the behavior of a system without modifying its existing, thoroughly tested source code.
+The **Open-Closed Principle (OCP)** is the structural cornerstone of modern object-oriented design and represents the **O** in the **SOLID** design acronym. It describes an elegant architectural goal: you should be able to alter or modify the behavior of an entity *without altering its underlying source code*.
+
+---
+
+## Why Apply OCP?
+
+* **Improve Maintainability & Stability**: By minimizing the need to rewrite or alter existing, verified, and thoroughly tested source code, you prevent regressions, dramatically enhancing the long-term stability and maintainability of your system.
+
+---
+
+## How to Apply It
+
+* **Write Extensible Classes**: Design your classes and components so that they can be extended (via polymorphism or interfaces) rather than modified whenever new behaviors are introduced.
+* **Expose Only the Moving Parts**: Identify the specific hot-spots or concepts that vary, expose only those moving parts that actually need to change, and keep everything else completely hidden behind stable interfaces.
+
+---
 
 ---
 
@@ -117,3 +132,10 @@ class DiscountCalculator {
 
 * **Liskov Substitution Principle (LSP)**: OCP relies on subclasses or interface implementations behaving predictably. If a subclass breaks the parent's contract, the OCP abstraction collapses.
 * **Robustness Principle (Postel's Law)**: *"Be conservative in what you do, be liberal in what you accept from others."* By keeping interfaces closed to structural changes but open to flexible payloads, systems retain extreme resilience.
+
+---
+
+## Resources & Deep Dive
+
+* [Open Closed Principle on Wikipedia](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)
+* [The Open Closed Principle by Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)

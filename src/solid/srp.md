@@ -6,9 +6,23 @@ icon: Target
 
 # Single Responsibility Principle (SRP)
 
-> "A module should be responsible to one, and only one, actor." — Robert C. Martin, 2014
+> **"A class should never have more than one reason to change."** — *Robert C. Martin*
 
-The **Single Responsibility Principle (SRP)** is the first principle of the **SOLID** design system and serves as a fundamental guideline for creating modular, robust, and maintainable software. It focuses on isolating cohesive logic to ensure that parts of a system that change for different reasons do not corrupt or destabilize one another.
+The **Single Responsibility Principle (SRP)**—the **S** in the **SOLID** design system—is a fundamental guideline for creating modular, robust, and maintainable software.
+
+Every class or module should have a **single responsibility**, and that responsibility should be **entirely encapsulated** by the class. Under this principle, a "responsibility" is formally defined as a *reason to change*. Therefore, a class or module should have one, and only one, reason to change.
+
+---
+
+## Why Apply SRP?
+
+* **High Maintainability**: By ensuring each class has only a single axis of change, system maintenance becomes clean and predictable. Future changes requested by business rules should only require modifications inside a single class or module, rather than triggering cascading changes across the system.
+
+## How to Apply It
+
+* **Apply [Curly's Law](/laws/curlys-law)**: Ensure each variable, function, class, and module has exactly one clearly defined goal—Do One Thing.
+
+---
 
 ---
 
@@ -129,3 +143,10 @@ If we change the printing layout (e.g. printing to PDF instead of physical paper
 Applying SRP blindly can lead to **Class Explosion**, where a simple application is fragmented into hundreds of single-method classes. 
 
 Always balance SRP with the **KISS Principle**. If two small utility operations are highly cohesive and always change together for the exact same reasons, keeping them in a single class is highly pragmatic. Apply SRP when you identify clear, divergent axes of change driven by different business stakeholders.
+
+---
+
+## Resources & Deep Dive
+
+* [Single Responsibility Principle on Wikipedia](https://en.wikipedia.org/wiki/Single-responsibility_principle)
+* [Curly's Law: Do One Thing](/laws/curlys-law)

@@ -6,13 +6,26 @@ icon: Divide
 
 # Command-Query Separation (CQS)
 
-> "Asking a question should not change the answer." — Bertrand Meyer
+> **"Asking a question should not change the answer."** — *Bertrand Meyer*
 
-**Command-Query Separation (CQS)** is a fundamental software design principle coined by Bertrand Meyer. It states that every method in a system should fall into one of two distinct categories:
-1. **Commands**: Perform an action, mutate state, and return **no data** (usually `void` or `Promise<void>`).
-2. **Queries**: Fetch and return data, but **must not mutate state** (they must be side-effect free).
+The **Command Query Separation (CQS)** principle states that each method should be either a **command** that performs an action, or a **query** that returns data to the caller, but not both.
 
-In short: **A method should either do something or answer something, but never both.**
+With this principle applied, the programmer can code with much more confidence. The query methods can be used anywhere, at any frequency, and in any order since they do not mutate state. With commands, one has to be more careful.
+
+---
+
+## Why Apply CQS?
+
+* **Developer Confidence**: By clearly separating methods into pure reads (queries) and writes (commands), the programmer can invoke methods with additional confidence without having to inspect each method's deep, internal implementation details.
+
+---
+
+## How to Apply It
+
+* **Segregate Every Method**: Implement each class method as either an absolute query (returns a value, no side effects) or an absolute command (mutates state, returns no value).
+* **Apply Strict Naming Conventions**: Use method naming conventions that make it instantly obvious whether a method is a command or query (e.g. prefixing commands with verbs like `save`, `update`, `delete`, `perform` and queries with `get`, `fetch`, `is`, `has`).
+
+---
 
 ---
 
@@ -224,3 +237,10 @@ class AtomicCounter {
 * **High Predictability**: Developers can safely call queries in templates, debug logging statements, or test assertions knowing they won't corrupt system state.
 * **Separation of Concerns**: Splitting read and write paths simplifies business logic, making it easier to reason about, maintain, and optimize.
 * **Clear Performance Optimization**: By isolating read-only paths, implementing advanced caching strategies, index optimizations, and database replicas becomes straightforward.
+
+---
+
+## Resources & Deep Dive
+
+* [Command-Query Separation on Wikipedia](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
+* [Command-Query Separation by Martin Fowler](https://martinfowler.com/bliki/CommandQuerySeparation.html)

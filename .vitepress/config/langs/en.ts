@@ -159,6 +159,7 @@ export const en = {
         collapsed: true,
         items: [
           { text: 'Booch Method', link: '/laws/booch-method' },
+          { text: 'Curly\'s Law', link: '/laws/curlys-law' },
           { text: 'Deutsch Limit', link: '/laws/deutsch-limit' },
           { text: 'Gall\'s Law', link: '/laws/galls-law' },
           { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },

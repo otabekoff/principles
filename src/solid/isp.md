@@ -6,9 +6,24 @@ icon: LayoutGrid
 
 # Interface Segregation Principle (ISP)
 
-> "Clients should not be forced to depend on methods they do not use." — Robert C. Martin
+> **"Reduce fat interfaces into multiple smaller and more specific client-specific interfaces. An interface should be more dependent on the code that calls it than the code that implements it."** — *Robert C. Martin*
 
-The **Interface Segregation Principle (ISP)** is the "I" in the **SOLID** principles of object-oriented design. It focuses on creating small, highly cohesive, client-specific interfaces rather than single, multi-purpose, "fat" interfaces. ISP aims to keep systems decoupled, highly cohesive, and easy to refactor, change, and redeploy.
+The **Interface Segregation Principle (ISP)** represents the **I** in the **SOLID** programming principles. 
+
+---
+
+## Why Apply ISP?
+
+* **Keep Systems Decoupled**: Restricting client dependencies to highly focused interfaces keeps modules completely isolated. This makes the system significantly easier to refactor, change, test, and redeploy.
+
+---
+
+## How to Apply It
+
+* **Avoid Fat Interfaces**: Restructure bulky, multi-purpose interfaces into narrow, cohesive role interfaces. 
+* **Honor Single Responsibility Principle (SRP)**: Ensure classes never have to implement interface methods they do not use, preventing them from violating the [Single Responsibility Principle](/solid/srp).
+
+---
 
 Beyond traditional object-oriented design, ISP is a core principle in the architecture of **distributed systems** and stands as one of the six **IDEALS principles for microservice design**.
 
@@ -156,3 +171,9 @@ In modern microservices architectures, ISP is represented in the **IDEALS design
 * **Cons**:
   * **Interface Explosion**: Segregating every class can lead to hundreds of small interfaces, increasing the overall codebase complexity and cognitive navigation overhead.
   * **Over-Engineering**: In dynamic languages (such as JavaScript or Python) that rely on duck-typing rather than compiler-enforced interfaces, creating explicit, small interfaces can be redundant if over-applied. Keep designs pragmatic.
+
+---
+
+## Resources & Deep Dive
+
+* [Interface Segregation Principle on Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle)
