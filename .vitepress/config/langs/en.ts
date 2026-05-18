@@ -137,6 +137,22 @@ export const en = {
           { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
           { text: 'Reveal Intentions', link: '/architecture/reveal-intentions' }
         ]
+      },
+      {
+        text: 'Laws & Aphorisms',
+        collapsed: true,
+        items: [
+          { text: 'Gall\'s Law', link: '/laws/galls-law' },
+          { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },
+          { text: 'Worse is Better', link: '/laws/worse-is-better' },
+          { text: 'Rule of Three', link: '/laws/rule-of-three' },
+          { text: 'Zero-One-Infinity Rule', link: '/laws/zero-one-infinity' },
+          { text: 'Uniform Access Principle', link: '/laws/uniform-access' },
+          { text: 'The Power of 10 Safety Rules', link: '/laws/power-of-10' },
+          { text: 'Mechanism and Policy', link: '/laws/mechanism-policy' },
+          { text: 'The Zen of Python', link: '/laws/zen-of-python' },
+          { text: 'If It Ain\'t Broke, Don\'t Fix It', link: '/laws/if-it-aint-broke' }
+        ]
       }
     ],
     footer: {

@@ -15,15 +15,16 @@ This learning tour explains how the Programming Principles documentation is stru
 
 ## What's Covered
 
-The documentation covers **over 30 foundational programming principles** across five key categories:
+The documentation covers **over 40 foundational programming principles, laws, and aphorisms** across six key categories:
 
-| Category | Count | Focus |
-| :--- | :--- | :--- |
-| **SOLID Principles** | 5 | The gold standard of Object-Oriented Design (SRP, OCP, LSP, ISP, DIP). |
-| **General Principles** | 8 | Real-world rules of thumb to avoid over-engineering (DRY, KISS, YAGNI, SoC, etc.). |
-| **Pragmatic & Clean Code** | 8 | Tactical rules for clean, malleable codebases (Boy Scout, WET, Abstraction levels). |
-| **Testing & Quality** | 3 | Pragmatic strategies for fully testable and high-quality software (TDD, ZOMBIES). |
-| **Software Architecture** | 8 | High-level paradigms, separations, and structural metrics (Cohesion, Core/Shell, CQS). |
+| Category                   | Count | Focus                                                                                                  |
+| :------------------------- | :---- | :----------------------------------------------------------------------------------------------------- |
+| **SOLID Principles**       | 5     | The gold standard of Object-Oriented Design (SRP, OCP, LSP, ISP, DIP).                                 |
+| **General Principles**     | 8     | Real-world rules of thumb to avoid over-engineering (DRY, KISS, YAGNI, SoC, etc.).                     |
+| **Pragmatic & Clean Code** | 8     | Tactical rules for clean, malleable codebases (Boy Scout, WET, Abstraction levels).                    |
+| **Testing & Quality**      | 3     | Pragmatic strategies for fully testable and high-quality software (TDD, ZOMBIES).                      |
+| **Software Architecture**  | 8     | High-level paradigms, separations, and structural metrics (Cohesion, Core/Shell, CQS).                 |
+| **Laws & Aphorisms**       | 10    | Classical software engineering laws, aphorisms, and design philosophies (Gall's Law, Worse is Better). |
 
 ---
 
@@ -64,7 +65,7 @@ How you explore this site depends on your experience level.
 2. Study **KISS** (Keep It Simple) and **DRY** (Don't Repeat Yourself) first — they are the easiest to apply immediately to any codebase.
 3. Move on to **YAGNI** (You Aren't Gonna Need It) and the **Boy Scout Rule** to protect yourself from complexity bloat and maintain cleanliness.
 4. Learn the value of testing via **Pass the Tests & Testability**.
-5. Begin your **SOLID** journey starting with the **Single Responsibility Principle (SRP)**.
+5. Read **If It Ain't Broke, Don't Fix It** and **The Zen of Python** for high-level, practical guidelines.
 
 ### Mid-Level & Senior Developers
 
@@ -72,7 +73,8 @@ How you explore this site depends on your experience level.
 2. Read the **Composition over Inheritance** page to learn how to break out of rigid class inheritance trees.
 3. Master **Functional Core, Imperative Shell** and **Command-Query Separation (CQS)** to write highly decoupled architectures.
 4. Learn the **ZOMBIES Strategy** to systematically test complex code blocks and edge cases.
-5. Review the **GRASP** principles to improve your design intuition regarding responsibility assignment, low coupling, and high cohesion.
+5. Study **Gall's Law** and **Worse is Better** to appreciate the power of evolution and simplicity in system designs.
+6. Review the **GRASP** principles to improve your design intuition regarding responsibility assignment, low coupling, and high cohesion.
 
 ---
 

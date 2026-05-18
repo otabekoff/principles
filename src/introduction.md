@@ -13,7 +13,7 @@ icon: Palette
 
 **Programming principles** are fundamental guidelines and rules of thumb that help developers design clean, robust, and maintainable software. They are not structural design pattern recipes that you copy-paste — they are foundational design philosophies that you apply with judgment. A principle guides your everyday decisions, helps prevent over-engineering, and provides a shared vocabulary for high-quality software craft.
 
-This reference covers the most critical software development principles, grouped into five categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, and **Software Architecture**.
+This reference covers the most critical software development principles, grouped into six categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, **Software Architecture**, and **Laws & Aphorisms**.
 
 ---
 
@@ -255,6 +255,75 @@ High-level design paradigms, architectural separations, and safety-critical rule
     description="Self-documenting code through meaningful, intent-revealing names."
     href="/architecture/reveal-intentions"
     image="/cards/service-locator.png"
+  />
+</Cards>
+
+---
+
+## Laws & Aphorisms
+
+Historical rules of thumb, software engineering laws, and design philosophies.
+
+<Cards>
+  <Card
+    title="Gall's Law"
+    description="A complex working system invariably evolved from a simple working system."
+    href="/laws/galls-law"
+    image="/cards/identity-map.png"
+  />
+  <Card
+    title="The Ninety-Ninety Rule"
+    description="A humorous but accurate law regarding project time estimations."
+    href="/laws/ninety-ninety-rule"
+    image="/cards/scheduler.png"
+  />
+  <Card
+    title="Worse is Better"
+    description="Simplicity of implementation is more important than completeness."
+    href="/laws/worse-is-better"
+    image="/cards/command.png"
+  />
+  <Card
+    title="Rule of Three"
+    description="Three strikes and you refactor to avoid premature DRYing."
+    href="/laws/rule-of-three"
+    image="/cards/null-object.png"
+  />
+  <Card
+    title="Zero-One-Infinity Rule"
+    description="A system should not allow arbitrary limits on entity instances."
+    href="/laws/zero-one-infinity"
+    image="/cards/interpreter.png"
+  />
+  <Card
+    title="Uniform Access Principle"
+    description="Access methods and properties through a unified identical notation."
+    href="/laws/uniform-access"
+    image="/cards/unit-of-work.png"
+  />
+  <Card
+    title="The Power of 10 Safety Rules"
+    description="Gerard J. Holzmann's strict guidelines for safety-critical coding."
+    href="/laws/power-of-10"
+    image="/cards/read-write-lock.png"
+  />
+  <Card
+    title="Mechanism and Policy"
+    description="Separate core system capabilities from behavioral business rules."
+    href="/laws/mechanism-policy"
+    image="/cards/repository.png"
+  />
+  <Card
+    title="The Zen of Python"
+    description="Universal aphorisms for simplicity, clarity, and readability."
+    href="/laws/zen-of-python"
+    image="/cards/observer.png"
+  />
+  <Card
+    title="If It Ain't Broke, Don't Fix It"
+    description="Pragmatic software adage advising stability over unnecessary rewrites."
+    href="/laws/if-it-aint-broke"
+    image="/cards/proxy.png"
   />
 </Cards>
 
