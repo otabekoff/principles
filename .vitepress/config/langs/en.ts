@@ -163,7 +163,9 @@ export const en = {
         text: 'Laws & Aphorisms',
         collapsed: true,
         items: [
+          { text: 'Booch Method', link: '/laws/booch-method' },
           { text: 'Curly\'s Law', link: '/laws/curlys-law' },
+          { text: 'Deutsch Limit', link: '/laws/deutsch-limit' },
           { text: 'Gall\'s Law', link: '/laws/galls-law' },
           { text: 'Conway\'s Law', link: '/laws/conways-law' },
           { text: 'Brooks\'s Law', link: '/laws/brookss-law' },
@@ -178,6 +180,7 @@ export const en = {
           { text: 'Uniform Access Principle', link: '/laws/uniform-access' },
           { text: 'The Power of 10 Safety Rules', link: '/laws/power-of-10' },
           { text: 'Mechanism and Policy', link: '/laws/mechanism-policy' },
+          { text: 'Pristine Sources', link: '/laws/pristine-sources' },
           { text: 'The Zen of Python', link: '/laws/zen-of-python' },
           { text: 'If It Ain\'t Broke, Don\'t Fix It', link: '/laws/if-it-aint-broke' }
         ]
