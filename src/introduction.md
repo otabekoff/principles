@@ -17,52 +17,7 @@ Every programmer benefits from understanding programming principles and design p
 
 This guide was originally inspired by the classic post [The Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531). We have enriched it with thorough architectural reasoning, practical TypeScript code comparisons, modern engineering trade-offs, and curated deep-dive resources.
 
-Currently, the reference covers the most critical software development principles, grouped into six categories: **SOLID**, **General Principles**, **Pragmatic & Clean Code**, **Testing & Quality**, **Software Architecture**, and **Laws & Aphorisms**.
-
----
-
-## SOLID Principles
-
-The gold standard of object-oriented design, compiled by Robert C. Martin. These five principles ensure your classes and modules are modular, cohesive, and resilient to change.
-
-<Cards>
-  <Card
-    title="Introduction to SOLID"
-    description="Learn the history and core goals of the SOLID principles."
-    href="/solid/introduction"
-    image="/cards/introduction.png"
-  />
-  <Card
-    title="Single Responsibility (SRP)"
-    description="A class should have only one reason to change."
-    href="/solid/srp"
-    image="/cards/singleton.png"
-  />
-  <Card
-    title="Open-Closed (OCP)"
-    description="Open for extension, closed for modification."
-    href="/solid/ocp"
-    image="/cards/factory-method.png"
-  />
-  <Card
-    title="Liskov Substitution (LSP)"
-    description="Subclasses must be fully substitutable for their parent classes."
-    href="/solid/lsp"
-    image="/cards/prototype.png"
-  />
-  <Card
-    title="Interface Segregation (ISP)"
-    description="Clients shouldn't depend on methods they don't use."
-    href="/solid/isp"
-    image="/cards/abstract-factory.png"
-  />
-  <Card
-    title="Dependency Inversion (DIP)"
-    description="Depend on abstractions, not concrete details."
-    href="/solid/dip"
-    image="/cards/dependency-injection.png"
-  />
-</Cards>
+Currently, the reference covers the most critical software development principles, grouped into six categories: **General Principles**, **SOLID**, **Pragmatic & Clean Code**, **Software Architecture**, **Testing & Quality**, and **Laws & Aphorisms**.
 
 ---
 
@@ -141,6 +96,51 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
 
 ---
 
+## SOLID Principles
+
+The gold standard of object-oriented design, compiled by Robert C. Martin. These five principles ensure your classes and modules are modular, cohesive, and resilient to change.
+
+<Cards>
+  <Card
+    title="Introduction to SOLID"
+    description="Learn the history and core goals of the SOLID principles."
+    href="/solid/introduction"
+    image="/cards/introduction.png"
+  />
+  <Card
+    title="Single Responsibility (SRP)"
+    description="A class should have only one reason to change."
+    href="/solid/srp"
+    image="/cards/singleton.png"
+  />
+  <Card
+    title="Open-Closed (OCP)"
+    description="Open for extension, closed for modification."
+    href="/solid/ocp"
+    image="/cards/factory-method.png"
+  />
+  <Card
+    title="Liskov Substitution (LSP)"
+    description="Subclasses must be fully substitutable for their parent classes."
+    href="/solid/lsp"
+    image="/cards/prototype.png"
+  />
+  <Card
+    title="Interface Segregation (ISP)"
+    description="Clients shouldn't depend on methods they don't use."
+    href="/solid/isp"
+    image="/cards/abstract-factory.png"
+  />
+  <Card
+    title="Dependency Inversion (DIP)"
+    description="Depend on abstractions, not concrete details."
+    href="/solid/dip"
+    image="/cards/dependency-injection.png"
+  />
+</Cards>
+
+---
+
 ## Pragmatic & Clean Code
 
 Tactical guidelines for maintaining an agile, clean, and highly maneuverable codebase during rapid development cycles.
@@ -210,33 +210,6 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
 
 ---
 
-## Testing & Quality
-
-Pragmatic workflows and strategies for building high-quality, fully testable, and reliable software.
-
-<Cards>
-  <Card
-    title="Pass the Tests & Testability"
-    description="Organic test growth, DX friction reduction, and testable design."
-    href="/testing/pass-the-tests"
-    image="/cards/chain-of-responsibility.png"
-  />
-  <Card
-    title="Test-Driven Development (TDD)"
-    description="Mastering the cycle of Red, Green, and Refactor."
-    href="/testing/test-driven-development"
-    image="/cards/visitor.png"
-  />
-  <Card
-    title="The ZOMBIES Strategy"
-    description="A systematic test-driven problem-solving and boundary checklist."
-    href="/testing/zombies-strategy"
-    image="/cards/state.png"
-  />
-</Cards>
-
----
-
 ## Software Architecture
 
 High-level design paradigms, architectural separations, and safety-critical rules.
@@ -301,6 +274,33 @@ High-level design paradigms, architectural separations, and safety-critical rule
     description="Self-documenting code through meaningful, intent-revealing names."
     href="/architecture/reveal-intentions"
     image="/cards/service-locator.png"
+  />
+</Cards>
+
+---
+
+## Testing & Quality
+
+Pragmatic workflows and strategies for building high-quality, fully testable, and reliable software.
+
+<Cards>
+  <Card
+    title="Pass the Tests & Testability"
+    description="Organic test growth, DX friction reduction, and testable design."
+    href="/testing/pass-the-tests"
+    image="/cards/chain-of-responsibility.png"
+  />
+  <Card
+    title="Test-Driven Development (TDD)"
+    description="Mastering the cycle of Red, Green, and Refactor."
+    href="/testing/test-driven-development"
+    image="/cards/visitor.png"
+  />
+  <Card
+    title="The ZOMBIES Strategy"
+    description="A systematic test-driven problem-solving and boundary checklist."
+    href="/testing/zombies-strategy"
+    image="/cards/state.png"
   />
 </Cards>
 

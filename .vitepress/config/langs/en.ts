@@ -76,18 +76,6 @@ export const en = {
         ]
       },
       {
-        text: 'SOLID',
-        collapsed: false,
-        items: [
-          { text: 'Introduction', link: '/solid/introduction' },
-          { text: 'Single Responsibility Principle (SRP)', link: '/solid/srp' },
-          { text: 'Open-Closed Principle (OCP)', link: '/solid/ocp' },
-          { text: 'Liskov Substitution Principle (LSP)', link: '/solid/lsp' },
-          { text: 'Interface Segregation Principle (ISP)', link: '/solid/isp' },
-          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' }
-        ]
-      },
-      {
         text: 'General Principles',
         collapsed: false,
         items: [
@@ -110,6 +98,18 @@ export const en = {
         ]
       },
       {
+        text: 'SOLID',
+        collapsed: false,
+        items: [
+          { text: 'Introduction', link: '/solid/introduction' },
+          { text: 'Single Responsibility Principle (SRP)', link: '/solid/srp' },
+          { text: 'Open-Closed Principle (OCP)', link: '/solid/ocp' },
+          { text: 'Liskov Substitution Principle (LSP)', link: '/solid/lsp' },
+          { text: 'Interface Segregation Principle (ISP)', link: '/solid/isp' },
+          { text: 'Dependency Inversion Principle (DIP)', link: '/solid/dip' }
+        ]
+      },
+      {
         text: 'Pragmatic & Clean Code',
         collapsed: true,
         items: [
@@ -129,17 +129,6 @@ export const en = {
         ]
       },
       {
-        text: 'Testing & Quality',
-        collapsed: true,
-        items: [
-          { text: 'FIRST Principles of Testing', link: '/testing/first-principles' },
-          { text: 'Arrange, Act, Assert (3A)', link: '/testing/arrange-act-assert' },
-          { text: 'Pass the Tests & Testability', link: '/testing/pass-the-tests' },
-          { text: 'Test-Driven Development (TDD)', link: '/testing/test-driven-development' },
-          { text: 'The ZOMBIES Strategy', link: '/testing/zombies-strategy' }
-        ]
-      },
-      {
         text: 'Software Architecture',
         collapsed: true,
         items: [
@@ -154,6 +143,17 @@ export const en = {
           { text: 'Encapsulation & Info Hiding', link: '/architecture/encapsulation-information-hiding' },
           { text: 'Fail-Fast & Robustness', link: '/architecture/fail-fast-robustness' },
           { text: 'Reveal Intentions', link: '/architecture/reveal-intentions' }
+        ]
+      },
+      {
+        text: 'Testing & Quality',
+        collapsed: true,
+        items: [
+          { text: 'FIRST Principles of Testing', link: '/testing/first-principles' },
+          { text: 'Arrange, Act, Assert (3A)', link: '/testing/arrange-act-assert' },
+          { text: 'Pass the Tests & Testability', link: '/testing/pass-the-tests' },
+          { text: 'Test-Driven Development (TDD)', link: '/testing/test-driven-development' },
+          { text: 'The ZOMBIES Strategy', link: '/testing/zombies-strategy' }
         ]
       },
       {
