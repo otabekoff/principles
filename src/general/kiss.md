@@ -6,9 +6,19 @@ icon: Lightbulb
 
 # KISS (Keep It Simple, Stupid)
 
-> "Simplicity is the ultimate sophistication." — Leonardo da Vinci
+> "Simplicity is the ultimate sophistication." — *Leonardo da Vinci*
+>
+> "It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away." — *Antoine de Saint-Exupéry*
 
-The **KISS (Keep It Simple, Stupid)** principle is a legendary design rule stating that most systems work best if they are kept simple rather than made complicated. Therefore, **simplicity should be a primary goal in any design**, and unnecessary complexity should be avoided.
+The **KISS (Keep It Simple, Stupid)** principle is a legendary systems engineering and design guideline stating that **most systems work and are understood better if they are kept simple rather than made complex**. Therefore, simplicity must be the primary design driver, and unnecessary cleverness should be actively avoided.
+
+---
+
+## Why Simplicity Matters
+
+* **Efficiency and Reliability**: Less code takes less time to write, contains fewer bugs, and is significantly easier to modify or debug.
+* **Reduced Cognitive Load**: Simple systems do not overload the reader's working memory, making it much easier to reason about correctness and verify edge cases.
+* **Change-Friendly**: Simple code is highly direct, which means replacing or refactoring it later is trivial.
 
 ---
 
@@ -95,3 +105,14 @@ Writing complex code is easy; writing simple code is remarkably difficult. It re
 1. **Never Write Clever Code**: Avoid bitwise hacks, undocumented language quirks, or highly nested operations unless they are backed by rigorous performance benchmarks.
 2. **Say No to Premature Abstractions**: Do not build interfaces, generic classes, or multi-tiered architectures for features you do not yet have (aligns with YAGNI).
 3. **Prioritize Reader Comprehension**: Code is read far more often than it is written. Write code that a junior developer can easily scan and understand in under 30 seconds.
+
+---
+
+## Resources & Deep Dive
+
+* [KISS Principle on Wikipedia](https://en.wikipedia.org/wiki/KISS_principle)
+* [Keep It Simple Stupid (KISS) on Principles-Wiki](http://principles-wiki.net/principles:keep_it_simple_stupid)
+* [Cognitive Load is What Matters](https://github.com/zakirullin/cognitive-load)
+* [The Limits of Human Cognitive Capacities in Programming and Their Impact on Code Readability](https://florian-kraemer.net/limits-of-human-cognitive-capacities-in-programming-and-their-impact-on-code-readability/)
+* [Simplicity is An Advantage but Sadly Complexity Sells Better](https://eugeneyan.com/writing/simplicity-is-an-advantage/)
+* [What Makes Code Hard To Read: Visual Patterns of Complexity](https://seeinglogic.com/what-makes-code-hard-to-read-visual-patterns-of-complexity/)

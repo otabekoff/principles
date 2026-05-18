@@ -6,9 +6,26 @@ icon: Sparkles
 
 # The Boy Scout Rule
 
-> "Always leave the campground cleaner than you found it." — Robert C. Martin (adapted from the Boy Scouts of America)
+> "Always leave the campground cleaner than you found it." — *Robert C. Martin (adapted from the Boy Scouts of America)*
 
-In software development, **The Boy Scout Rule** is a simple yet profound guideline for maintaining a healthy codebase: **"Always leave the codebase better than you found it."** This approach encourages developers to make minor, incremental improvements to the code each time they interact with it, preventing technical debt from piling up.
+In software engineering, **The Boy Scout Rule** is a simple, highly effective guideline stating that **we should always leave the code cleaner than we found it**. 
+
+---
+
+## Why Apply the Boy Scout Rule?
+
+* **Combat Technical Debt**: When making changes to an existing codebase, code quality naturally tends to degrade over time, accumulating technical debt. Continuous, small-scale refactoring is the single best way to resist this code rot.
+* **Mind Quality with Every Commit**: Following this rule, we treat code quality as an active, daily responsibility with each commit, rather than deferring it to big, risky, and rarely approved "refactoring sprints."
+* **Empower the Team**: It cultivates a sense of shared ownership and pride, raising the bar of excellence across the entire project.
+
+---
+
+## How to Apply It
+
+* **Verify Quality Daily**: With each commit, make sure that your changes do not degrade the overall quality of the codebase.
+* **Opportunistic Refactoring**: Any time you see a piece of code that isn't as clear as it should be—whether it is a confusing variable name, an undocumented magic number, or a redundant condition—take the opportunity to fix it right then and there.
+
+---
 
 ## The Core Concept
 
@@ -63,3 +80,9 @@ function calculateActiveTotal(transactions: Transaction[]): number {
 ::: warning Keep Scopes Reasonable
 Do not let the Boy Scout Rule lead to massive scope creep. Clean up the immediate neighborhood of your change, but do not refactor completely unrelated files or rewrite entire systems in a single pull request. Keep your PRs easy to review!
 :::
+
+---
+
+## Resources & Deep Dive
+
+* [Opportunistic Refactoring by Martin Fowler](https://martinfowler.com/bliki/OpportunisticRefactoring.html)

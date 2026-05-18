@@ -6,11 +6,25 @@ icon: Layers
 
 # Separation of Concerns (SoC)
 
-> "It is what I sometimes have called 'the separation of concerns', which, even if not perfectly possible, is yet the only available technique for effective ordering of one's thoughts, that I know of." — Edsger W. Dijkstra, 1974
+> "It is what I sometimes have called 'the separation of concerns', which, even if not perfectly possible, is yet the only available technique for effective ordering of one's thoughts, that I know of. This is what I mean by 'focusing one's attention upon some aspect': it does not mean ignoring the other aspects, it is just doing justice to the fact that from this aspect's point of view, the other is irrelevant." — *Edsger W. Dijkstra, 1974*
 
-**Separation of Concerns (SoC)** is a fundamental software engineering and system design principle that dictates organizing a codebase into distinct sections, with each section addressing a single, specific concern. A concern is any set of information, logic, or constraint that affects the execution of a program.
+**Separation of Concerns (SoC)** is a core software design principle that dictates organizing a computer program into distinct sections, such that each section addresses a separate, independent concern. 
 
-An application that fully embodies SoC is said to be **modular**, achieving loose coupling and high cohesion by encapsulating data and logic inside code modules that expose well-defined interfaces.
+A concern is any set of information, logic, or technical constraint that affects the program. For example, the **business logic** and the **user interface** of an application are separate concerns: changing the user interface should not require changes to the business logic, and vice versa.
+
+---
+
+## Why Separate Concerns?
+
+* **Simplify Development and Maintenance**: Breaking a massive system into isolated layers dramatically reduces cognitive load, allowing developers to focus on one problem at a time.
+* **Reusability and Independence**: When concerns are well-separated, individual sections or modules can be reused, as well as developed, tested, and updated independently without side effects.
+* **Testability**: Independent components can be thoroughly unit-tested without requiring complex, coupled system setups.
+
+## How to Separate Concerns
+
+* **Minimize Overlap**: Break program functionality into separate modules that overlap as little as possible.
+* **Expose Clean Interfaces**: Modules should interact only through stable, minimal public contracts, hiding their internal implementation details entirely.
+* **Encapsulate Cross-Cutting Concerns**: Extract common utility concerns (like logging, security, and caching) using aspects or middleware, keeping core business files clean.
 
 ---
 
@@ -134,3 +148,10 @@ class OrderProcessor {
 * **Single Responsibility Principle (SRP)**: The SOLID equivalent of SoC on a class-level, stating that a class should have one, and only one, reason to change.
 * **Coupling & Cohesion**: Applying SoC maximizes cohesion within modules (they focus solely on their concern) and minimizes coupling between them.
 * **David Marr's Levels of Analysis**: Cognitive science applies SoC by evaluating intelligent systems at three distinct levels: Computational (the *what*), Algorithmic (the *how*), and Implementational (the physical hardware/neurons).
+
+---
+
+## Resources & Deep Dive
+
+* [Separation of Concerns on Wikipedia](https://en.wikipedia.org/wiki/Separation_of_concerns)
+* [On the Role of Scientific Thought (Dijkstra's original 1974 paper)](https://www.cs.utexas.edu/users/EWD/ewd04xx/EWD447.PDF)

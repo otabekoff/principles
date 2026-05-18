@@ -6,9 +6,25 @@ icon: ShieldAlert
 
 # YAGNI (You Aren't Gonna Need It)
 
-> "Always implement things when you actually need them, never when you just foresee that you [will] need them." — Ron Jeffries, Extreme Programming co-founder
+> "Always implement things when you actually need them, never when you just foresee that you need them." — *Ron Jeffries, Extreme Programming co-founder*
 
-**YAGNI** (an acronym for *"You Aren't Gonna Need It"*) is a core principle arising from Extreme Programming (XP). It dictates that programmers should not add functionality, abstractions, or architecture until they are strictly deemed necessary by current business requirements.
+**YAGNI** (an acronym for **"You Aren't Gonna Need It"**) is a fundamental software design guideline stating that **you should not implement something until it is strictly necessary**.
+
+---
+
+## Why Avoid Early Implementation?
+
+* **Lost Iteration Effort**: Any work spent preparing for a speculative feature that might be needed tomorrow directly steals time and focus away from concrete features that must be completed for the current iteration.
+* **Code Bloat**: Speculative design leads to rapid code bloat. The codebase becomes unnecessarily large, convoluted, and difficult to comprehend, which increases future maintenance overhead.
+* **Flawed Assumptions**: When you build ahead of schedule, you inevitably make incorrect assumptions about how the feature will actually be used, forcing you to rewrite or throw away the code later.
+
+---
+
+## How to Apply YAGNI
+
+* **Always implement features at the exact moment they are needed**, never when you merely foresee or guess that they will be useful in the future.
+* Rely on clean, simple, and highly modular code so that when a new requirement is approved, refactoring the codebase to support it is trivial.
+* Continuously ask yourself the core Extreme Programming question: [Do The Simplest Thing That Could Possibly Work](/general/do-simplest-thing).
 
 ---
 
@@ -82,3 +98,11 @@ class UserService {
 - **KISS (Keep It Simple, Stupid)**: Favor simplicity in the solution you are building today.
 - **Minimum Viable Product (MVP)**: The business-level equivalent of YAGNI.
 - **Technical Debt**: Without the supporting XP practice of continuous refactoring, YAGNI can theoretically lead to messy, disorganized code (technical debt) when features are forcefully bolted on later.
+
+---
+
+## Resources & Deep Dive
+
+* [You Aren't Gonna Need It on Wiki.c2.com](https://wiki.c2.com/?YouArentGonnaNeedIt)
+* [You’re NOT Gonna Need It! by Ron Jeffries](https://ronjeffries.com/xprog/articles/practices/dontneed/)
+* [You Aren't Gonna Need It on Wikipedia](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
