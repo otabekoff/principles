@@ -101,6 +101,8 @@ export const en = {
           { text: 'Law of Demeter', link: '/general/law-of-demeter' },
           { text: 'Separation of Concerns (SoC)', link: '/general/soc' },
           { text: 'Composition over Inheritance', link: '/general/composition-over-inheritance' },
+          { text: 'Orthogonality', link: '/general/orthogonality' },
+          { text: 'Robustness Principle (Postel\'s Law)', link: '/general/robustness-principle' },
           { text: 'Optimize for Deletion', link: '/general/optimize-for-deletion' },
           { text: 'Encapsulate What Changes', link: '/general/encapsulate-what-changes' },
           { text: 'Principle of Least Astonishment', link: '/general/least-astonishment' },

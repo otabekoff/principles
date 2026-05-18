@@ -174,8 +174,30 @@ class XMLImporter extends DataImporter {
 
 ---
 
-## 5. Summary of Benefits
+## 5. Summary of Benefits (Why Invert Control?)
 
-* **Strict Decoupling**: Reusable framework code and problem-specific custom code are developed, tested, and optimized independently.
-* **High Extensibility**: Frameworks act as skeletons, letting application developers extend behavior effortlessly by registering custom pluggable components without modifying the framework internals.
-* **Clean Life-cycle Management**: Systems avoid distributed state synchronization bugs by letting a central container coordinate object creation, scoping, and teardown.
+* **Decouple Task Execution**: Decouple the execution of a task from its underlying implementation, allowing core system skeletons and specific behaviors to evolve independently.
+* **Seamless Implementation Switching**: Switch between completely different concrete implementations of a service (e.g., swapping storage adapters or mailing services) with zero changes to caller code.
+* **Easier Modularization**: Break large programs into clean, highly independent, and reusable modules.
+* **Simplified Component Testing**: Isolate a component entirely by mocking or stubbing its dependencies, making unit testing fast and precise.
+* **Centralized Lifecycle Management**: Centralize object creation, configuration, scoping, and cleanup inside a container instead of distributing `new` instances randomly throughout your application.
+
+---
+
+## 6. How IoC is Achieved (Core Patterns)
+
+Inversion of Control is a broad, overarching principle that can be implemented at multiple granularities using a variety of design patterns:
+
+* **Dependency Injection (DI)**: Passing dependent objects to a class rather than letting the class instantiate them itself (via Constructor, Setter, or Interface injection).
+* **Service Locator**: Using a central registry that acts as a locator for system services when requested by components.
+* **Factory Pattern / Abstract Factory**: Delegating the instantiation logic of complex objects to dedicated factory classes.
+* **Strategy Pattern**: Decoupling the algorithm choice from the client class, injecting concrete strategies at runtime.
+* **Template Method Pattern**: Defining the invariant skeleton of an algorithm in a parent class, letting subclasses override specific step hook methods.
+* **Service Provider**: Registering and binding services within a bootstrap configuration layer of modern frameworks (like Laravel or NestJS).
+
+---
+
+## Resources & Deep Dive
+
+* [Inversion of Control on Wikipedia](https://en.wikipedia.org/wiki/Inversion_of_control)
+* [Inversion of Control Containers and the Dependency Injection pattern by Martin Fowler](https://martinfowler.com/articles/injection.html)

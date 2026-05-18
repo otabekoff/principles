@@ -6,9 +6,26 @@ icon: Layers3
 
 # Composition over Inheritance
 
-> "Favor object composition over class inheritance." — *Design Patterns (Gang of Four)*
+> "It is better to compose what an object can do than extend what it is. Compose when there is a 'has a' (or 'uses a') relationship, inherit when 'is a'."
 
 **Composition over Inheritance** (or the **Composite Reuse Principle**) is a core software design rule. It suggests that classes should achieve polymorphic behavior and code reuse by containing instances of other classes (**composition** / Has-A relationship) rather than inheriting from a parent class (**inheritance** / Is-A relationship).
+
+---
+
+## Why Favor Composition?
+
+* **Minimize Coupling**: Class inheritance creates the tightest form of coupling in object-oriented programming. Subclasses easily make assumptions about the internal workings of their parents, frequently breaking the [Liskov Substitution Principle (LSP)](/solid/lsp).
+* **Maximize Flexibility**: Using composition, behavior can be swapped dynamically at runtime to accommodate changing business requirements, avoiding deep, rigid restructurings of domain-class hierarchies.
+* **Avoid Cascading Changes**: Deep inheritance structures suffer when relatively minor changes are made to baseline parent classes, forcing complex, cascading corrections across several generations of subclasses.
+
+---
+
+## How to Apply It
+
+* **Identify Behaviors as Interfaces**: Separate system object behaviors into distinct, focused interfaces rather than relying on class hierarchies to distribute behaviors among business classes.
+* **Use Liskov Substitution Principle (LSP) as a Test**: Use the LSP test to decide when inheritance is truly justified. If a subclass cannot be substituted for its parent in *all* contexts without side effects, inherit is the wrong choice. Use composition instead.
+
+---
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
@@ -228,3 +245,10 @@ They analyzed dozens of open-source projects and discovered that:
 * **Dynamic Behavior**: Swap components and alter object capabilities dynamically at runtime.
 * **Simple Unit Testing**: Decompose classes into small, focused, easily testable components.
 * **No Fragile Base Classes**: Changes inside components do not propagate unexpected structural breaks to outer classes.
+
+---
+
+## Resources & Deep Dive
+
+* [Composition over Inheritance on Wikipedia](https://en.wikipedia.org/wiki/Composition_over_inheritance)
+* [Favor Composition Over Inheritance (Microsoft Docs)](https://learn.microsoft.com/en-us/archive/msdn-magazine/2005/july/design-patterns-favor-object-composition-over-class-inheritance)

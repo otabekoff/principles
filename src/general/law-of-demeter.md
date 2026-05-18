@@ -181,3 +181,10 @@ const result = array
 ```
 
 In this case, each method call in the pipeline returns the same object or type of stream. There is no traversal of nested, unrelated domain models (i.e. you are not reaching through a Customer to grab their wallet to grab their card to check its expiration).
+
+---
+
+## Resources & Deep Dive
+
+* [Law of Demeter on Wikipedia](https://en.wikipedia.org/wiki/Law_of_Demeter)
+* [The Law of Demeter Is Not A Dot Counting Exercise by Phil Haack](https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/)
