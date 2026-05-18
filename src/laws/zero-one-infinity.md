@@ -8,7 +8,7 @@ icon: Infinity
 
 > "A software design rule of thumb that says that a system should not allow arbitrary limits on the number of instances of a particular entity. Instead, it should either disallow the entity entirely, allow exactly one, or allow an infinite number." — Willem van der Poel
 
-The **Zero-One-Infinity (ZOI) Rule** suggests that when designing data structures, APIs, or systems, you should avoid setting arbitrary, hardcoded upper limits (like allowing exactly 5 files, 10 users, or 25 categories). 
+The **Zero-One-Infinity (ZOI) Rule** suggests that when designing data structures, APIs, or systems, you should avoid setting arbitrary, hardcoded upper limits (like allowing exactly 5 files, 10 users, or 25 categories).
 
 ---
 

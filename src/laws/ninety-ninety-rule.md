@@ -14,9 +14,10 @@ icon: Hourglass
 
 ## The Core Concept
 
-In a software project, progress often seems rapid in the beginning. Developers write models, setup routes, build UI components, and declare: *"The feature is 90% complete!"*
+In a software project, progress often seems rapid in the beginning. Developers write models, setup routes, build UI components, and declare: _"The feature is 90% complete!"_
 
 However, the final 10% of the project includes:
+
 - Debugging obscure edge cases.
 - Fixing asynchronous race conditions.
 - Running cross-browser testing.

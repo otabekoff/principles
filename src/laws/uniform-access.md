@@ -17,6 +17,7 @@ The **Uniform Access Principle (UAP)** is a software design rule of thumb statin
 In many traditional programming languages, accessing a public field is written as `object.value`, while invoking a calculated method requires parenthesis like `object.value()`.
 
 If a developer changes a stored variable into a dynamically calculated method (or vice-versa):
+
 1. **Traditional languages**: The developer must locate and update every calling file in the entire application to add or remove parentheses (`()`).
 2. **UAP-compliant languages**: The caller notation remains exactly identical (`object.value`), meaning implementation changes have **zero** ripple effects on callers.
 
@@ -27,7 +28,10 @@ JavaScript and TypeScript fully support the Uniform Access Principle through the
 ```ts
 // 🌟 Stored field (Storage)
 class Rectangle {
-  constructor(public width: number, public height: number) {}
+  constructor(
+    public width: number,
+    public height: number,
+  ) {}
 }
 
 const rect = new Rectangle(10, 5);
@@ -39,9 +43,13 @@ If we later decide to make a computed value (e.g. `area`), we use the `get` keyw
 ```ts
 // 🌟 Computed field (UAP via getter)
 class Rectangle {
-  constructor(public width: number, public height: number) {}
+  constructor(
+    public width: number,
+    public height: number,
+  ) {}
 
-  get area(): number { // Looks like a property to the caller!
+  get area(): number {
+    // Looks like a property to the caller!
     return this.width * this.height; // Computation hidden!
   }
 }

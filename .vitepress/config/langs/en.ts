@@ -91,6 +91,7 @@ export const en = {
         text: 'General Principles',
         collapsed: false,
         items: [
+          { text: 'Abstraction Principle', link: '/general/abstraction-principle' },
           { text: 'DRY (Don\'t Repeat Yourself)', link: '/general/dry' },
           { text: 'KISS (Keep It Simple, Stupid)', link: '/general/kiss' },
           { text: 'YAGNI (You Aren\'t Gonna Need It)', link: '/general/yagni' },

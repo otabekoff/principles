@@ -32,6 +32,7 @@ While these rules might seem extremely restrictive for general web application d
 ## Pragmatic Takeaways for General Developers
 
 For everyday applications (like SaaS apps or websites), we can adapt Holzmann's extreme safety rules into excellent, pragmatic standards:
+
 - **Compile with Strict Linters**: Never ignore compiler warnings or ESLint errors. Treat them as blockers to deployment.
 - **Keep Functions Small**: Keep functions focused and under 50 lines to maximize readability.
 - **Check Your Returns**: Always check responses from API calls and database queries. Never assume the network or database will return a perfect response.

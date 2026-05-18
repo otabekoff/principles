@@ -17,6 +17,7 @@ icon: TreeDeciduous
 When developers or businesses want to build a new product, they often design a massive, multi-featured system with all anticipated complexities (microservices, caching, advanced auth, complex databases) on day one.
 
 According to Gall's Law, this is a recipe for failure:
+
 1. **Designed-from-scratch complexity is unpredictable**: A complex system has countless moving parts, feedback loops, and hidden dependencies. When designed from scratch, it will suffer from endless bugs, architectural failures, and deployment blockages.
 2. **Cannot be patched to work**: If a massive designed-from-scratch system doesn't work, no amount of hotfixes or patches will save it. The architectural foundation is fundamentally flawed because it was built on untested assumptions.
 3. **Evolving is natural**: A simple system that works has already proved its correctness under real-world conditions. When you add features incrementally, you build on a stable, verified foundation.

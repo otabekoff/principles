@@ -68,6 +68,12 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
 
 <Cards>
   <Card
+    title="Abstraction Principle"
+    description="Reduce duplication by making use of programming language abstractions."
+    href="/general/abstraction-principle"
+    image="/cards/target.png"
+  />
+  <Card
     title="DRY (Don't Repeat Yourself)"
     description="Ensure every piece of knowledge has a single representation."
     href="/general/dry"
