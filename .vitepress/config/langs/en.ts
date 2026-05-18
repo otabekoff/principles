@@ -133,6 +133,7 @@ export const en = {
         collapsed: true,
         items: [
           { text: 'Coupling and Cohesion', link: '/architecture/coupling-cohesion' },
+          { text: 'Cohesion', link: '/architecture/cohesion' },
           { text: 'Functional Core, Imperative Shell', link: '/architecture/functional-core-imperative-shell' },
           { text: 'Command-Query Separation (CQS)', link: '/architecture/cqs' },
           { text: 'Defensive & Offensive Programming', link: '/architecture/defensive-offensive-programming' },

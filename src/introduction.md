@@ -239,6 +239,12 @@ High-level design paradigms, architectural separations, and safety-critical rule
     image="/cards/mvc.png"
   />
   <Card
+    title="Cohesion (Deep Dive)"
+    description="Explore Larry Constantine's complete qualitative rubric of software cohesion."
+    href="/architecture/cohesion"
+    image="/cards/shield.png"
+  />
+  <Card
     title="Functional Core, Imperative Shell"
     description="Keeping pure business rules safely isolated from side-effects."
     href="/architecture/functional-core-imperative-shell"
