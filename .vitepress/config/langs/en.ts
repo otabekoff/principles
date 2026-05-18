@@ -92,6 +92,7 @@ export const en = {
         collapsed: false,
         items: [
           { text: 'Abstraction Principle', link: '/general/abstraction-principle' },
+          { text: 'Black Box', link: '/general/black-box' },
           { text: 'DRY (Don\'t Repeat Yourself)', link: '/general/dry' },
           { text: 'KISS (Keep It Simple, Stupid)', link: '/general/kiss' },
           { text: 'YAGNI (You Aren\'t Gonna Need It)', link: '/general/yagni' },
@@ -143,6 +144,7 @@ export const en = {
         text: 'Laws & Aphorisms',
         collapsed: true,
         items: [
+          { text: 'Booch Method', link: '/laws/booch-method' },
           { text: 'Gall\'s Law', link: '/laws/galls-law' },
           { text: 'The Ninety-Ninety Rule', link: '/laws/ninety-ninety-rule' },
           { text: 'Worse is Better', link: '/laws/worse-is-better' },

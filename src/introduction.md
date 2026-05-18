@@ -74,6 +74,12 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     image="/cards/target.png"
   />
   <Card
+    title="Black Box"
+    description="View systems in terms of inputs and outputs without internal knowledge."
+    href="/general/black-box"
+    image="/cards/box.png"
+  />
+  <Card
     title="DRY (Don't Repeat Yourself)"
     description="Ensure every piece of knowledge has a single representation."
     href="/general/dry"
@@ -271,6 +277,12 @@ High-level design paradigms, architectural separations, and safety-critical rule
 Historical rules of thumb, software engineering laws, and design philosophies.
 
 <Cards>
+  <Card
+    title="Booch Method"
+    description="Grady Booch's object-oriented software design methodology (UML origin)."
+    href="/laws/booch-method"
+    image="/cards/compass.png"
+  />
   <Card
     title="Gall's Law"
     description="A complex working system invariably evolved from a simple working system."
