@@ -336,18 +336,6 @@ Historical rules of thumb, software engineering laws, and design philosophies.
 
 <Cards>
   <Card
-    title="Booch Method"
-    description="Grady Booch's object-oriented software design methodology (UML origin)."
-    href="/laws/booch-method"
-    image="/cards/compass.png"
-  />
-  <Card
-    title="Deutsch Limit"
-    description="Coined by L. Peter Deutsch, visual programming graphs should not exceed fifty elements."
-    href="/laws/deutsch-limit"
-    image="/cards/memento.png"
-  />
-  <Card
     title="Gall's Law"
     description="A complex working system invariably evolved from a simple working system."
     href="/laws/galls-law"
@@ -394,12 +382,6 @@ Historical rules of thumb, software engineering laws, and design philosophies.
     description="Separate core system capabilities from behavioral business rules."
     href="/laws/mechanism-policy"
     image="/cards/repository.png"
-  />
-  <Card
-    title="Pristine Sources"
-    description="Release management policy stating upstream code tarballs must be kept unmodified."
-    href="/laws/pristine-sources"
-    image="/cards/template-method.png"
   />
   <Card
     title="The Zen of Python"
