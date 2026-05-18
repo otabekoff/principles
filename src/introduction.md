@@ -239,6 +239,12 @@ High-level design paradigms, architectural separations, and safety-critical rule
     image="/cards/mvc.png"
   />
   <Card
+    title="Coupling (Deep Dive)"
+    description="Explore Larry Constantine's complete qualitative rubric of software coupling."
+    href="/architecture/coupling"
+    image="/cards/component.png"
+  />
+  <Card
     title="Cohesion (Deep Dive)"
     description="Explore Larry Constantine's complete qualitative rubric of software cohesion."
     href="/architecture/cohesion"

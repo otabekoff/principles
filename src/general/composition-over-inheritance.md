@@ -8,79 +8,223 @@ icon: Layers3
 
 > "Favor object composition over class inheritance." — *Design Patterns (Gang of Four)*
 
-**Composition over Inheritance** (or the **Composite Reuse Principle**) is a fundamental rule in object-oriented design. It suggests that a class should achieve polymorphic behavior and code reuse by containing instances of other classes (composition) rather than inheriting from a parent class (inheritance).
+**Composition over Inheritance** (or the **Composite Reuse Principle**) is a core software design rule. It suggests that classes should achieve polymorphic behavior and code reuse by containing instances of other classes (**composition** / Has-A relationship) rather than inheriting from a parent class (**inheritance** / Is-A relationship).
 
-## The Core Concept
+```
+┌────────────────────────────────────────────────────────────────┐
+│                        DESIGN STRATEGY                         │
+├───────────────────────────────┬────────────────────────────────┤
+│    INHERITANCE (Is-A)         │      COMPOSITION (Has-A)       │
+│  - Static / Compile-time      │  - Dynamic / Runtime           │
+│  - Tight coupling (Fragile)   │  - Loose coupling (Resilient)  │
+│  - Hard to change structure   │  - Behavior easily swapped     │
+└───────────────────────────────┴────────────────────────────────┘
+```
 
-- **Inheritance (Is-A relationship)**: Tightest form of coupling in OOP. A subclass is bound to the parent class implementation. Changes in parent class can break subclasses (the **fragile base class problem**).
-- **Composition (Has-A relationship)**: Loose coupling. An object references other objects to delegate behavior. These components can be swapped easily at runtime.
+---
 
-### Code Smell: Deep Inheritance Hierarchies
+## 1. The Core Tension: Is-A vs. Has-A
 
-Imagine modeling video game characters. You have a base `Character` class and use inheritance to define roles:
+* **Inheritance (Is-A)**: A subclass inherits everything from its parent class. This creates the tightest form of coupling in object-oriented programming. If the parent class changes, subclasses can break instantly (known as the **fragile base class problem**).
+* **Composition (Has-A)**: An object holds references to other objects (components) and delegates work to them. This allows components to be easily mocked in tests and swapped dynamically at runtime.
 
-```ts
-// ❌ Violates Composition over Inheritance
-class Character {
-  walk() { console.log("Walking..."); }
-}
+---
 
-class FightingCharacter extends Character {
-  fight() { console.log("Fighting..."); }
-}
+## 2. A Real-World C++ Game Object Example
 
-class FlyingCharacter extends Character {
-  fly() { console.log("Flying..."); }
+Consider modeling game entities in a game engine. If we use class inheritance, we might create a deep, rigid tree:
+
+```cpp
+// ❌ Static, rigid inheritance tree
+class GameObject {};
+class VisibleObject : public GameObject {};
+class SolidObject : public VisibleObject {};
+class MovableObject : public SolidObject {};
+```
+
+What if we want a **Visible, Movable** object that is **not Solid** (e.g. a ghostly particle)? In single-inheritance languages, this structure completely breaks, forcing developers to resort to code duplication or messy workarounds.
+
+### The Decoupled Delegate Pattern (C++)
+
+By refactoring to **Composition**, we separate behavior into independent delegate interfaces (`VisibilityDelegate`, `UpdateDelegate`, and `CollisionDelegate`). Concrete behaviors are injected into a generic `GameObject` at runtime:
+
+```cpp
+#include <iostream>
+#include <memory>
+
+// 1. Behavior Interfaces (Abstractions)
+class VisibilityDelegate {
+public:
+    virtual ~VisibilityDelegate() = default;
+    virtual void draw() = 0;
+};
+
+class UpdateDelegate {
+public:
+    virtual ~UpdateDelegate() = default;
+    virtual void update() = 0;
+};
+
+class CollisionDelegate {
+public:
+    virtual ~CollisionDelegate() = default;
+    virtual void collide() = 0;
+};
+
+// 2. Concrete Behaviors
+class OpaqueRender : public VisibilityDelegate {
+public:
+    void draw() override { std::cout << "Rendering opaque mesh.\n"; }
+};
+
+class TranslucentRender : public VisibilityDelegate {
+public:
+    void draw() override { std::cout << "Rendering ghostly mesh.\n"; }
+};
+
+class PhysicsMovement : public UpdateDelegate {
+public:
+    void update() override { std::cout << "Moving via Newton's laws.\n"; }
+};
+
+class SolidCollision : public CollisionDelegate {
+public:
+    void collide() override { std::cout << "Blocking physical movement.\n"; }
+};
+
+// 3. Composed Game Object
+class GameObject {
+private:
+    std::unique_ptr<VisibilityDelegate> visibility;
+    std::unique_ptr<UpdateDelegate> update;
+    std::unique_ptr<CollisionDelegate> collision;
+
+public:
+    GameObject(
+        std::unique_ptr<VisibilityDelegate> vis,
+        std::unique_ptr<UpdateDelegate> upd,
+        std::unique_ptr<CollisionDelegate> col
+    ) : visibility(std::move(vis)), update(std::move(upd)), collision(std::move(col)) {}
+
+    void renderEntity() { if (visibility) visibility->draw(); }
+    void updatePhysics() { if (update) update->update(); }
+    void handleCollision() { if (collision) collision->collide(); }
+};
+
+int main() {
+    // We can compose a Ghostly Particle (Translucent Render + Physics, but no Solid Collision)
+    auto ghost = std::make_unique<GameObject>(
+        std::make_unique<TranslucentRender>(),
+        std::make_unique<PhysicsMovement>(),
+        nullptr // No collision behavior!
+    );
+
+    ghost->renderEntity();
+    ghost->updatePhysics();
+    ghost->handleCollision(); // Does nothing safely
+    return 0;
 }
 ```
 
-Now, what if we need a new character type that can **both** fight and fly? In languages with single inheritance, you cannot inherit from both `FightingCharacter` and `FlyingCharacter`. You are forced to copy code or create a convoluted inheritance tree.
+---
 
-### The Solution: Composition
+## 3. Drawbacks of Composition: The Boilerplate Problem
 
-Instead of saying a character *is* a fighter, we say a character *has* a fighting ability. We separate behaviors into independent components and compose our character using them:
+While composition provides unmatched design flexibility, it introduces the **Forwarding / Delegation Boilerplate** problem. 
+
+If a composite class wants to expose the interface of its components, it must manually write forwarding shell methods for every single delegate method. This is tedious and can lead to a significant amount of boilerplate code:
 
 ```ts
-//  Adheres to Composition over Inheritance
-interface MovementAbility { move(): void; }
-interface CombatAbility { attack(): void; }
+// ⚠️ Boilerplate Forwarding Methods:
+class Window {
+  constructor(private bounds: Rectangle) {}
 
-class WalkMovement implements MovementAbility {
-  move() { console.log("Walking..."); }
-}
-
-class FlyMovement implements MovementAbility {
-  move() { console.log("Flying..."); }
-}
-
-class SwordAttack implements CombatAbility {
-  attack() { console.log("Swinging sword..."); }
-}
-
-class BowAttack implements CombatAbility {
-  attack() { console.log("Shooting bow..."); }
-}
-
-class GameCharacter {
-  constructor(
-    private movement: MovementAbility,
-    private combat: CombatAbility
-  ) {}
-
-  performMove() { this.movement.move(); }
-  performAttack() { this.combat.attack(); }
+  // Manual wrapper forwarding:
+  getArea(): number { return this.bounds.getArea(); }
+  getWidth(): number { return this.bounds.getWidth(); }
+  getHeight(): number { return this.bounds.getHeight(); }
 }
 ```
 
-Now, we can compose any type of character dynamically without any complex hierarchies:
-```ts
-const flyingWarrior = new GameCharacter(new FlyMovement(), new SwordAttack());
-const walkingArcher = new GameCharacter(new WalkMovement(), new BowAttack());
+---
+
+## 4. Modern Language Solutions to Boilerplate
+
+Modern programming languages offer built-in syntactic sugar to eliminate this delegation boilerplate:
+
+### A. Go (Struct Embedding)
+Go supports implicit composition through struct embedding. Fields and methods of the embedded struct are automatically promoted to the outer struct:
+
+```go
+type Engine struct {}
+func (e *Engine) Start() { println("Vroom!") }
+
+type Car struct {
+    Engine // Implicit composition (Embedding)
+}
+
+func main() {
+    c := Car{}
+    c.Start() // Method is automatically promoted! No manual forwarding needed.
+}
 ```
 
-We can even change a character's movement or combat behavior at runtime!
+### B. Kotlin (Class Delegation via `by` keyword)
+Kotlin allows delegation of an interface to a specified object using the `by` keyword:
 
-## Tradeoffs
+```kotlin
+interface Engine { fun start() }
+class V8Engine : Engine { override fun start() = println("Vroom!") }
 
-- **Pros**: Extreme flexibility, runtime adaptability, easily testable decoupled components, and no fragile base class issues.
-- **Cons**: Requires more setup code (wiring components together) and can lead to a higher number of small, single-purpose classes.
+// Kotlin automatically generates all forwarding boilerplate under the hood!
+class Car(engine: Engine) : Engine by engine
+```
+
+### C. C# & Java (Default Interface Methods)
+With default methods in interfaces, developers can write trait-like shared code inside interfaces, avoiding deep class hierarchies.
+
+### D. Java (Lombok `@Delegate`)
+Lombok automatically generates forwarding methods at compile-time for fields annotated with `@Delegate`:
+
+```java
+public class Car {
+    @Delegate
+    private final Engine engine = new V8Engine(); // Generates all Engine methods on Car
+}
+```
+
+### E. Swift (Protocol Extensions)
+Swift allows developers to define default method implementations directly within protocol extensions, creating powerful composition traits.
+
+### F. PHP (Traits)
+PHP uses traits to allow classes to share modular blocks of methods across unrelated structures:
+
+```php
+trait Movable {
+    public function move() { echo "Moving..."; }
+}
+
+class Particle {
+    use Movable; // Composer trait
+}
+```
+
+---
+
+## 5. Tempero et al. (2013) Empirical Findings
+
+In 2013, researchers **Tempero et al.** conducted a large-scale empirical study analyzing how inheritance is actually used in real-world Java applications. 
+
+They analyzed dozens of open-source projects and discovered that:
+* Inheritance is rarely used to share code.
+* The vast majority of class structures are highly shallow, with a **median depth of inheritance of only 1 or 2**.
+* The study recorded a **median of only 2% purely internal reuse** via subclassing.
+* **Conclusion**: Real-world software engineering implicitly leans heavily on composition. Designers who build deep, complex class trees are fighting against empirical software trends.
+
+---
+
+## Summary of Composition Benefits
+
+* **Dynamic Behavior**: Swap components and alter object capabilities dynamically at runtime.
+* **Simple Unit Testing**: Decompose classes into small, focused, easily testable components.
+* **No Fragile Base Classes**: Changes inside components do not propagate unexpected structural breaks to outer classes.
