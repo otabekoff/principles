@@ -45,9 +45,9 @@ These principles focus on everyday code cleanliness, simplicity, and protecting 
     image="/cards/iterator.png"
   />
   <Card
-    title="DRY (Don't Repeat Yourself)"
-    description="Ensure every piece of knowledge has a single representation."
-    href="/general/dry"
+    title="DRY vs WET"
+    description="The fundamental tension between Don't Repeat Yourself and Write Everything Twice."
+    href="/general/dry-wet"
     image="/cards/iterator.png"
   />
   <Card
@@ -159,22 +159,10 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
     image="/cards/facade.png"
   />
   <Card
-    title="Discoverability"
-    description="Ensure product features and API options are easy for consumers to find."
-    href="/pragmatic/discoverability"
-    image="/cards/decorator.png"
-  />
-  <Card
-    title="Findability"
-    description="Ensure website information is easily retrieved from both outside and inside."
-    href="/pragmatic/findability"
+    title="Findability & Discoverability"
+    description="Ensure product features and information are easily retrieved and discovered."
+    href="/pragmatic/findability-discoverability"
     image="/cards/command.png"
-  />
-  <Card
-    title="WET Principle"
-    description="Write Everything Twice; avoid hasty and coupled abstractions."
-    href="/pragmatic/wet-principle"
-    image="/cards/builder.png"
   />
   <Card
     title="Levels of Abstraction"
@@ -215,12 +203,6 @@ Tactical guidelines for maintaining an agile, clean, and highly maneuverable cod
 High-level design paradigms, architectural separations, and safety-critical rules.
 
 <Cards>
-  <Card
-    title="Coupling and Cohesion"
-    description="The core structural quality metrics of high-end software designs."
-    href="/architecture/coupling-cohesion"
-    image="/cards/mvc.png"
-  />
   <Card
     title="Coupling (Deep Dive)"
     description="Explore Larry Constantine's complete qualitative rubric of software coupling."
