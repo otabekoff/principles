@@ -1,75 +1,131 @@
 ---
 title: Single Responsibility Principle (SRP)
-description: A complete guide to the Single Responsibility Principle.
+description: "A complete guide to Robert C. Martin's Single Responsibility Principle (SRP), its cohesion roots in DeMarco and Page-Jones, and actor-based change analysis."
 icon: Target
 ---
 
 # Single Responsibility Principle (SRP)
 
-> "A class should have one, and only one, reason to change." — Robert C. Martin
+> "A module should be responsible to one, and only one, actor." — Robert C. Martin, 2014
 
-The **Single Responsibility Principle (SRP)** is one of the most fundamental guidelines for creating clean, modular, and maintainable software. It states that every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+The **Single Responsibility Principle (SRP)** is the first principle of the **SOLID** design system and serves as a fundamental guideline for creating modular, robust, and maintainable software. It focuses on isolating cohesive logic to ensure that parts of a system that change for different reasons do not corrupt or destabilize one another.
 
-## The Core Concept
+---
 
-The word "responsibility" in SRP can sometimes be confusing. A better way to think about it is in terms of **actors** or **reasons to change**. 
+## 1. History and Cohesion Roots
 
-If a class does three different things, changes to any of those three requirements will require modifying the class. This increases the risk of introducing bugs in other unrelated parts of the class.
+While Robert C. Martin introduced and popularized the SRP term in his seminal 2003 book, ***Agile Software Development, Principles, Patterns, and Practices***, the principle has deep roots in structured software engineering theory:
 
-### Code Smell: The "God Object" or Multi-Tasker
+```
+                            THE SRP EVOLUTION:
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │ 1978: Tom DeMarco (Structured Analysis and System Specification)       │
+   │       -- Coined initial concepts of functional cohesion in modules.   │
+   │                                                                        │
+   │ 1980: Meilir Page-Jones (The Practical Guide to Structured Systems Design)│
+   │       -- Formalized modular coupling and structural cohesion metrics.  │
+   │                                                                        │
+   │ 2003: Robert C. Martin (Agile Software Development, PPP)               │
+   │       -- Transferred structured cohesion concepts to OOP as SRP.       │
+   └────────────────────────────────────────────────────────────────────────┘
+```
 
-Imagine a class `User` that handles user data, database persistence, and sending emails:
+Martin designed SRP as an object-oriented translation of the classic structured concept of **Cohesion**. A cohesive module is one where all internal functions and statements work together to achieve a single unified goal.
+
+---
+
+## 2. Defining "Responsibility": The Actor Concept
+
+The most common point of confusion surrounding SRP is the definition of "responsibility" or "reason to change." In his 2014 clarification blog post, Martin simplified the definition by mapping responsibilities directly to **Actors**:
+
+> *"Another wording for the Single Responsibility Principle is: Gather together the things that change for the same reasons. Separate those things that change for different reasons. A class should be responsible to one, and only one, actor."*
+
+An **Actor** represents a group of users, stakeholders, or business roles who demand a change in a specific feature. 
+
+```
+                          ACTORS VS. CLASS COUPLING:
+   ┌───────────────────────────┐           ┌────────────────────────────┐
+   │        ACTOR 1            │           │          ACTOR 2           │
+   │   Accountant (Finance)    │           │    Database Admin (DBA)    │
+   └───────────────────────────┘           └────────────────────────────┘
+                 │                                       │
+                 ▼                                       ▼
+   ┌────────────────────────────────────────────────────────────────────┐
+   │                       ❌ THE COUPLED CLASS                         │
+   │                                                                    │
+   │  - calculatePay()  -- Requested by Finance to change calculation.  │
+   │  - saveEmployee()  -- Requested by DBA to change DB scheme.        │
+   │                                                                    │
+   │ Problem: A change requested by Finance risks breaking DBA database │
+   │          operations, and vice versa.                               │
+   └────────────────────────────────────────────────────────────────────┘
+```
+
+Even if the Accountant and the Database Administrator are represented by the same physical person in a small startup, they represent **different business roles** and will demand modifications at different times for entirely different reasons. Putting their respective logic in a single class couples their risks.
+
+---
+
+## 3. Case Study: The Report Compiler and Printer
+
+Consider a software module that compiles a business report and prints it out:
+
+### ❌ The Code Smell: Coupled Responsibilities
+This design encapsulates two entirely different axes of change in a single class:
 
 ```ts
-// ❌ Violates SRP
-class User {
-  constructor(public name: string, public email: string) {}
+// ❌ Violates SRP: Two reasons to change, two different actors!
+class ReportManager {
+  constructor(private rawData: object) {}
 
-  saveToDatabase() {
-    console.log(`Saving ${this.name} to the database...`);
+  // Actor 1: Business Analyst (wants to change what content is presented)
+  compileReportData(): string {
+    return `Report Content: ${JSON.stringify(this.rawData)}`;
   }
 
-  sendWelcomeEmail() {
-    console.log(`Sending email to ${this.email}...`);
+  // Actor 2: Print Administrator (wants to change the page margins/format)
+  printReport(content: string): void {
+    console.log(`Printing on paper: ${content}`);
   }
 }
 ```
 
-This class violates SRP because it has three reasons to change:
-1. The business definition of a user changes.
-2. The database schema or persistence mechanism changes.
-3. The email provider or format changes.
+If the printing library is upgraded or the layout margins are adjusted, we are forced to rewrite `ReportManager`. This modification runs a high risk of breaking the unrelated data compilation logic.
 
-### The Solution: Separation of Concerns
-
-To follow SRP, we split these responsibilities into distinct classes, each focusing on exactly one job:
+### 🌟 The Solution: Decoupled and Actor-Focused Modules
+We split these responsibilities into distinct classes, ensuring that each class answers to exactly one actor:
 
 ```ts
-//  Adheres to SRP
-class User {
-  constructor(public name: string, public email: string) {}
-}
+// 🌟 Adheres to SRP: Single reason to change per class!
 
-class UserRepository {
-  save(user: User) {
-    console.log(`Saving ${user.name} to the database...`);
+// Responsible purely to Actor 1: The Business Analyst
+class ReportCompiler {
+  constructor(private rawData: object) {}
+
+  compile(): string {
+    return `Report Content: ${JSON.stringify(this.rawData)}`;
   }
 }
 
-class EmailService {
-  sendWelcome(user: User) {
-    console.log(`Sending email to ${user.email}...`);
+// Responsible purely to Actor 2: The Print Administrator
+class ReportPrinter {
+  print(content: string): void {
+    console.log(`Printing on A4 paper with 1-inch margins: ${content}`);
   }
 }
 ```
 
-Now, if you want to switch from a relational database to a NoSQL database, you only modify `UserRepository`. `User` and `EmailService` remain untouched and safe.
+If we change the printing layout (e.g. printing to PDF instead of physical paper), we modify `ReportPrinter`. The `ReportCompiler` remains completely untouched, tested, and safe.
 
-## Tradeoffs and Pragmatism
+---
 
-While SRP is powerful, it can be taken to extremes. 
+## 4. Advantages and Pragmatic Boundaries
 
-- **Pros**: Highly cohesive classes, easy testing (you only need to mock one responsibility), and low risk of side effects.
-- **Cons**: Can lead to "class explosion" where a codebase is divided into too many tiny, single-method classes, making it harder to navigate and understand the big picture.
+### Advantages:
+* **Extreme Testability**: Writing unit tests for an SRP class is trivial. You do not need to construct complex mocks for secondary responsibilities.
+* **Low Regression Risk**: Changes requested by one department cannot accidentally inject bugs into features used by an entirely different department.
+* **Understandability**: A developer can read an SRP file and instantly grasp its entire capability in under 10 seconds.
 
-Always apply SRP with pragmatism. If a small utility class does two closely related small tasks that never change independently, keeping them together might be better than over-splitting.
+### The "Class Explosion" Trap:
+Applying SRP blindly can lead to **Class Explosion**, where a simple application is fragmented into hundreds of single-method classes. 
+
+Always balance SRP with the **KISS Principle**. If two small utility operations are highly cohesive and always change together for the exact same reasons, keeping them in a single class is highly pragmatic. Apply SRP when you identify clear, divergent axes of change driven by different business stakeholders.
