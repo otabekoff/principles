@@ -135,6 +135,10 @@ class Renderer {
 ```
 
 ```go [Go]
+package main
+
+import "errors"
+
 // ❌ Primitive Obsession (loose parameters allow out-of-bound errors)
 func ProcessPaymentPrimitive(amount float64, currency string) {
     // Requires endless runtime checks:
@@ -144,10 +148,6 @@ func ProcessPaymentPrimitive(amount float64, currency string) {
 }
 
 // 🌟 Type-Driven (custom typed constants & struct encapsulation)
-package main
-
-import "errors"
-
 type Currency string
 
 const (

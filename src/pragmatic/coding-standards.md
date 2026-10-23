@@ -122,8 +122,11 @@ public class UserAccount {
 ```
 
 ```go [Go]
-// ❌ Non-Standard (Mixed naming, missing error handling, unformatted)
 package main
+
+import "errors"
+
+// ❌ Non-Standard (Mixed naming, missing error handling, unformatted)
 type userAccount struct {
 	BAL float64
 	uName string
@@ -134,10 +137,6 @@ func (u *userAccount) AddVal(amt float64) {
 }
 
 // 🌟 Standardized (Go Style: gofmt, camelCase, idiomatic error handling)
-package main
-
-import "errors"
-
 type UserAccount struct {
 	username string
 	balance  float64
