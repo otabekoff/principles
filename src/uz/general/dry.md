@@ -8,7 +8,7 @@ icon: RefreshCw
 
 <CoverImage src="/covers/general/dry-wet.webp" alt="DRY (Takrorlamang)">
   <h1>DRY (Takrorlamang)</h1>
-  <p>Ikkiga bo'lingan sahna: chapda kichkina oq robot yigirmata bir xil eshikdagi bir xil yozuvni shoshib qayta-qayta bo'yamoqda; o'ngda esa xuddi shu robot xotirjam holda yagona asosiy trafaretni o'zgartirmoqda va u barcha eshiklarni bir vaqtda mayin qahrabo nur bilan yangilaydi.</p>
+  <p>Ikkiga bo'lingan sahna: chapda kichkina oq robot yigirmata bir xil eshikdagi bir xil yozuvni shoshib qayta-qayta bo'yamoqda; o'ngda esa xuddi shu robot xotirjam holda yagona asosiy trafaretni o'zgartirmoqda va u barcha eshiklarni bir vaqtda mayin binafsha nur bilan yangilaydi.</p>
 </CoverImage>
 
 > "Har bir bilim yoki mantiq tizim ichida yagona, aniq va nufuzli ko'rinishga ega bo'lishi kerak." — Andy Hunt and Dave Thomas, *The Pragmatic Programmer*

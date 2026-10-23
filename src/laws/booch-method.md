@@ -2,6 +2,7 @@
 title: Booch Method
 description: "Grady Booch's pioneering object-oriented software development methodology, combining macro and micro design processes."
 icon: Compass
+cardPrompt: "Soft cloud-shaped diagrams floating up off an old drafting sheet."
 ---
 
 # Booch Method

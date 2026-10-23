@@ -2,6 +2,7 @@
 title: If It Ain't Broke, Don't Fix It
 description: "A pragmatic software engineering adage: Avoid making unnecessary changes to stable, working systems to prevent regression risks."
 icon: Lock
+cardPrompt: "A humble old windmill turning happily in the breeze beside a closed toolbox."
 ---
 
 # If It Ain't Broke, Don't Fix It

@@ -8,7 +8,7 @@ icon: Grid
 
 <CoverImage src="/covers/solid/introduction.webp" alt="SOLID tamoyillariga kirish">
   <h1>SOLID tamoyillariga kirish</h1>
-  <p>Beshta kichkina oq robotning har biri bittadan katta, porlayotgan qahrabo rang ustunni ko'tarib turibdi va ular birgalikda kichik, mustahkam ibodatxona tomini tutib turishibdi.</p>
+  <p>Beshta kichkina oq robotning har biri bittadan katta, porlayotgan binafsha rang ustunni ko'tarib turibdi va ular birgalikda kichik, mustahkam ibodatxona tomini tutib turishibdi.</p>
 </CoverImage>
 
 SOLID — bu obyektga yo'naltirilgan dizayn va dasturlashning beshta asosiy tamoyili bo'lib, ular 2000-yillarning boshlarida Robert C. Martin (Uncle Bob) tomonidan to'plangan. Ushbu tamoyillar klasslar tuzilishini loyihalashda amal qilinishi kerak bo'lgan qoidalar va eng yaxshi amaliyotlar to'plamidir.

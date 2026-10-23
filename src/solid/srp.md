@@ -2,6 +2,7 @@
 title: Single Responsibility Principle (SRP)
 description: "A complete guide to Robert C. Martin's Single Responsibility Principle (SRP), its cohesion roots in DeMarco and Page-Jones, and actor-based change analysis."
 icon: Target
+cardPrompt: "A single chef's knife resting beside one neatly sliced vegetable on a clean cutting board."
 ---
 
 # Single Responsibility Principle (SRP)

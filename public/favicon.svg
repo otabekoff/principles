@@ -1,10 +1,10 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="512" height="512" viewBox="40 40 432 432" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .ring { stroke: #34495E; }
-    .star { fill: #F59E0B; stroke: #F59E0B; }
+    .star { fill: #7C3AED; stroke: #7C3AED; }
     @media (prefers-color-scheme: dark) {
       .ring { stroke: #E5E7EB; }
-      .star { fill: #FBBF24; stroke: #FBBF24; }
+      .star { fill: #A78BFA; stroke: #A78BFA; }
     }
   </style>
   <circle class="ring" cx="256" cy="256" r="194" stroke-width="44" />

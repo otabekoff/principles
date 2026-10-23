@@ -2,6 +2,7 @@
 title: Behavior-Driven Development (BDD)
 description: Bridge the communication gap between developers and business stakeholders by writing tests in natural human language using Given-When-Then.
 icon: Award
+cardPrompt: "An open storybook whose pages pop up into three small scenes: setup, action and outcome."
 ---
 
 # Behavior-Driven Development (BDD)

@@ -2,6 +2,7 @@
 title: Interface Segregation Principle (ISP)
 description: A complete guide to the Interface Segregation Principle, its historical Xerox origins, and modern software design applications.
 icon: LayoutGrid
+cardPrompt: "A slim three-button remote control lying next to a huge remote crowded with hundreds of buttons."
 ---
 
 # Interface Segregation Principle (ISP)

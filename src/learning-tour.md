@@ -2,13 +2,14 @@
 title: Learning Tour
 description: A guided learning tour of the Programming Principles documentation — what's here and how to use it.
 icon: BookOpen
+cardPrompt: "A folded paper map with a dotted violet trail winding between little island illustrations, a tiny white robot figurine standing at the start."
 ---
 
 # Learning Tour
 
 <CoverImage src="/covers/getting-started/learning-tour.webp" alt="Learning Tour">
   <h1>Learning Tour</h1>
-  <p>A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing amber stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.</p>
+  <p>A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing violet stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.</p>
 </CoverImage>
 
 This learning tour explains how the Programming Principles documentation is structured, what each page contains, and how to navigate effectively depending on what you're trying to do.

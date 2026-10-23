@@ -2,6 +2,7 @@
 title: The ZOMBIES Strategy
 description: Apply the ZOMBIES mnemonic for systematic, test-driven problem-solving and comprehensive edge-case testing.
 icon: Skull
+cardPrompt: "A cute, friendly cartoon zombie robot holding an empty box, a single apple and a basket of apples."
 ---
 
 # The ZOMBIES Strategy

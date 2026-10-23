@@ -2,6 +2,7 @@
 title: Reveal Intentions
 description: Write self-documenting code by choosing descriptive names that reflect purpose, structure, and intent.
 icon: Eye
+cardPrompt: "A row of clear glass jars with neat descriptive labels on a pantry shelf."
 ---
 
 # Reveal Intentions

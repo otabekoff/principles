@@ -2,6 +2,7 @@
 title: Pristine Sources
 description: "A release management philosophy stating that original upstream source archives must be kept completely unmodified."
 icon: Archive
+cardPrompt: "A crystal-clear mountain spring bubbling out of a rock."
 ---
 
 # Pristine Sources

@@ -2,6 +2,7 @@
 title: Property-Based Testing
 description: Find edge cases automatically by asserting system invariants across thousands of randomly generated inputs.
 icon: ShieldCheck
+cardPrompt: "A funnel of random colourful marbles pouring in and coming out in a perfectly sorted line."
 ---
 
 # Property-Based Testing

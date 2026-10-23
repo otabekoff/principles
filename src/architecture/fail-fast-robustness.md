@@ -2,13 +2,14 @@
 title: Fail-Fast & Robustness
 description: Design software that crashes early on anomalies to guarantee state correctness and robust recovery.
 icon: ZapOff
+cardPrompt: "A red emergency stop button above a small assembly line, a violet warning light flashing."
 ---
 
 # Fail-Fast & Robustness
 
 <CoverImage src="/covers/architecture/fail-fast-robustness.webp" alt="Fail-Fast & Robustness">
   <h1>Fail-Fast & Robustness</h1>
-  <p>A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright amber warning light flashing overhead.</p>
+  <p>A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright violet warning light flashing overhead.</p>
 </CoverImage>
 
 A classic architectural dilemma is deciding how to respond when a minor system error or state anomaly is detected. The **Fail-Fast** principle suggests that a system should immediately stop execution and raise an error as soon as it detects any anomaly, rather than trying to proceed in an undefined, corrupted state.

@@ -2,13 +2,14 @@
 title: Pass the Tests & Testability
 description: A complete philosophy of building highly testable code, organic test growth, and eliminating test friction.
 icon: ShieldCheck
+cardPrompt: "A small toy car crossing a checkpoint gate that lights up violet."
 ---
 
 # Pass the Tests & Testability
 
 <CoverImage src="/covers/testing/pass-the-tests.webp" alt="Pass the Tests">
   <h1>Pass the Tests</h1>
-  <p>A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up amber as it passes.</p>
+  <p>A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up violet as it passes.</p>
 </CoverImage>
 
 > "Software testing is a sport of building confidence. It is not about proving the absence of bugs, but verifying the presence of core functionality."

@@ -8,7 +8,7 @@ icon: BookMarked
 
 <CoverImage src="/covers/getting-started/quick-reference.webp" alt="Tezkor ma'lumotnoma">
   <h1>Tezkor ma'lumotnoma</h1>
-  <p>Kichkina oq robot ulkan cho'ntak qo'llanmasini varaqlamoqda, uning sahifalari ochilganda kichik 3D rasmlarga aylanib chiqadi; robotning bir qo'lida lupa, kitobdan esa qahrabo rang xatcho'p lentasi osilib turibdi.</p>
+  <p>Kichkina oq robot ulkan cho'ntak qo'llanmasini varaqlamoqda, uning sahifalari ochilganda kichik 3D rasmlarga aylanib chiqadi; robotning bir qo'lida lupa, kitobdan esa binafsha rang xatcho'p lentasi osilib turibdi.</p>
 </CoverImage>
 
 Eng muhim dasturlash tamoyillari uchun qisqa shpargalka. Ushbu jadvallardan tamoyillarni ko'rib chiqish, qoidabuzarliklarni (kod hidlarini) aniqlash va eng yaxshi yechimlarni bir qarashda topish uchun foydalaning.

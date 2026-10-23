@@ -2,6 +2,7 @@
 title: Uniform Access Principle
 description: "A complete guide to Bertrand Meyer's Uniform Access Principle (UAP), its language implementations (Python, Ruby, C#, JS, C++), and performance tradeoffs."
 icon: Equal
+cardPrompt: "A vending machine with a row of identical buttons, one glowing violet."
 ---
 
 # Uniform Access Principle (UAP)

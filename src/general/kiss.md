@@ -2,13 +2,14 @@
 title: KISS (Keep It Simple, Stupid)
 description: A complete guide to the U.S. Navy origin, Kelly Johnson's Skunk Works design constraints, and modern software engineering applications of the KISS principle.
 icon: Lightbulb
+cardPrompt: "A single glowing violet paper clip lying on a dark surface."
 ---
 
 # KISS (Keep It Simple, Stupid)
 
 <CoverImage src="/covers/general/kiss.webp" alt="KISS">
   <h1>KISS</h1>
-  <p>A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip glowing warm amber.</p>
+  <p>A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip glowing soft violet.</p>
 </CoverImage>
 
 > "Simplicity is the ultimate sophistication." — *Leonardo da Vinci*

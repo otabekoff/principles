@@ -2,6 +2,7 @@
 title: Make Non-Breaking Changes
 description: Avoid the mud of endless refactoring by making incremental, non-breaking modifications.
 icon: FastForward
+cardPrompt: "A new modern bridge built right beside an old one, small cars still crossing the old bridge."
 ---
 
 # Make Non-Breaking Changes

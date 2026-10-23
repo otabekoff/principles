@@ -2,13 +2,14 @@
 title: Coupling
 description: "Larry Constantine's complete qualitative rubric of software coupling: metrics, connascence, loose coupling dimensions, and performance analysis."
 icon: Link
+cardPrompt: "Two machines joined by a single neat violet cable with plugs, a tangled knot of rope cut away beside them."
 ---
 
 # Coupling (Deep Dive)
 
 <CoverImage src="/covers/architecture/coupling.webp" alt="Coupling">
   <h1>Coupling</h1>
-  <p>A split scene: a tiny white robot tangled in a mess of knotted ropes tying all its machines together, beside a tidy workshop where the same machines connect only through a few neat amber cables with plugs.</p>
+  <p>A split scene: a tiny white robot tangled in a mess of knotted ropes tying all its machines together, beside a tidy workshop where the same machines connect only through a few neat violet cables with plugs.</p>
 </CoverImage>
 
 > **Coupling** between modules or components represents their degree of mutual interdependence; **lower coupling is always better**. Pragmatically, coupling is the probability that code unit "B" will break after an unknown or unrelated change is made to code unit "A."

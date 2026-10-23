@@ -162,14 +162,14 @@ const localizedHref = computed(() => {
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background-color: white !important;
+  background-color: var(--vp-c-bg-soft);
   border-bottom: 1px solid var(--vp-c-gutter);
 }
 
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none !important;
   border-radius: 0 !important;

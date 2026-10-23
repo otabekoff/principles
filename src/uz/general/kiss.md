@@ -8,7 +8,7 @@ icon: Lightbulb
 
 <CoverImage src="/covers/general/kiss.webp" alt="KISS (Oddiy saqlang)">
   <h1>KISS (Oddiy saqlang)</h1>
-  <p>Kichkina oq robot oddiy qog'oz qisqichni g'urur bilan ko'tarib turibdi, uning yonida esa xuddi shu ishni bajaradigan, chayqalib turgan ulkan va murakkab Rube Goldberg mexanizmi qad ko'targan; qisqich iliq qahrabo nur sochmoqda.</p>
+  <p>Kichkina oq robot oddiy qog'oz qisqichni g'urur bilan ko'tarib turibdi, uning yonida esa xuddi shu ishni bajaradigan, chayqalib turgan ulkan va murakkab Rube Goldberg mexanizmi qad ko'targan; qisqich yorqin binafsha nur sochmoqda.</p>
 </CoverImage>
 
 > "Oddiylik — eng yuqori darajadagi murakkablikdir." — Leonardo da Vinci

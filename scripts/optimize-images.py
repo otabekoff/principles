@@ -1,12 +1,13 @@
-"""Converts public/covers and public/cards PNGs to WebP and builds 1200x630 JPEG social images.
+"""Crops public/covers and public/cards PNGs to their exact frame size, converts them to WebP,
+and builds 1200x630 JPEG social images for covers.
 
 Usage: python scripts/optimize-images.py   (requires Pillow)
 """
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageOps
 
 PUBLIC = Path(__file__).resolve().parent.parent / "public"
-MAX_WIDTH = {"covers": 1360, "cards": 1024}  # 2x the on-page display width
+SIZE = {"covers": (1360, 850), "cards": (1024, 640)}  # 16:10 frames at 2x the on-page display width
 OG_SIZE = (1200, 630)
 
 
@@ -14,10 +15,9 @@ def to_rgb(im: Image.Image) -> Image.Image:
     return im.convert("RGBA" if im.mode in ("P", "LA", "RGBA") and "transparency" in im.info or im.mode == "RGBA" else "RGB")
 
 
-def convert(png: Path, max_width: int) -> Image.Image:
-    im = to_rgb(Image.open(png))
-    if im.width > max_width:
-        im = im.resize((max_width, round(im.height * max_width / im.width)), Image.LANCZOS)
+def convert(png: Path, size: tuple[int, int]) -> Image.Image:
+    # Generators rarely hit an exact size, so centre-crop to the frame's ratio, then scale
+    im = ImageOps.fit(to_rgb(Image.open(png)), size, Image.LANCZOS)
     im.save(png.with_suffix(".webp"), "WEBP", quality=82, method=6)
     return im
 
@@ -37,9 +37,11 @@ def og_image(im: Image.Image, out: Path) -> None:
 
 
 def main() -> None:
-    for folder, max_width in MAX_WIDTH.items():
+    for folder, size in SIZE.items():
+        if not (PUBLIC / folder).exists():
+            continue
         for png in sorted((PUBLIC / folder).rglob("*.png")):
-            im = convert(png, max_width)
+            im = convert(png, size)
             if folder == "covers":
                 og_image(im, PUBLIC / "og" / png.relative_to(PUBLIC / "covers").with_suffix(".jpg"))
             print("ok", png.relative_to(PUBLIC))

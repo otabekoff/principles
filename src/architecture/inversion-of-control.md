@@ -2,6 +2,7 @@
 title: Inversion of Control (IoC)
 description: Master Inversion of Control (IoC), the Hollywood Principle, its rich history in systems programming, and its dual meanings in modern software architectures.
 icon: RefreshCw
+cardPrompt: "An empty director's chair under a single violet spotlight on a small stage."
 ---
 
 # Inversion of Control (IoC)

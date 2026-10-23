@@ -2,13 +2,14 @@
 title: The Test Pyramid
 description: Structure your test suite with a broad foundation of fast unit tests, a smaller middle layer of integration tests, and a minimal top tier of E2E tests.
 icon: Play
+cardPrompt: "A small pyramid with a wide base of many little bricks, fewer large blocks above and one shining violet capstone."
 ---
 
 # The Test Pyramid
 
 <CoverImage src="/covers/testing/test-pyramid.webp" alt="The Test Pyramid">
   <h1>The Test Pyramid</h1>
-  <p>A tiny white robot building a pyramid from a broad base of many small amber bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.</p>
+  <p>A tiny white robot building a pyramid from a broad base of many small violet bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.</p>
 </CoverImage>
 
 > **"The Test Pyramid is a great visual metaphor that tells you to think about different groups of software tests. It also explains how many tests you should have in each of these groups."** — *Martin Fowler*

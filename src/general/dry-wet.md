@@ -2,13 +2,14 @@
 title: DRY (Don't Repeat Yourself) vs WET (Write Everything Twice)
 description: A complete guide to the tension between DRY and WET principles, AHA (Avoid Hasty Abstractions), and finding the balance in software design.
 icon: RefreshCw
+cardPrompt: "One violet master stencil hovering above a row of identical small doors, each door glowing with the same matching sign."
 ---
 
 # DRY (Don't Repeat Yourself) vs WET (Write Everything Twice)
 
 <CoverImage src="/covers/general/dry-wet.webp" alt="DRY vs WET">
   <h1>DRY vs WET</h1>
-  <p>A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft amber glow.</p>
+  <p>A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft violet glow.</p>
 </CoverImage>
 
 > **"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."** — *Andy Hunt and Dave Thomas, The Pragmatic Programmer*

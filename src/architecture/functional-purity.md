@@ -2,6 +2,7 @@
 title: Functional Purity
 description: Design predictable, side-effect-free software by leveraging deterministic pure functions.
 icon: Sparkles
+cardPrompt: "A pristine glass juicer with identical apples going in and identical glasses of juice coming out."
 ---
 
 # Functional Purity

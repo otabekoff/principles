@@ -2,6 +2,7 @@
 title: Hofstadter's Law
 description: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 icon: Clock
+cardPrompt: "A giant hourglass that never quite runs out, calendar pages fluttering around it."
 ---
 
 # Hofstadter's Law

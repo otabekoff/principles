@@ -2,6 +2,7 @@
 title: Levels of Abstraction
 description: A guide to keeping each block of code on a single, consistent level of abstraction.
 icon: Layout
+cardPrompt: "Three nested magnifying lenses, each showing the same city at a different zoom."
 ---
 
 # Levels of Abstraction

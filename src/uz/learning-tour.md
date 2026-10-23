@@ -8,7 +8,7 @@ icon: BookOpen
 
 <CoverImage src="/covers/getting-started/learning-tour.webp" alt="O'rganish sayohati">
   <h1>O'rganish sayohati</h1>
-  <p>Kichkina ryukzak taqqan va qo'lida qog'oz xarita ochib olgan kichkina oq robot porlayotgan qahrabo rang toshlardan iborat egri-bugri so'qmoq bo'ylab sakrab bormoqda; so'qmoq bir qator mitti orollarni bog'laydi va har bir orolda o'ziga xos kichik yodgorlik qad rostlagan.</p>
+  <p>Kichkina ryukzak taqqan va qo'lida qog'oz xarita ochib olgan kichkina oq robot porlayotgan binafsha rang toshlardan iborat egri-bugri so'qmoq bo'ylab sakrab bormoqda; so'qmoq bir qator mitti orollarni bog'laydi va har bir orolda o'ziga xos kichik yodgorlik qad rostlagan.</p>
 </CoverImage>
 
 Ushbu sayohat Dasturlash tamoyillari (Programming Principles) hujjatlari qanday tuzilganligini, har bir sahifada nimalar borligini va o'zingiz xohlagan narsaga qarab saytda qanday samarali harakat qilish kerakligini tushuntiradi.

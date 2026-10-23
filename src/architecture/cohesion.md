@@ -2,6 +2,7 @@
 title: Cohesion (Computer Science)
 description: "A deep dive into the types, metrics, advantages, and trade-offs of cohesion within software modules."
 icon: Shield
+cardPrompt: "An open bicycle-repair toolbox with every compartment holding a tool for that one job."
 ---
 
 # Maximise Cohesion

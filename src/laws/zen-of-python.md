@@ -2,6 +2,7 @@
 title: The Zen of Python
 description: "A collection of 19 guiding principles for writing clean, simple, and readable computer software."
 icon: Feather
+cardPrompt: "A tranquil raked sand garden with a friendly blue-and-yellow snake coiled on a stone."
 ---
 
 # The Zen of Python

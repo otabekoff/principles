@@ -2,6 +2,7 @@
 title: Gall's Law
 description: "A fundamental law of system design: complex working systems invariably evolve from simple working systems."
 icon: TreeDeciduous
+cardPrompt: "A healthy young tree growing from a small sapling, a toppled metal tree lying behind it."
 ---
 
 # Gall's Law

@@ -8,7 +8,7 @@ icon: GitCommit
 
 <CoverImage src="/covers/solid/dip.webp" alt="Qaramlikni inversiya qilish tamoyili (DIP)">
   <h1>Qaramlikni inversiya qilish tamoyili (DIP)</h1>
-  <p>Kichkina oq robot turli jihozlarni — chiroq, toster va radioni — bir xil standart qahrabo rang devor rozetkasiga ulamoqda; devor ortidagi simlar esa yashirin va almashtirilishi mumkin.</p>
+  <p>Kichkina oq robot turli jihozlarni — chiroq, toster va radioni — bir xil standart binafsha rang devor rozetkasiga ulamoqda; devor ortidagi simlar esa yashirin va almashtirilishi mumkin.</p>
 </CoverImage>
 
 > "Konkretlikka emas, abstraktsiyaga bog'liq bo'ling." — Robert C. Martin

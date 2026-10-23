@@ -2,6 +2,7 @@
 title: Principle of Least Astonishment
 description: "A complete guide to the Principle of Least Astonishment (POLA), its 1967 PL/I origins, UX and API applications, and historical system violations."
 icon: Compass
+cardPrompt: "A door with a simple push-plate swinging open exactly as expected, warm violet light spilling through."
 ---
 
 # Principle of Least Astonishment (POLA)

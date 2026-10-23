@@ -2,13 +2,14 @@
 title: Coding Standards & Specs
 description: Adhere to established specifications, style guides, and the 10 essential pillars of engineering quality.
 icon: FileCode
+cardPrompt: "A short, perfectly even brick wall with a violet blueprint unrolled in front of it."
 ---
 
 # Coding Standards & Specs
 
 <CoverImage src="/covers/pragmatic/coding-standards.webp" alt="Coding Standards">
   <h1>Coding Standards</h1>
-  <p>A row of tiny white robots each building a neat brick wall, all following the same glowing amber blueprint and laying identical bricks in the same tidy pattern.</p>
+  <p>A row of tiny white robots each building a neat brick wall, all following the same glowing violet blueprint and laying identical bricks in the same tidy pattern.</p>
 </CoverImage>
 
 > "Adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable."

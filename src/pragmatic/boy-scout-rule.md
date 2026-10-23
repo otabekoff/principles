@@ -2,6 +2,7 @@
 title: The Boy Scout Rule
 description: Cultivating a clean codebase by leaving it better than you found it.
 icon: Sparkles
+cardPrompt: "A tiny white robot scout hand placing a single piece of litter into a small bag, a clean violet-lit campsite behind."
 ---
 
 # The Boy Scout Rule

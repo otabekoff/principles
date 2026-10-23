@@ -2,6 +2,7 @@
 title: Encapsulation & Info Hiding
 description: Learn the difference between Encapsulation and Information Hiding and how to safeguard your systems.
 icon: EyeOff
+cardPrompt: "An elegant closed pocket watch, a faint glow of gears visible through a thin seam."
 ---
 
 # Encapsulation & Information Hiding

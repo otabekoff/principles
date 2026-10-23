@@ -2,13 +2,14 @@
 title: FIRST Principles of Testing
 description: Discover the F.I.R.S.T. mnemonic of software testing to write fast, isolated, repeatable, self-validating, and timely tests.
 icon: ShieldCheck
+cardPrompt: "A single running lane with a finish line and a scoreboard showing an instant pass light."
 ---
 
 # FIRST Principles of Testing
 
 <CoverImage src="/covers/testing/first-principles.webp" alt="FIRST">
   <h1>FIRST</h1>
-  <p>A tiny white robot sprinter racing alone in its own isolated lane and crossing the finish line in a blink, an instant pass-or-fail amber scoreboard showing the same result on every lap.</p>
+  <p>A tiny white robot sprinter racing alone in its own isolated lane and crossing the finish line in a blink, an instant pass-or-fail violet scoreboard showing the same result on every lap.</p>
 </CoverImage>
 
 > **"The quality of your test suite determines the speed at which you can safely change your system."**

@@ -37,7 +37,7 @@ bun run dev        # http://localhost:5173/
 | `bun run check:code` | Syntax-check every code sample (TS/JS via esbuild, Python, Java 21, Go, Rust; missing toolchains are skipped) |
 | `bun run check:i18n` | Compare each English page with its Uzbek translation (missing pages, code/diagram drift) |
 | `bun run prompts` | Regenerate [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) from the pages' cover scenes |
-| `bun run images` | Convert new cover PNGs to WebP and generate their social images (needs Python + Pillow) |
+| `bun run images` | Crop new cover/card PNGs to size, convert them to WebP and generate social images (needs Python + Pillow) |
 
 ## Project Structure
 
@@ -45,7 +45,7 @@ bun run dev        # http://localhost:5173/
 src/                     # Content (English at the root)
   general/ solid/ pragmatic/ architecture/ testing/ laws/
   uz/                    # Uzbek translation, mirroring the same paths
-public/                  # Static assets: covers/, og/ (social images), placeholders/, logos and icons
+public/                  # Static assets: covers/, cards/, og/ (social images), placeholders/, logos and icons
 .vitepress/
   config/                # Site config, per-locale nav/sidebar (langs/), markdown plugins
   theme/                 # Theme overrides and Vue components (CoverImage, Card, Mermaid, …)
@@ -55,7 +55,7 @@ scripts/                 # Content checks, the image pipeline and the prompt lis
 ## Writing Content
 
 - Each page starts with frontmatter: `title`, `description` and `icon` (a [Lucide](https://lucide.dev/icons) icon name in PascalCase, shown in the sidebar).
-- Under the H1, a `<CoverImage src="/covers/<section>/<page>.webp">` holds a short title and the scene used to generate the cover. Until that file exists, the site shows a placeholder. See [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) for the workflow.
+- Under the H1, a `<CoverImage src="/covers/<section>/<page>.webp">` holds a short title and the scene used to generate the cover (1360x850). The `cardPrompt` frontmatter holds the scene for the page's card image (`/cards/<section>/<page>.webp`, 1024x640). Until an image exists, the site shows a placeholder. See [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) for the workflow.
 - Group implementations with `::: code-group` and label tabs, e.g. ` ```ts [❌ Violation] `.
 - Diagrams go in ` ```mermaid ` blocks.
 - Add new pages to the sidebar in `.vitepress/config/langs/en.ts` and `uz.ts`.

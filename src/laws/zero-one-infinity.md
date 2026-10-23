@@ -2,6 +2,7 @@
 title: Zero-One-Infinity Rule
 description: "A software design rule of thumb: A system should either disallow an entity, allow exactly one, or allow an infinite number."
 icon: Infinity
+cardPrompt: "Three bakery shelves: one empty, one with a single cupcake, one stretching into the distance full of cupcakes."
 ---
 
 # Zero-One-Infinity (ZOI) Rule
