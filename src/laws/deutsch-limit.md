@@ -2,14 +2,14 @@
 title: Deutsch Limit
 description: "Coined by L. Peter Deutsch, this visual programming adage limits screen-level visual primitives to fifty."
 icon: ShieldAlert
-cardPrompt: "A screen crowded with tiny glowing symbols, a single violet magnifying lens focused on just a few."
+cardPrompt: "A screen crammed with tiny symbols labelled \"TOO MANY\", a magnifying glass showing just a few labelled \"READABLE\"."
 ---
 
 # Deutsch Limit
 
 <CoverImage src="/covers/laws/deutsch-limit.webp" alt="Deutsch Limit">
   <h1>Deutsch Limit</h1>
-  <p>A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single violet magnifying lens shows how few of them can be understood at once.</p>
+  <p>A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single magnifying lens shows how few of them can be understood at once.</p>
 </CoverImage>
 
 > "The problem with visual programming is that you can't have more than 50 visual primitives on the screen at the same time." — L. Peter Deutsch

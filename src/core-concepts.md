@@ -1,15 +1,15 @@
 ---
 title: Core Concepts
-description: A clear explanation of what design patterns are, where they came from, and why they matter.
+description: A clear explanation of what programming principles are, where they came from, and how they differ from design patterns.
 icon: Shapes
-cardPrompt: "A small wooden chest of drawers with one drawer pulled open, revealing neatly stacked glowing violet building blocks."
+cardPrompt: "A cute wooden cabinet with three open drawers labelled \"SIMPLICITY\", \"COHESION\" and \"CONTRACTS\", each holding a few smiling building blocks."
 ---
 
 # Core concepts
 
 <CoverImage src="/covers/getting-started/core-concepts.webp" alt="Core Concepts">
   <h1>Core Concepts</h1>
-  <p>A tiny white robot in a cozy wooden workshop, sorting glowing violet building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.</p>
+  <p>A tiny white robot in a cozy wooden workshop, sorting glowing building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.</p>
 </CoverImage>
 
 A **programming principle** is a fundamental rule of thumb, guideline, or best practice that helps software developers design clean, maintainable, and robust systems. Unlike design patterns, which are concrete structural templates for specific problems, principles are more general, high-level guidelines that apply across all programming paradigms and situations.

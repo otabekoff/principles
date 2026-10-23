@@ -8,7 +8,7 @@ icon: Palette
 
 <CoverImage src="/covers/getting-started/introduction.webp" alt="Kirish">
   <h1>Kirish</h1>
-  <p>Tong chog'ida tepalikda turgan kichkina oq robot qo'lidagi porlayotgan binafsha rang kompasni baland ko'tarib turibdi; kompas mili uzoqdagi toza, tartibli geometrik binolar shahrini ko'rsatmoqda, robotning ortida esa chirmashgan o'tlar va sochilgan simlardan iborat changalzor qolgan.</p>
+  <p>Tong chog'ida tepalikda turgan kichkina oq robot qo'lidagi porlayotgan kompasni baland ko'tarib turibdi; kompas mili uzoqdagi toza, tartibli geometrik binolar shahrini ko'rsatmoqda, robotning ortida esa chirmashgan o'tlar va sochilgan simlardan iborat changalzor qolgan.</p>
 </CoverImage>
 
 **Dasturlash tamoyillari (Programming Principles)** — toza, mustahkam va oson saqlanadigan dasturiy ta'minot loyihalashda dasturchilarga yordam beradigan fundamental ko'rsatmalar va hayotiy qoidalar to'plamidir. Ular nusxa olib ishlatiladigan tayyor andozalar (patterns) emas — ular loyihalash jarayonida to'g'ri qarorlar qabul qilishga undaydigan dizayn falsafalaridir. Tamoyillar kodning haddan tashqari murakkablashib ketishining oldini oladi va jamoada yuqori sifatli kod yozish bo'yicha umumiy lug'atni shakllantiradi.

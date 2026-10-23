@@ -2,7 +2,7 @@
 title: Law of Demeter (LoD)
 description: A complete guide to the Law of Demeter (Principle of Least Knowledge), its history, formal rules, and tradeoffs.
 icon: GitPullRequest
-cardPrompt: "An outstretched hand offering a single coin to a shopkeeper's open palm."
+cardPrompt: "A shopkeeper accepting a coin from a customer's hand labelled \"ASK\", with a crossed-out sketch of reaching into the customer's pocket labelled \"DON'T REACH IN\"."
 ---
 
 # Law of Demeter (LoD)

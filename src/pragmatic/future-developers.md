@@ -2,7 +2,7 @@
 title: Future Developers Will Copy You
 description: Setting a high standard because future maintainers will mimic the patterns they see in the codebase.
 icon: Copy
-cardPrompt: "A line of footprints in fresh snow, smaller footprints stepping exactly into each one."
+cardPrompt: "Footprints in snow with a line of smaller characters stepping exactly into them, a speech bubble saying \"I'll do what they did!\"."
 ---
 
 # Future Developers Will Copy You

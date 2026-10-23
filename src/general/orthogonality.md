@@ -2,14 +2,14 @@
 title: Orthogonality
 description: Things that are not related conceptually should not be related in the system. Orthogonality promotes modularity, simplicity, and safety.
 icon: Grid
-cardPrompt: "A row of independent mixing-desk sliders, each topped with its own small violet light."
+cardPrompt: "Three independent sliders labelled \"COLOR\", \"SIZE\" and \"SPEED\", each wired to only its own little light bulb, with dashed arrows that never cross."
 ---
 
 # Orthogonality
 
 <CoverImage src="/covers/general/orthogonality.webp" alt="Orthogonality">
   <h1>Orthogonality</h1>
-  <p>A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing violet light in a neat grid, moving one never disturbing any other.</p>
+  <p>A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing light in a neat grid, moving one never disturbing any other.</p>
 </CoverImage>
 
 > "The basic idea of orthogonality is that things that are not related conceptually should not be related in the system." — *Dave Thomas & Andy Hunt, The Pragmatic Programmer*

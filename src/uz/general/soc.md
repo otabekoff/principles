@@ -8,7 +8,7 @@ icon: Layers
 
 <CoverImage src="/covers/general/soc.webp" alt="Mas'uliyatlarni ajratish (SoC)">
   <h1>Mas'uliyatlarni ajratish (SoC)</h1>
-  <p>Kichkina oq robot ulkan bento qutisini tartiblamoqda: har bir bo'limda alohida, ozoda taom joylashgan, bo'limlar orasida hech narsa aralashib ketmagan, ajratgichlardan esa binafsha nur taralmoqda.</p>
+  <p>Kichkina oq robot ulkan bento qutisini tartiblamoqda: har bir bo'limda alohida, ozoda taom joylashgan, bo'limlar orasida hech narsa aralashib ketmagan, ajratgichlardan esa nur taralmoqda.</p>
 </CoverImage>
 
 > "Mas'uliyatlarni ajratish dasturlashdagi eng muhim masala hisoblanadi." — Edsger W. Dijkstra

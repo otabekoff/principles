@@ -2,14 +2,14 @@
 title: Introduction
 description: A complete guide to programming principles (SOLID, DRY, KISS, YAGNI, and more) used in software development.
 icon: Palette
-cardPrompt: "A glowing violet compass lying open on a dark stone surface, its needle pointing firmly in one direction."
+cardPrompt: "A cheerful little explorer holding a big compass whose needle points to a signpost labelled \"CLEAN CODE\", while a tangled scribble labelled \"SPAGHETTI\" sits behind them."
 ---
 
 # Introduction to Programming Principles
 
 <CoverImage src="/covers/getting-started/introduction.webp" alt="Introduction">
   <h1>Introduction</h1>
-  <p>A tiny white robot standing on a hilltop at dawn, holding up a glowing violet compass whose needle points toward a distant, orderly city of clean geometric buildings, while a tangled jungle of vines and loose wires lies behind it.</p>
+  <p>A tiny white robot standing on a hilltop at dawn, holding up a glowing compass whose needle points toward a distant, orderly city of clean geometric buildings, while a tangled jungle of vines and loose wires lies behind it.</p>
 </CoverImage>
 
 **Programming principles** are fundamental guidelines and rules of thumb that help developers design clean, robust, and maintainable software. They are not structural design pattern recipes that you copy-paste — they are foundational design philosophies that you apply with judgment. A principle guides your everyday decisions, helps prevent over-engineering, and provides a shared vocabulary for high-quality software craft.

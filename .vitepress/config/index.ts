@@ -7,6 +7,7 @@ import { en } from './langs/en'
 import { uz } from './langs/uz'
 import { injectSidebarIcons } from './icon-injector'
 import { MermaidMarkdown } from './mermaid-markdown'
+import { eiffel } from './eiffel'
 
 const SITE_URL = 'https://pp.mohirlab.uz/'
 
@@ -65,6 +66,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }]
   ],
   markdown: {
+    languages: [eiffel as any],
     config(md) {
       md.use(groupIconMdPlugin)
       MermaidMarkdown(md)

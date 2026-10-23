@@ -8,7 +8,7 @@ icon: Layers3
 
 <CoverImage src="/covers/architecture/composition-over-inheritance.webp" alt="Meros o'rniga kompozitsiya">
   <h1>Meros o'rniga kompozitsiya</h1>
-  <p>Kichkina oq robot almashtiriladigan binafsha rang qismlarni — g'ildiraklar, qanotlar va parrakni — bir-biriga ulab o'ziga xos transport vositasini yasamoqda; uning ortida esa transport ajdodlarining ulkan va chigal shajara daraxti foydalanilmay turibdi.</p>
+  <p>Kichkina oq robot almashtiriladigan qismlarni — g'ildiraklar, qanotlar va parrakni — bir-biriga ulab o'ziga xos transport vositasini yasamoqda; uning ortida esa transport ajdodlarining ulkan va chigal shajara daraxti foydalanilmay turibdi.</p>
 </CoverImage>
 
 > "Klass vorisligidan (inheritance) ko'ra, ob'ektlar kompozitsiyasini afzal ko'ring." — *Design Patterns (Gang of Four)*

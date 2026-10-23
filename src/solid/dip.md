@@ -2,14 +2,14 @@
 title: Dependency Inversion Principle (DIP)
 description: A complete guide to the Dependency Inversion Principle.
 icon: GitCommit
-cardPrompt: "A single standard violet wall socket with a lamp plug, a toaster plug and a radio plug arranged around it."
+cardPrompt: "A smiling wall socket labelled \"INTERFACE\" with a lamp, a toaster and a radio each plugged in by dashed lines."
 ---
 
 # Dependency Inversion Principle (DIP)
 
 <CoverImage src="/covers/solid/dip.webp" alt="Dependency Inversion">
   <h1>Dependency Inversion</h1>
-  <p>A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard violet wall socket, the wiring behind the wall hidden and interchangeable.</p>
+  <p>A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard wall socket, the wiring behind the wall hidden and interchangeable.</p>
 </CoverImage>
 
 > **"Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes rather than upon concrete functions and classes. Simply put, when components of our system have dependencies, we don’t want to directly inject a component’s dependency into another. Instead, we should use a level of abstraction between them."** — *Robert C. Martin*

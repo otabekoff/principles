@@ -2,14 +2,14 @@
 title: Encapsulate What Changes
 description: Identify the hotspots that are most likely to change and encapsulate them behind an interface. Keep changes local.
 icon: Box
-cardPrompt: "A sturdy box with a standard plug on the outside and a swirling shape-shifting violet glow peeking from under the lid."
+cardPrompt: "A wiggly, shape-shifting little creature labelled \"CHANGES\" peeking out of a sturdy box with a plain plug on the side labelled \"STABLE\"."
 ---
 
 # Encapsulate What Changes
 
 <CoverImage src="/covers/general/encapsulate-what-changes.webp" alt="Encapsulate What Changes">
   <h1>Encapsulate What Changes</h1>
-  <p>A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy violet-lined box with a standard plug, so the rest of the machine connects to the box instead of the creature.</p>
+  <p>A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy steel box with a standard plug, so the rest of the machine connects to the box instead of the creature.</p>
 </CoverImage>
 
 > **"Identify the aspects of your application that vary and separate them from what stays the same."** — *Gang of Four (Design Patterns, 1994)*

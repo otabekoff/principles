@@ -55,6 +55,9 @@ jobs:
       - name: Check Mermaid diagrams
         run: bun run check:mermaid
 
+      - name: Check sidebar links
+        run: bun run check:sidebar
+
       - name: Check code samples
         run: node scripts/check-code-samples.mjs --strict
 

@@ -2,14 +2,14 @@
 title: Type-Driven Development
 description: Make illegal states unrepresentable using structural compile-time type proofs.
 icon: ShieldCheck
-cardPrompt: "A shape-sorter toy with glowing violet blocks that each fit only their matching hole."
+cardPrompt: "A shape-sorter box with blocks labelled \"EMAIL\", \"USER ID\" and \"PRICE\", each fitting only its own hole."
 ---
 
 # Type-Driven Development
 
 <CoverImage src="/covers/pragmatic/type-driven-development.webp" alt="Type-Driven Development">
   <h1>Type-Driven Development</h1>
-  <p>A tiny white robot fitting uniquely shaped glowing violet blocks into a giant shape-sorter toy, each block sliding only into its matching hole.</p>
+  <p>A tiny white robot fitting uniquely shaped glowing blocks into a giant shape-sorter toy, each block sliding only into its matching hole.</p>
 </CoverImage>
 
 > "Make illegal states unrepresentable." — Yaron Minsky

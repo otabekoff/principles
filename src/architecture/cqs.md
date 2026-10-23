@@ -2,14 +2,14 @@
 title: Command-Query Separation (CQS)
 description: Ensure methods either perform an action or return data, but never both.
 icon: Divide
-cardPrompt: "A counter with two separate service windows, one marked with a question-mark sign and one with a pen sign."
+cardPrompt: "A counter with two windows: one labelled \"QUERY\" handing out a card, one labelled \"COMMAND\" receiving a stamped form."
 ---
 
 # Command-Query Separation (CQS)
 
 <CoverImage src="/covers/architecture/cqs.webp" alt="Command-Query Separation">
   <h1>Command-Query Separation</h1>
-  <p>A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests stamped in violet.</p>
+  <p>A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests with a rubber stamp.</p>
 </CoverImage>
 
 > **"Asking a question should not change the answer."** — *Bertrand Meyer*

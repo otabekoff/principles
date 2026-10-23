@@ -2,7 +2,7 @@
 title: GRASP (General Responsibility Assignment Software Patterns)
 description: A complete architectural guide to the nine fundamental principles of GRASP for object-oriented responsibility assignment.
 icon: Zap
-cardPrompt: "A hard hat and a rolled blueprint being handed from one robot hand to another."
+cardPrompt: "A friendly foreman handing a task card to the worker holding the matching tools, a label \"WHO KNOWS MOST DOES IT\"."
 ---
 
 # GRASP (General Responsibility Assignment Software Patterns)

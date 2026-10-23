@@ -2,7 +2,7 @@
 title: Avoid Premature Optimization
 description: A complete guide on why premature optimization is the root of all evil in programming.
 icon: ZapOff
-cardPrompt: "A polished chrome race-car wheel on a car body with an empty, open engine bay."
+cardPrompt: "A tiny mechanic polishing a shiny wheel on a race car with an empty engine bay labelled \"NO ENGINE YET\", a forgotten stopwatch nearby."
 ---
 
 # Avoid Premature Optimization

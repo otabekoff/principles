@@ -2,7 +2,7 @@
 title: Code Reuse
 description: "The software engineering practice of building new software systems using existing, well-tested assets."
 icon: RefreshCw
-cardPrompt: "A tiny spaceship built from mismatched, well-worn spare parts, one glowing violet bolt holding it together."
+cardPrompt: "A cute toy robot built from parts pulled off a shelf of labelled boxes \"WHEELS\", \"ARMS\" and \"HEAD\", each part with a little \"TESTED\" tick."
 ---
 
 # Code Reuse

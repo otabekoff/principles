@@ -2,14 +2,14 @@
 title: Findability & Discoverability
 description: A comprehensive guide to Information Architecture (IA) and User Experience (UX) metrics, SEO alignment, Peter Morville's Ambient Findability, and Don Norman's Discoverability.
 icon: Locate
-cardPrompt: "Glowing violet floor arrows leading down a tidy warehouse aisle to one highlighted box."
+cardPrompt: "Shelves of neatly labelled boxes with a dotted arrow path on the floor leading to one box labelled \"FOUND IT!\"."
 ---
 
 # Findability & Discoverability
 
 <CoverImage src="/covers/pragmatic/findability-discoverability.webp" alt="Findability & Discoverability">
   <h1>Findability & Discoverability</h1>
-  <p>A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing violet floor arrows leading it straight to the exact box it needs.</p>
+  <p>A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing floor arrows leading it straight to the exact box it needs.</p>
 </CoverImage>
 
 > **"If the user can't find the product, the user can't buy the product."** — *The First Law of E-Commerce*

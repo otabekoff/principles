@@ -2,7 +2,7 @@
 title: Conway's Law
 description: Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
 icon: GitCommit
-cardPrompt: "A bridge made of four distinct sections, each shaped like the island it starts from."
+cardPrompt: "Four team bubbles labelled \"TEAM A\" to \"TEAM D\" with dashed arrows to four matching boxes of a system diagram."
 ---
 
 # Conway's Law

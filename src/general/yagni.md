@@ -2,7 +2,7 @@
 title: YAGNI (You Aren't Gonna Need It)
 description: A complete guide to the YAGNI principle from Extreme Programming.
 icon: ShieldAlert
-cardPrompt: "A small, light backpack next to a towering, toppling pile of just-in-case gadgets."
+cardPrompt: "A light-footed hiker with a small backpack labelled \"NEEDED NOW\", passing a groaning hiker buried under gadgets labelled \"JUST IN CASE\"."
 ---
 
 # YAGNI (You Aren't Gonna Need It)
