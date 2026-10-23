@@ -58,7 +58,7 @@ export const uz = {
         text: 'Ko\'proq',
         items: [
           { text: 'Boshqa loyihalar', link: 'https://github.com/otabekoff' },
-          { text: 'Qo\'llab-quvvatlash', link: 'https://tirikchilik.uz/uzhandy' }
+          { text: 'Qo\'llab-quvvatlash', link: 'https://taps.uz/uzhandy' }
         ]
       }
     ],

@@ -2,10 +2,13 @@
   <a v-if="href" :href="localizedHref" class="vp-card is-link">
     <div v-if="image" class="image-wrapper">
       <img
-        :src="withBase(image)"
+        :src="withBase(imageSrc)"
         class="card-image"
         :alt="title"
+        width="1024"
+        height="1024"
         loading="lazy"
+        decoding="async"
       />
       <button @click.stop.prevent="openDialog" class="zoom-btn" title="Zoom image">
         <Maximize2 :size="16" />
@@ -20,10 +23,13 @@
   <div v-else class="vp-card">
     <div v-if="image" class="image-wrapper">
       <img
-        :src="withBase(image)"
+        :src="withBase(imageSrc)"
         class="card-image"
         :alt="title"
+        width="1024"
+        height="1024"
         loading="lazy"
+        decoding="async"
       />
       <button @click.stop.prevent="openDialog" class="zoom-btn" title="Zoom image">
         <Maximize2 :size="16" />
@@ -40,7 +46,7 @@
     <div v-if="isDialogOpen" class="dialog-overlay" @click="closeDialog">
       <div class="dialog-container" @click.stop>
         <img
-          :src="withBase(image)"
+          :src="withBase(imageSrc)"
           class="dialog-image"
           :alt="title"
         />
@@ -55,6 +61,7 @@
 <script setup>
 import { ref, computed, onUnmounted } from "vue";
 import { useData, withBase } from "vitepress";
+import { data as images } from "../images.data";
 import { Maximize2, X } from "@lucide/vue";
 
 const props = defineProps({
@@ -67,6 +74,11 @@ const props = defineProps({
 
 const { lang } = useData();
 const isDialogOpen = ref(false);
+
+// Show the placeholder until the generated card image is dropped into public/
+const imageSrc = computed(() =>
+  images.includes(props.image) ? props.image : "/placeholders/card.webp"
+);
 
 const openDialog = () => {
   isDialogOpen.value = true;

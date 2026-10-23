@@ -1,7 +1,8 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { Lightbulb, X } from "@lucide/vue";
 import { withBase } from "vitepress";
+import { data as images } from "../images.data";
 
 const props = defineProps({
   src: {
@@ -14,12 +15,26 @@ const props = defineProps({
   },
 });
 
+// Show the placeholder until the generated cover is dropped into public/
+const imageSrc = computed(() =>
+  images.includes(props.src) ? props.src : "/placeholders/cover.webp"
+);
+
 const showOverlay = ref(false);
 </script>
 
 <template>
   <div class="cover-image-container">
-    <img :src="withBase(src)" :alt="alt" class="cover-image" />
+    <!-- Above the fold: load eagerly; explicit size reserves space and avoids layout shift -->
+    <img
+      :src="withBase(imageSrc)"
+      :alt="alt"
+      class="cover-image"
+      width="1360"
+      height="851"
+      decoding="async"
+      fetchpriority="high"
+    />
 
     <button
       class="info-btn"
