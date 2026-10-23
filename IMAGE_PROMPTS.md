@@ -10,7 +10,7 @@ Every page needs two images:
 | **Cover** | Top of the page, under the title | 1360x850 px (16:10) | `public/covers/<section>/<page>.png` |
 | **Card** | Cards on the overview pages that link to it | 1024x1024 px (1:1) | `public/cards/<section>/<page>.png` |
 
-Progress: 39/80 covers, 0/80 cards. Until an image exists, the site shows
+Progress: 80/80 covers, 0/80 cards. Until an image exists, the site shows
 `public/placeholders/cover.webp` or `public/placeholders/card.webp`, so nothing breaks while you work through the list.
 
 ## Workflow
@@ -824,7 +824,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/cqs`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/cqs.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/cqs.png`
 
 ```text
 A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests with a rubber stamp.
@@ -844,7 +844,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/defensive-offensive-programming`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/defensive-offensive-programming.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/defensive-offensive-programming.png`
 
 ```text
 A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud alarm bell at the very first sign of trouble.
@@ -864,7 +864,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/design-by-contract`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/design-by-contract.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/design-by-contract.png`
 
 ```text
 A tiny white robot and a client robot shaking hands over a glowing scroll stamped with three wax seals, standing for preconditions, postconditions and invariants.
@@ -884,7 +884,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/encapsulation-information-hiding`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/encapsulation-information-hiding.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/encapsulation-information-hiding.png`
 
 ```text
 A tiny white robot operating an elegant pocket watch using only its crown and face, while a faint x-ray view hints at the delicate gears safely sealed inside.
@@ -904,7 +904,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/event-driven-architecture`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/event-driven-architecture.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/event-driven-architecture.png`
 
 ```text
 A tiny white robot ringing a large bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.
@@ -924,7 +924,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/fail-fast-robustness`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/fail-fast-robustness.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/fail-fast-robustness.png`
 
 ```text
 A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright warning light flashing overhead.
@@ -944,7 +944,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/functional-core-imperative-shell`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/functional-core-imperative-shell.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/functional-core-imperative-shell.png`
 
 ```text
 A glowing, perfectly still crystal at the centre of a sphere, surrounded by an outer shell where tiny white robots busily handle deliveries, wires and doors.
@@ -964,7 +964,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/functional-purity`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/functional-purity.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/functional-purity.png`
 
 ```text
 A tiny white robot feeding identical apples into a pristine glass juicer that always pours identical glasses of juice, leaving no mess and changing nothing around it.
@@ -984,7 +984,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/grasp`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/grasp.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/grasp.png`
 
 ```text
 A tiny white robot foreman on a construction site handing each task to the teammate robot that already holds the right tools and plans for it.
@@ -1004,7 +1004,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/inversion-of-control`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/inversion-of-control.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/inversion-of-control.png`
 
 ```text
 A tiny white robot actor relaxing in a director's chair backstage while the stage crew hands it props and calls it into the spotlight exactly when its scene begins.
@@ -1024,7 +1024,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/law-of-demeter`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/law-of-demeter.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/law-of-demeter.png`
 
 ```text
 A tiny white robot shopkeeper politely accepting a coin from a customer's outstretched hand, instead of reaching into the customer's pocket to rummage through their wallet.
@@ -1044,7 +1044,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/reveal-intentions`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/reveal-intentions.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/reveal-intentions.png`
 
 ```text
 A tiny white robot fixing clear, descriptive labels onto glass jars in a sunny pantry, next to a dusty shelf of identical unmarked jars nobody can tell apart.
@@ -1064,7 +1064,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/strangler-fig`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/strangler-fig.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/strangler-fig.png`
 
 ```text
 Glowing green fig vines gradually growing around an old crumbling stone tower and replacing it piece by piece, while tiny white robots tend the new growth.
@@ -1086,7 +1086,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/arrange-act-assert`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/arrange-act-assert.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/arrange-act-assert.png`
 
 ```text
 A tiny white robot scientist in three panels: arranging test tubes on a rack, pouring in a single drop of reagent, and checking the resulting colour against a reference chart.
@@ -1106,7 +1106,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/behavior-driven-development`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/behavior-driven-development.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/behavior-driven-development.png`
 
 ```text
 A tiny white robot and a stakeholder robot reading together from a large storybook whose pages unfold into three illustrated scenes: the setup, the action and the outcome.
@@ -1126,7 +1126,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/first-principles`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/first-principles.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/first-principles.png`
 
 ```text
 A tiny white robot sprinter racing alone in its own isolated lane and crossing the finish line in a blink, an instant pass-or-fail scoreboard showing the same result on every lap.
@@ -1146,7 +1146,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/pass-the-tests`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/pass-the-tests.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/pass-the-tests.png`
 
 ```text
 A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up as it passes.
@@ -1166,7 +1166,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/property-based-testing`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/property-based-testing.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/property-based-testing.png`
 
 ```text
 A tiny white robot pouring thousands of random colourful marbles into a sorting machine and checking that every single one still comes out in perfect order.
@@ -1186,7 +1186,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/test-driven-development`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/test-driven-development.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/test-driven-development.png`
 
 ```text
 A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-cycle wheel hanging on the wall.
@@ -1206,7 +1206,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/test-pyramid`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/test-pyramid.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/test-pyramid.png`
 
 ```text
 A tiny white robot building a pyramid from a broad base of many small bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.
@@ -1226,7 +1226,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/testing/zombies-strategy`
 
-⬜ **Cover**, 1360x850, save as `public/covers/testing/zombies-strategy.png`
+✅ **Cover**, 1360x850, save as `public/covers/testing/zombies-strategy.png`
 
 ```text
 A line of cute, friendly cartoon zombie robots shuffling toward a tiny white robot tester, each carrying a different object: an empty box, a single apple, a basket of apples, a little fence, a plug, a spark and a checkmark.
@@ -1248,7 +1248,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/booch-method`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/booch-method.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/booch-method.png`
 
 ```text
 A tiny white robot architect sketching soft cloud-shaped diagrams on an old drafting table, the clouds floating up off the paper and turning into small glowing objects.
@@ -1268,7 +1268,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/brookss-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/brookss-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/brookss-law.png`
 
 ```text
 A tiny white robot foreman watching in dismay as more and more robots crowd onto a small half-built raft, slowing the work and making it sink lower, while a clock tower ticks behind them.
@@ -1288,7 +1288,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/chestertons-fence`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/chestertons-fence.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/chestertons-fence.png`
 
 ```text
 A tiny white robot about to remove a lonely fence in an open meadow, pausing with a magnifying glass to discover that the fence holds back a sleepy flock of sheep just beyond the hill.
@@ -1308,7 +1308,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/conways-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/conways-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/conways-law.png`
 
 ```text
 Four teams of tiny white robots on four separate islands, each building its own piece of a bridge, the finished bridge having four distinct sections that mirror the shapes of the islands.
@@ -1328,7 +1328,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/curlys-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/curlys-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/curlys-law.png`
 
 ```text
 A tiny white robot cowboy at sunset holding up a single finger, one perfectly sharpened tool hanging from its belt.
@@ -1348,7 +1348,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/deutsch-limit`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/deutsch-limit.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/deutsch-limit.png`
 
 ```text
 A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single magnifying lens shows how few of them can be understood at once.
@@ -1368,7 +1368,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/galls-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/galls-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/galls-law.png`
 
 ```text
 A tiny white robot watering a small sapling that has grown into a healthy tree behind it, while beside it a giant tree assembled from scratch out of metal parts lies toppled over.
@@ -1388,7 +1388,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/hofstadters-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/hofstadters-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/hofstadters-law.png`
 
 ```text
 A tiny white robot flipping a giant hourglass over and over, the sand never quite running out, while calendar pages flutter away in the wind.
@@ -1408,7 +1408,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/hyrums-law`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/hyrums-law.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/hyrums-law.png`
 
 ```text
 A tiny white robot oiling a squeaky old door hinge, while dozens of other robots who had been using the squeak as a doorbell come running out, confused.
@@ -1428,7 +1428,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/if-it-aint-broke`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/if-it-aint-broke.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/if-it-aint-broke.png`
 
 ```text
 A tiny white robot resisting the urge to tinker, sitting on a closed toolbox beside a humble old windmill that is happily turning in the breeze.
@@ -1448,7 +1448,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/mechanism-policy`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/mechanism-policy.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/mechanism-policy.png`
 
 ```text
 A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small timetable that decides where each train goes.
@@ -1468,7 +1468,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/ninety-ninety-rule`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/ninety-ninety-rule.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/ninety-ninety-rule.png`
 
 ```text
 A tiny white robot reaching what it thought was the mountain summit, flag in hand, only to see a second, equally tall peak revealed behind it.
@@ -1488,7 +1488,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/power-of-10`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/power-of-10.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/power-of-10.png`
 
 ```text
 A tiny white robot astronaut working through a pre-flight checklist of ten glowing items beside a small rocket on its launch pad.
@@ -1508,7 +1508,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/pristine-sources`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/pristine-sources.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/pristine-sources.png`
 
 ```text
 A tiny white robot drinking from a crystal-clear mountain spring right at its source, while far downstream the same river turns murky with debris.
@@ -1528,7 +1528,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/rule-of-three`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/rule-of-three.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/rule-of-three.png`
 
 ```text
 A tiny white robot noticing it has drawn the same star shape three times on a sheet of paper, and carving a reusable stamp of that star.
@@ -1548,7 +1548,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/uniform-access`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/uniform-access.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/uniform-access.png`
 
 ```text
 A tiny white robot at a vending machine with identical buttons, where some snacks drop out ready-made and others are quietly cooked fresh behind the panel, and the robot cannot tell the difference.
@@ -1568,7 +1568,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/unix-philosophy`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/unix-philosophy.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/unix-philosophy.png`
 
 ```text
 A row of small, simple machines connected by glowing pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.
@@ -1588,7 +1588,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/worse-is-better`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/worse-is-better.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/worse-is-better.png`
 
 ```text
 A small, slightly scruffy sailboat with a happy robot crew already sailing out of the harbour, while a magnificent unfinished golden galleon is still under construction on the dock.
@@ -1608,7 +1608,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/zen-of-python`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/zen-of-python.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/zen-of-python.png`
 
 ```text
 A tiny white robot meditating in a tranquil rock garden, raking clean parallel lines into the sand, a friendly blue-and-yellow snake coiled peacefully on a nearby stone.
@@ -1628,7 +1628,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/laws/zero-one-infinity`
 
-⬜ **Cover**, 1360x850, save as `public/covers/laws/zero-one-infinity.png`
+✅ **Cover**, 1360x850, save as `public/covers/laws/zero-one-infinity.png`
 
 ```text
 A tiny white robot at a bakery counter with three shelves: one empty, one holding exactly one cupcake, and one stretching endlessly into the distance, full of cupcakes.
