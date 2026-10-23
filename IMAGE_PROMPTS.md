@@ -10,7 +10,7 @@ Every page needs two images:
 | **Cover** | Top of the page, under the title | 1360x850 px (16:10) | `public/covers/<section>/<page>.png` |
 | **Card** | Cards on the overview pages that link to it | 1024x1024 px (1:1) | `public/cards/<section>/<page>.png` |
 
-Progress: 0/80 covers, 0/80 cards. Until an image exists, the site shows
+Progress: 24/80 covers, 0/80 cards. Until an image exists, the site shows
 `public/placeholders/cover.webp` or `public/placeholders/card.webp`, so nothing breaks while you work through the list.
 
 ## Workflow
@@ -36,7 +36,7 @@ starring the same tiny white robot; cards are hand-drawn watercolour sketches on
 
 Page: `/core-concepts`
 
-⬜ **Cover**, 1360x850, save as `public/covers/getting-started/core-concepts.png`
+✅ **Cover**, 1360x850, save as `public/covers/getting-started/core-concepts.png`
 
 ```text
 A tiny white robot in a cozy wooden workshop, sorting glowing building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.
@@ -56,7 +56,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/introduction`
 
-⬜ **Cover**, 1360x850, save as `public/covers/getting-started/introduction.png`
+✅ **Cover**, 1360x850, save as `public/covers/getting-started/introduction.png`
 
 ```text
 A tiny white robot standing on a hilltop at dawn, holding up a glowing compass whose needle points toward a distant, orderly city of clean geometric buildings, while a tangled jungle of vines and loose wires lies behind it.
@@ -76,7 +76,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/learning-tour`
 
-⬜ **Cover**, 1360x850, save as `public/covers/getting-started/learning-tour.png`
+✅ **Cover**, 1360x850, save as `public/covers/getting-started/learning-tour.png`
 
 ```text
 A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.
@@ -96,7 +96,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/quick-reference`
 
-⬜ **Cover**, 1360x850, save as `public/covers/getting-started/quick-reference.png`
+✅ **Cover**, 1360x850, save as `public/covers/getting-started/quick-reference.png`
 
 ```text
 A tiny white robot flipping through a huge pocket field guide whose pages pop up into small 3D illustrations, a magnifying glass in one hand and a ribbon bookmark trailing from the book.
@@ -118,7 +118,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/abstraction-principle`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/abstraction-principle.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/abstraction-principle.png`
 
 ```text
 A tiny white robot pulling a single lever on a smooth, minimal control panel, while the panel's transparent back reveals a vast hidden clockwork of thousands of turning gears.
@@ -138,7 +138,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/black-box`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/black-box.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/black-box.png`
 
 ```text
 A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped parcels as they slide out of the other side, with no way to see inside the box.
@@ -158,7 +158,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/code-reuse`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/code-reuse.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/code-reuse.png`
 
 ```text
 A tiny white robot assembling a brand-new little spaceship entirely from well-worn, tested spare parts taken from a tidy shelf of previously built machines.
@@ -178,7 +178,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/do-simplest-thing`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/do-simplest-thing.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/do-simplest-thing.png`
 
 ```text
 A tiny white robot crossing a narrow creek by stepping on a single wooden plank, while an elaborate half-built suspension bridge with idle cranes looms unfinished in the background.
@@ -198,7 +198,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/dry-wet`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/dry-wet.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/dry-wet.png`
 
 ```text
 A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft glow.
@@ -218,7 +218,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/encapsulate-what-changes`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/encapsulate-what-changes.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/encapsulate-what-changes.png`
 
 ```text
 A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy steel box with a standard plug, so the rest of the machine connects to the box instead of the creature.
@@ -238,7 +238,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/kiss`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/kiss.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/kiss.png`
 
 ```text
 A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip gleaming in a small spotlight.
@@ -258,7 +258,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/least-astonishment`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/least-astonishment.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/least-astonishment.png`
 
 ```text
 A tiny white robot pushing a door with a push-plate and the door swinging open exactly as expected, while in the background a bewildered robot tugs at a handle and its door slides straight up into the ceiling.
@@ -278,7 +278,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/least-privilege`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/least-privilege.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/least-privilege.png`
 
 ```text
 A tiny white robot caretaker holding a key ring with just one small key, standing in a long hallway of locked doors where only a single door is open to it.
@@ -298,7 +298,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/orthogonality`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/orthogonality.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/orthogonality.png`
 
 ```text
 A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing light in a neat grid, moving one never disturbing any other.
@@ -318,7 +318,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/robustness-principle`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/robustness-principle.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/robustness-principle.png`
 
 ```text
 A tiny white robot postmaster at a counter cheerfully accepting crumpled, oddly shaped letters from a queue, while sending out only perfectly folded envelopes sealed with red wax.
@@ -338,7 +338,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/single-source-of-truth`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/single-source-of-truth.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/single-source-of-truth.png`
 
 ```text
 Many tiny white robots in a bright round library, all looking at one great glowing book on a central pedestal, thin beams of light connecting each robot's tablet to that single book.
@@ -358,7 +358,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/soc`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/soc.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/soc.png`
 
 ```text
 A tiny white robot arranging a giant bento box, each compartment holding a different neatly separated dish, with nothing spilling over between sections and light glowing from the dividers.
@@ -378,7 +378,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/general/yagni`
 
-⬜ **Cover**, 1360x850, save as `public/covers/general/yagni.png`
+✅ **Cover**, 1360x850, save as `public/covers/general/yagni.png`
 
 ```text
 A tiny white robot strolling lightly across a bridge with only a small backpack, while another robot struggles behind it, buried under an enormous pile of just-in-case gadgets, umbrellas, ladders and spare wheels.
@@ -400,7 +400,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/dip`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/dip.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/dip.png`
 
 ```text
 A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard wall socket, the wiring behind the wall hidden and interchangeable.
@@ -420,7 +420,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/introduction`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/introduction.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/introduction.png`
 
 ```text
 Five tiny white robots each holding up one large glowing pillar, together supporting the roof of a small, sturdy temple.
@@ -440,7 +440,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/isp`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/isp.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/isp.png`
 
 ```text
 A tiny white robot picking a slim, single-purpose remote with three buttons off a wall hook, ignoring a giant remote with hundreds of confusing buttons hanging right next to it.
@@ -460,7 +460,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/lsp`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/lsp.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/lsp.png`
 
 ```text
 A tiny white robot swapping an ordinary light bulb for a fancy smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.
@@ -480,7 +480,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/ocp`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/ocp.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/ocp.png`
 
 ```text
 A tiny white robot snapping a new glowing module onto the side of a sealed, polished machine through a standard socket, without ever opening the machine's casing.
@@ -500,7 +500,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/solid/srp`
 
-⬜ **Cover**, 1360x850, save as `public/covers/solid/srp.png`
+✅ **Cover**, 1360x850, save as `public/covers/solid/srp.png`
 
 ```text
 A calm tiny white robot chef doing one thing perfectly, slicing vegetables, beside a chaotic counter where a stressed robot juggles cooking, washing dishes and answering the phone all at once.
