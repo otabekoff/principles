@@ -50,7 +50,7 @@ Tizim bo'ylab tezkor qidirish uchun qidiruv satridan (`Cmd+K` Mac-da, `Ctrl+K` W
 
 ### Yangi boshlovchilar uchun
 
-1. Avval [Asosiy tushunchalar](/core-concepts) sahifasini o'qib, tamoyil nimaligini va u dizayn andozalaridan (patterns) qanday farq qilishini bilib oling.
+1. Avval [Asosiy tushunchalar](/uz/core-concepts) sahifasini o'qib, tamoyil nimaligini va u dizayn andozalaridan (patterns) qanday farq qilishini bilib oling.
 2. **KISS** (Oddiy saqlang) va **DRY** (Takrorlamang) tamoyillarini o'rganing — ularni har qanday kod bazasida darhol qo'llash juda oson.
 3. Ortiqcha loyihalash va taxminiy kodlardan qochish uchun **YAGNI** tamoyilini o'rganing.
 4. SOLID olamiga birinchi qadam sifatida **Yagona javobgarlik (SRP)** sahifasidan boshlang.

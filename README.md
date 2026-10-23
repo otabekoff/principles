@@ -32,8 +32,9 @@ bun run dev        # http://localhost:5173/
 | `bun run dev` | Start the dev server |
 | `bun run build` | Build the static site into `.vitepress/dist` (fails on dead links) |
 | `bun run preview` | Serve the production build locally |
-| `bun run check` | Run the Mermaid and code-sample checks below |
+| `bun run check` | Run the Mermaid, code-sample and sidebar checks below |
 | `bun run check:mermaid` | Parse every Mermaid diagram |
+| `bun run check:sidebar` | Make sure every sidebar/nav link points at an existing page |
 | `bun run check:code` | Syntax-check every code sample (TS/JS via esbuild, Python, Java 21, Go, Rust; missing toolchains are skipped) |
 | `bun run check:i18n` | Compare each English page with its Uzbek translation (missing pages, code/diagram drift) |
 | `bun run prompts` | Regenerate [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) from the pages' cover scenes |

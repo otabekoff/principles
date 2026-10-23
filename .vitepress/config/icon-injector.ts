@@ -30,8 +30,12 @@ function getIconForLink(link: string): string {
   }
   
   try {
-    const filePath = path.join(process.cwd(), 'src', `${rootLink}.md`);
-    if (fs.existsSync(filePath)) {
+    // A translation can live at a different path than its English page (uz/general/dry vs general/dry-wet),
+    // so fall back to the linked page itself when there is no English file at the same path
+    const filePath = [rootLink, link]
+      .map((l) => path.join(process.cwd(), 'src', `${l}.md`))
+      .find((f) => fs.existsSync(f));
+    if (filePath) {
       const content = fs.readFileSync(filePath, 'utf8');
       const match = content.match(/^icon:\s*(.+)$/m);
       if (match) {

@@ -1,6 +1,6 @@
 ---
 title: Core Concepts
-description: A clear explanation of what design patterns are, where they came from, and why they matter.
+description: A clear explanation of what programming principles are, where they came from, and how they differ from design patterns.
 icon: Shapes
 cardPrompt: "A cute wooden cabinet with three open drawers labelled \"SIMPLICITY\", \"COHESION\" and \"CONTRACTS\", each holding a few smiling building blocks."
 ---
