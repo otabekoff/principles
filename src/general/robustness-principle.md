@@ -2,9 +2,15 @@
 title: Robustness Principle (Postel's Law)
 description: Be conservative in what you send, liberal in what you accept. Resilient, evolvable software interface design.
 icon: ShieldCheck
+cardPrompt: "A crumpled letter on one side and a perfectly folded envelope sealed with violet wax on the other."
 ---
 
 # Robustness Principle (Postel's Law)
+
+<CoverImage src="/covers/general/robustness-principle.webp" alt="Robustness Principle">
+  <h1>Robustness Principle</h1>
+  <p>A tiny white robot postmaster at a counter cheerfully accepting crumpled, oddly shaped letters from a queue, while sending out only perfectly folded envelopes sealed with violet wax.</p>
+</CoverImage>
 
 > "Be conservative in what you do, be liberal in what you accept from others." — *Jon Postel, early Internet pioneer and editor of the TCP specification*
 

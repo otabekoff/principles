@@ -2,9 +2,15 @@
 title: If It Ain't Broke, Don't Fix It
 description: "A pragmatic software engineering adage: Avoid making unnecessary changes to stable, working systems to prevent regression risks."
 icon: Lock
+cardPrompt: "A humble old windmill turning happily in the breeze beside a closed toolbox."
 ---
 
 # If It Ain't Broke, Don't Fix It
+
+<CoverImage src="/covers/laws/if-it-aint-broke.webp" alt="If It Ain't Broke">
+  <h1>If It Ain't Broke</h1>
+  <p>A tiny white robot resisting the urge to tinker, sitting on a closed toolbox beside a humble old windmill that is happily turning in the breeze.</p>
+</CoverImage>
 
 > "If it ain't broke, don't fix it." — Thomas Bertram "Bert" Lance, *Nation's Business* (May 1977)
 

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import fs from 'fs'
 import path from 'path'
 import { joinURL, withoutTrailingSlash } from 'ufo'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
@@ -6,6 +7,28 @@ import { en } from './langs/en'
 import { uz } from './langs/uz'
 import { injectSidebarIcons } from './icon-injector'
 import { MermaidMarkdown } from './mermaid-markdown'
+
+const SITE_URL = 'https://pp.mohirlab.uz/'
+
+// Netlify (pp.mohirlab.uz) serves the site from the domain root; GitHub Pages sets SITE_BASE=/principles/
+const BASE = process.env.SITE_BASE || '/'
+
+const pageUrl = (relativePath: string) =>
+  joinURL(SITE_URL, withoutTrailingSlash(relativePath.replace(/(index)?\.md$/, '')))
+
+const PUBLIC_DIR = path.resolve(__dirname, '../../public')
+
+// Social preview image: the page's <CoverImage> cover, pre-cropped to 1200x630 JPEG in public/og
+// by scripts/optimize-images.py, falling back to the site-wide default image
+function ogImageFor(filePath: string) {
+  try {
+    const cover = fs.readFileSync(filePath, 'utf8').match(/<CoverImage\s+src="\/covers\/([^"]+)\.(?:png|webp)"/)
+    if (cover && fs.existsSync(path.join(PUBLIC_DIR, 'og', `${cover[1]}.jpg`))) {
+      return joinURL(SITE_URL, 'og', `${cover[1]}.jpg`)
+    }
+  } catch {}
+  return joinURL(SITE_URL, 'og', 'default.jpg')
+}
 
 function processLocale(localeObj: any) {
   if (localeObj.themeConfig && localeObj.themeConfig.sidebar) {
@@ -17,28 +40,27 @@ function processLocale(localeObj: any) {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: 'src',
-  base: '/principles/',
+  base: BASE,
   title: "Programming Principles",
   description: "Complete Reference Guide",
   sitemap: {
-    hostname: 'https://otabekoff.github.io/principles/'
+    hostname: SITE_URL
   },
-  ignoreDeadLinks: true,
   metaChunk: true,
   mpa: false,
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/principles/favicon-96x96.png?v=20260516', sizes: '96x96' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/principles/favicon.svg?v=20260516' }],
-    ['link', { rel: 'shortcut icon', href: '/principles/favicon.ico?v=20260516' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/principles/apple-touch-icon.png?v=20260516' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}favicon-96x96.png?v=20261023`, sizes: '96x96' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${BASE}favicon.svg?v=20261023` }],
+    ['link', { rel: 'shortcut icon', href: `${BASE}favicon.ico?v=20261023` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${BASE}apple-touch-icon.png?v=20261023` }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'Programming Principles' }],
-    ['link', { rel: 'manifest', href: '/principles/site.webmanifest?v=20260516' }],
+    ['link', { rel: 'manifest', href: `${BASE}site.webmanifest?v=20261023` }],
     ['meta', { name: 'twitter:site', content: '@otabekoff' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:type', content: 'image/png' }],
+    ['meta', { property: 'og:image:type', content: 'image/jpeg' }],
     ['meta', { property: 'og:site_name', content: 'Programming Principles' }],
     ['meta', { property: 'og:type', content: 'website' }]
   ],
@@ -50,24 +72,7 @@ export default defineConfig({
       const fence = md.renderer.rules.fence!
       md.renderer.rules.fence = function (tokens, idx, options, env, self) {
         const { localeIndex = 'root' } = env
-        const codeCopyButtonTitle = (() => {
-          switch (localeIndex) {
-            case 'uz':
-              return 'Kodni nusxalash'
-            case 'tr':
-              return 'Kodu kopyala'
-            case 'ru':
-              return 'Скопировать код'
-            case 'de':
-              return 'Code kopieren'
-            case 'es':
-              return 'Copiar código'
-            case 'ar':
-              return 'نسخ الكود'
-            default:
-              return 'Copy code'
-          }
-        })()
+        const codeCopyButtonTitle = localeIndex === 'uz' ? 'Kodni nusxalash' : 'Copy code'
         return fence(tokens, idx, options, env, self).replace(
           '<button title="Copy Code" class="copy"></button>',
           `<button title="${codeCopyButtonTitle}" class="copy"></button>`
@@ -84,6 +89,8 @@ export default defineConfig({
       pageData.frontmatter.navbar = false
       pageData.frontmatter.aside = true
     }
+
+    const ogImage = ogImageFor(path.join(siteConfig.srcDir, pageData.relativePath))
 
     pageData.frontmatter.head.push(
       [
@@ -114,27 +121,22 @@ export default defineConfig({
           content: pageData.frontmatter.description || pageData.description || siteConfig.site.description,
         },
       ],
-      [
-        'link',
-        {
-          rel: 'canonical',
-          href: joinURL(
-            'https://otabekoff.github.io/principles/',
-            withoutTrailingSlash(pageData.filePath.replace(/(index)?\.md$/, '')),
-          ),
-        },
-      ],
-      [
-        'meta',
-        {
-          property: 'og:url',
-          content: joinURL(
-            'https://otabekoff.github.io/principles/',
-            withoutTrailingSlash(pageData.filePath.replace(/(index)?\.md$/, '')),
-          ),
-        },
-      ]
+      ['meta', { property: 'og:image', content: ogImage }],
+      ['meta', { name: 'twitter:image', content: ogImage }],
+      ['link', { rel: 'canonical', href: pageUrl(pageData.relativePath) }],
+      ['meta', { property: 'og:url', content: pageUrl(pageData.relativePath) }]
     )
+
+    // hreflang alternates between the English (root) and Uzbek versions of a page
+    const enPath = pageData.relativePath.replace(/^uz\//, '')
+    const uzPath = `uz/${enPath}`
+    if (fs.existsSync(path.join(siteConfig.srcDir, enPath)) && fs.existsSync(path.join(siteConfig.srcDir, uzPath))) {
+      pageData.frontmatter.head.push(
+        ['link', { rel: 'alternate', hreflang: 'en', href: pageUrl(enPath) }],
+        ['link', { rel: 'alternate', hreflang: 'uz', href: pageUrl(uzPath) }],
+        ['link', { rel: 'alternate', hreflang: 'x-default', href: pageUrl(enPath) }]
+      )
+    }
   },
   locales: {
     root: processLocale(en),
@@ -155,11 +157,20 @@ export default defineConfig({
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/otabekoff/principles' }
     ]
   },
   vite: {
-    publicDir: path.resolve(__dirname, '../../public'),
+    publicDir: PUBLIC_DIR,
+    resolve: {
+      // Uzbek-aware "Last updated" date (see the component for why)
+      alias: [
+        {
+          find: /^.*\/VPDocFooterLastUpdated\.vue$/,
+          replacement: path.resolve(__dirname, '../theme/components/LastUpdated.vue')
+        }
+      ]
+    },
     plugins: [
       groupIconVitePlugin({
         customIcon: {

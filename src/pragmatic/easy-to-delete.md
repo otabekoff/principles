@@ -2,9 +2,15 @@
 title: Good Code is Easy to Delete (Optimize for Deletion)
 description: Discover why modularity, encapsulation, and deletability are the ultimate software design goals over premature extensibility.
 icon: Trash2
+cardPrompt: "One building block lifted cleanly out of a small block city, leaving a neat empty gap."
 ---
 
 # Good Code is Easy to Delete (Optimize for Deletion)
+
+<CoverImage src="/covers/pragmatic/easy-to-delete.webp" alt="Easy to Delete">
+  <h1>Easy to Delete</h1>
+  <p>A tiny white robot cleanly lifting one building-block house out of a colourful model city, every other building still standing and connected around the empty spot.</p>
+</CoverImage>
 
 > **"Write code that is easy to delete, not easy to extend."** — *Tef (Programming in the 21st Century)*
 

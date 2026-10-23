@@ -2,13 +2,14 @@
 title: Quick Reference
 description: A concise cheat sheet and guide for all key SOLID, General, Clean Code, Testing, and Software Architecture principles.
 icon: BookMarked
+cardPrompt: "A thick pocket field guide standing upright with a glowing violet ribbon bookmark and a small magnifying glass leaning against it."
 ---
 
 # Quick Reference
 
-<CoverImage src="/covers/getting-started/quick-reference.png" alt="Cover">
+<CoverImage src="/covers/getting-started/quick-reference.webp" alt="Quick Reference">
   <h1>Quick Reference</h1>
-  <p>A massive, clean control panel containing a beautiful array of color-coded glowing buttons, each representing a programming principle, with a tiny operator robot happily sliding a slider.</p>
+  <p>A tiny white robot flipping through a huge pocket field guide whose pages pop up into small 3D illustrations, a magnifying glass in one hand and an violet ribbon bookmark trailing from the book.</p>
 </CoverImage>
 
 A quick reference cheat sheet for the most important programming principles. Use these tables to review principles, identify violations (code smells), and find the best solutions at a glance.

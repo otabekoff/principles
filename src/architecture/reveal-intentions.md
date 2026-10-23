@@ -2,9 +2,15 @@
 title: Reveal Intentions
 description: Write self-documenting code by choosing descriptive names that reflect purpose, structure, and intent.
 icon: Eye
+cardPrompt: "A row of clear glass jars with neat descriptive labels on a pantry shelf."
 ---
 
 # Reveal Intentions
+
+<CoverImage src="/covers/architecture/reveal-intentions.webp" alt="Reveal Intentions">
+  <h1>Reveal Intentions</h1>
+  <p>A tiny white robot fixing clear, descriptive labels onto glass jars in a sunny pantry, next to a dusty shelf of identical unmarked jars nobody can tell apart.</p>
+</CoverImage>
 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler
 

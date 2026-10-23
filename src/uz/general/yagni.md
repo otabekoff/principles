@@ -6,6 +6,11 @@ icon: ShieldAlert
 
 # YAGNI (You Aren't Gonna Need It)
 
+<CoverImage src="/covers/general/yagni.webp" alt="YAGNI (Sizga bu kerak bo'lmaydi)">
+  <h1>YAGNI (Sizga bu kerak bo'lmaydi)</h1>
+  <p>Kichkina oq robot faqat kichik ryukzak bilan ko'prikdan yengil yurib o'tmoqda, uning ortida esa boshqa bir robot "har ehtimolga qarshi" olingan anjomlar, soyabonlar, narvonlar va ehtiyot g'ildiraklardan iborat ulkan uyum ostida qiynalib kelmoqda.</p>
+</CoverImage>
+
 > "Narsalarni faqat ularga haqiqatan ham muhtoj bo'lganingizda yarating, ularga muhtoj bo'lishingizni taxmin qilganingizda emas." — Ron Jeffries, Extreme Programming asoschilaridan biri
 
 **YAGNI (Sizga bu baribir kerak bo'lmaydi)** — Extreme Programming (XP) va moslashuvchan (agile) dasturlashning asosiy tamoyillaridan biridir. U ortiqcha loyihalash va taxminiy kelajak talablariga asoslanib kod yozishdan himoya qiladi.

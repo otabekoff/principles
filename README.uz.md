@@ -72,7 +72,7 @@ src/styles/          # Global uslublar
 
 Loyiha sizga foydali bo‘lsa, qo‘llab-quvvatlang:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## Hissa qo‘shish
 

@@ -2,9 +2,15 @@
 title: Rule of Three
 description: "A code refactoring rule of thumb: Don Roberts' three strikes and you refactor guideline to prevent premature abstractions."
 icon: Hash
+cardPrompt: "Three identical hand-drawn stars on paper next to a freshly carved violet stamp of the same star."
 ---
 
 # Rule of Three (Refactoring)
+
+<CoverImage src="/covers/laws/rule-of-three.webp" alt="Rule of Three">
+  <h1>Rule of Three</h1>
+  <p>A tiny white robot noticing it has drawn the same star shape three times on a sheet of paper, and carving a reusable violet stamp of that star.</p>
+</CoverImage>
 
 > "Two instances of similar code do not require refactoring, but when similar code is used three times, it should be extracted into a new procedure." — Don Roberts
 

@@ -2,9 +2,15 @@
 title: Gall's Law
 description: "A fundamental law of system design: complex working systems invariably evolve from simple working systems."
 icon: TreeDeciduous
+cardPrompt: "A healthy young tree growing from a small sapling, a toppled metal tree lying behind it."
 ---
 
 # Gall's Law
+
+<CoverImage src="/covers/laws/galls-law.webp" alt="Gall's Law">
+  <h1>Gall's Law</h1>
+  <p>A tiny white robot watering a small sapling that has grown into a healthy tree behind it, while beside it a giant tree assembled from scratch out of metal parts lies toppled over.</p>
+</CoverImage>
 
 > "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system." — John Gall (*Systemantics*, 1975)
 

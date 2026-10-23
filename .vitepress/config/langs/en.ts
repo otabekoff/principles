@@ -48,7 +48,7 @@ export const en = {
     langMenuLabel: 'Change language',
     skipToContentLabel: 'Skip to content',
     editLink: {
-      pattern: 'https://github.com/otabekoff/principles/edit/main/:path',
+      pattern: 'https://github.com/otabekoff/principles/edit/main/src/:path',
       text: 'Edit this page on GitHub'
     },
     nav: [
@@ -58,13 +58,11 @@ export const en = {
         text: 'More',
         items: [
           { text: 'Other projects', link: 'https://github.com/otabekoff' },
-          { text: 'Support Us', link: 'https://tirikchilik.uz/uzhandy' }
+          { text: 'Support Us', link: 'https://taps.uz/uzhandy' }
         ]
       }
     ],
     sidebar: [
-      { text: 'Other projects', link: 'https://github.com/otabekoff', target: '_blank', rel: 'noopener noreferrer' },
-      { text: 'Support Us', link: 'https://tirikchilik.uz/uzhandy', target: '_blank', rel: 'noopener noreferrer' },
       {
         text: 'Getting Started',
         collapsed: false,

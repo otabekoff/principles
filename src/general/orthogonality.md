@@ -2,9 +2,15 @@
 title: Orthogonality
 description: Things that are not related conceptually should not be related in the system. Orthogonality promotes modularity, simplicity, and safety.
 icon: Grid
+cardPrompt: "A row of independent mixing-desk sliders, each topped with its own small violet light."
 ---
 
 # Orthogonality
+
+<CoverImage src="/covers/general/orthogonality.webp" alt="Orthogonality">
+  <h1>Orthogonality</h1>
+  <p>A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing violet light in a neat grid, moving one never disturbing any other.</p>
+</CoverImage>
 
 > "The basic idea of orthogonality is that things that are not related conceptually should not be related in the system." — *Dave Thomas & Andy Hunt, The Pragmatic Programmer*
 
@@ -110,7 +116,7 @@ def format_output(value: float, file_format: str) -> str:
 
 ## How to Maintain Orthogonality
 
-* **Keep Code Decoupled**: Avoid writing classes that know too much about their neighbors. Apply the [Law of Demeter](/general/law-of-demeter) and [Separation of Concerns](/general/soc).
+* **Keep Code Decoupled**: Avoid writing classes that know too much about their neighbors. Apply the [Law of Demeter](/architecture/law-of-demeter) and [Separation of Concerns](/general/soc).
 * **Avoid Shared Global State**: When multiple components read and write to the same global variables, their behavior becomes highly dependent on execution timing, destroying orthogonality.
 * **Refactor Coincidental Coupling**: As systems grow, components can naturally drift and become entangled. Actively refactor code to decouple unrelated features when you notice changes starting to cascade.
 

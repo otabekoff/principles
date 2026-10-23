@@ -6,6 +6,11 @@ icon: Layers
 
 # Mas'uliyatlarni ajratish (SoC)
 
+<CoverImage src="/covers/general/soc.webp" alt="Mas'uliyatlarni ajratish (SoC)">
+  <h1>Mas'uliyatlarni ajratish (SoC)</h1>
+  <p>Kichkina oq robot ulkan bento qutisini tartiblamoqda: har bir bo'limda alohida, ozoda taom joylashgan, bo'limlar orasida hech narsa aralashib ketmagan, ajratgichlardan esa binafsha nur taralmoqda.</p>
+</CoverImage>
+
 > "Mas'uliyatlarni ajratish dasturlashdagi eng muhim masala hisoblanadi." — Edsger W. Dijkstra
 
 **Mas'uliyatlarni ajratish (Separation of Concerns - SoC)** dasturni alohida bo'limlarga ajratish tamoyili bo'lib, bunda har bir bo'lim alohida muammo yoki vazifani hal qiladi. 

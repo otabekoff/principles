@@ -2,9 +2,15 @@
 title: The Zen of Python
 description: "A collection of 19 guiding principles for writing clean, simple, and readable computer software."
 icon: Feather
+cardPrompt: "A tranquil raked sand garden with a friendly blue-and-yellow snake coiled on a stone."
 ---
 
 # The Zen of Python
+
+<CoverImage src="/covers/laws/zen-of-python.webp" alt="The Zen of Python">
+  <h1>The Zen of Python</h1>
+  <p>A tiny white robot meditating in a tranquil rock garden, raking clean parallel lines into the sand, a friendly blue-and-yellow snake coiled peacefully on a nearby stone.</p>
+</CoverImage>
 
 > "Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex." 
 

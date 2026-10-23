@@ -2,9 +2,15 @@
 title: Functional Core, Imperative Shell
 description: Build robust systems by wrapping a pure, highly testable functional domain inside an imperative shell.
 icon: LifeBuoy
+cardPrompt: "A perfectly still glowing violet crystal inside a busy transparent outer sphere."
 ---
 
 # Functional Core, Imperative Shell
+
+<CoverImage src="/covers/architecture/functional-core-imperative-shell.webp" alt="Functional Core, Imperative Shell">
+  <h1>Functional Core, Imperative Shell</h1>
+  <p>A glowing, perfectly still violet crystal at the centre of a sphere, surrounded by an outer shell where tiny white robots busily handle deliveries, wires and doors.</p>
+</CoverImage>
 
 **Functional Core, Imperative Shell** (sometimes called *Clean Architecture* or *Ports and Adapters* on a code level) is a powerful structural design pattern. It separates code into two distinct zones: a pure, side-effect-free **Functional Core** that contains all complex business logic, and an **Imperative Shell** that handles all input/output (database, network, UI, filesystem) and orchestrates the core.
 

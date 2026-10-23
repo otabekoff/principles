@@ -2,9 +2,15 @@
 title: Code Reuse
 description: "The software engineering practice of building new software systems using existing, well-tested assets."
 icon: RefreshCw
+cardPrompt: "A tiny spaceship built from mismatched, well-worn spare parts, one glowing violet bolt holding it together."
 ---
 
 # Code Reuse
+
+<CoverImage src="/covers/general/code-reuse.webp" alt="Code Reuse">
+  <h1>Code Reuse</h1>
+  <p>A tiny white robot assembling a brand-new little spaceship entirely from well-worn, tested spare parts taken from a tidy shelf of previously built machines.</p>
+</CoverImage>
 
 > "A little copying is better than a little dependency." — Rob Pike (*Go Proverbs*)
 

@@ -22,6 +22,12 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "check": "bun run check:mermaid && bun run check:code",
+    "check:mermaid": "node scripts/check-mermaid.mjs",
+    "check:code": "node scripts/check-code-samples.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "images": "python scripts/optimize-images.py",
+    "prompts": "node scripts/image-prompts.mjs"
   }
 }

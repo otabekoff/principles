@@ -2,9 +2,15 @@
 title: Single Source of Truth (SSOT)
 description: Ensure every data element is stored exactly once, preventing synchronization errors, stale caches, and conflicting states.
 icon: Database
+cardPrompt: "A single glowing violet book on a pedestal, thin beams of light radiating outward from it."
 ---
 
 # Single Source of Truth (SSOT)
+
+<CoverImage src="/covers/general/single-source-of-truth.webp" alt="Single Source of Truth">
+  <h1>Single Source of Truth</h1>
+  <p>Many tiny white robots in a bright round library, all looking at one great glowing violet book on a central pedestal, thin beams of light connecting each robot's tablet to that single book.</p>
+</CoverImage>
 
 > **"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."**
 

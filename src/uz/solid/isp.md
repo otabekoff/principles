@@ -6,6 +6,11 @@ icon: LayoutGrid
 
 # Interfeysni ajratish tamoyili (ISP)
 
+<CoverImage src="/covers/solid/isp.webp" alt="Interfeysni ajratish tamoyili (ISP)">
+  <h1>Interfeysni ajratish tamoyili (ISP)</h1>
+  <p>Kichkina oq robot devordagi ilgakdan faqat uchta tugmasi bor ixcham, bitta vazifali pultni olmoqda va uning yonida osilib turgan yuzlab chalkash tugmali ulkan pultga e'tibor ham bermayapti.</p>
+</CoverImage>
+
 > "Mijozlar o'zlari ishlatmaydigan metodlarga bog'liq bo'lishga majburlanmasligi kerak." — Robert C. Martin
 
 **Interfeysni ajratish tamoyili (ISP)** interfeyslarning hajmi va diqqat markaziga qaratilgan. U bitta katta, umumiy maqsadli interfeysdan ko'ra, ko'plab kichik, juda aniq interfeyslarga ega bo'lish yaxshiroq ekanligini ta'kidlaydi.

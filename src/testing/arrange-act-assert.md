@@ -2,9 +2,15 @@
 title: Arrange, Act, Assert (3A)
 description: Master the Arrange, Act, Assert (3A) pattern to structure unit tests logically, uniformly, and readably.
 icon: Layers
+cardPrompt: "Three test tubes in a rack: one being set up, one receiving a drop, one glowing with the result colour."
 ---
 
 # Arrange, Act, Assert (3A)
+
+<CoverImage src="/covers/testing/arrange-act-assert.webp" alt="Arrange, Act, Assert">
+  <h1>Arrange, Act, Assert</h1>
+  <p>A tiny white robot scientist in three panels: arranging test tubes on a rack, pouring in a single drop of reagent, and checking the resulting colour against a reference chart.</p>
+</CoverImage>
 
 > **"A clean test should read like a three-act play: set the stage, perform the action, and deliver the resolution."**
 

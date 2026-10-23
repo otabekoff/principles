@@ -2,9 +2,15 @@
 title: Open-Closed Principle (OCP)
 description: A complete guide to Bertrand Meyer's implementation inheritance and Robert C. Martin's polymorphic interface interpretations of OCP.
 icon: Unlock
+cardPrompt: "A sealed polished machine with a new glowing violet module snapped into a socket on its side."
 ---
 
 # Open-Closed Principle (OCP)
+
+<CoverImage src="/covers/solid/ocp.webp" alt="Open-Closed">
+  <h1>Open-Closed</h1>
+  <p>A tiny white robot snapping a new glowing violet module onto the side of a sealed, polished machine through a standard socket, without ever opening the machine's casing.</p>
+</CoverImage>
 
 > **"Software entities (such as classes, modules, and functions) should be open for extension, but closed for modification."** — *Bertrand Meyer*
 

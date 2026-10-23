@@ -50,10 +50,11 @@
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: #10b981;
-  --vp-c-brand-2: #059669;
-  --vp-c-brand-3: #047857;
-  --vp-c-brand-soft: rgba(16, 185, 129, 0.14);
+  /* Violet: -600 for text keeps links readable on white; -700 for button backgrounds */
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #6d28d9;
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.14);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -69,6 +70,13 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+}
+
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #6d28d9;
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.16);
 }
 
 /**
@@ -95,14 +103,14 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #6ee7b7 30%,
-    #10b981
+    #c4b5fd 30%,
+    #8b5cf6
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #10abb9 50%,
-    #10b981 50%
+    #a855f7 50%,
+    #6366f1 50%
   );
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -444,4 +452,30 @@ div[class*="language-"] pre,
 
 :lang(ar) {
   --vp-code-copy-copied-text-content: "تم النسخ";
+}
+
+/* ─── Polish ────────────────────────────────────────────────── */
+
+/* Support card: VitePress gives every markdown h2 a top border, which reads as a stray line here */
+.vp-doc .home-support h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Search shortcut: two separate keycaps instead of VitePress's half-merged "Ctrl|K" pill */
+.DocSearch-Button .DocSearch-Button-Keys {
+  gap: 4px;
+}
+.DocSearch-Button .DocSearch-Button-Key,
+.DocSearch-Button .DocSearch-Button-Key + .DocSearch-Button-Key {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+/* Code blocks: keep the language label clear of the vertical scrollbar on long blocks */
+.vp-doc div[class*='language-'] > span.lang {
+  top: 4px;
+  right: 16px;
 }

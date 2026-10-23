@@ -2,9 +2,15 @@
 title: Uniform Access Principle
 description: "A complete guide to Bertrand Meyer's Uniform Access Principle (UAP), its language implementations (Python, Ruby, C#, JS, C++), and performance tradeoffs."
 icon: Equal
+cardPrompt: "A vending machine with a row of identical buttons, one glowing violet."
 ---
 
 # Uniform Access Principle (UAP)
+
+<CoverImage src="/covers/laws/uniform-access.webp" alt="Uniform Access">
+  <h1>Uniform Access</h1>
+  <p>A tiny white robot at a vending machine with identical buttons, where some snacks drop out ready-made and others are quietly cooked fresh behind the panel, and the robot cannot tell the difference.</p>
+</CoverImage>
 
 > "All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation." — Bertrand Meyer
 

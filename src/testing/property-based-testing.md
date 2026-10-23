@@ -2,9 +2,15 @@
 title: Property-Based Testing
 description: Find edge cases automatically by asserting system invariants across thousands of randomly generated inputs.
 icon: ShieldCheck
+cardPrompt: "A funnel of random colourful marbles pouring in and coming out in a perfectly sorted line."
 ---
 
 # Property-Based Testing
+
+<CoverImage src="/covers/testing/property-based-testing.webp" alt="Property-Based Testing">
+  <h1>Property-Based Testing</h1>
+  <p>A tiny white robot pouring thousands of random colourful marbles into a sorting machine and checking that every single one still comes out in perfect order.</p>
+</CoverImage>
 
 > **"Don't write tests. Write properties, and let the computer generate thousands of test cases to prove them wrong."** — *John Hughes*
 

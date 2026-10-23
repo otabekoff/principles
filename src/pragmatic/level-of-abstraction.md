@@ -2,9 +2,15 @@
 title: Levels of Abstraction
 description: A guide to keeping each block of code on a single, consistent level of abstraction.
 icon: Layout
+cardPrompt: "Three nested magnifying lenses, each showing the same city at a different zoom."
 ---
 
 # Levels of Abstraction
+
+<CoverImage src="/covers/pragmatic/level-of-abstraction.webp" alt="Levels of Abstraction">
+  <h1>Levels of Abstraction</h1>
+  <p>A tiny white robot peering through a row of nested lenses, each lens showing the same place at a different zoom: a continent, a city, a street, and a single brick.</p>
+</CoverImage>
 
 > "Functions should do one thing. They should do it well. They should do it only." — Robert C. Martin
 

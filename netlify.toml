@@ -1,0 +1,9 @@
+# Netlify site for pp.mohirlab.uz. Production deploys come from .github/workflows/deploy.yml
+# (built in CI, then `netlify deploy --prod`), so Netlify itself doesn't build on push.
+# Response headers live in public/_headers so they ship with the build output.
+[build]
+  command = "bun run build"
+  publish = ".vitepress/dist"
+
+[build.environment]
+  SITE_BASE = "/"

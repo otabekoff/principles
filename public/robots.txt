@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://otabekoff.github.io/principles/sitemap.xml
+Sitemap: https://pp.mohirlab.uz/sitemap.xml

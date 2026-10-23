@@ -2,9 +2,15 @@
 title: Command-Query Separation (CQS)
 description: Ensure methods either perform an action or return data, but never both.
 icon: Divide
+cardPrompt: "A counter with two separate service windows, one marked with a question-mark sign and one with a pen sign."
 ---
 
 # Command-Query Separation (CQS)
+
+<CoverImage src="/covers/architecture/cqs.webp" alt="Command-Query Separation">
+  <h1>Command-Query Separation</h1>
+  <p>A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests stamped in violet.</p>
+</CoverImage>
 
 > **"Asking a question should not change the answer."** — *Bertrand Meyer*
 
@@ -205,11 +211,9 @@ To prevent this, the `pop()` method *must* be atomic—combining the query (fetc
 
 ```ts
 // Atomic pop: Violates strict CQS but is critical for thread-safety
-pop(): T {
-  lock(this) {
-    const item = this.elements.pop();
-    return item;
-  }
+async pop(): Promise<T | undefined> {
+  // A mutex (e.g. from async-mutex) makes fetch + remove one indivisible step
+  return this.mutex.runExclusive(() => this.elements.pop());
 }
 ```
 
@@ -220,12 +224,13 @@ Low-level operating system APIs or database operations often require atomic read
 // Atomic update: combines read & write safely
 class AtomicCounter {
   private value = 0;
+  private mutex = new Mutex();
 
-  incrementAndGet(): number {
-    lock(this) {
+  async incrementAndGet(): Promise<number> {
+    return this.mutex.runExclusive(() => {
       this.value++;
       return this.value; // Query + Command in one atomic step
-    }
+    });
   }
 }
 ```

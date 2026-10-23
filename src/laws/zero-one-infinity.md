@@ -2,9 +2,15 @@
 title: Zero-One-Infinity Rule
 description: "A software design rule of thumb: A system should either disallow an entity, allow exactly one, or allow an infinite number."
 icon: Infinity
+cardPrompt: "Three bakery shelves: one empty, one with a single cupcake, one stretching into the distance full of cupcakes."
 ---
 
 # Zero-One-Infinity (ZOI) Rule
+
+<CoverImage src="/covers/laws/zero-one-infinity.webp" alt="Zero-One-Infinity">
+  <h1>Zero-One-Infinity</h1>
+  <p>A tiny white robot at a bakery counter with three shelves: one empty, one holding exactly one cupcake, and one stretching endlessly into the distance, full of cupcakes.</p>
+</CoverImage>
 
 > "The only reasonable numbers are zero, one, and infinity." — Bruce MacLennan
 

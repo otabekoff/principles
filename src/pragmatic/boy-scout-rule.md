@@ -2,9 +2,15 @@
 title: The Boy Scout Rule
 description: Cultivating a clean codebase by leaving it better than you found it.
 icon: Sparkles
+cardPrompt: "A tiny white robot scout hand placing a single piece of litter into a small bag, a clean violet-lit campsite behind."
 ---
 
 # The Boy Scout Rule
+
+<CoverImage src="/covers/pragmatic/boy-scout-rule.webp" alt="The Boy Scout Rule">
+  <h1>The Boy Scout Rule</h1>
+  <p>A tiny white robot scout picking up a single piece of litter as it leaves a forest campsite, the campsite visibly a little cleaner and brighter behind it.</p>
+</CoverImage>
 
 > "Always leave the campground cleaner than you found it." — *Robert C. Martin (adapted from the Boy Scouts of America)*
 

@@ -2,9 +2,15 @@
 title: Principle of Least Astonishment
 description: "A complete guide to the Principle of Least Astonishment (POLA), its 1967 PL/I origins, UX and API applications, and historical system violations."
 icon: Compass
+cardPrompt: "A door with a simple push-plate swinging open exactly as expected, warm violet light spilling through."
 ---
 
 # Principle of Least Astonishment (POLA)
+
+<CoverImage src="/covers/general/least-astonishment.webp" alt="Least Astonishment">
+  <h1>Least Astonishment</h1>
+  <p>A tiny white robot pushing a door with a push-plate and the door swinging open exactly as expected, while in the background a bewildered robot tugs at a handle and its door slides straight up into the ceiling.</p>
+</CoverImage>
 
 > "If a necessary feature has a high astonishment factor, it may be necessary to redesign the feature." — Law of Least Surprise Corollary
 

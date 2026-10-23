@@ -6,6 +6,11 @@ icon: Lightbulb
 
 # KISS (Keep It Simple, Stupid)
 
+<CoverImage src="/covers/general/kiss.webp" alt="KISS (Oddiy saqlang)">
+  <h1>KISS (Oddiy saqlang)</h1>
+  <p>Kichkina oq robot oddiy qog'oz qisqichni g'urur bilan ko'tarib turibdi, uning yonida esa xuddi shu ishni bajaradigan, chayqalib turgan ulkan va murakkab Rube Goldberg mexanizmi qad ko'targan; qisqich yorqin binafsha nur sochmoqda.</p>
+</CoverImage>
+
 > "Oddiylik — eng yuqori darajadagi murakkablikdir." — Leonardo da Vinci
 
 **KISS (Keep It Simple, Stupid - Oddiy saqlang, ahmoqona qilmagan holda)** tamoyili 1960-yilda AQSh Harbiy-havo kuchlari tomonidan qayd etilgan va dasturiy ta'minotda keng qo'llaniladigan loyihalash qoidasidir. Unda aytilishicha, ko'plab tizimlar murakkablashtirilgandan ko'ra oddiy saqlansa eng yaxshi ishlaydi.

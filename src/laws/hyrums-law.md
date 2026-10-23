@@ -2,9 +2,15 @@
 title: Hyrum's Law
 description: With a sufficient number of users of an API, it does not matter what you promise in the contract; all observable behaviors of your system will be depended on by somebody.
 icon: ShieldAlert
+cardPrompt: "An oil can next to an old door hinge, a small doorbell icon fading away."
 ---
 
 # Hyrum's Law
+
+<CoverImage src="/covers/laws/hyrums-law.webp" alt="Hyrum's Law">
+  <h1>Hyrum's Law</h1>
+  <p>A tiny white robot oiling a squeaky old door hinge, while dozens of other robots who had been using the squeak as a doorbell come running out, confused.</p>
+</CoverImage>
 
 > **"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."** — *Hyrum Wright*
 

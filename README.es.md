@@ -72,7 +72,7 @@ src/styles/          # Estilos globales
 
 Si este proyecto te resulta útil, apóyalo:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## Contribuir
 

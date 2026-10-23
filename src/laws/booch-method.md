@@ -2,9 +2,15 @@
 title: Booch Method
 description: "Grady Booch's pioneering object-oriented software development methodology, combining macro and micro design processes."
 icon: Compass
+cardPrompt: "Soft cloud-shaped diagrams floating up off an old drafting sheet."
 ---
 
 # Booch Method
+
+<CoverImage src="/covers/laws/booch-method.webp" alt="Booch Method">
+  <h1>Booch Method</h1>
+  <p>A tiny white robot architect sketching soft cloud-shaped diagrams on an old drafting table, the clouds floating up off the paper and turning into small glowing objects.</p>
+</CoverImage>
 
 > "The recommended practices include adding more classes to simplify complex code." — Grady Booch (*Object Oriented Analysis and Design with Applications*, 1991)
 

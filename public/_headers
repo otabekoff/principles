@@ -1,0 +1,6 @@
+# Netlify response headers (shipped inside the build, so CI deploys pick them up)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/site.webmanifest
+  Content-Type: application/manifest+json

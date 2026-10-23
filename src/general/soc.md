@@ -2,9 +2,15 @@
 title: Separation of Concerns (SoC)
 description: "A complete guide to Edsger W. Dijkstra's Separation of Concerns, its architectural layers, cross-cutting concerns, and real-world network stack applications."
 icon: Layers
+cardPrompt: "A top-down view of a bento box with neatly separated compartments, violet light glowing from the dividers."
 ---
 
 # Separation of Concerns (SoC)
+
+<CoverImage src="/covers/general/soc.webp" alt="Separation of Concerns">
+  <h1>Separation of Concerns</h1>
+  <p>A tiny white robot arranging a giant bento box, each compartment holding a different neatly separated dish, with nothing spilling over between sections and violet light glowing from the dividers.</p>
+</CoverImage>
 
 > "It is what I sometimes have called 'the separation of concerns', which, even if not perfectly possible, is yet the only available technique for effective ordering of one's thoughts, that I know of. This is what I mean by 'focusing one's attention upon some aspect': it does not mean ignoring the other aspects, it is just doing justice to the fact that from this aspect's point of view, the other is irrelevant." — *Edsger W. Dijkstra, 1974*
 

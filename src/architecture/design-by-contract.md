@@ -2,9 +2,15 @@
 title: Design by Contract (DbC)
 description: A complete guide to Bertrand Meyer's Design by Contract (DbC) methodology, focusing on preconditions, postconditions, and class invariants.
 icon: FileSignature
+cardPrompt: "A rolled scroll stamped with three glowing violet wax seals."
 ---
 
 # Design By Contract (DbC)
+
+<CoverImage src="/covers/architecture/design-by-contract.webp" alt="Design by Contract">
+  <h1>Design by Contract</h1>
+  <p>A tiny white robot and a client robot shaking hands over a glowing violet scroll stamped with three wax seals, standing for preconditions, postconditions and invariants.</p>
+</CoverImage>
 
 > **"A software system is a collection of components that interact according to precise specifications. These specifications, or contracts, govern the relationships between a supplier (the implementation) and a client (the caller). If a contract is broken, the fault lies with the party that failed to uphold its terms."** — *Bertrand Meyer (1986)*
 

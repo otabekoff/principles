@@ -2,9 +2,15 @@
 title: Pass the Tests & Testability
 description: A complete philosophy of building highly testable code, organic test growth, and eliminating test friction.
 icon: ShieldCheck
+cardPrompt: "A small toy car crossing a checkpoint gate that lights up violet."
 ---
 
 # Pass the Tests & Testability
+
+<CoverImage src="/covers/testing/pass-the-tests.webp" alt="Pass the Tests">
+  <h1>Pass the Tests</h1>
+  <p>A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up violet as it passes.</p>
+</CoverImage>
 
 > "Software testing is a sport of building confidence. It is not about proving the absence of bugs, but verifying the presence of core functionality."
 
@@ -88,7 +94,7 @@ When you create a fairly straightforward but verbose component (like a complex r
 
 Writing a single "happy path" or mounting test serves two critical purposes:
 - **It bootstraps the testing boilerplate**: It shows that the component is mountable and provides the necessary mocks and setup.
-- **It guides future developers**: Unfamiliar developers (and yourself in six months) will look at your file, copy the single test you wrote, and easily add new tests for their own bug fixes or features (See [Future Developers Will Copy You](file:///d:/vitepress/principles/src/pragmatic/future-developers.md)).
+- **It guides future developers**: Unfamiliar developers (and yourself in six months) will look at your file, copy the single test you wrote, and easily add new tests for their own bug fixes or features (See [Future Developers Will Copy You](/pragmatic/future-developers)).
 
 ---
 
@@ -101,7 +107,7 @@ A developer should be able to read your test file and instantly understand:
 * How the component is instantiated and configured.
 * How exceptional or error conditions are handled.
 
-By treating tests as documentation, developers never have to dive deep into the hairiest parts of the implementation just to understand how to use a module (See [Good Code is Easy to Delete](file:///d:/vitepress/principles/src/pragmatic/easy-to-delete.md)).
+By treating tests as documentation, developers never have to dive deep into the hairiest parts of the implementation just to understand how to use a module (See [Good Code is Easy to Delete](/pragmatic/easy-to-delete)).
 
 ---
 

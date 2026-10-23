@@ -2,9 +2,15 @@
 title: Single Responsibility Principle (SRP)
 description: "A complete guide to Robert C. Martin's Single Responsibility Principle (SRP), its cohesion roots in DeMarco and Page-Jones, and actor-based change analysis."
 icon: Target
+cardPrompt: "A single chef's knife resting beside one neatly sliced vegetable on a clean cutting board."
 ---
 
 # Single Responsibility Principle (SRP)
+
+<CoverImage src="/covers/solid/srp.webp" alt="Single Responsibility">
+  <h1>Single Responsibility</h1>
+  <p>A calm tiny white robot chef doing one thing perfectly, slicing vegetables, beside a chaotic counter where a stressed robot juggles cooking, washing dishes and answering the phone all at once.</p>
+</CoverImage>
 
 > **"A class should never have more than one reason to change."** — *Robert C. Martin*
 

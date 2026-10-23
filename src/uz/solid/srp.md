@@ -6,6 +6,11 @@ icon: Target
 
 # Yagona javobgarlik tamoyili (SRP)
 
+<CoverImage src="/covers/solid/srp.webp" alt="Yagona javobgarlik tamoyili (SRP)">
+  <h1>Yagona javobgarlik tamoyili (SRP)</h1>
+  <p>Xotirjam kichkina oq robot oshpaz bitta ishni mukammal bajarmoqda — sabzavot to'g'ramoqda; uning yonidagi tartibsiz stolda esa asabiy robot bir vaqtning o'zida ovqat pishirish, idish yuvish va telefonga javob berishni eplashga urinmoqda.</p>
+</CoverImage>
+
 > "Klassning o'zgarishi uchun faqat bitta sabab bo'lishi kerak." — Robert C. Martin
 
 **Yagona javobgarlik tamoyili (SRP)** — toza, modulli va oson saqlanadigan dasturiy ta'minot yaratishning eng muhim qoidalaridan biridir. U har bir modul, klass yoki funktsiya dastur tomonidan taqdim etiladigan funktsionallikning faqat bitta qismi uchun javobgar bo'lishi va bu javobgarlik to'liq klass ichiga olingan bo'lishi kerakligini belgilaydi.

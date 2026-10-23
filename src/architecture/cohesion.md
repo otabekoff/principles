@@ -2,9 +2,15 @@
 title: Cohesion (Computer Science)
 description: "A deep dive into the types, metrics, advantages, and trade-offs of cohesion within software modules."
 icon: Shield
+cardPrompt: "An open bicycle-repair toolbox with every compartment holding a tool for that one job."
 ---
 
 # Maximise Cohesion
+
+<CoverImage src="/covers/architecture/cohesion.webp" alt="Cohesion">
+  <h1>Cohesion</h1>
+  <p>A tiny white robot opening a perfectly organised bicycle-repair toolbox where every compartment holds a tool for that one job and nothing unrelated is inside.</p>
+</CoverImage>
 
 > **"Cohesion of a single module or component is the degree to which its responsibilities form a meaningful unit. Higher cohesion is always better."**
 
@@ -39,14 +45,14 @@ In contrast, low cohesion creates "Swiss Army Knife" modules that do too many un
 
 ```mermaid
 graph TD
-    subgraph Low Cohesion (Bloated Module)
+    subgraph low ["Low Cohesion (Bloated Module)"]
         M1[UserManager] --> A[Save User to DB]
         M1 --> B[Hash Password]
         M1 --> C[Send Email Alert]
         M1 --> D[Format Invoice PDF]
     end
     
-    subgraph High Cohesion (Focused Modules)
+    subgraph high ["High Cohesion (Focused Modules)"]
         Repo[UserRepository] --> A1[Save User to DB]
         Crypto[PasswordHasher] --> B1[Hash Password]
         Email[MailService] --> C1[Send Email Alert]

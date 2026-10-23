@@ -72,7 +72,7 @@ src/styles/          # Globale Styles
 
 Wenn dir das Projekt hilft, unterstütze es gerne:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## Mitwirken
 

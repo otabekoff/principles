@@ -2,9 +2,15 @@
 title: Conway's Law
 description: Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
 icon: GitCommit
+cardPrompt: "A bridge made of four distinct sections, each shaped like the island it starts from."
 ---
 
 # Conway's Law
+
+<CoverImage src="/covers/laws/conways-law.webp" alt="Conway's Law">
+  <h1>Conway's Law</h1>
+  <p>Four teams of tiny white robots on four separate islands, each building its own piece of a bridge, the finished bridge having four distinct sections that mirror the shapes of the islands.</p>
+</CoverImage>
 
 > **"Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations."** — *Melvin Conway (1967)*
 

@@ -2,9 +2,15 @@
 title: The ZOMBIES Strategy
 description: Apply the ZOMBIES mnemonic for systematic, test-driven problem-solving and comprehensive edge-case testing.
 icon: Skull
+cardPrompt: "A cute, friendly cartoon zombie robot holding an empty box, a single apple and a basket of apples."
 ---
 
 # The ZOMBIES Strategy
+
+<CoverImage src="/covers/testing/zombies-strategy.webp" alt="The ZOMBIES Strategy">
+  <h1>The ZOMBIES Strategy</h1>
+  <p>A line of cute, friendly cartoon zombie robots shuffling toward a tiny white robot tester, each carrying a different object: an empty box, a single apple, a basket of apples, a little fence, a plug, a spark and a checkmark.</p>
+</CoverImage>
 
 **ZOMBIES** is a highly effective mnemonic and strategy for step-by-step problem-solving, particularly useful when practicing Test-Driven Development (TDD). It provides a structured, progressive checklist that helps you break complex coding problems down into small, highly manageable increments, ensuring comprehensive test coverage and robust boundary handling.
 

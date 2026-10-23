@@ -2,9 +2,15 @@
 title: Avoid Premature Optimization
 description: A complete guide on why premature optimization is the root of all evil in programming.
 icon: ZapOff
+cardPrompt: "A polished chrome race-car wheel on a car body with an empty, open engine bay."
 ---
 
 # Avoid Premature Optimization
+
+<CoverImage src="/covers/pragmatic/premature-optimization.webp" alt="Premature Optimization">
+  <h1>Premature Optimization</h1>
+  <p>A tiny white robot lovingly polishing the chrome wheels of a race car that has no engine yet, while a stopwatch lies forgotten on the garage floor.</p>
+</CoverImage>
 
 > "Premature optimization is the root of all evil in programming." — Donald Knuth
 

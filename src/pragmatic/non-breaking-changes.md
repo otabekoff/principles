@@ -2,9 +2,15 @@
 title: Make Non-Breaking Changes
 description: Avoid the mud of endless refactoring by making incremental, non-breaking modifications.
 icon: FastForward
+cardPrompt: "A new modern bridge built right beside an old one, small cars still crossing the old bridge."
 ---
 
 # Make Non-Breaking Changes
+
+<CoverImage src="/covers/pragmatic/non-breaking-changes.webp" alt="Non-Breaking Changes">
+  <h1>Non-Breaking Changes</h1>
+  <p>A tiny white robot crew building a new modern bridge right beside an old one, little cars still flowing over the old bridge until the new one is ready to open.</p>
+</CoverImage>
 
 > "Keep the engine running while you swap the parts."
 
@@ -42,7 +48,7 @@ Now, the entire build is broken, and you must update all 200 callers before you 
 
 Instead, keep `url` as an optional deprecated prop and introduce the new prop alongside it:
 
-```ts
+```tsx
 //  Non-Breaking Change
 interface AvatarProps {
   /** @deprecated Use imageUrl instead */

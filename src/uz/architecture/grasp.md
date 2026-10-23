@@ -6,6 +6,11 @@ icon: Zap
 
 # GRASP
 
+<CoverImage src="/covers/architecture/grasp.webp" alt="GRASP">
+  <h1>GRASP</h1>
+  <p>Qurilish maydonidagi kichkina oq robot usta har bir vazifani aynan unga kerakli asboblar va chizmalarga ega bo'lgan sherik robotga topshirmoqda.</p>
+</CoverImage>
+
 > **GRASP** — **General Responsibility Assignment Software Patterns (Mas'uliyatni taqsimlashning umumiy dasturiy naqshlari/tamoyillari)** so'zlarining qisqartmasidir.
 
 Craig Larman tomonidan taklif qilingan GRASP — bu obyektga yo'naltirilgan loyihalashda klasslar va ob'ektlarga mas'uliyatlarni (metodlar va vazifalarni) to'g'ri va mantiqiy taqsimlashga yordam beradigan 9 ta asosiy tamoyillar to'plamidir.

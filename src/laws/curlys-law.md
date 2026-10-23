@@ -2,9 +2,15 @@
 title: Curly's Law (Do One Thing)
 description: Choose a single, clearly defined goal for any particular bit of code. Do One Thing.
 icon: Target
+cardPrompt: "A cowboy hat beside a single perfectly sharpened tool."
 ---
 
 # Curly's Law (Do One Thing)
+
+<CoverImage src="/covers/laws/curlys-law.webp" alt="Curly's Law">
+  <h1>Curly's Law</h1>
+  <p>A tiny white robot cowboy at sunset holding up a single finger, one perfectly sharpened tool hanging from its belt.</p>
+</CoverImage>
 
 > **Curly**: Do you know what the secret of life is?  
 > **Mitch**: No. What?  

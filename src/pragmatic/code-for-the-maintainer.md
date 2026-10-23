@@ -2,9 +2,15 @@
 title: Code for the Maintainer
 description: Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.
 icon: Heart
+cardPrompt: "A wooden trail signpost with a friendly handwritten note pinned to it, glowing violet in the dusk."
 ---
 
 # Code for the Maintainer
+
+<CoverImage src="/covers/pragmatic/code-for-the-maintainer.webp" alt="Code for the Maintainer">
+  <h1>Code for the Maintainer</h1>
+  <p>A tiny white robot planting clear violet signposts and leaving friendly handwritten notes along a mountain trail for a future traveller robot just visible far behind.</p>
+</CoverImage>
 
 > "Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live." — *John Woods (popularized by Damian Conway)*
 

@@ -2,9 +2,15 @@
 title: GRASP (General Responsibility Assignment Software Patterns)
 description: A complete architectural guide to the nine fundamental principles of GRASP for object-oriented responsibility assignment.
 icon: Zap
+cardPrompt: "A hard hat and a rolled blueprint being handed from one robot hand to another."
 ---
 
 # GRASP (General Responsibility Assignment Software Patterns)
+
+<CoverImage src="/covers/architecture/grasp.webp" alt="GRASP">
+  <h1>GRASP</h1>
+  <p>A tiny white robot foreman on a construction site handing each task to the teammate robot that already holds the right tools and plans for it.</p>
+</CoverImage>
 
 > "The critical design tool for software development is a mind well educated in design principles. It is not UML or any other technology." — Craig Larman, *Applying UML and Patterns*
 

@@ -2,9 +2,15 @@
 title: Brooks's Law
 description: Adding human resources to a late software project makes it later.
 icon: UserMinus
+cardPrompt: "A small raft sinking under too many robot workers crowded onto it."
 ---
 
 # Brooks's Law
+
+<CoverImage src="/covers/laws/brookss-law.webp" alt="Brooks's Law">
+  <h1>Brooks's Law</h1>
+  <p>A tiny white robot foreman watching in dismay as more and more robots crowd onto a small half-built raft, slowing the work and making it sink lower, while a clock tower ticks behind them.</p>
+</CoverImage>
 
 > **"Adding human resources to a late software project makes it later."** — *Fred Brooks (The Mythical Man-Month, 1975)*
 

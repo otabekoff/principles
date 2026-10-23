@@ -2,9 +2,15 @@
 title: Law of Demeter (LoD)
 description: A complete guide to the Law of Demeter (Principle of Least Knowledge), its history, formal rules, and tradeoffs.
 icon: GitPullRequest
+cardPrompt: "An outstretched hand offering a single coin to a shopkeeper's open palm."
 ---
 
 # Law of Demeter (LoD)
+
+<CoverImage src="/covers/architecture/law-of-demeter.webp" alt="Law of Demeter">
+  <h1>Law of Demeter</h1>
+  <p>A tiny white robot shopkeeper politely accepting a coin from a customer's outstretched hand, instead of reaching into the customer's pocket to rummage through their wallet.</p>
+</CoverImage>
 
 > "Talk only to your immediate friends; never talk to strangers."
 

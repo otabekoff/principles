@@ -2,9 +2,15 @@
 title: Pristine Sources
 description: "A release management philosophy stating that original upstream source archives must be kept completely unmodified."
 icon: Archive
+cardPrompt: "A crystal-clear mountain spring bubbling out of a rock."
 ---
 
 # Pristine Sources
+
+<CoverImage src="/covers/laws/pristine-sources.webp" alt="Pristine Sources">
+  <h1>Pristine Sources</h1>
+  <p>A tiny white robot drinking from a crystal-clear mountain spring right at its source, while far downstream the same river turns murky with debris.</p>
+</CoverImage>
 
 > "The original, unmodified source code provided by upstream developers must be kept completely untouched by package maintainers." — Marc Ewing
 
