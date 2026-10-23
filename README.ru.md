@@ -72,7 +72,7 @@ src/styles/          # Глобальные стили
 
 Если проект вам полезен, поддержите его:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## Вклад
 

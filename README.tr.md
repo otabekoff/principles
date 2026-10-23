@@ -72,7 +72,7 @@ src/styles/          # Global stiller
 
 Bu proje işinize yarıyorsa destek olabilirsiniz:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## Katkıda Bulunma
 

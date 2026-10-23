@@ -72,7 +72,7 @@ src/styles/          # أنماط عامة
 
 إذا كان هذا المشروع مفيدًا لك، يمكنك دعمه:
 
-- https://tirikchilik.uz/uzhandy
+- https://taps.uz/uzhandy
 
 ## المساهمة
 
