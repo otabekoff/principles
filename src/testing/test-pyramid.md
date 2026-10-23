@@ -6,6 +6,11 @@ icon: Play
 
 # The Test Pyramid
 
+<CoverImage src="/covers/testing/test-pyramid.webp" alt="The Test Pyramid">
+  <h1>The Test Pyramid</h1>
+  <p>A tiny white robot building a pyramid from a broad base of many small amber bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.</p>
+</CoverImage>
+
 > **"The Test Pyramid is a great visual metaphor that tells you to think about different groups of software tests. It also explains how many tests you should have in each of these groups."** — *Martin Fowler*
 
 The **Test Pyramid** (originally formulated by **Mike Cohn** in his 2009 book *Succeeding with Agile*) is a software testing paradigm. It provides a structural blueprint for designing a healthy, fast, and highly reliable automated test suite by balancing three distinct categories of tests: **Unit Tests**, **Integration Tests**, and **End-to-End (E2E) Tests**.

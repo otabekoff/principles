@@ -27,7 +27,7 @@ features:
     icon: 🧱
   - title: DRY
     details: Don't Repeat Yourself. Minimize duplication and improve maintainability.
-    link: /general/dry
+    link: /general/dry-wet
     linkText: Explore DRY
     icon: 🔄
   - title: KISS & YAGNI
@@ -37,7 +37,7 @@ features:
     icon: 💡
   - title: Demeter & GRASP
     details: Law of Demeter, Separation of Concerns, and General Responsibility Assignment Software Patterns.
-    link: /general/law-of-demeter
+    link: /architecture/law-of-demeter
     linkText: Explore Design Rules
     icon: 📐
 ---
@@ -50,25 +50,25 @@ features:
 <div class="home-feature-card">
 <div class="home-feature-icon">🎯</div>
 <h3 class="home-feature-title">Find the right fit</h3>
-<p class="home-feature-desc">Identify when a pattern fits, when it doesn't, and explore modern alternatives.</p>
+<p class="home-feature-desc">Recognise which principle applies to the problem in front of you, and when it doesn't.</p>
 </div>
 
 <div class="home-feature-card">
 <div class="home-feature-icon">⚖️</div>
 <h3 class="home-feature-title">Weigh the tradeoffs</h3>
-<p class="home-feature-desc">Compare the pros, cons, complexity, and exact runtime costs of each solution.</p>
+<p class="home-feature-desc">See where principles pull against each other, like DRY vs. coupling or KISS vs. flexibility.</p>
 </div>
 
 <div class="home-feature-card">
 <div class="home-feature-icon">🧩</div>
-<h3 class="home-feature-title">Combine them safely</h3>
-<p class="home-feature-desc">Compose multiple patterns elegantly without over-design or added complexity.</p>
+<h3 class="home-feature-title">Review code with a shared vocabulary</h3>
+<p class="home-feature-desc">Name the problem in a code review and point to the reasoning behind the fix.</p>
 </div>
 
 <div class="home-feature-card">
 <div class="home-feature-icon">🚀</div>
 <h3 class="home-feature-title">Build with confidence</h3>
-<p class="home-feature-desc">Implement using hands-on decision guides and production-ready examples.</p>
+<p class="home-feature-desc">Apply each principle through side-by-side code examples and real-world tradeoffs.</p>
 </div>
 </div>
 </div>
@@ -76,5 +76,5 @@ features:
 <div class="home-support">
 <h2>Support the project</h2>
 <p>Your support keeps Programming Principles free, accurate, and evolving.</p>
-<a href="https://tirikchilik.uz/uzhandy" target="_blank" class="VPButton medium brand" style="text-decoration: none;">Support Us</a>
+<a href="https://taps.uz/uzhandy" target="_blank" class="VPButton medium brand" style="text-decoration: none;">Support Us</a>
 </div>

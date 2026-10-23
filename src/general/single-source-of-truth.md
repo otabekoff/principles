@@ -6,6 +6,11 @@ icon: Database
 
 # Single Source of Truth (SSOT)
 
+<CoverImage src="/covers/general/single-source-of-truth.webp" alt="Single Source of Truth">
+  <h1>Single Source of Truth</h1>
+  <p>Many tiny white robots in a bright round library, all looking at one great glowing amber book on a central pedestal, thin beams of light connecting each robot's tablet to that single book.</p>
+</CoverImage>
+
 > **"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."**
 
 In software architecture, **Single Source of Truth (SSOT)** is the practice of structuring information systems such that every data element is stored exactly once. Any future references or modifications to that data must route back to this primary authoritative representation.

@@ -6,6 +6,11 @@ icon: Shield
 
 # The Power of 10 Safety Rules
 
+<CoverImage src="/covers/laws/power-of-10.webp" alt="The Power of 10">
+  <h1>The Power of 10</h1>
+  <p>A tiny white robot astronaut working through a pre-flight checklist of ten glowing amber items beside a small rocket on its launch pad.</p>
+</CoverImage>
+
 > "Rules are like guardrails on a mountain road; they keep you on track when things get slippery." — Gerard J. Holzmann
 
 **The Power of 10 Rules** was created in 2006 by **Gerard J. Holzmann** of the **NASA/JPL Laboratory for Reliable Software**. The rules are specifically intended to eliminate certain C coding practices that make code difficult to review, test, or statically analyze. They are designed to guarantee absolute predictability in **safety-critical** software (such as spacecraft flight controls, medical life-support systems, or automotive throttle controllers).

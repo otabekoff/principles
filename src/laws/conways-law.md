@@ -6,6 +6,11 @@ icon: GitCommit
 
 # Conway's Law
 
+<CoverImage src="/covers/laws/conways-law.webp" alt="Conway's Law">
+  <h1>Conway's Law</h1>
+  <p>Four teams of tiny white robots on four separate islands, each building its own piece of a bridge, the finished bridge having four distinct sections that mirror the shapes of the islands.</p>
+</CoverImage>
+
 > **"Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations."** — *Melvin Conway (1967)*
 
 **Conway's Law** is a sociological and architectural principle stating that **a software system's structure will inevitably mirror the communication channels and team boundaries of the organization that built it.**

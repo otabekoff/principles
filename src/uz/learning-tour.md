@@ -6,9 +6,9 @@ icon: BookOpen
 
 # O'rganish sayohati
 
-<CoverImage src="/covers/getting-started/learning-tour.png" alt="Cover">
+<CoverImage src="/covers/getting-started/learning-tour.webp" alt="O'rganish sayohati">
   <h1>O'rganish sayohati</h1>
-  <p>Dasturlash tamoyillarini ifodalovchi rang-barang va yorqin tugmalarga ega ulkan boshqaruv paneli va undagi slayderni baxtli boshqarayotgan kichik robot operatori.</p>
+  <p>Kichkina ryukzak taqqan va qo'lida qog'oz xarita ochib olgan kichkina oq robot porlayotgan qahrabo rang toshlardan iborat egri-bugri so'qmoq bo'ylab sakrab bormoqda; so'qmoq bir qator mitti orollarni bog'laydi va har bir orolda o'ziga xos kichik yodgorlik qad rostlagan.</p>
 </CoverImage>
 
 Ushbu sayohat Dasturlash tamoyillari (Programming Principles) hujjatlari qanday tuzilganligini, har bir sahifada nimalar borligini va o'zingiz xohlagan narsaga qarab saytda qanday samarali harakat qilish kerakligini tushuntiradi.
@@ -50,7 +50,7 @@ Tizim bo'ylab tezkor qidirish uchun qidiruv satridan (`Cmd+K` Mac-da, `Ctrl+K` W
 
 ### Yangi boshlovchilar uchun
 
-1. Avval [Asosiy tushunchalar](/uz/core-concepts) sahifasini o'qib, tamoyil nimaligini va u dizayn andozalaridan (patterns) qanday farq qilishini bilib oling.
+1. Avval [Asosiy tushunchalar](/core-concepts) sahifasini o'qib, tamoyil nimaligini va u dizayn andozalaridan (patterns) qanday farq qilishini bilib oling.
 2. **KISS** (Oddiy saqlang) va **DRY** (Takrorlamang) tamoyillarini o'rganing — ularni har qanday kod bazasida darhol qo'llash juda oson.
 3. Ortiqcha loyihalash va taxminiy kodlardan qochish uchun **YAGNI** tamoyilini o'rganing.
 4. SOLID olamiga birinchi qadam sifatida **Yagona javobgarlik (SRP)** sahifasidan boshlang.

@@ -6,6 +6,11 @@ icon: Eye
 
 # Reveal Intentions
 
+<CoverImage src="/covers/architecture/reveal-intentions.webp" alt="Reveal Intentions">
+  <h1>Reveal Intentions</h1>
+  <p>A tiny white robot fixing clear, descriptive labels onto glass jars in a sunny pantry, next to a dusty shelf of identical unmarked jars nobody can tell apart.</p>
+</CoverImage>
+
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler
 
 The principle of **Revealing Intentions** suggests that code should be self-documenting. By choosing descriptive names for variables, functions, and classes that reflect their true purpose and structure, you allow other developers (and your future self) to understand the code at a glance without having to decipher ambiguous meanings.

@@ -6,9 +6,9 @@ icon: Shapes
 
 # Core concepts
 
-<CoverImage src="/covers/getting-started/core-concepts.png" alt="Cover">
+<CoverImage src="/covers/getting-started/core-concepts.webp" alt="Core Concepts">
   <h1>Core Concepts</h1>
-  <p>A wizard-hat robot sitting in a floating library, pointing a magic wand at a shelf of glowing, transparent 3D blueprints (a bridge, a castle gate, a shield) that fit perfectly over chaotic piles of jumbled toy blocks.</p>
+  <p>A tiny white robot in a cozy wooden workshop, sorting glowing amber building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.</p>
 </CoverImage>
 
 A **programming principle** is a fundamental rule of thumb, guideline, or best practice that helps software developers design clean, maintainable, and robust systems. Unlike design patterns, which are concrete structural templates for specific problems, principles are more general, high-level guidelines that apply across all programming paradigms and situations.

@@ -6,6 +6,11 @@ icon: Lock
 
 # Principle of Least Privilege
 
+<CoverImage src="/covers/general/least-privilege.webp" alt="Least Privilege">
+  <h1>Least Privilege</h1>
+  <p>A tiny white robot caretaker holding a key ring with just one small amber key, standing in a long hallway of locked doors where only a single door is open to it.</p>
+</CoverImage>
+
 > **"Every program and every privileged user of the system should operate using the least set of privileges necessary to complete the job."** — *Jerome Saltzer (CACM, 1974)*
 
 The **Principle of Least Privilege (PoLP)** is a fundamental security concept in software design and system administration. It dictates that **any user, process, program, or system component must only have access to the specific information and resources necessary to complete its legitimate, authorized purpose—and absolutely nothing more.**
@@ -95,7 +100,7 @@ Only expose methods and fields that are absolutely necessary for consumers. Keep
 class OrderProcessor {
   public orders: Order[] = []; // Mutate from anywhere! Very dangerous.
   
-  public process() { ... }
+  public process() { /* ... */ }
 }
 
 // CONFORMING to PoLP: Internal state is read-only for consumers
@@ -106,7 +111,7 @@ class OrderProcessor {
     return this._orders; // Exposes read-only projection
   }
 
-  public process() { ... }
+  public process() { /* ... */ }
 }
 ```
 

@@ -6,6 +6,11 @@ icon: LayoutGrid
 
 # Interface Segregation Principle (ISP)
 
+<CoverImage src="/covers/solid/isp.webp" alt="Interface Segregation">
+  <h1>Interface Segregation</h1>
+  <p>A tiny white robot picking a slim, single-purpose remote with three buttons off a wall hook, ignoring a giant remote with hundreds of confusing buttons hanging right next to it.</p>
+</CoverImage>
+
 > **"Reduce fat interfaces into multiple smaller and more specific client-specific interfaces. An interface should be more dependent on the code that calls it than the code that implements it."** — *Robert C. Martin*
 
 The **Interface Segregation Principle (ISP)** represents the **I** in the **SOLID** programming principles. 

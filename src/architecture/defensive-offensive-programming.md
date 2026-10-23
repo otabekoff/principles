@@ -6,6 +6,11 @@ icon: ShieldAlert
 
 # Defensive & Offensive Programming
 
+<CoverImage src="/covers/architecture/defensive-offensive-programming.webp" alt="Defensive & Offensive Programming">
+  <h1>Defensive & Offensive Programming</h1>
+  <p>A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud amber alarm bell at the very first sign of trouble.</p>
+</CoverImage>
+
 In systems design, developers often debate how to handle unexpected inputs and runtime errors. **Defensive Programming** and **Offensive Programming** represent two distinct, yet highly complementary, strategies for ensuring system integrity, security, and reliability.
 
 ---

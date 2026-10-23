@@ -6,6 +6,11 @@ icon: Unlock
 
 # Open-Closed Principle (OCP)
 
+<CoverImage src="/covers/solid/ocp.webp" alt="Open-Closed">
+  <h1>Open-Closed</h1>
+  <p>A tiny white robot snapping a new glowing amber module onto the side of a sealed, polished machine through a standard socket, without ever opening the machine's casing.</p>
+</CoverImage>
+
 > **"Software entities (such as classes, modules, and functions) should be open for extension, but closed for modification."** — *Bertrand Meyer*
 
 The **Open-Closed Principle (OCP)** is the structural cornerstone of modern object-oriented design and represents the **O** in the **SOLID** design acronym. It describes an elegant architectural goal: you should be able to alter or modify the behavior of an entity *without altering its underlying source code*.

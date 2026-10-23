@@ -6,9 +6,9 @@ icon: BookOpen
 
 # Learning Tour
 
-<CoverImage src="/covers/getting-started/learning-tour.png" alt="Cover">
+<CoverImage src="/covers/getting-started/learning-tour.webp" alt="Learning Tour">
   <h1>Learning Tour</h1>
-  <p>A cheerful robot tour guide driving a tiny, sleek futuristic hover-bus filled with little curious baby robots peering out of the windows at grand, floating monuments representing SOLID, DRY, and GRASP principles.</p>
+  <p>A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing amber stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.</p>
 </CoverImage>
 
 This learning tour explains how the Programming Principles documentation is structured, what each page contains, and how to navigate effectively depending on what you're trying to do.

@@ -6,6 +6,11 @@ icon: Lock
 
 # If It Ain't Broke, Don't Fix It
 
+<CoverImage src="/covers/laws/if-it-aint-broke.webp" alt="If It Ain't Broke">
+  <h1>If It Ain't Broke</h1>
+  <p>A tiny white robot resisting the urge to tinker, sitting on a closed toolbox beside a humble old windmill that is happily turning in the breeze.</p>
+</CoverImage>
+
 > "If it ain't broke, don't fix it." — Thomas Bertram "Bert" Lance, *Nation's Business* (May 1977)
 
 **If It Ain't Broke, Don't Fix It** is one of the most famous pragmatic rules of thumb in management, engineering, and systems theory. It cautions designers, managers, and developers against intervening in stable, self-regulating, and functional systems, warning that unnecessary modifications almost always introduce new regression risks, bugs, and instability.

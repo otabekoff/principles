@@ -6,6 +6,11 @@ icon: Award
 
 # Behavior-Driven Development (BDD)
 
+<CoverImage src="/covers/testing/behavior-driven-development.webp" alt="Behavior-Driven Development">
+  <h1>Behavior-Driven Development</h1>
+  <p>A tiny white robot and a stakeholder robot reading together from a large storybook whose pages unfold into three illustrated scenes: the setup, the action and the outcome.</p>
+</CoverImage>
+
 > **"BDD is a second-generation, agile software development process that blends Test-Driven Development (TDD) with domain-driven design and acceptance-test-driven planning to provide software development and management teams with shared tools and a shared process."** — *Dan North*
 
 **Behavior-Driven Development (BDD)** is an agile software development methodology designed to bridge the communication gap between technical developers and non-technical business stakeholders (such as Product Managers, QA analysts, and clients). 

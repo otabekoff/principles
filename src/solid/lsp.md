@@ -6,6 +6,11 @@ icon: Repeat
 
 # Liskov Substitution Principle (LSP)
 
+<CoverImage src="/covers/solid/lsp.webp" alt="Liskov Substitution">
+  <h1>Liskov Substitution</h1>
+  <p>A tiny white robot swapping an ordinary light bulb for a fancy amber smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.</p>
+</CoverImage>
+
 > **"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."** — *Barbara Liskov*
 
 The **Liskov Substitution Principle (LSP)** represents the **L** in the **SOLID** programming principles. It focuses entirely on the expected behavioral semantics of object hierarchies, ensuring that subclass polymorphism does not silently introduce bugs or alter program correctness.

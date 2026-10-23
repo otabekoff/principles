@@ -6,6 +6,11 @@ icon: Zap
 
 # GRASP (General Responsibility Assignment Software Patterns)
 
+<CoverImage src="/covers/architecture/grasp.webp" alt="GRASP">
+  <h1>GRASP</h1>
+  <p>A tiny white robot foreman on a construction site handing each task to the teammate robot that already holds the right tools and plans for it.</p>
+</CoverImage>
+
 > "The critical design tool for software development is a mind well educated in design principles. It is not UML or any other technology." — Craig Larman, *Applying UML and Patterns*
 
 **GRASP** is an acronym for **General Responsibility Assignment Software Patterns (or Principles)**. First published by computer scientist **Craig Larman** in his seminal 1997 book *Applying UML and Patterns*, GRASP is a unified mental framework of nine core principles designed to guide software engineers in a fundamental task: **assigning responsibilities to classes and objects.**

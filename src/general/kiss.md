@@ -6,6 +6,11 @@ icon: Lightbulb
 
 # KISS (Keep It Simple, Stupid)
 
+<CoverImage src="/covers/general/kiss.webp" alt="KISS">
+  <h1>KISS</h1>
+  <p>A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip glowing warm amber.</p>
+</CoverImage>
+
 > "Simplicity is the ultimate sophistication." — *Leonardo da Vinci*
 >
 > "It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away." — *Antoine de Saint-Exupéry*

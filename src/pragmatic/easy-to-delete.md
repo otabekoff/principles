@@ -6,6 +6,11 @@ icon: Trash2
 
 # Good Code is Easy to Delete (Optimize for Deletion)
 
+<CoverImage src="/covers/pragmatic/easy-to-delete.webp" alt="Easy to Delete">
+  <h1>Easy to Delete</h1>
+  <p>A tiny white robot cleanly lifting one building-block house out of a colourful model city, every other building still standing and connected around the empty spot.</p>
+</CoverImage>
+
 > **"Write code that is easy to delete, not easy to extend."** — *Tef (Programming in the 21st Century)*
 
 When we think about software design, we are historically trained to prioritize extensibility, reusability, and complex inheritance hierarchies. We strive to make code "easy to extend" to accommodate future requirements. 

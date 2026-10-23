@@ -6,6 +6,11 @@ icon: ShieldCheck
 
 # Type-Driven Development
 
+<CoverImage src="/covers/pragmatic/type-driven-development.webp" alt="Type-Driven Development">
+  <h1>Type-Driven Development</h1>
+  <p>A tiny white robot fitting uniquely shaped glowing amber blocks into a giant shape-sorter toy, each block sliding only into its matching hole.</p>
+</CoverImage>
+
 > "Make illegal states unrepresentable." — Yaron Minsky
 
 In modern software development, we often rely heavily on unit tests to catch bugs and verify system correctness. While tests are essential, they are executed *after* the code is written and run at runtime. 

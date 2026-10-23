@@ -6,6 +6,11 @@ icon: Infinity
 
 # Zero-One-Infinity (ZOI) Rule
 
+<CoverImage src="/covers/laws/zero-one-infinity.webp" alt="Zero-One-Infinity">
+  <h1>Zero-One-Infinity</h1>
+  <p>A tiny white robot at a bakery counter with three shelves: one empty, one holding exactly one cupcake, and one stretching endlessly into the distance, full of cupcakes.</p>
+</CoverImage>
+
 > "The only reasonable numbers are zero, one, and infinity." — Bruce MacLennan
 
 The **Zero-One-Infinity (ZOI) Rule** is a fundamental rule of thumb in software design. It argues that software architectures should not place arbitrary, hardcoded upper limits on the number of instances of a particular entity or data structure. 

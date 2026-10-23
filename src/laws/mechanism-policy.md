@@ -6,6 +6,11 @@ icon: Split
 
 # Separation of Mechanism and Policy
 
+<CoverImage src="/covers/laws/mechanism-policy.webp" alt="Mechanism and Policy">
+  <h1>Mechanism and Policy</h1>
+  <p>A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small amber timetable that decides where each train goes.</p>
+</CoverImage>
+
 > "Mechanisms (those parts of a system implementation that control authorization and resource allocation) should not dictate the policies according to which decisions are made." — Operating Systems Design Principle
 
 **Separation of Mechanism and Policy** is a fundamental design principle in computer science. It states that the core capabilities of a system (the **mechanism**) should be kept completely separate from the rules, configurations, and business decisions governing how that system behaves (the **policy**).

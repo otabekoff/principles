@@ -6,6 +6,11 @@ icon: Layers
 
 # Arrange, Act, Assert (3A)
 
+<CoverImage src="/covers/testing/arrange-act-assert.webp" alt="Arrange, Act, Assert">
+  <h1>Arrange, Act, Assert</h1>
+  <p>A tiny white robot scientist in three panels: arranging test tubes on a rack, pouring in a single drop of reagent, and checking the resulting colour against a reference chart.</p>
+</CoverImage>
+
 > **"A clean test should read like a three-act play: set the stage, perform the action, and deliver the resolution."**
 
 The **Arrange, Act, Assert (3A)** pattern is a highly structured, industry-standard layout pattern used to arrange and format code inside unit tests. By partitioning tests into these three distinct and sequential phases, developers achieve high readability, easy debugging, and a highly uniform test suite.

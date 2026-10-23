@@ -6,6 +6,11 @@ icon: Layers3
 
 # Meros o'rniga kompozitsiya
 
+<CoverImage src="/covers/architecture/composition-over-inheritance.webp" alt="Meros o'rniga kompozitsiya">
+  <h1>Meros o'rniga kompozitsiya</h1>
+  <p>Kichkina oq robot almashtiriladigan qahrabo rang qismlarni — g'ildiraklar, qanotlar va parrakni — bir-biriga ulab o'ziga xos transport vositasini yasamoqda; uning ortida esa transport ajdodlarining ulkan va chigal shajara daraxti foydalanilmay turibdi.</p>
+</CoverImage>
+
 > "Klass vorisligidan (inheritance) ko'ra, ob'ektlar kompozitsiyasini afzal ko'ring." — *Design Patterns (Gang of Four)*
 
 **Meros o'rniga kompozitsiya (Composition over Inheritance)** — obyektga yo'naltirilgan dizaynning muhim qoidasi bo'lib, kodni qayta ishlatish uchun ota klassdan meros olish o'rniga, boshqa klasslar ob'ektlaridan tarkibiy qism sifatida foydalanishni (kompozitsiya) tavsiya qiladi.

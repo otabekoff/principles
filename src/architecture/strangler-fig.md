@@ -6,6 +6,11 @@ icon: GitFork
 
 # Strangler Fig
 
+<CoverImage src="/covers/architecture/strangler-fig.webp" alt="Strangler Fig">
+  <h1>Strangler Fig</h1>
+  <p>Glowing amber fig vines gradually growing around an old crumbling stone tower and replacing it piece by piece, while tiny white robots tend the new growth.</p>
+</CoverImage>
+
 > **"One of the natural wonders of Australia are the strangler figs. They seed in the upper branches of a tree and gradually work their way down the tree until they root in the soil. Over many years they grow into fantastic and beautiful shapes, meanwhile strangling and killing the original tree in the process."** — *Martin Fowler (2004)*
 
 The **Strangler Fig Pattern** (originally termed the "Strangler Application Pattern") is a software architecture pattern used for migrating legacy systems. It describes a strategy where **a legacy system is incrementally replaced by a new system by wrapping the old system in a modern interface and routing traffic away from it piece by piece.**

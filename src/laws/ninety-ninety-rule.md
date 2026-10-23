@@ -6,6 +6,11 @@ icon: Hourglass
 
 # The Ninety-Ninety Rule
 
+<CoverImage src="/covers/laws/ninety-ninety-rule.webp" alt="The Ninety-Ninety Rule">
+  <h1>The Ninety-Ninety Rule</h1>
+  <p>A tiny white robot reaching what it thought was the mountain summit, flag in hand, only to see a second, equally tall peak revealed behind it.</p>
+</CoverImage>
+
 > "The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time." — Tom Cargill, Bell Labs
 
 **The Ninety-Ninety Rule** is a famous, humorous aphorism in computer programming and software engineering. By mathematically adding up to **180%**, the rule serves as a wry allusion to the notorious tendency of software development projects to overrun their schedules and exceed initial effort estimations.

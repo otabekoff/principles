@@ -6,6 +6,11 @@ icon: Compass
 
 # Principle of Least Astonishment (POLA)
 
+<CoverImage src="/covers/general/least-astonishment.webp" alt="Least Astonishment">
+  <h1>Least Astonishment</h1>
+  <p>A tiny white robot pushing a door with a push-plate and the door swinging open exactly as expected, while in the background a bewildered robot tugs at a handle and its door slides straight up into the ceiling.</p>
+</CoverImage>
+
 > "If a necessary feature has a high astonishment factor, it may be necessary to redesign the feature." — Law of Least Surprise Corollary
 
 The **Principle of Least Astonishment (POLA)**—also known as the **Principle of Least Surprise (POLS)**—is a core design philosophy in user interface (UI), user experience (UX), and software API design. It asserts that a component of any system should behave in a way that most users and developers expect it to behave, minimizing surprise, confusion, and cognitive overhead.

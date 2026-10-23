@@ -6,6 +6,11 @@ icon: FileSignature
 
 # Design By Contract (DbC)
 
+<CoverImage src="/covers/architecture/design-by-contract.webp" alt="Design by Contract">
+  <h1>Design by Contract</h1>
+  <p>A tiny white robot and a client robot shaking hands over a glowing amber scroll stamped with three wax seals, standing for preconditions, postconditions and invariants.</p>
+</CoverImage>
+
 > **"A software system is a collection of components that interact according to precise specifications. These specifications, or contracts, govern the relationships between a supplier (the implementation) and a client (the caller). If a contract is broken, the fault lies with the party that failed to uphold its terms."** — *Bertrand Meyer (1986)*
 
 **Design by Contract (DbC)** is a software engineering methodology that prescribes formal, precise, and verifiable interface specifications for software components. It treats the relationship between a class or method and its callers as a **legally binding contract**, specifying each party's mutual rights and obligations.

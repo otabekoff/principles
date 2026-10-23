@@ -6,6 +6,11 @@ icon: UserMinus
 
 # Brooks's Law
 
+<CoverImage src="/covers/laws/brookss-law.webp" alt="Brooks's Law">
+  <h1>Brooks's Law</h1>
+  <p>A tiny white robot foreman watching in dismay as more and more robots crowd onto a small half-built raft, slowing the work and making it sink lower, while a clock tower ticks behind them.</p>
+</CoverImage>
+
 > **"Adding human resources to a late software project makes it later."** — *Fred Brooks (The Mythical Man-Month, 1975)*
 
 **Brooks's Law** is a famous software project management principle formulated by **Fred Brooks** in his seminal 1975 book, *The Mythical Man-Month*. It warns that when a software project is running behind schedule, attempting to speed up development by simply hiring more programmers will inevitably delay the project even further.

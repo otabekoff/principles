@@ -6,6 +6,11 @@ icon: Repeat
 
 # Liskov o'rnini bosish tamoyili (LSP)
 
+<CoverImage src="/covers/solid/lsp.webp" alt="Liskov o'rnini bosish tamoyili (LSP)">
+  <h1>Liskov o'rnini bosish tamoyili (LSP)</h1>
+  <p>Kichkina oq robot chiroqdagi oddiy lampochkani xuddi shu patronga mos keladigan zamonaviy qahrabo rang aqlli lampochkaga almashtirmoqda va stol chirog'i kitobni avvalgidek yoritishda davom etmoqda.</p>
+</CoverImage>
+
 > "Subtiplar o'zlarining asosiy tiplari o'rnini bosa olishi kerak." — Barbara Liskov
 
 **Liskov o'rnini bosish tamoyili (LSP)** vorislikdan (inheritance) to'g'ri foydalanishni ta'minlaydi. Agar `B` klassi `A` klassining subklassi bo'lsa, unda `A` tipidagi ob'ektlarni `B` tipidagi ob'ektlar bilan dasturning to'g'riligiga yoki xatti-harakatiga ta'sir qilmasdan almashtirish imkoni bo'lishi kerak.

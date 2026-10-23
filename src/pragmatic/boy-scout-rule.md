@@ -6,6 +6,11 @@ icon: Sparkles
 
 # The Boy Scout Rule
 
+<CoverImage src="/covers/pragmatic/boy-scout-rule.webp" alt="The Boy Scout Rule">
+  <h1>The Boy Scout Rule</h1>
+  <p>A tiny white robot scout picking up a single piece of litter as it leaves a forest campsite, the campsite visibly a little cleaner and brighter behind it.</p>
+</CoverImage>
+
 > "Always leave the campground cleaner than you found it." — *Robert C. Martin (adapted from the Boy Scouts of America)*
 
 In software engineering, **The Boy Scout Rule** is a simple, highly effective guideline stating that **we should always leave the code cleaner than we found it**. 

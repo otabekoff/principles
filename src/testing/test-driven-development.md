@@ -6,6 +6,11 @@ icon: Route
 
 # Test-Driven Development (TDD)
 
+<CoverImage src="/covers/testing/test-driven-development.webp" alt="Test-Driven Development">
+  <h1>Test-Driven Development</h1>
+  <p>A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-amber cycle wheel hanging on the wall.</p>
+</CoverImage>
+
 **Test-Driven Development (TDD)** is an iterative software development process where you write a failing test *before* you write any production code. TDD is not just a testing technique; it is a **design methodology** that helps you understand requirements, keep code simple, and build highly decoupled architectures.
 
 ---

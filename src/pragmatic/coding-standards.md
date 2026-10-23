@@ -6,6 +6,11 @@ icon: FileCode
 
 # Coding Standards & Specs
 
+<CoverImage src="/covers/pragmatic/coding-standards.webp" alt="Coding Standards">
+  <h1>Coding Standards</h1>
+  <p>A row of tiny white robots each building a neat brick wall, all following the same glowing amber blueprint and laying identical bricks in the same tidy pattern.</p>
+</CoverImage>
+
 > "Adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable."
 
 In software development, writing working code is only the first step. For a codebase to be maintainable, scalable, and secure, it must be built on a foundation of rigorous **coding standards and system design specifications**. 
@@ -197,16 +202,16 @@ Below are the **10 essential pillars of software design and coding standards** t
 
 | Pillar | Focus | Deep Dive Link |
 | :--- | :--- | :--- |
-| **1. Follow Code Specs** | Maintain consistent indentation, casing, naming conventions, and style specs. | [Coding Standards & Specs](file:///d:/vitepress/principles/src/pragmatic/coding-standards.md) |
-| **2. Documentation & Comments** | Write clear code that reveals intent; use comments for the "Why" and not the "What". | [Reveal Intentions](file:///d:/vitepress/principles/src/architecture/reveal-intentions.md#L50-L71) |
-| **3. Robustness** | Catch and handle exception cases at system boundaries without crashing. | [Fail-Fast & Robustness](file:///d:/vitepress/principles/src/architecture/fail-fast-robustness.md) |
-| **4. Follow SOLID Principles** | Build scalable, easily maintainable modules using S, O, L, I, D guidelines. | [SOLID Section](file:///d:/vitepress/principles/src/solid) |
-| **5. Make Testing Easy** | Reduce component coupling to make testing straightforward and friction-free. | [Pass the Tests & Testability](file:///d:/vitepress/principles/src/testing/pass-the-tests.md#L26-L37) |
-| **6. Abstraction** | Extract core logic to hide internal complexity and keep abstractions moderate. | [Abstraction Principle](file:///d:/vitepress/principles/src/general/abstraction-principle.md) |
-| **7. Design Patterns (No Over-Design)** | Leverage patterns to solve common problems, but don't over-engineer them. | [Core Concepts](file:///d:/vitepress/principles/src/core-concepts.md#L36-L58) |
-| **8. Reduce Global Dependencies** | Minimize shared state, rely on parameter passing, and minimize coupling. | [Coupling and Cohesion](file:///d:/vitepress/principles/src/architecture/coupling-cohesion.md) |
-| **9. Continuous Refactoring** | Cultivate a clean codebase by continuously applying minor, incremental fixes. | [The Boy Scout Rule](file:///d:/vitepress/principles/src/pragmatic/boy-scout-rule.md) |
-| **10. Security as a Top Priority** | Lock down modules and prevent leaks using strict encapsulation boundaries. | [Encapsulation & Info Hiding](file:///d:/vitepress/principles/src/architecture/encapsulation-information-hiding.md#L192-L200) |
+| **1. Follow Code Specs** | Maintain consistent indentation, casing, naming conventions, and style specs. | [Coding Standards & Specs](/pragmatic/coding-standards) |
+| **2. Documentation & Comments** | Write clear code that reveals intent; use comments for the "Why" and not the "What". | [Reveal Intentions](/architecture/reveal-intentions) |
+| **3. Robustness** | Catch and handle exception cases at system boundaries without crashing. | [Fail-Fast & Robustness](/architecture/fail-fast-robustness) |
+| **4. Follow SOLID Principles** | Build scalable, easily maintainable modules using S, O, L, I, D guidelines. | [SOLID Section](/solid/introduction) |
+| **5. Make Testing Easy** | Reduce component coupling to make testing straightforward and friction-free. | [Pass the Tests & Testability](/testing/pass-the-tests) |
+| **6. Abstraction** | Extract core logic to hide internal complexity and keep abstractions moderate. | [Abstraction Principle](/general/abstraction-principle) |
+| **7. Design Patterns (No Over-Design)** | Leverage patterns to solve common problems, but don't over-engineer them. | [Core Concepts](/core-concepts) |
+| **8. Reduce Global Dependencies** | Minimize shared state, rely on parameter passing, and minimize coupling. | [Coupling and Cohesion](/architecture/coupling) |
+| **9. Continuous Refactoring** | Cultivate a clean codebase by continuously applying minor, incremental fixes. | [The Boy Scout Rule](/pragmatic/boy-scout-rule) |
+| **10. Security as a Top Priority** | Lock down modules and prevent leaks using strict encapsulation boundaries. | [Encapsulation & Info Hiding](/architecture/encapsulation-information-hiding) |
 
 ---
 

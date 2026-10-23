@@ -6,6 +6,11 @@ icon: Grid
 
 # Introduction to SOLID
 
+<CoverImage src="/covers/solid/introduction.webp" alt="SOLID">
+  <h1>SOLID</h1>
+  <p>Five tiny white robots each holding up one large glowing amber pillar, together supporting the roof of a small, sturdy temple.</p>
+</CoverImage>
+
 > "The SOLID principles are a set of rules and best practices to follow while designing class structures, intended to combat software rot." — Robert C. Martin
 
 In software engineering, **SOLID** is a famous mnemonic acronym representing five design principles of object-oriented programming (OOP). When applied together, these five principles are designed to make source code significantly more **understandable, flexible, and maintainable**. 

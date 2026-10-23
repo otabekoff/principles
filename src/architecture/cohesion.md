@@ -6,6 +6,11 @@ icon: Shield
 
 # Maximise Cohesion
 
+<CoverImage src="/covers/architecture/cohesion.webp" alt="Cohesion">
+  <h1>Cohesion</h1>
+  <p>A tiny white robot opening a perfectly organised bicycle-repair toolbox where every compartment holds a tool for that one job and nothing unrelated is inside.</p>
+</CoverImage>
+
 > **"Cohesion of a single module or component is the degree to which its responsibilities form a meaningful unit. Higher cohesion is always better."**
 
 In software engineering, **cohesion** is a qualitative metric that measures how focused, unified, and closely related the responsibilities inside a single module, class, package, or function are. First formalized by Larry Constantine in the late 1960s as part of *Structured Design*, cohesion serves as one of the primary pillars of software quality.
@@ -39,14 +44,14 @@ In contrast, low cohesion creates "Swiss Army Knife" modules that do too many un
 
 ```mermaid
 graph TD
-    subgraph Low Cohesion (Bloated Module)
+    subgraph low ["Low Cohesion (Bloated Module)"]
         M1[UserManager] --> A[Save User to DB]
         M1 --> B[Hash Password]
         M1 --> C[Send Email Alert]
         M1 --> D[Format Invoice PDF]
     end
     
-    subgraph High Cohesion (Focused Modules)
+    subgraph high ["High Cohesion (Focused Modules)"]
         Repo[UserRepository] --> A1[Save User to DB]
         Crypto[PasswordHasher] --> B1[Hash Password]
         Email[MailService] --> C1[Send Email Alert]

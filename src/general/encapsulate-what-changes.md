@@ -6,6 +6,11 @@ icon: Box
 
 # Encapsulate What Changes
 
+<CoverImage src="/covers/general/encapsulate-what-changes.webp" alt="Encapsulate What Changes">
+  <h1>Encapsulate What Changes</h1>
+  <p>A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy amber-lined box with a standard plug, so the rest of the machine connects to the box instead of the creature.</p>
+</CoverImage>
+
 > **"Identify the aspects of your application that vary and separate them from what stays the same."** — *Gang of Four (Design Patterns, 1994)*
 
 A fundamental rule of great software design is to identify the **hotspots** or concepts in your system that are most likely to change and encapsulate them behind a stable, abstract interface. When an anticipated change occurs, the necessary modifications are kept local, leaving the rest of the application completely unaffected.

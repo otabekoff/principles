@@ -6,6 +6,11 @@ icon: ShieldAlert
 
 # YAGNI (You Aren't Gonna Need It)
 
+<CoverImage src="/covers/general/yagni.webp" alt="YAGNI">
+  <h1>YAGNI</h1>
+  <p>A tiny white robot strolling lightly across a bridge with only a small backpack, while another robot struggles behind it, buried under an enormous pile of just-in-case gadgets, umbrellas, ladders and spare wheels.</p>
+</CoverImage>
+
 > "Always implement things when you actually need them, never when you just foresee that you need them." — *Ron Jeffries, Extreme Programming co-founder*
 
 **YAGNI** (an acronym for **"You Aren't Gonna Need It"**) is a fundamental software design guideline stating that **you should not implement something until it is strictly necessary**.

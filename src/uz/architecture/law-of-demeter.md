@@ -6,6 +6,11 @@ icon: GitPullRequest
 
 # Demetra qonuni (LoD)
 
+<CoverImage src="/covers/architecture/law-of-demeter.webp" alt="Demetra qonuni (LoD)">
+  <h1>Demetra qonuni (LoD)</h1>
+  <p>Kichkina oq robot do'kondor xaridorning cho'zilgan qo'lidan tangani xushmuomalalik bilan olmoqda, uning cho'ntagiga qo'l solib hamyonini titkilamayapti.</p>
+</CoverImage>
+
 > "Faqat o'z yaqin do'stlaringiz bilan gaplashing."
 
 **Demetra qonuni (LoD)** yoki **Eng kam bilim tamoyili (Principle of Least Knowledge)** loyihalash qoidasi bo'lib, u modullarning o'zaro bog'liqligini kamaytirishga yordam beradi. Unda aytilishicha, ob'ekt o'zi ishlayotgan boshqa ob'ektlarning ichki tuzilishini bilmasligi kerak.

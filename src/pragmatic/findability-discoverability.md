@@ -6,6 +6,11 @@ icon: Locate
 
 # Findability & Discoverability
 
+<CoverImage src="/covers/pragmatic/findability-discoverability.webp" alt="Findability & Discoverability">
+  <h1>Findability & Discoverability</h1>
+  <p>A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing amber floor arrows leading it straight to the exact box it needs.</p>
+</CoverImage>
+
 > **"If the user can't find the product, the user can't buy the product."** — *The First Law of E-Commerce*
 >
 > **"Discoverability: the ability to discover what operations are possible and where and how to perform them."** — *Don Norman (The Design of Everyday Things)*

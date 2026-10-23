@@ -6,9 +6,9 @@ icon: BookMarked
 
 # Quick Reference
 
-<CoverImage src="/covers/getting-started/quick-reference.png" alt="Cover">
+<CoverImage src="/covers/getting-started/quick-reference.webp" alt="Quick Reference">
   <h1>Quick Reference</h1>
-  <p>A massive, clean control panel containing a beautiful array of color-coded glowing buttons, each representing a programming principle, with a tiny operator robot happily sliding a slider.</p>
+  <p>A tiny white robot flipping through a huge pocket field guide whose pages pop up into small 3D illustrations, a magnifying glass in one hand and an amber ribbon bookmark trailing from the book.</p>
 </CoverImage>
 
 A quick reference cheat sheet for the most important programming principles. Use these tables to review principles, identify violations (code smells), and find the best solutions at a glance.

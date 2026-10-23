@@ -6,6 +6,11 @@ icon: Archive
 
 # Pristine Sources
 
+<CoverImage src="/covers/laws/pristine-sources.webp" alt="Pristine Sources">
+  <h1>Pristine Sources</h1>
+  <p>A tiny white robot drinking from a crystal-clear mountain spring right at its source, while far downstream the same river turns murky with debris.</p>
+</CoverImage>
+
 > "The original, unmodified source code provided by upstream developers must be kept completely untouched by package maintainers." — Marc Ewing
 
 **Pristine Sources** is a software packaging, version control, and release management philosophy. It dictates that the original, upstream source code archive (e.g., a `.tar.gz`, `.tar.bz2`, or `.zip` release) must remain completely untouched ("pristine") by package maintainers and downstream distribution developers.

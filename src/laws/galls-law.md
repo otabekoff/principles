@@ -6,6 +6,11 @@ icon: TreeDeciduous
 
 # Gall's Law
 
+<CoverImage src="/covers/laws/galls-law.webp" alt="Gall's Law">
+  <h1>Gall's Law</h1>
+  <p>A tiny white robot watering a small sapling that has grown into a healthy tree behind it, while beside it a giant tree assembled from scratch out of metal parts lies toppled over.</p>
+</CoverImage>
+
 > "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system." — John Gall (*Systemantics*, 1975)
 
 **Gall's Law** is one of the most profound truths in software architecture, systems engineering, and cybernetics. It asserts that complexity cannot be successfully manufactured from scratch; rather, it must emerge organically from a stable, simple foundation that has already been verified in the real world.

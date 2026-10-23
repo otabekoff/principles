@@ -6,6 +6,11 @@ icon: Target
 
 # Single Responsibility Principle (SRP)
 
+<CoverImage src="/covers/solid/srp.webp" alt="Single Responsibility">
+  <h1>Single Responsibility</h1>
+  <p>A calm tiny white robot chef doing one thing perfectly, slicing vegetables, beside a chaotic counter where a stressed robot juggles cooking, washing dishes and answering the phone all at once.</p>
+</CoverImage>
+
 > **"A class should never have more than one reason to change."** — *Robert C. Martin*
 
 The **Single Responsibility Principle (SRP)**—the **S** in the **SOLID** design system—is a fundamental guideline for creating modular, robust, and maintainable software.

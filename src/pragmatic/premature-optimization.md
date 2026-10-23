@@ -6,6 +6,11 @@ icon: ZapOff
 
 # Avoid Premature Optimization
 
+<CoverImage src="/covers/pragmatic/premature-optimization.webp" alt="Premature Optimization">
+  <h1>Premature Optimization</h1>
+  <p>A tiny white robot lovingly polishing the chrome wheels of a race car that has no engine yet, while a stopwatch lies forgotten on the garage floor.</p>
+</CoverImage>
+
 > "Premature optimization is the root of all evil in programming." — Donald Knuth
 
 Optimization indeed helps in speeding up a program or algorithm, but according to this principle, you do not need to optimize your algorithm at an early stage of development. 

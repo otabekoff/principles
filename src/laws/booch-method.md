@@ -6,6 +6,11 @@ icon: Compass
 
 # Booch Method
 
+<CoverImage src="/covers/laws/booch-method.webp" alt="Booch Method">
+  <h1>Booch Method</h1>
+  <p>A tiny white robot architect sketching soft cloud-shaped diagrams on an old drafting table, the clouds floating up off the paper and turning into small glowing objects.</p>
+</CoverImage>
+
 > "The recommended practices include adding more classes to simplify complex code." — Grady Booch (*Object Oriented Analysis and Design with Applications*, 1991)
 
 The **Booch Method** is a pioneering object-oriented software development methodology created by American software engineer Grady Booch in the early 1990s. While its unique cloud-shaped notation has since been merged into the **Unified Modeling Language (UML)**, the architectural processes and principles of the Booch Method remain highly influential in modern object-oriented analysis and design (OOAD).

@@ -6,6 +6,11 @@ icon: RefreshCw
 
 # Inversion of Control (IoC)
 
+<CoverImage src="/covers/architecture/inversion-of-control.webp" alt="Inversion of Control">
+  <h1>Inversion of Control</h1>
+  <p>A tiny white robot actor relaxing in a director's chair backstage while the stage crew hands it props and calls it into the spotlight exactly when its scene begins.</p>
+</CoverImage>
+
 > "Don't call us, we'll call you." — The Hollywood Principle
 
 **Inversion of Control (IoC)** is a fundamental software design philosophy in which custom-written portions of a computer program receive their flow of control from an external source (such as a reusable software framework). 

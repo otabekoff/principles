@@ -6,6 +6,11 @@ icon: Zap
 
 # Make It Work, Make It Right, Make It Fast
 
+<CoverImage src="/covers/pragmatic/make-it-work-right-fast.webp" alt="Make It Work, Right, Fast">
+  <h1>Make It Work, Right, Fast</h1>
+  <p>Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek amber racing bike.</p>
+</CoverImage>
+
 > "Make it work, make it right, make it fast." — Kent Beck
 
 This principle outlines a highly disciplined, three-stage workflow for building software. It prevents developers from getting paralyzed by trying to write perfect, optimized code on the first attempt, instead breaking the development process into manageable, logical phases.

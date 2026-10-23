@@ -6,6 +6,11 @@ icon: ShieldCheck
 
 # Robustness Principle (Postel's Law)
 
+<CoverImage src="/covers/general/robustness-principle.webp" alt="Robustness Principle">
+  <h1>Robustness Principle</h1>
+  <p>A tiny white robot postmaster at a counter cheerfully accepting crumpled, oddly shaped letters from a queue, while sending out only perfectly folded envelopes sealed with amber wax.</p>
+</CoverImage>
+
 > "Be conservative in what you do, be liberal in what you accept from others." — *Jon Postel, early Internet pioneer and editor of the TCP specification*
 
 The **Robustness Principle**—often referred to as **Postel's Law**—is a fundamental guideline for designing resilient software systems, network protocols, and API interfaces. Originally formulated to maximize interoperability in early internet architectures (like TCP/IP), it serves as a cornerstone for building robust distributed systems that can evolve gracefully over time.

@@ -6,6 +6,11 @@ icon: Heart
 
 # Code for the Maintainer
 
+<CoverImage src="/covers/pragmatic/code-for-the-maintainer.webp" alt="Code for the Maintainer">
+  <h1>Code for the Maintainer</h1>
+  <p>A tiny white robot planting clear amber signposts and leaving friendly handwritten notes along a mountain trail for a future traveller robot just visible far behind.</p>
+</CoverImage>
+
 > "Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live." — *John Woods (popularized by Damian Conway)*
 
 In software engineering, writing code is easy; reading and maintaining code is hard. Statistically, **maintenance is by far the most expensive phase of any software project**, swallowing up to 80% of a system's total lifetime cost.

@@ -6,6 +6,11 @@ icon: ShieldCheck
 
 # Property-Based Testing
 
+<CoverImage src="/covers/testing/property-based-testing.webp" alt="Property-Based Testing">
+  <h1>Property-Based Testing</h1>
+  <p>A tiny white robot pouring thousands of random colourful marbles into a sorting machine and checking that every single one still comes out in perfect order.</p>
+</CoverImage>
+
 > **"Don't write tests. Write properties, and let the computer generate thousands of test cases to prove them wrong."** — *John Hughes*
 
 **Property-Based Testing (PBT)** is a testing paradigm first introduced in 1999 by **Koen Claessen** and **John Hughes** with the creation of the Haskell library **QuickCheck**. Unlike traditional **Example-Based Testing**—where you write tests for specific inputs (e.g., verifying that `add(2, 3)` returns `5`)—**PBT asserts that certain system invariants (properties) must hold true across thousands of randomly generated inputs.**

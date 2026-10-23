@@ -6,6 +6,11 @@ icon: Target
 
 # Curly's Law (Do One Thing)
 
+<CoverImage src="/covers/laws/curlys-law.webp" alt="Curly's Law">
+  <h1>Curly's Law</h1>
+  <p>A tiny white robot cowboy at sunset holding up a single finger, one perfectly sharpened tool hanging from its belt.</p>
+</CoverImage>
+
 > **Curly**: Do you know what the secret of life is?  
 > **Mitch**: No. What?  
 > **Curly**: This. [Holds up one finger]  

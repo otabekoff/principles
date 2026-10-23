@@ -6,6 +6,11 @@ icon: Box
 
 # Black Box System
 
+<CoverImage src="/covers/general/black-box.webp" alt="Black Box">
+  <h1>Black Box</h1>
+  <p>A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped amber parcels as they slide out of the other side, with no way to see inside the box.</p>
+</CoverImage>
+
 > "A black box is any system whose internal workings are hidden from or ignored by an observer, who instead studies it by examining what goes in (inputs) and what comes out (outputs)." — W. Ross Ashby (*An Introduction to Cybernetics*, 1956)
 
 A **Black Box** is a fundamental systems abstraction representing a component or process which can be understood entirely by its inputs, outputs, and transfer characteristics, without requiring any knowledge or inspection of its internal ("opaque") implementation logic. 

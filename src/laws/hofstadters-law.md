@@ -6,6 +6,11 @@ icon: Clock
 
 # Hofstadter's Law
 
+<CoverImage src="/covers/laws/hofstadters-law.webp" alt="Hofstadter's Law">
+  <h1>Hofstadter's Law</h1>
+  <p>A tiny white robot flipping a giant hourglass over and over, the sand never quite running out, while calendar pages flutter away in the wind.</p>
+</CoverImage>
+
 > **"Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law."** — *Douglas Hofstadter (Gödel, Escher, Bach: An Eternal Golden Braid, 1979)*
 
 **Hofstadter's Law** is a recursive, self-referential observation regarding the extreme difficulty of estimating the time it will take to complete a complex task. First formulated by cognitive scientist **Douglas Hofstadter**, the law is heavily cited in software engineering, project management, and systems theory.

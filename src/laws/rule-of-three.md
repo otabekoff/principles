@@ -6,6 +6,11 @@ icon: Hash
 
 # Rule of Three (Refactoring)
 
+<CoverImage src="/covers/laws/rule-of-three.webp" alt="Rule of Three">
+  <h1>Rule of Three</h1>
+  <p>A tiny white robot noticing it has drawn the same star shape three times on a sheet of paper, and carving a reusable amber stamp of that star.</p>
+</CoverImage>
+
 > "Two instances of similar code do not require refactoring, but when similar code is used three times, it should be extracted into a new procedure." — Don Roberts
 
 The **Rule of Three**—also known as the **"Three strikes and you refactor"** rule—is a widely accepted, pragmatic guideline in computer programming. It provides a simple, quantitative rubric for deciding when to extract duplicate code into a shared abstraction, balancing the benefits of **DRY (Don't Repeat Yourself)** against the immense dangers of **premature optimization**.

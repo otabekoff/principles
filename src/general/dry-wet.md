@@ -6,6 +6,11 @@ icon: RefreshCw
 
 # DRY (Don't Repeat Yourself) vs WET (Write Everything Twice)
 
+<CoverImage src="/covers/general/dry-wet.webp" alt="DRY vs WET">
+  <h1>DRY vs WET</h1>
+  <p>A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft amber glow.</p>
+</CoverImage>
+
 > **"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."** — *Andy Hunt and Dave Thomas, The Pragmatic Programmer*
 >
 > **"Duplication is far cheaper than the wrong abstraction."** — *Sandi Metz*
@@ -89,13 +94,13 @@ Coined by Bertrand Meyer in his book *Object-Oriented Software Construction*, th
 // Multiple switch statements on the same list of alternatives across files
 class InvoiceGenerator {
   calculateTax(userType: "Retail" | "Wholesale" | "NonProfit") {
-    switch(userType) { ... }
+    switch(userType) { /* ... */ }
   }
 }
 
 class ShippingService {
   getPriority(userType: "Retail" | "Wholesale" | "NonProfit") {
-    switch(userType) { ... }
+    switch(userType) { /* ... */ }
   }
 }
 // If you add a new "Enterprise" user type, you must locate and update both classes.

@@ -6,6 +6,11 @@ icon: Equal
 
 # Uniform Access Principle (UAP)
 
+<CoverImage src="/covers/laws/uniform-access.webp" alt="Uniform Access">
+  <h1>Uniform Access</h1>
+  <p>A tiny white robot at a vending machine with identical buttons, where some snacks drop out ready-made and others are quietly cooked fresh behind the panel, and the robot cannot tell the difference.</p>
+</CoverImage>
+
 > "All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation." — Bertrand Meyer
 
 The **Uniform Access Principle (UAP)** is a fundamental software design rule of thumb put forth by computer scientist **Bertrand Meyer** in his seminal book, ***Object-Oriented Software Construction***. It states that the notation used to access properties of an object should remain completely identical regardless of whether that property is a simple variable pre-calculated in memory (storage) or a dynamic value computed on the fly (computation).

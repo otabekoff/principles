@@ -6,6 +6,11 @@ icon: ShieldAlert
 
 # Deutsch Limit
 
+<CoverImage src="/covers/laws/deutsch-limit.webp" alt="Deutsch Limit">
+  <h1>Deutsch Limit</h1>
+  <p>A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single amber magnifying lens shows how few of them can be understood at once.</p>
+</CoverImage>
+
 > "The problem with visual programming is that you can't have more than 50 visual primitives on the screen at the same time." — L. Peter Deutsch
 
 The **Deutsch Limit** is an influential programming adage that addresses the information density, visual scalability, and cognitive limitations of **Visual Programming Languages (VPLs)**. 

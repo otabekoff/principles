@@ -6,6 +6,11 @@ icon: EyeOff
 
 # Encapsulation & Information Hiding
 
+<CoverImage src="/covers/architecture/encapsulation-information-hiding.webp" alt="Encapsulation & Information Hiding">
+  <h1>Encapsulation & Information Hiding</h1>
+  <p>A tiny white robot operating an elegant pocket watch using only its crown and face, while a faint x-ray view hints at the delicate gears safely sealed inside.</p>
+</CoverImage>
+
 While commonly used as synonyms, **Encapsulation** and **Information Hiding** represent two distinct and powerful design philosophies in software engineering.
 
 ```

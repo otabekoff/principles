@@ -6,6 +6,11 @@ icon: FastForward
 
 # Make Non-Breaking Changes
 
+<CoverImage src="/covers/pragmatic/non-breaking-changes.webp" alt="Non-Breaking Changes">
+  <h1>Non-Breaking Changes</h1>
+  <p>A tiny white robot crew building a new modern bridge right beside an old one, little cars still flowing over the old bridge until the new one is ready to open.</p>
+</CoverImage>
+
 > "Keep the engine running while you swap the parts."
 
 When a component, interface, or database schema needs to change, developers often make the mistake of performing a **breaking change** immediately. They modify the signature and then spend hours or days fixing compiler errors across a hundred calling files. This stalls feature development and creates major merge conflicts.
@@ -42,7 +47,7 @@ Now, the entire build is broken, and you must update all 200 callers before you 
 
 Instead, keep `url` as an optional deprecated prop and introduce the new prop alongside it:
 
-```ts
+```tsx
 //  Non-Breaking Change
 interface AvatarProps {
   /** @deprecated Use imageUrl instead */

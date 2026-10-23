@@ -6,6 +6,11 @@ icon: ShieldAlert
 
 # Hyrum's Law
 
+<CoverImage src="/covers/laws/hyrums-law.webp" alt="Hyrum's Law">
+  <h1>Hyrum's Law</h1>
+  <p>A tiny white robot oiling a squeaky old door hinge, while dozens of other robots who had been using the squeak as a doorbell come running out, confused.</p>
+</CoverImage>
+
 > **"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."** — *Hyrum Wright*
 
 **Hyrum's Law** (also known as the "Law of Implicit Interfaces") is a software engineering observation formulated by Google engineer **Hyrum Wright**. It states that **once an API has enough consumers, every detail of the system's implementation—even undocumented quirks, execution performance, side-effects, and order of operations—will eventually be discovered and relied upon by a user as a critical feature.**

@@ -6,6 +6,11 @@ icon: GitCommit
 
 # Dependency Inversion Principle (DIP)
 
+<CoverImage src="/covers/solid/dip.webp" alt="Dependency Inversion">
+  <h1>Dependency Inversion</h1>
+  <p>A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard amber wall socket, the wiring behind the wall hidden and interchangeable.</p>
+</CoverImage>
+
 > **"Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes rather than upon concrete functions and classes. Simply put, when components of our system have dependencies, we don’t want to directly inject a component’s dependency into another. Instead, we should use a level of abstraction between them."** — *Robert C. Martin*
 
 The **Dependency Inversion Principle (DIP)** represents the **D** in the **SOLID** design principles. It provides a formal model for decoupling software modules, ensuring that high-level business policies remain completely insulated from low-level implementation details.

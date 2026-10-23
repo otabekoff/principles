@@ -6,6 +6,11 @@ icon: Layers
 
 # Separation of Concerns (SoC)
 
+<CoverImage src="/covers/general/soc.webp" alt="Separation of Concerns">
+  <h1>Separation of Concerns</h1>
+  <p>A tiny white robot arranging a giant bento box, each compartment holding a different neatly separated dish, with nothing spilling over between sections and amber light glowing from the dividers.</p>
+</CoverImage>
+
 > "It is what I sometimes have called 'the separation of concerns', which, even if not perfectly possible, is yet the only available technique for effective ordering of one's thoughts, that I know of. This is what I mean by 'focusing one's attention upon some aspect': it does not mean ignoring the other aspects, it is just doing justice to the fact that from this aspect's point of view, the other is irrelevant." — *Edsger W. Dijkstra, 1974*
 
 **Separation of Concerns (SoC)** is a core software design principle that dictates organizing a computer program into distinct sections, such that each section addresses a separate, independent concern. 

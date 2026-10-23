@@ -6,6 +6,11 @@ icon: Terminal
 
 # The Unix Philosophy
 
+<CoverImage src="/covers/laws/unix-philosophy.webp" alt="The Unix Philosophy">
+  <h1>The Unix Philosophy</h1>
+  <p>A row of small, simple machines connected by glowing amber pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.</p>
+</CoverImage>
+
 > **"Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."** — *Doug McIlroy (1978)*
 
 The **Unix Philosophy** is a set of cultural and software design guidelines formulated by the pioneers of the Unix operating system (including **Ken Thompson**, **Dennis Ritchie**, and **Doug McIlroy**). It emphasizes building software using **small, simple, highly modular, and composable tools** rather than large, complex, monolithic applications.

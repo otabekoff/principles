@@ -6,6 +6,11 @@ icon: ZapOff
 
 # Fail-Fast & Robustness
 
+<CoverImage src="/covers/architecture/fail-fast-robustness.webp" alt="Fail-Fast & Robustness">
+  <h1>Fail-Fast & Robustness</h1>
+  <p>A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright amber warning light flashing overhead.</p>
+</CoverImage>
+
 A classic architectural dilemma is deciding how to respond when a minor system error or state anomaly is detected. The **Fail-Fast** principle suggests that a system should immediately stop execution and raise an error as soon as it detects any anomaly, rather than trying to proceed in an undefined, corrupted state.
 
 This stands in creative harmony with the **Robustness Principle (Postel's Law)**, which advises being liberal in what you accept from others. A resilient system achieves its strength by applying both: failing fast internally on programming errors and configuration anomalies to prevent state corruption, while handling external system boundary errors and user inputs gracefully through validation, exception handling, and error boundaries.

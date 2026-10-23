@@ -6,6 +6,11 @@ icon: ChevronDown
 
 # Worse is Better
 
+<CoverImage src="/covers/laws/worse-is-better.webp" alt="Worse is Better">
+  <h1>Worse is Better</h1>
+  <p>A small, slightly scruffy sailboat with a happy robot crew already sailing out of the harbour, while a magnificent unfinished golden galleon is still under construction on the dock.</p>
+</CoverImage>
+
 > "Simplicity of both the interface and the implementation is more important than any other attribute of the system — including correctness, consistency, and completeness." — Richard P. Gabriel
 
 **Worse is Better** (also known as the **New Jersey style**) is a conceptual model of software design formulated by Lisp programmer Richard P. Gabriel in his 1989 essay *"Lisp: Good News, Bad News, How to Win Big"*. It proposes a provocative idea: software that is limited but extremely simple to implement will ultimately outcompete and outlive software that is highly functional but complex.
@@ -33,15 +38,13 @@ This approach strives for rapid implementation and deployment.
 - **Completeness**: Completeness must be sacrificed whenever implementation simplicity is jeopardized.
 
 ```mermaid
-radarChart
+radar-beta
   title Design Priorities
-  axis Simplicity
-  axis Correctness
-  axis Consistency
-  axis Completeness
-  
-  "MIT Approach (The Right Thing)" : [70, 100, 100, 90]
-  "New Jersey (Worse is Better)" : [100, 60, 50, 40]
+  axis simplicity["Simplicity"], correctness["Correctness"], consistency["Consistency"], completeness["Completeness"]
+  curve mit["MIT Approach (The Right Thing)"]{70, 100, 100, 90}
+  curve nj["New Jersey (Worse is Better)"]{100, 60, 50, 40}
+  max 100
+  min 0
 ```
 
 ---

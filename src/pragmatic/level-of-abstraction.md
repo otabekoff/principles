@@ -6,6 +6,11 @@ icon: Layout
 
 # Levels of Abstraction
 
+<CoverImage src="/covers/pragmatic/level-of-abstraction.webp" alt="Levels of Abstraction">
+  <h1>Levels of Abstraction</h1>
+  <p>A tiny white robot peering through a row of nested lenses, each lens showing the same place at a different zoom: a continent, a city, a street, and a single brick.</p>
+</CoverImage>
+
 > "Functions should do one thing. They should do it well. They should do it only." — Robert C. Martin
 
 The principle of **Levels of Abstraction** suggests that every statement in a function, class, or module should be at the **same level of abstraction**. Mixing high-level business rules with low-level technical details inside the same method is one of the most common causes of unreadable and hard-to-maintain code.

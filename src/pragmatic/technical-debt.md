@@ -6,6 +6,11 @@ icon: CircleDollarSign
 
 # Technical Debt
 
+<CoverImage src="/covers/pragmatic/technical-debt.webp" alt="Technical Debt">
+  <h1>Technical Debt</h1>
+  <p>A tiny white robot feeding coins into a ticking meter to keep a duct-taped, hastily patched bridge from collapsing, while a rolled-up blueprint for a proper stone bridge lies unused at its feet.</p>
+</CoverImage>
+
 > **"Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation."** — *Ward Cunningham (1992)*
 
 **Technical Debt** (also known as design debt or code debt) is a conceptual metaphor that compares quick-and-dirty software development shortcuts to financial debt. It posits that choosing a fast, suboptimal technical implementation to achieve a short-term release goal is equivalent to taking out a loan; it provides immediate capability but incurs a continuous "interest" penalty of increased maintenance complexity and reduced delivery speed until the principal "loan" is paid back via refactoring.

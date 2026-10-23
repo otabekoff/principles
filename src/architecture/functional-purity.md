@@ -6,6 +6,11 @@ icon: Sparkles
 
 # Functional Purity
 
+<CoverImage src="/covers/architecture/functional-purity.webp" alt="Functional Purity">
+  <h1>Functional Purity</h1>
+  <p>A tiny white robot feeding identical apples into a pristine glass juicer that always pours identical glasses of juice, leaving no mess and changing nothing around it.</p>
+</CoverImage>
+
 > "Practicality beats purity, but purity is the foundation of predictability."
 
 In software architecture, **Functional Purity** is a design principle that encourages the use of **pure functions** to calculate values and model business domain operations. It serves as the mathematical bedrock for highly predictable, modular, and exceptionally testable software.

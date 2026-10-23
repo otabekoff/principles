@@ -6,6 +6,11 @@ icon: CheckCircle
 
 # Do The Simplest Thing That Could Possibly Work
 
+<CoverImage src="/covers/general/do-simplest-thing.webp" alt="Do The Simplest Thing">
+  <h1>Do The Simplest Thing</h1>
+  <p>A tiny white robot crossing a narrow creek by stepping on a single wooden plank, while an elaborate half-built suspension bridge with idle cranes looms unfinished in the background.</p>
+</CoverImage>
+
 > "Real progress against the real problem is maximized if we just work on what the problem really is." — *Extreme Programming Core Philosophy*
 
 When faced with a complex programming challenge, it is incredibly easy to get sucked into designing massive class hierarchies, custom pub-sub event buses, and elaborate configurations. Developers often believe that "professionalism" means making the code look complex and architectural.

@@ -6,6 +6,11 @@ icon: Zap
 
 # Event-Driven Architecture (EDA)
 
+<CoverImage src="/covers/architecture/event-driven-architecture.webp" alt="Event-Driven Architecture">
+  <h1>Event-Driven Architecture</h1>
+  <p>A tiny white robot ringing a large amber bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.</p>
+</CoverImage>
+
 > **"An event-driven architecture is a software architecture pattern promoting the production, detection, consumption of, and reaction to events."**
 
 In software architecture, **Event-Driven Architecture (EDA)** is a design paradigm where system components communicate by publishing and subscribing to **Events**. An event represents a significant state change that has occurred in the past (e.g., `OrderPlaced`, `UserRegistered`, `InvoicePaid`).

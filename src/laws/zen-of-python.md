@@ -6,6 +6,11 @@ icon: Feather
 
 # The Zen of Python
 
+<CoverImage src="/covers/laws/zen-of-python.webp" alt="The Zen of Python">
+  <h1>The Zen of Python</h1>
+  <p>A tiny white robot meditating in a tranquil rock garden, raking clean parallel lines into the sand, a friendly blue-and-yellow snake coiled peacefully on a nearby stone.</p>
+</CoverImage>
+
 > "Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex." 
 
 **The Zen of Python** is a collection of 19 "guiding principles" for writing computer programs that heavily influence the design of the Python programming language. Code that aligns with these principles is highly regarded and often referred to as **"Pythonic"**.

@@ -6,6 +6,11 @@ icon: Copy
 
 # Future Developers Will Copy You
 
+<CoverImage src="/covers/pragmatic/future-developers.webp" alt="Future Developers Will Copy You">
+  <h1>Future Developers Will Copy You</h1>
+  <p>A tiny white robot leaving footprints in fresh snow while a line of even smaller robots behind it carefully steps exactly into each footprint.</p>
+</CoverImage>
+
 > "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." — John Woods
 
 One of the most powerful sociological truths in software development is this: **"Future developers (including yourself in six months) are going to copy what they see here."**

@@ -6,6 +6,11 @@ icon: RefreshCw
 
 # Code Reuse
 
+<CoverImage src="/covers/general/code-reuse.webp" alt="Code Reuse">
+  <h1>Code Reuse</h1>
+  <p>A tiny white robot assembling a brand-new little spaceship entirely from well-worn, tested spare parts taken from a tidy shelf of previously built machines.</p>
+</CoverImage>
+
 > "A little copying is better than a little dependency." — Rob Pike (*Go Proverbs*)
 
 **Code Reuse** (or software reuse) is the practice of leveraging existing software assets—such as source code, architectures, designs, test suites, or documentation—to build new software rather than writing it from scratch. 

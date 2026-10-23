@@ -6,6 +6,11 @@ icon: Layers3
 
 # Composition over Inheritance
 
+<CoverImage src="/covers/architecture/composition-over-inheritance.webp" alt="Composition over Inheritance">
+  <h1>Composition over Inheritance</h1>
+  <p>A tiny white robot building a custom vehicle by snapping together interchangeable amber parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.</p>
+</CoverImage>
+
 > "It is better to compose what an object can do than extend what it is. Compose when there is a 'has a' (or 'uses a') relationship, inherit when 'is a'."
 
 **Composition over Inheritance** (or the **Composite Reuse Principle**) is a core software design rule. It suggests that classes should achieve polymorphic behavior and code reuse by containing instances of other classes (**composition** / Has-A relationship) rather than inheriting from a parent class (**inheritance** / Is-A relationship).

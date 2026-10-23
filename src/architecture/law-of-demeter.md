@@ -6,6 +6,11 @@ icon: GitPullRequest
 
 # Law of Demeter (LoD)
 
+<CoverImage src="/covers/architecture/law-of-demeter.webp" alt="Law of Demeter">
+  <h1>Law of Demeter</h1>
+  <p>A tiny white robot shopkeeper politely accepting a coin from a customer's outstretched hand, instead of reaching into the customer's pocket to rummage through their wallet.</p>
+</CoverImage>
+
 > "Talk only to your immediate friends; never talk to strangers."
 
 The **Law of Demeter (LoD)**—also known as the **Principle of Least Knowledge**—is a fundamental software design guideline for developing loosely coupled, maintainable systems. Rather than a formal law, it is a pragmatic rule of thumb that limits how deeply an object can traverse the internal structures of other objects.
