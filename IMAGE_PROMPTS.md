@@ -10,7 +10,7 @@ Every page needs two images:
 | **Cover** | Top of the page, under the title | 1360x850 px (16:10) | `public/covers/<section>/<page>.png` |
 | **Card** | Cards on the overview pages that link to it | 1024x1024 px (1:1) | `public/cards/<section>/<page>.png` |
 
-Progress: 24/80 covers, 0/80 cards. Until an image exists, the site shows
+Progress: 39/80 covers, 0/80 cards. Until an image exists, the site shows
 `public/placeholders/cover.webp` or `public/placeholders/card.webp`, so nothing breaks while you work through the list.
 
 ## Workflow
@@ -522,7 +522,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/boy-scout-rule`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/boy-scout-rule.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/boy-scout-rule.png`
 
 ```text
 A tiny white robot scout picking up a single piece of litter as it leaves a forest campsite, the campsite visibly a little cleaner and brighter behind it.
@@ -542,7 +542,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/code-for-the-maintainer`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/code-for-the-maintainer.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/code-for-the-maintainer.png`
 
 ```text
 A tiny white robot planting clear signposts and leaving friendly handwritten notes along a mountain trail for a future traveller robot just visible far behind.
@@ -562,7 +562,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/coding-standards`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/coding-standards.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/coding-standards.png`
 
 ```text
 A row of tiny white robots each building a neat brick wall, all following the same glowing blueprint and laying identical bricks in the same tidy pattern.
@@ -582,7 +582,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/easy-to-delete`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/easy-to-delete.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/easy-to-delete.png`
 
 ```text
 A tiny white robot cleanly lifting one building-block house out of a colourful model city, every other building still standing and connected around the empty spot.
@@ -602,7 +602,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/findability-discoverability`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/findability-discoverability.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/findability-discoverability.png`
 
 ```text
 A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing floor arrows leading it straight to the exact box it needs.
@@ -622,7 +622,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/future-developers`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/future-developers.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/future-developers.png`
 
 ```text
 A tiny white robot leaving footprints in fresh snow while a line of even smaller robots behind it carefully steps exactly into each footprint.
@@ -642,7 +642,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/level-of-abstraction`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/level-of-abstraction.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/level-of-abstraction.png`
 
 ```text
 A tiny white robot peering through a row of nested lenses, each lens showing the same place at a different zoom: a continent, a city, a street, and a single brick.
@@ -662,7 +662,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/make-it-work-right-fast`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/make-it-work-right-fast.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/make-it-work-right-fast.png`
 
 ```text
 Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek racing bike.
@@ -682,7 +682,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/non-breaking-changes`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/non-breaking-changes.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/non-breaking-changes.png`
 
 ```text
 A tiny white robot crew building a new modern bridge right beside an old one, little cars still flowing over the old bridge until the new one is ready to open.
@@ -702,7 +702,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/premature-optimization`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/premature-optimization.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/premature-optimization.png`
 
 ```text
 A tiny white robot lovingly polishing the chrome wheels of a race car that has no engine yet, while a stopwatch lies forgotten on the garage floor.
@@ -722,7 +722,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/technical-debt`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/technical-debt.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/technical-debt.png`
 
 ```text
 A tiny white robot feeding coins into a ticking meter to keep a duct-taped, hastily patched bridge from collapsing, while a rolled-up blueprint for a proper stone bridge lies unused at its feet.
@@ -742,7 +742,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/pragmatic/type-driven-development`
 
-⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/type-driven-development.png`
+✅ **Cover**, 1360x850, save as `public/covers/pragmatic/type-driven-development.png`
 
 ```text
 A tiny white robot fitting uniquely shaped glowing blocks into a giant shape-sorter toy, each block sliding only into its matching hole.
@@ -764,7 +764,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/cohesion`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/cohesion.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/cohesion.png`
 
 ```text
 A tiny white robot opening a perfectly organised bicycle-repair toolbox where every compartment holds a tool for that one job and nothing unrelated is inside.
@@ -784,7 +784,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/composition-over-inheritance`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/composition-over-inheritance.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/composition-over-inheritance.png`
 
 ```text
 A tiny white robot building a custom vehicle by snapping together interchangeable parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.
@@ -804,7 +804,7 @@ Style: hand-drawn children's-book illustration, clean ink outlines with soft wat
 
 Page: `/architecture/coupling`
 
-⬜ **Cover**, 1360x850, save as `public/covers/architecture/coupling.png`
+✅ **Cover**, 1360x850, save as `public/covers/architecture/coupling.png`
 
 ```text
 A split scene: a tiny white robot tangled in a mess of knotted ropes tying all its machines together, beside a tidy workshop where the same machines connect only through a few neat cables with plugs.
