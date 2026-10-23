@@ -2,14 +2,14 @@
 title: Make It Work, Right, Fast
 description: "A practical workflow for software development: Make it work, make it right, make it fast."
 icon: Zap
-cardPrompt: "A wooden cart, a sturdy bicycle and a sleek violet racing bike lined up from left to right."
+cardPrompt: "Three vehicles left to right with arrows: a wobbly cart labelled \"WORK\", a sturdy bicycle labelled \"RIGHT\", a sleek racing bike labelled \"FAST\"."
 ---
 
 # Make It Work, Make It Right, Make It Fast
 
 <CoverImage src="/covers/pragmatic/make-it-work-right-fast.webp" alt="Make It Work, Right, Fast">
   <h1>Make It Work, Right, Fast</h1>
-  <p>Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek violet racing bike.</p>
+  <p>Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek racing bike.</p>
 </CoverImage>
 
 > "Make it work, make it right, make it fast." — Kent Beck

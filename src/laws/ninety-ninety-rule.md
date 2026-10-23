@@ -2,7 +2,7 @@
 title: The Ninety-Ninety Rule
 description: "A humorous but highly accurate software estimation adage: The first 90% of the code accounts for the first 90% of the development time."
 icon: Hourglass
-cardPrompt: "A small flag on a mountain summit with a second, equally tall peak looming behind it."
+cardPrompt: "A climber planting a flag on a peak labelled \"90% DONE\", only to see a second peak behind labelled \"THE OTHER 90%\"."
 ---
 
 # The Ninety-Ninety Rule

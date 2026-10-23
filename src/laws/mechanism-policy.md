@@ -2,14 +2,14 @@
 title: Separation of Mechanism and Policy
 description: "A core computer science design principle: separating high-level business rules (policies) from low-level execution engines (mechanisms)."
 icon: Split
-cardPrompt: "Fixed steel railway tracks at a junction with a small violet timetable card pinned beside the switch."
+cardPrompt: "Railway tracks and a switch labelled \"MECHANISM\", with a timetable card in a character's hand labelled \"POLICY\"."
 ---
 
 # Separation of Mechanism and Policy
 
 <CoverImage src="/covers/laws/mechanism-policy.webp" alt="Mechanism and Policy">
   <h1>Mechanism and Policy</h1>
-  <p>A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small violet timetable that decides where each train goes.</p>
+  <p>A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small timetable that decides where each train goes.</p>
 </CoverImage>
 
 > "Mechanisms (those parts of a system implementation that control authorization and resource allocation) should not dictate the policies according to which decisions are made." — Operating Systems Design Principle

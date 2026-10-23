@@ -2,7 +2,7 @@
 title: Chesterton's Fence
 description: Don't destroy a fence until you know why it was put up. A foundational principle for refactoring, architectural changes, and code deletion.
 icon: ShieldAlert
-cardPrompt: "A lonely wooden fence in a meadow with a magnifying glass resting against one post."
+cardPrompt: "A curious character with a magnifying glass at a lonely fence, a thought bubble \"WHY IS THIS HERE?\" and sleepy sheep hidden behind a hill."
 ---
 
 # Chesterton's Fence

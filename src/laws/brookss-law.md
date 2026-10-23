@@ -2,7 +2,7 @@
 title: Brooks's Law
 description: Adding human resources to a late software project makes it later.
 icon: UserMinus
-cardPrompt: "A small raft sinking under too many robot workers crowded onto it."
+cardPrompt: "A small raft sinking under too many workers, a clock labelled \"LATE\" and a speech bubble \"MORE PEOPLE = SLOWER\"."
 ---
 
 # Brooks's Law

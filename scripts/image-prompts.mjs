@@ -18,15 +18,18 @@ const SECTIONS = [
   ['laws', 'Laws & Aphorisms'],
 ]
 
-// Shared look, so the whole series reads as one set
-const LOOK =
-  'Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, ' +
-  'glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. ' +
-  'No text, letters, numbers or logos anywhere in the image.'
-
-// Sizes match the frames on the site; scripts/optimize-images.py centre-crops to them exactly
-const COVER_STYLE = `Style: ${LOOK} Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.`
-const CARD_STYLE = `Style: ${LOOK} A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.`
+// Two deliberately different looks, matching the Design Patterns site: cinematic 3D covers, hand-drawn cards.
+// Sizes match the frames on the site; scripts/optimize-images.py centre-crops to them exactly.
+const COVER_STYLE =
+  'Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring ' +
+  'character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one ' +
+  'subtle violet accent light, shallow depth of field, subject centred with room around it. ' +
+  'No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.'
+const CARD_STYLE =
+  "Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly " +
+  '(objects and characters may have simple smiling faces), on a pure white background with generous white space. ' +
+  'Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, ' +
+  'connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.'
 
 const pages = fs
   .readdirSync(SRC, { recursive: true })
@@ -62,7 +65,7 @@ Every page needs two images:
 | Image | Where it shows | Size | Save as |
 | --- | --- | --- | --- |
 | **Cover** | Top of the page, under the title | 1360x850 px (16:10) | \`public/covers/<section>/<page>.png\` |
-| **Card** | Cards on the overview pages that link to it | 1024x640 px (16:10) | \`public/cards/<section>/<page>.png\` |
+| **Card** | Cards on the overview pages that link to it | 1024x1024 px (1:1) | \`public/cards/<section>/<page>.png\` |
 
 Progress: ${covers}/${pages.length} covers, ${cards}/${pages.length} cards. Until an image exists, the site shows
 \`public/placeholders/cover.webp\` or \`public/placeholders/card.webp\`, so nothing breaks while you work through the list.
@@ -75,7 +78,8 @@ Progress: ${covers}/${pages.length} covers, ${cards}/${pages.length} cards. Unti
    a 1200x630 social preview in \`public/og/\` for covers.
 4. Delete the PNGs and commit the \`.webp\` and \`.jpg\` files. The pages pick them up automatically.
 
-Every scene stars the same tiny white robot used on Design Patterns, so the two sites look like siblings.
+The two styles follow the Design Patterns site, so the sites look like siblings: covers are cinematic 3D renders
+starring the same tiny white robot; cards are hand-drawn watercolour sketches on white with short labels.
 
 ## Shared styles
 
@@ -93,7 +97,7 @@ for (const [key, heading] of SECTIONS) {
     out += `${exists('covers', p.image) ? '✅' : '⬜'} **Cover**, 1360x850, save as \`public/covers/${p.image}.png\`\n\n`
     out += '```text\n' + `${p.scene}\n\n${COVER_STYLE}\n` + '```\n'
     if (p.card) {
-      out += `\n${exists('cards', p.image) ? '✅' : '⬜'} **Card**, 1024x640, save as \`public/cards/${p.image}.png\`\n\n`
+      out += `\n${exists('cards', p.image) ? '✅' : '⬜'} **Card**, 1024x1024, save as \`public/cards/${p.image}.png\`\n\n`
       out += '```text\n' + `${p.card}\n\n${CARD_STYLE}\n` + '```\n'
     }
   }

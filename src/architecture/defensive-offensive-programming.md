@@ -2,14 +2,14 @@
 title: Defensive & Offensive Programming
 description: Learn how to combine Defensive Programming at your system boundaries with Offensive Programming in your core to write robust, bug-free applications.
 icon: ShieldAlert
-cardPrompt: "A knight's shield leaning against a castle gate beside a brightly ringing alarm bell."
+cardPrompt: "A knight with a shield checking visitors at a gate labelled \"VALIDATE\", and a loud alarm bell inside labelled \"FAIL LOUDLY\"."
 ---
 
 # Defensive & Offensive Programming
 
 <CoverImage src="/covers/architecture/defensive-offensive-programming.webp" alt="Defensive & Offensive Programming">
   <h1>Defensive & Offensive Programming</h1>
-  <p>A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud violet alarm bell at the very first sign of trouble.</p>
+  <p>A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud alarm bell at the very first sign of trouble.</p>
 </CoverImage>
 
 In systems design, developers often debate how to handle unexpected inputs and runtime errors. **Defensive Programming** and **Offensive Programming** represent two distinct, yet highly complementary, strategies for ensuring system integrity, security, and reliability.

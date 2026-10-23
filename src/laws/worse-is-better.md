@@ -2,7 +2,7 @@
 title: Worse is Better
 description: "A software design philosophy advocating that simplicity of both interface and implementation is more important than completeness."
 icon: ChevronDown
-cardPrompt: "A small scruffy sailboat sailing away from an unfinished golden galleon on a dock."
+cardPrompt: "A scruffy little sailboat labelled \"SHIPPED\" sailing away from a grand unfinished galleon labelled \"PERFECT\"."
 ---
 
 # Worse is Better

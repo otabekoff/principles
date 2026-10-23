@@ -2,14 +2,14 @@
 title: Composition over Inheritance
 description: A complete guide to the Composition over Inheritance principle.
 icon: Layers3
-cardPrompt: "A small custom vehicle snapped together from interchangeable violet parts: wheels, wings and a propeller."
+cardPrompt: "A little vehicle snapped together from parts labelled \"WHEELS\", \"WINGS\" and \"PROPELLER\", beside a tangled family tree with a red cross over it."
 ---
 
 # Composition over Inheritance
 
 <CoverImage src="/covers/architecture/composition-over-inheritance.webp" alt="Composition over Inheritance">
   <h1>Composition over Inheritance</h1>
-  <p>A tiny white robot building a custom vehicle by snapping together interchangeable violet parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.</p>
+  <p>A tiny white robot building a custom vehicle by snapping together interchangeable parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.</p>
 </CoverImage>
 
 > "It is better to compose what an object can do than extend what it is. Compose when there is a 'has a' (or 'uses a') relationship, inherit when 'is a'."

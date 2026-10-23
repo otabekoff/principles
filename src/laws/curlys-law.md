@@ -2,7 +2,7 @@
 title: Curly's Law (Do One Thing)
 description: Choose a single, clearly defined goal for any particular bit of code. Do One Thing.
 icon: Target
-cardPrompt: "A cowboy hat beside a single perfectly sharpened tool."
+cardPrompt: "A cowboy holding up one finger with a speech bubble \"ONE THING\", a single sharp tool on their belt."
 ---
 
 # Curly's Law (Do One Thing)

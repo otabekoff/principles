@@ -2,14 +2,14 @@
 title: The Power of 10 Safety Rules
 description: "A complete guide to Gerard J. Holzmann's rules for safety-critical systems, MISRA C compliance, and the NASA study of the Toyota electronic throttle firmware."
 icon: Shield
-cardPrompt: "A clipboard checklist of ten glowing violet ticks beside a small rocket."
+cardPrompt: "A clipboard with ten checkboxes ticked, a small rocket beside it and a label \"SAFETY RULES\"."
 ---
 
 # The Power of 10 Safety Rules
 
 <CoverImage src="/covers/laws/power-of-10.webp" alt="The Power of 10">
   <h1>The Power of 10</h1>
-  <p>A tiny white robot astronaut working through a pre-flight checklist of ten glowing violet items beside a small rocket on its launch pad.</p>
+  <p>A tiny white robot astronaut working through a pre-flight checklist of ten glowing items beside a small rocket on its launch pad.</p>
 </CoverImage>
 
 > "Rules are like guardrails on a mountain road; they keep you on track when things get slippery." — Gerard J. Holzmann

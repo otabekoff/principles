@@ -8,7 +8,7 @@ icon: Unlock
 
 <CoverImage src="/covers/solid/ocp.webp" alt="Ochiq-yopiq tamoyili (OCP)">
   <h1>Ochiq-yopiq tamoyili (OCP)</h1>
-  <p>Kichkina oq robot muhrlangan, yaltiroq mashinaning yon tomoniga standart uyacha orqali yangi porlayotgan binafsha rang modulni ulamoqda, mashina korpusini esa umuman ochmayapti.</p>
+  <p>Kichkina oq robot muhrlangan, yaltiroq mashinaning yon tomoniga standart uyacha orqali yangi porlayotgan modulni ulamoqda, mashina korpusini esa umuman ochmayapti.</p>
 </CoverImage>
 
 > "Dasturiy ta'minot ob'ektlari (klasslar, modullar, funktsiyalar va boshqalar) kengaytirish uchun ochiq, lekin o'zgartirish uchun yopiq bo'lishi kerak." — Bertrand Meyer

@@ -55,7 +55,7 @@ scripts/                 # Content checks, the image pipeline and the prompt lis
 ## Writing Content
 
 - Each page starts with frontmatter: `title`, `description` and `icon` (a [Lucide](https://lucide.dev/icons) icon name in PascalCase, shown in the sidebar).
-- Under the H1, a `<CoverImage src="/covers/<section>/<page>.webp">` holds a short title and the scene used to generate the cover (1360x850). The `cardPrompt` frontmatter holds the scene for the page's card image (`/cards/<section>/<page>.webp`, 1024x640). Until an image exists, the site shows a placeholder. See [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) for the workflow.
+- Under the H1, a `<CoverImage src="/covers/<section>/<page>.webp">` holds a short title and the scene used to generate the cover (1360x850). The `cardPrompt` frontmatter holds the scene for the page's card image (`/cards/<section>/<page>.webp`, 1024x1024). Until an image exists, the site shows a placeholder. See [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md) for the workflow.
 - Group implementations with `::: code-group` and label tabs, e.g. ` ```ts [❌ Violation] `.
 - Diagrams go in ` ```mermaid ` blocks.
 - Add new pages to the sidebar in `.vitepress/config/langs/en.ts` and `uz.ts`.

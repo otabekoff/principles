@@ -2,14 +2,14 @@
 title: Principle of Least Privilege
 description: Restrict access rights for users, accounts, and processes to only those absolutely necessary to perform their work.
 icon: Lock
-cardPrompt: "A key ring holding just one small glowing violet key."
+cardPrompt: "A key ring with one small key labelled \"ONLY WHAT YOU NEED\", facing a row of doors where just one door is open."
 ---
 
 # Principle of Least Privilege
 
 <CoverImage src="/covers/general/least-privilege.webp" alt="Least Privilege">
   <h1>Least Privilege</h1>
-  <p>A tiny white robot caretaker holding a key ring with just one small violet key, standing in a long hallway of locked doors where only a single door is open to it.</p>
+  <p>A tiny white robot caretaker holding a key ring with just one small key, standing in a long hallway of locked doors where only a single door is open to it.</p>
 </CoverImage>
 
 > **"Every program and every privileged user of the system should operate using the least set of privileges necessary to complete the job."** — *Jerome Saltzer (CACM, 1974)*

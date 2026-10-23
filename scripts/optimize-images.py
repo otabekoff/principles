@@ -7,7 +7,7 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 PUBLIC = Path(__file__).resolve().parent.parent / "public"
-SIZE = {"covers": (1360, 850), "cards": (1024, 640)}  # 16:10 frames at 2x the on-page display width
+SIZE = {"covers": (1360, 850), "cards": (1024, 1024)}  # 16:10 covers and square cards, as on design-patterns
 OG_SIZE = (1200, 630)
 
 

@@ -2,14 +2,14 @@
 title: Liskov Substitution Principle (LSP)
 description: A complete guide to the Liskov Substitution Principle (Strong Behavioral Subtyping), its formal rules, history constraint, and design metrics.
 icon: Repeat
-cardPrompt: "Two light bulbs, one plain and one glowing violet, side by side in front of the same lamp socket."
+cardPrompt: "A desk lamp with a dashed arrow swapping a plain bulb labelled \"BASE\" for a fancy bulb labelled \"SUBTYPE\", both shining exactly the same."
 ---
 
 # Liskov Substitution Principle (LSP)
 
 <CoverImage src="/covers/solid/lsp.webp" alt="Liskov Substitution">
   <h1>Liskov Substitution</h1>
-  <p>A tiny white robot swapping an ordinary light bulb for a fancy violet smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.</p>
+  <p>A tiny white robot swapping an ordinary light bulb for a fancy smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.</p>
 </CoverImage>
 
 > **"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."** — *Barbara Liskov*

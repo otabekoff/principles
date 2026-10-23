@@ -2,14 +2,14 @@
 title: The Unix Philosophy
 description: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
 icon: Terminal
-cardPrompt: "Three small simple machines connected in a row by glowing violet pipes."
+cardPrompt: "Three small machines connected by pipes labelled \"FILTER\", \"SORT\" and \"COUNT\", with the \"|\" pipe symbol drawn between them."
 ---
 
 # The Unix Philosophy
 
 <CoverImage src="/covers/laws/unix-philosophy.webp" alt="The Unix Philosophy">
   <h1>The Unix Philosophy</h1>
-  <p>A row of small, simple machines connected by glowing violet pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.</p>
+  <p>A row of small, simple machines connected by glowing pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.</p>
 </CoverImage>
 
 > **"Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."** — *Doug McIlroy (1978)*

@@ -2,14 +2,14 @@
 title: Abstraction Principle
 description: "A foundational dictum in software engineering: reduce duplication of information by making use of programming language abstractions."
 icon: Target
-cardPrompt: "A single sleek violet lever on a smooth panel, faint outlines of gears hidden behind it."
+cardPrompt: "A friendly remote control with one big button labelled \"START\", and a dashed bubble showing a messy pile of gears hidden inside labelled \"DETAILS\"."
 ---
 
 # Abstraction Principle
 
 <CoverImage src="/covers/general/abstraction-principle.webp" alt="Abstraction Principle">
   <h1>Abstraction Principle</h1>
-  <p>A tiny white robot pulling a single violet lever on a smooth, minimal control panel, while the panel's transparent back reveals a vast hidden clockwork of thousands of turning gears.</p>
+  <p>A tiny white robot pulling a single lever on a smooth, minimal control panel, while the panel's transparent back reveals a vast hidden clockwork of thousands of turning gears.</p>
 </CoverImage>
 
 > "Each significant piece of functionality in a program should be implemented in just one place in the source code. Where similar functions are carried out by distinct pieces of code, it is generally beneficial to combine them into one by abstracting out the varying parts." — Benjamin C. Pierce (*Types and Programming Languages*, 2002)

@@ -8,7 +8,7 @@ Every page needs two images:
 | Image | Where it shows | Size | Save as |
 | --- | --- | --- | --- |
 | **Cover** | Top of the page, under the title | 1360x850 px (16:10) | `public/covers/<section>/<page>.png` |
-| **Card** | Cards on the overview pages that link to it | 1024x640 px (16:10) | `public/cards/<section>/<page>.png` |
+| **Card** | Cards on the overview pages that link to it | 1024x1024 px (1:1) | `public/cards/<section>/<page>.png` |
 
 Progress: 0/80 covers, 0/80 cards. Until an image exists, the site shows
 `public/placeholders/cover.webp` or `public/placeholders/card.webp`, so nothing breaks while you work through the list.
@@ -21,13 +21,14 @@ Progress: 0/80 covers, 0/80 cards. Until an image exists, the site shows
    a 1200x630 social preview in `public/og/` for covers.
 4. Delete the PNGs and commit the `.webp` and `.jpg` files. The pages pick them up automatically.
 
-Every scene stars the same tiny white robot used on Design Patterns, so the two sites look like siblings.
+The two styles follow the Design Patterns site, so the sites look like siblings: covers are cinematic 3D renders
+starring the same tiny white robot; cards are hand-drawn watercolour sketches on white with short labels.
 
 ## Shared styles
 
-**Cover:** Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+**Cover:** Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 
-**Card:** Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+**Card:** Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 
 ## Getting Started
 
@@ -38,17 +39,17 @@ Page: `/core-concepts`
 ⬜ **Cover**, 1360x850, save as `public/covers/getting-started/core-concepts.png`
 
 ```text
-A tiny white robot in a cozy wooden workshop, sorting glowing violet building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.
+A tiny white robot in a cozy wooden workshop, sorting glowing building blocks into neatly organised drawers, each drawer marked with a different simple symbol, under a large chalkboard covered in tidy diagrams.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/getting-started/core-concepts.png`
+⬜ **Card**, 1024x1024, save as `public/cards/getting-started/core-concepts.png`
 
 ```text
-A small wooden chest of drawers with one drawer pulled open, revealing neatly stacked glowing violet building blocks.
+A cute wooden cabinet with three open drawers labelled "SIMPLICITY", "COHESION" and "CONTRACTS", each holding a few smiling building blocks.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Introduction
@@ -58,17 +59,17 @@ Page: `/introduction`
 ⬜ **Cover**, 1360x850, save as `public/covers/getting-started/introduction.png`
 
 ```text
-A tiny white robot standing on a hilltop at dawn, holding up a glowing violet compass whose needle points toward a distant, orderly city of clean geometric buildings, while a tangled jungle of vines and loose wires lies behind it.
+A tiny white robot standing on a hilltop at dawn, holding up a glowing compass whose needle points toward a distant, orderly city of clean geometric buildings, while a tangled jungle of vines and loose wires lies behind it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/getting-started/introduction.png`
+⬜ **Card**, 1024x1024, save as `public/cards/getting-started/introduction.png`
 
 ```text
-A glowing violet compass lying open on a dark stone surface, its needle pointing firmly in one direction.
+A cheerful little explorer holding a big compass whose needle points to a signpost labelled "CLEAN CODE", while a tangled scribble labelled "SPAGHETTI" sits behind them.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Learning Tour
@@ -78,17 +79,17 @@ Page: `/learning-tour`
 ⬜ **Cover**, 1360x850, save as `public/covers/getting-started/learning-tour.png`
 
 ```text
-A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing violet stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.
+A tiny white robot with a small backpack and an unfolded paper map, hopping along a winding path of glowing stepping stones that connects a chain of miniature islands, each island crowned with a different little monument.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/getting-started/learning-tour.png`
+⬜ **Card**, 1024x1024, save as `public/cards/getting-started/learning-tour.png`
 
 ```text
-A folded paper map with a dotted violet trail winding between little island illustrations, a tiny white robot figurine standing at the start.
+A small dotted trail hopping across five tiny islands, each with a little flag: "GENERAL", "SOLID", "CLEAN CODE", "ARCHITECTURE", "TESTING", and a happy backpacker at the start.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Quick Reference
@@ -98,17 +99,17 @@ Page: `/quick-reference`
 ⬜ **Cover**, 1360x850, save as `public/covers/getting-started/quick-reference.png`
 
 ```text
-A tiny white robot flipping through a huge pocket field guide whose pages pop up into small 3D illustrations, a magnifying glass in one hand and an violet ribbon bookmark trailing from the book.
+A tiny white robot flipping through a huge pocket field guide whose pages pop up into small 3D illustrations, a magnifying glass in one hand and a ribbon bookmark trailing from the book.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/getting-started/quick-reference.png`
+⬜ **Card**, 1024x1024, save as `public/cards/getting-started/quick-reference.png`
 
 ```text
-A thick pocket field guide standing upright with a glowing violet ribbon bookmark and a small magnifying glass leaning against it.
+An open pocket handbook with friendly tabbed pages labelled "SOLID", "DRY", "KISS" and "YAGNI", a magnifying glass resting on it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## General Principles
@@ -120,17 +121,17 @@ Page: `/general/abstraction-principle`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/abstraction-principle.png`
 
 ```text
-A tiny white robot pulling a single violet lever on a smooth, minimal control panel, while the panel's transparent back reveals a vast hidden clockwork of thousands of turning gears.
+A tiny white robot pulling a single lever on a smooth, minimal control panel, while the panel's transparent back reveals a vast hidden clockwork of thousands of turning gears.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/abstraction-principle.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/abstraction-principle.png`
 
 ```text
-A single sleek violet lever on a smooth panel, faint outlines of gears hidden behind it.
+A friendly remote control with one big button labelled "START", and a dashed bubble showing a messy pile of gears hidden inside labelled "DETAILS".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Black Box
@@ -140,17 +141,17 @@ Page: `/general/black-box`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/black-box.png`
 
 ```text
-A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped violet parcels as they slide out of the other side, with no way to see inside the box.
+A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped parcels as they slide out of the other side, with no way to see inside the box.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/black-box.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/black-box.png`
 
 ```text
-A matte-black cube with a colourful cube entering one side and a neatly wrapped violet parcel leaving the other.
+A smiling black box with an arrow of raw blocks going in labelled "INPUT" and a neat wrapped gift coming out labelled "OUTPUT", a question mark floating above it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Code Reuse
@@ -162,15 +163,15 @@ Page: `/general/code-reuse`
 ```text
 A tiny white robot assembling a brand-new little spaceship entirely from well-worn, tested spare parts taken from a tidy shelf of previously built machines.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/code-reuse.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/code-reuse.png`
 
 ```text
-A tiny spaceship built from mismatched, well-worn spare parts, one glowing violet bolt holding it together.
+A cute toy robot built from parts pulled off a shelf of labelled boxes "WHEELS", "ARMS" and "HEAD", each part with a little "TESTED" tick.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Do The Simplest Thing
@@ -182,15 +183,15 @@ Page: `/general/do-simplest-thing`
 ```text
 A tiny white robot crossing a narrow creek by stepping on a single wooden plank, while an elaborate half-built suspension bridge with idle cranes looms unfinished in the background.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/do-simplest-thing.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/do-simplest-thing.png`
 
 ```text
-A single wooden plank bridging a narrow creek, lit by a soft violet glow.
+A character crossing a stream on a single plank labelled "SIMPLE", next to a half-finished suspension bridge labelled "SOMEDAY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### DRY vs WET
@@ -200,17 +201,17 @@ Page: `/general/dry-wet`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/dry-wet.png`
 
 ```text
-A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft violet glow.
+A split scene: on the left, a tiny white robot frantically repainting the same sign on twenty identical doors; on the right, the same robot calmly adjusting one master stencil that updates every door at once with a soft glow.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/dry-wet.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/dry-wet.png`
 
 ```text
-One violet master stencil hovering above a row of identical small doors, each door glowing with the same matching sign.
+One smiling master stamp labelled "ONE SOURCE" with dashed arrows to five identical doors, next to a tired character painting the same sign on each door by hand labelled "COPY-PASTE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Encapsulate What Changes
@@ -220,17 +221,17 @@ Page: `/general/encapsulate-what-changes`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/encapsulate-what-changes.png`
 
 ```text
-A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy violet-lined box with a standard plug, so the rest of the machine connects to the box instead of the creature.
+A tiny white robot carefully placing a wildly shape-shifting glowing creature into a sturdy steel box with a standard plug, so the rest of the machine connects to the box instead of the creature.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/encapsulate-what-changes.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/encapsulate-what-changes.png`
 
 ```text
-A sturdy box with a standard plug on the outside and a swirling shape-shifting violet glow peeking from under the lid.
+A wiggly, shape-shifting little creature labelled "CHANGES" peeking out of a sturdy box with a plain plug on the side labelled "STABLE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### KISS
@@ -240,17 +241,17 @@ Page: `/general/kiss`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/kiss.png`
 
 ```text
-A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip glowing soft violet.
+A tiny white robot proudly holding up a simple paper clip next to a towering, wobbling Rube Goldberg contraption that does the exact same job, the paper clip gleaming in a small spotlight.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/kiss.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/kiss.png`
 
 ```text
-A single glowing violet paper clip lying on a dark surface.
+A tiny smiling paper clip labelled "SIMPLE" next to a huge wobbly contraption of gears and pulleys labelled "CLEVER", both holding the same two sheets of paper.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Least Astonishment
@@ -262,15 +263,15 @@ Page: `/general/least-astonishment`
 ```text
 A tiny white robot pushing a door with a push-plate and the door swinging open exactly as expected, while in the background a bewildered robot tugs at a handle and its door slides straight up into the ceiling.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/least-astonishment.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/least-astonishment.png`
 
 ```text
-A door with a simple push-plate swinging open exactly as expected, warm violet light spilling through.
+A door with a push plate labelled "PUSH" swinging open the expected way, a happy face above it, and a tiny surprised character next to a weird door sliding into the ceiling.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Least Privilege
@@ -280,17 +281,17 @@ Page: `/general/least-privilege`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/least-privilege.png`
 
 ```text
-A tiny white robot caretaker holding a key ring with just one small violet key, standing in a long hallway of locked doors where only a single door is open to it.
+A tiny white robot caretaker holding a key ring with just one small key, standing in a long hallway of locked doors where only a single door is open to it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/least-privilege.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/least-privilege.png`
 
 ```text
-A key ring holding just one small glowing violet key.
+A key ring with one small key labelled "ONLY WHAT YOU NEED", facing a row of doors where just one door is open.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Orthogonality
@@ -300,17 +301,17 @@ Page: `/general/orthogonality`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/orthogonality.png`
 
 ```text
-A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing violet light in a neat grid, moving one never disturbing any other.
+A tiny white robot at a mixing desk of perfectly independent sliders, each slider controlling exactly one glowing light in a neat grid, moving one never disturbing any other.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/orthogonality.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/orthogonality.png`
 
 ```text
-A row of independent mixing-desk sliders, each topped with its own small violet light.
+Three independent sliders labelled "COLOR", "SIZE" and "SPEED", each wired to only its own little light bulb, with dashed arrows that never cross.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Robustness Principle
@@ -320,17 +321,17 @@ Page: `/general/robustness-principle`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/robustness-principle.png`
 
 ```text
-A tiny white robot postmaster at a counter cheerfully accepting crumpled, oddly shaped letters from a queue, while sending out only perfectly folded envelopes sealed with violet wax.
+A tiny white robot postmaster at a counter cheerfully accepting crumpled, oddly shaped letters from a queue, while sending out only perfectly folded envelopes sealed with red wax.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/robustness-principle.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/robustness-principle.png`
 
 ```text
-A crumpled letter on one side and a perfectly folded envelope sealed with violet wax on the other.
+A cheerful post office counter: crumpled, odd-shaped letters arriving labelled "ACCEPT LIBERALLY", neat sealed envelopes leaving labelled "SEND STRICTLY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Single Source of Truth
@@ -340,17 +341,17 @@ Page: `/general/single-source-of-truth`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/single-source-of-truth.png`
 
 ```text
-Many tiny white robots in a bright round library, all looking at one great glowing violet book on a central pedestal, thin beams of light connecting each robot's tablet to that single book.
+Many tiny white robots in a bright round library, all looking at one great glowing book on a central pedestal, thin beams of light connecting each robot's tablet to that single book.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/single-source-of-truth.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/single-source-of-truth.png`
 
 ```text
-A single glowing violet book on a pedestal, thin beams of light radiating outward from it.
+A big friendly book on a pedestal labelled "TRUTH" with dashed lines to four little tablets that all show the same smiley face.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Separation of Concerns
@@ -360,17 +361,17 @@ Page: `/general/soc`
 ⬜ **Cover**, 1360x850, save as `public/covers/general/soc.png`
 
 ```text
-A tiny white robot arranging a giant bento box, each compartment holding a different neatly separated dish, with nothing spilling over between sections and violet light glowing from the dividers.
+A tiny white robot arranging a giant bento box, each compartment holding a different neatly separated dish, with nothing spilling over between sections and light glowing from the dividers.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/soc.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/soc.png`
 
 ```text
-A top-down view of a bento box with neatly separated compartments, violet light glowing from the dividers.
+A bento box seen from above with compartments labelled "UI", "LOGIC" and "DATA", each holding a different cute food item that never touches the others.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### YAGNI
@@ -382,15 +383,15 @@ Page: `/general/yagni`
 ```text
 A tiny white robot strolling lightly across a bridge with only a small backpack, while another robot struggles behind it, buried under an enormous pile of just-in-case gadgets, umbrellas, ladders and spare wheels.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/general/yagni.png`
+⬜ **Card**, 1024x1024, save as `public/cards/general/yagni.png`
 
 ```text
-A small, light backpack next to a towering, toppling pile of just-in-case gadgets.
+A light-footed hiker with a small backpack labelled "NEEDED NOW", passing a groaning hiker buried under gadgets labelled "JUST IN CASE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## SOLID
@@ -402,17 +403,17 @@ Page: `/solid/dip`
 ⬜ **Cover**, 1360x850, save as `public/covers/solid/dip.png`
 
 ```text
-A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard violet wall socket, the wiring behind the wall hidden and interchangeable.
+A tiny white robot plugging different appliances, a lamp, a toaster and a radio, into the same standard wall socket, the wiring behind the wall hidden and interchangeable.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/dip.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/dip.png`
 
 ```text
-A single standard violet wall socket with a lamp plug, a toaster plug and a radio plug arranged around it.
+A smiling wall socket labelled "INTERFACE" with a lamp, a toaster and a radio each plugged in by dashed lines.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### SOLID
@@ -422,17 +423,17 @@ Page: `/solid/introduction`
 ⬜ **Cover**, 1360x850, save as `public/covers/solid/introduction.png`
 
 ```text
-Five tiny white robots each holding up one large glowing violet pillar, together supporting the roof of a small, sturdy temple.
+Five tiny white robots each holding up one large glowing pillar, together supporting the roof of a small, sturdy temple.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/introduction.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/introduction.png`
 
 ```text
-Five glowing violet pillars side by side holding up a small stone roof.
+Five smiling pillars labelled "S", "O", "L", "I" and "D" holding up a small temple roof.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Interface Segregation
@@ -444,15 +445,15 @@ Page: `/solid/isp`
 ```text
 A tiny white robot picking a slim, single-purpose remote with three buttons off a wall hook, ignoring a giant remote with hundreds of confusing buttons hanging right next to it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/isp.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/isp.png`
 
 ```text
-A slim three-button remote control lying next to a huge remote crowded with hundreds of buttons.
+A slim three-button remote labelled "WHAT I NEED" beside a giant remote crowded with buttons labelled "EVERYTHING", a happy face picking the small one.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Liskov Substitution
@@ -462,17 +463,17 @@ Page: `/solid/lsp`
 ⬜ **Cover**, 1360x850, save as `public/covers/solid/lsp.png`
 
 ```text
-A tiny white robot swapping an ordinary light bulb for a fancy violet smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.
+A tiny white robot swapping an ordinary light bulb for a fancy smart bulb in the same lamp socket, and the reading lamp keeps shining on its book exactly as before.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/lsp.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/lsp.png`
 
 ```text
-Two light bulbs, one plain and one glowing violet, side by side in front of the same lamp socket.
+A desk lamp with a dashed arrow swapping a plain bulb labelled "BASE" for a fancy bulb labelled "SUBTYPE", both shining exactly the same.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Open-Closed
@@ -482,17 +483,17 @@ Page: `/solid/ocp`
 ⬜ **Cover**, 1360x850, save as `public/covers/solid/ocp.png`
 
 ```text
-A tiny white robot snapping a new glowing violet module onto the side of a sealed, polished machine through a standard socket, without ever opening the machine's casing.
+A tiny white robot snapping a new glowing module onto the side of a sealed, polished machine through a standard socket, without ever opening the machine's casing.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/ocp.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/ocp.png`
 
 ```text
-A sealed polished machine with a new glowing violet module snapped into a socket on its side.
+A sealed, smiling machine with a padlock labelled "CLOSED" and a new module clicking into a side socket labelled "OPEN FOR EXTENSION".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Single Responsibility
@@ -504,15 +505,15 @@ Page: `/solid/srp`
 ```text
 A calm tiny white robot chef doing one thing perfectly, slicing vegetables, beside a chaotic counter where a stressed robot juggles cooking, washing dishes and answering the phone all at once.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/solid/srp.png`
+⬜ **Card**, 1024x1024, save as `public/cards/solid/srp.png`
 
 ```text
-A single chef's knife resting beside one neatly sliced vegetable on a clean cutting board.
+A calm chef character with one knife labelled "ONE JOB" slicing a carrot, beside a frazzled character juggling a pan, a phone and a sponge.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## Pragmatic & Clean Code
@@ -526,15 +527,15 @@ Page: `/pragmatic/boy-scout-rule`
 ```text
 A tiny white robot scout picking up a single piece of litter as it leaves a forest campsite, the campsite visibly a little cleaner and brighter behind it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/boy-scout-rule.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/boy-scout-rule.png`
 
 ```text
-A tiny white robot scout hand placing a single piece of litter into a small bag, a clean violet-lit campsite behind.
+A little scout picking up one piece of litter at a campsite, a sign reading "LEAVE IT CLEANER" stuck in the ground.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Code for the Maintainer
@@ -544,17 +545,17 @@ Page: `/pragmatic/code-for-the-maintainer`
 ⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/code-for-the-maintainer.png`
 
 ```text
-A tiny white robot planting clear violet signposts and leaving friendly handwritten notes along a mountain trail for a future traveller robot just visible far behind.
+A tiny white robot planting clear signposts and leaving friendly handwritten notes along a mountain trail for a future traveller robot just visible far behind.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/code-for-the-maintainer.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/code-for-the-maintainer.png`
 
 ```text
-A wooden trail signpost with a friendly handwritten note pinned to it, glowing violet in the dusk.
+A trail signpost with friendly notes pinned on it labelled "WHY", "HOW" and "WATCH OUT", a future traveller waving from far away.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Coding Standards
@@ -564,17 +565,17 @@ Page: `/pragmatic/coding-standards`
 ⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/coding-standards.png`
 
 ```text
-A row of tiny white robots each building a neat brick wall, all following the same glowing violet blueprint and laying identical bricks in the same tidy pattern.
+A row of tiny white robots each building a neat brick wall, all following the same glowing blueprint and laying identical bricks in the same tidy pattern.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/coding-standards.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/coding-standards.png`
 
 ```text
-A short, perfectly even brick wall with a violet blueprint unrolled in front of it.
+A row of neat identical brick walls built by little workers following one shared blueprint labelled "STYLE GUIDE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Easy to Delete
@@ -586,15 +587,15 @@ Page: `/pragmatic/easy-to-delete`
 ```text
 A tiny white robot cleanly lifting one building-block house out of a colourful model city, every other building still standing and connected around the empty spot.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/easy-to-delete.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/easy-to-delete.png`
 
 ```text
-One building block lifted cleanly out of a small block city, leaving a neat empty gap.
+A neat block town with one block lifted out by a friendly hand, a label "SAFE TO REMOVE" and the other blocks still smiling.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Findability & Discoverability
@@ -604,17 +605,17 @@ Page: `/pragmatic/findability-discoverability`
 ⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/findability-discoverability.png`
 
 ```text
-A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing violet floor arrows leading it straight to the exact box it needs.
+A tiny white robot in a vast warehouse where every aisle is clearly signposted, glowing floor arrows leading it straight to the exact box it needs.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/findability-discoverability.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/findability-discoverability.png`
 
 ```text
-Glowing violet floor arrows leading down a tidy warehouse aisle to one highlighted box.
+Shelves of neatly labelled boxes with a dotted arrow path on the floor leading to one box labelled "FOUND IT!".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Future Developers Will Copy You
@@ -626,15 +627,15 @@ Page: `/pragmatic/future-developers`
 ```text
 A tiny white robot leaving footprints in fresh snow while a line of even smaller robots behind it carefully steps exactly into each footprint.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/future-developers.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/future-developers.png`
 
 ```text
-A line of footprints in fresh snow, smaller footprints stepping exactly into each one.
+Footprints in snow with a line of smaller characters stepping exactly into them, a speech bubble saying "I'll do what they did!".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Levels of Abstraction
@@ -646,15 +647,15 @@ Page: `/pragmatic/level-of-abstraction`
 ```text
 A tiny white robot peering through a row of nested lenses, each lens showing the same place at a different zoom: a continent, a city, a street, and a single brick.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/level-of-abstraction.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/level-of-abstraction.png`
 
 ```text
-Three nested magnifying lenses, each showing the same city at a different zoom.
+Four stacked frames like a zoom ladder labelled "SYSTEM", "MODULE", "FUNCTION" and "LINE", each showing a closer view of the same little house.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Make It Work, Right, Fast
@@ -664,17 +665,17 @@ Page: `/pragmatic/make-it-work-right-fast`
 ⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/make-it-work-right-fast.png`
 
 ```text
-Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek violet racing bike.
+Three stages from left to right: a tiny white robot riding a wobbly wooden cart, then a sturdy well-built bicycle, then a sleek racing bike.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/make-it-work-right-fast.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/make-it-work-right-fast.png`
 
 ```text
-A wooden cart, a sturdy bicycle and a sleek violet racing bike lined up from left to right.
+Three vehicles left to right with arrows: a wobbly cart labelled "WORK", a sturdy bicycle labelled "RIGHT", a sleek racing bike labelled "FAST".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Non-Breaking Changes
@@ -686,15 +687,15 @@ Page: `/pragmatic/non-breaking-changes`
 ```text
 A tiny white robot crew building a new modern bridge right beside an old one, little cars still flowing over the old bridge until the new one is ready to open.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/non-breaking-changes.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/non-breaking-changes.png`
 
 ```text
-A new modern bridge built right beside an old one, small cars still crossing the old bridge.
+A new bridge labelled "V2" being built beside an old bridge labelled "V1", little cars still happily crossing V1.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Premature Optimization
@@ -706,15 +707,15 @@ Page: `/pragmatic/premature-optimization`
 ```text
 A tiny white robot lovingly polishing the chrome wheels of a race car that has no engine yet, while a stopwatch lies forgotten on the garage floor.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/premature-optimization.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/premature-optimization.png`
 
 ```text
-A polished chrome race-car wheel on a car body with an empty, open engine bay.
+A tiny mechanic polishing a shiny wheel on a race car with an empty engine bay labelled "NO ENGINE YET", a forgotten stopwatch nearby.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Technical Debt
@@ -726,15 +727,15 @@ Page: `/pragmatic/technical-debt`
 ```text
 A tiny white robot feeding coins into a ticking meter to keep a duct-taped, hastily patched bridge from collapsing, while a rolled-up blueprint for a proper stone bridge lies unused at its feet.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/technical-debt.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/technical-debt.png`
 
 ```text
-A duct-taped, patched little bridge with a coin meter ticking beside it.
+A wobbly bridge held together with tape labelled "QUICK FIX", a coin meter beside it labelled "INTEREST", and a rolled-up plan labelled "PROPER FIX".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Type-Driven Development
@@ -744,17 +745,17 @@ Page: `/pragmatic/type-driven-development`
 ⬜ **Cover**, 1360x850, save as `public/covers/pragmatic/type-driven-development.png`
 
 ```text
-A tiny white robot fitting uniquely shaped glowing violet blocks into a giant shape-sorter toy, each block sliding only into its matching hole.
+A tiny white robot fitting uniquely shaped glowing blocks into a giant shape-sorter toy, each block sliding only into its matching hole.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/pragmatic/type-driven-development.png`
+⬜ **Card**, 1024x1024, save as `public/cards/pragmatic/type-driven-development.png`
 
 ```text
-A shape-sorter toy with glowing violet blocks that each fit only their matching hole.
+A shape-sorter box with blocks labelled "EMAIL", "USER ID" and "PRICE", each fitting only its own hole.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## Software Architecture
@@ -768,15 +769,15 @@ Page: `/architecture/cohesion`
 ```text
 A tiny white robot opening a perfectly organised bicycle-repair toolbox where every compartment holds a tool for that one job and nothing unrelated is inside.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/cohesion.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/cohesion.png`
 
 ```text
-An open bicycle-repair toolbox with every compartment holding a tool for that one job.
+An open toolbox labelled "BIKE REPAIR" with every tool belonging to bikes, and a stray frying pan being tossed out.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Composition over Inheritance
@@ -786,17 +787,17 @@ Page: `/architecture/composition-over-inheritance`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/composition-over-inheritance.png`
 
 ```text
-A tiny white robot building a custom vehicle by snapping together interchangeable violet parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.
+A tiny white robot building a custom vehicle by snapping together interchangeable parts, wheels, wings and a propeller, while a towering, tangled family tree of vehicle ancestors looms unused behind it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/composition-over-inheritance.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/composition-over-inheritance.png`
 
 ```text
-A small custom vehicle snapped together from interchangeable violet parts: wheels, wings and a propeller.
+A little vehicle snapped together from parts labelled "WHEELS", "WINGS" and "PROPELLER", beside a tangled family tree with a red cross over it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Coupling
@@ -806,17 +807,17 @@ Page: `/architecture/coupling`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/coupling.png`
 
 ```text
-A split scene: a tiny white robot tangled in a mess of knotted ropes tying all its machines together, beside a tidy workshop where the same machines connect only through a few neat violet cables with plugs.
+A split scene: a tiny white robot tangled in a mess of knotted ropes tying all its machines together, beside a tidy workshop where the same machines connect only through a few neat cables with plugs.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/coupling.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/coupling.png`
 
 ```text
-Two machines joined by a single neat violet cable with plugs, a tangled knot of rope cut away beside them.
+Two machines connected by one neat plug labelled "LOOSE", next to two machines tangled in a knot of ropes labelled "TIGHT".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Command-Query Separation
@@ -826,17 +827,17 @@ Page: `/architecture/cqs`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/cqs.png`
 
 ```text
-A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests stamped in violet.
+A tiny white robot clerk behind a counter with two separate windows: at one it only hands out information cards, at the other it only accepts change requests with a rubber stamp.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/cqs.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/cqs.png`
 
 ```text
-A counter with two separate service windows, one marked with a question-mark sign and one with a pen sign.
+A counter with two windows: one labelled "QUERY" handing out a card, one labelled "COMMAND" receiving a stamped form.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Defensive & Offensive Programming
@@ -846,17 +847,17 @@ Page: `/architecture/defensive-offensive-programming`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/defensive-offensive-programming.png`
 
 ```text
-A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud violet alarm bell at the very first sign of trouble.
+A tiny white robot knight with a shield inspecting every visitor at a castle gate, while inside the walls a second robot rings a loud alarm bell at the very first sign of trouble.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/defensive-offensive-programming.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/defensive-offensive-programming.png`
 
 ```text
-A knight's shield leaning against a castle gate beside a brightly ringing alarm bell.
+A knight with a shield checking visitors at a gate labelled "VALIDATE", and a loud alarm bell inside labelled "FAIL LOUDLY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Design by Contract
@@ -866,17 +867,17 @@ Page: `/architecture/design-by-contract`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/design-by-contract.png`
 
 ```text
-A tiny white robot and a client robot shaking hands over a glowing violet scroll stamped with three wax seals, standing for preconditions, postconditions and invariants.
+A tiny white robot and a client robot shaking hands over a glowing scroll stamped with three wax seals, standing for preconditions, postconditions and invariants.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/design-by-contract.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/design-by-contract.png`
 
 ```text
-A rolled scroll stamped with three glowing violet wax seals.
+A scroll with three wax seals labelled "PRE", "POST" and "INVARIANT", two characters shaking hands over it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Encapsulation & Information Hiding
@@ -888,15 +889,15 @@ Page: `/architecture/encapsulation-information-hiding`
 ```text
 A tiny white robot operating an elegant pocket watch using only its crown and face, while a faint x-ray view hints at the delicate gears safely sealed inside.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/encapsulation-information-hiding.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/encapsulation-information-hiding.png`
 
 ```text
-An elegant closed pocket watch, a faint glow of gears visible through a thin seam.
+A pocket watch showing only its face labelled "PUBLIC", with a dashed bubble revealing gears inside labelled "PRIVATE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Event-Driven Architecture
@@ -906,17 +907,17 @@ Page: `/architecture/event-driven-architecture`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/event-driven-architecture.png`
 
 ```text
-A tiny white robot ringing a large violet bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.
+A tiny white robot ringing a large bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/event-driven-architecture.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/event-driven-architecture.png`
 
 ```text
-A large bell mid-ring with violet sound waves rippling out to tiny houses around it.
+A bell labelled "EVENT" ringing with dashed arrows to three little houses, each reacting differently: a lamp, a window, an oven.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Fail-Fast & Robustness
@@ -926,17 +927,17 @@ Page: `/architecture/fail-fast-robustness`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/fail-fast-robustness.png`
 
 ```text
-A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright violet warning light flashing overhead.
+A tiny white robot pulling the emergency stop cord on a small assembly line the instant a cracked part appears, a bright warning light flashing overhead.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/fail-fast-robustness.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/fail-fast-robustness.png`
 
 ```text
-A red emergency stop button above a small assembly line, a violet warning light flashing.
+An assembly line with a big red button labelled "STOP!" pressed the moment a cracked part appears.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Functional Core, Imperative Shell
@@ -946,17 +947,17 @@ Page: `/architecture/functional-core-imperative-shell`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/functional-core-imperative-shell.png`
 
 ```text
-A glowing, perfectly still violet crystal at the centre of a sphere, surrounded by an outer shell where tiny white robots busily handle deliveries, wires and doors.
+A glowing, perfectly still crystal at the centre of a sphere, surrounded by an outer shell where tiny white robots busily handle deliveries, wires and doors.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/functional-core-imperative-shell.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/functional-core-imperative-shell.png`
 
 ```text
-A perfectly still glowing violet crystal inside a busy transparent outer sphere.
+A calm crystal in the middle labelled "PURE CORE", surrounded by a ring of busy little workers carrying boxes labelled "I/O SHELL".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Functional Purity
@@ -968,15 +969,15 @@ Page: `/architecture/functional-purity`
 ```text
 A tiny white robot feeding identical apples into a pristine glass juicer that always pours identical glasses of juice, leaving no mess and changing nothing around it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/functional-purity.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/functional-purity.png`
 
 ```text
-A pristine glass juicer with identical apples going in and identical glasses of juice coming out.
+A glass juicer with the same apple going in and the same juice coming out, a label "SAME INPUT, SAME OUTPUT" and no mess around it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### GRASP
@@ -988,15 +989,15 @@ Page: `/architecture/grasp`
 ```text
 A tiny white robot foreman on a construction site handing each task to the teammate robot that already holds the right tools and plans for it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/grasp.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/grasp.png`
 
 ```text
-A hard hat and a rolled blueprint being handed from one robot hand to another.
+A friendly foreman handing a task card to the worker holding the matching tools, a label "WHO KNOWS MOST DOES IT".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Inversion of Control
@@ -1008,15 +1009,15 @@ Page: `/architecture/inversion-of-control`
 ```text
 A tiny white robot actor relaxing in a director's chair backstage while the stage crew hands it props and calls it into the spotlight exactly when its scene begins.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/inversion-of-control.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/inversion-of-control.png`
 
 ```text
-An empty director's chair under a single violet spotlight on a small stage.
+A relaxed actor in a director's chair while a stage hand calls "YOU'RE ON!", a sign behind reading "DON'T CALL US".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Law of Demeter
@@ -1028,15 +1029,15 @@ Page: `/architecture/law-of-demeter`
 ```text
 A tiny white robot shopkeeper politely accepting a coin from a customer's outstretched hand, instead of reaching into the customer's pocket to rummage through their wallet.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/law-of-demeter.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/law-of-demeter.png`
 
 ```text
-An outstretched hand offering a single coin to a shopkeeper's open palm.
+A shopkeeper accepting a coin from a customer's hand labelled "ASK", with a crossed-out sketch of reaching into the customer's pocket labelled "DON'T REACH IN".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Reveal Intentions
@@ -1048,15 +1049,15 @@ Page: `/architecture/reveal-intentions`
 ```text
 A tiny white robot fixing clear, descriptive labels onto glass jars in a sunny pantry, next to a dusty shelf of identical unmarked jars nobody can tell apart.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/reveal-intentions.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/reveal-intentions.png`
 
 ```text
-A row of clear glass jars with neat descriptive labels on a pantry shelf.
+Two shelves of jars: neatly labelled jars "SUGAR", "SALT" and "FLOUR" next to a shelf of unlabelled jars with question marks.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Strangler Fig
@@ -1066,17 +1067,17 @@ Page: `/architecture/strangler-fig`
 ⬜ **Cover**, 1360x850, save as `public/covers/architecture/strangler-fig.png`
 
 ```text
-Glowing violet fig vines gradually growing around an old crumbling stone tower and replacing it piece by piece, while tiny white robots tend the new growth.
+Glowing green fig vines gradually growing around an old crumbling stone tower and replacing it piece by piece, while tiny white robots tend the new growth.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/architecture/strangler-fig.png`
+⬜ **Card**, 1024x1024, save as `public/cards/architecture/strangler-fig.png`
 
 ```text
-Glowing violet fig vines wrapping around an old crumbling stone tower.
+Green fig vines labelled "NEW" slowly wrapping around an old crumbling tower labelled "LEGACY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## Testing & Quality
@@ -1090,15 +1091,15 @@ Page: `/testing/arrange-act-assert`
 ```text
 A tiny white robot scientist in three panels: arranging test tubes on a rack, pouring in a single drop of reagent, and checking the resulting colour against a reference chart.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/arrange-act-assert.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/arrange-act-assert.png`
 
 ```text
-Three test tubes in a rack: one being set up, one receiving a drop, one glowing with the result colour.
+Three panels with arrows: test tubes set out labelled "ARRANGE", a drop being added labelled "ACT", a colour checked against a chart labelled "ASSERT".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Behavior-Driven Development
@@ -1110,15 +1111,15 @@ Page: `/testing/behavior-driven-development`
 ```text
 A tiny white robot and a stakeholder robot reading together from a large storybook whose pages unfold into three illustrated scenes: the setup, the action and the outcome.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/behavior-driven-development.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/behavior-driven-development.png`
 
 ```text
-An open storybook whose pages pop up into three small scenes: setup, action and outcome.
+An open storybook with three illustrated pages labelled "GIVEN", "WHEN" and "THEN".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### FIRST
@@ -1128,17 +1129,17 @@ Page: `/testing/first-principles`
 ⬜ **Cover**, 1360x850, save as `public/covers/testing/first-principles.png`
 
 ```text
-A tiny white robot sprinter racing alone in its own isolated lane and crossing the finish line in a blink, an instant pass-or-fail violet scoreboard showing the same result on every lap.
+A tiny white robot sprinter racing alone in its own isolated lane and crossing the finish line in a blink, an instant pass-or-fail scoreboard showing the same result on every lap.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/first-principles.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/first-principles.png`
 
 ```text
-A single running lane with a finish line and a scoreboard showing an instant pass light.
+A little runner in its own lane with five checkpoint flags labelled "FAST", "INDEPENDENT", "REPEATABLE", "SELF-VALIDATING" and "TIMELY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Pass the Tests
@@ -1148,17 +1149,17 @@ Page: `/testing/pass-the-tests`
 ⬜ **Cover**, 1360x850, save as `public/covers/testing/pass-the-tests.png`
 
 ```text
-A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up violet as it passes.
+A tiny white robot driving a small car around a bright test track of cones, ramps and checkpoints, each checkpoint lighting up as it passes.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/pass-the-tests.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/pass-the-tests.png`
 
 ```text
-A small toy car crossing a checkpoint gate that lights up violet.
+A small car driving through a gate of checkpoints that light up with green ticks, a finish flag labelled "ALL GREEN".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Property-Based Testing
@@ -1170,15 +1171,15 @@ Page: `/testing/property-based-testing`
 ```text
 A tiny white robot pouring thousands of random colourful marbles into a sorting machine and checking that every single one still comes out in perfect order.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/property-based-testing.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/property-based-testing.png`
 
 ```text
-A funnel of random colourful marbles pouring in and coming out in a perfectly sorted line.
+A funnel catching a shower of random marbles labelled "RANDOM INPUTS", with a sorted row coming out labelled "ALWAYS SORTED".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Test-Driven Development
@@ -1188,17 +1189,17 @@ Page: `/testing/test-driven-development`
 ⬜ **Cover**, 1360x850, save as `public/covers/testing/test-driven-development.png`
 
 ```text
-A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-violet cycle wheel hanging on the wall.
+A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-cycle wheel hanging on the wall.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/test-driven-development.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/test-driven-development.png`
 
 ```text
-A chalk outline of a suit on fabric with scissors resting beside it.
+A circular cycle of three arrows labelled "RED", "GREEN" and "REFACTOR", with a little tailor drawing a chalk outline in the middle.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The Test Pyramid
@@ -1208,17 +1209,17 @@ Page: `/testing/test-pyramid`
 ⬜ **Cover**, 1360x850, save as `public/covers/testing/test-pyramid.png`
 
 ```text
-A tiny white robot building a pyramid from a broad base of many small violet bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.
+A tiny white robot building a pyramid from a broad base of many small bricks, a middle layer of fewer larger blocks, and a single shining capstone at the top.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/test-pyramid.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/test-pyramid.png`
 
 ```text
-A small pyramid with a wide base of many little bricks, fewer large blocks above and one shining violet capstone.
+A pyramid with a wide base labelled "UNIT", a middle band labelled "INTEGRATION" and a small top labelled "E2E".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The ZOMBIES Strategy
@@ -1230,15 +1231,15 @@ Page: `/testing/zombies-strategy`
 ```text
 A line of cute, friendly cartoon zombie robots shuffling toward a tiny white robot tester, each carrying a different object: an empty box, a single apple, a basket of apples, a little fence, a plug, a spark and a checkmark.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/testing/zombies-strategy.png`
+⬜ **Card**, 1024x1024, save as `public/cards/testing/zombies-strategy.png`
 
 ```text
-A cute, friendly cartoon zombie robot holding an empty box, a single apple and a basket of apples.
+A line of cute, friendly zombies holding signs "ZERO", "ONE", "MANY", "BOUNDARY", "INTERFACE", "EXCEPTION" and "SIMPLE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ## Laws & Aphorisms
@@ -1252,15 +1253,15 @@ Page: `/laws/booch-method`
 ```text
 A tiny white robot architect sketching soft cloud-shaped diagrams on an old drafting table, the clouds floating up off the paper and turning into small glowing objects.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/booch-method.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/booch-method.png`
 
 ```text
-Soft cloud-shaped diagrams floating up off an old drafting sheet.
+Fluffy cloud-shaped boxes connected by arrows, floating up from an old drafting sheet labelled "CLASS DIAGRAM".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Brooks's Law
@@ -1272,15 +1273,15 @@ Page: `/laws/brookss-law`
 ```text
 A tiny white robot foreman watching in dismay as more and more robots crowd onto a small half-built raft, slowing the work and making it sink lower, while a clock tower ticks behind them.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/brookss-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/brookss-law.png`
 
 ```text
-A small raft sinking under too many robot workers crowded onto it.
+A small raft sinking under too many workers, a clock labelled "LATE" and a speech bubble "MORE PEOPLE = SLOWER".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Chesterton's Fence
@@ -1292,15 +1293,15 @@ Page: `/laws/chestertons-fence`
 ```text
 A tiny white robot about to remove a lonely fence in an open meadow, pausing with a magnifying glass to discover that the fence holds back a sleepy flock of sheep just beyond the hill.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/chestertons-fence.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/chestertons-fence.png`
 
 ```text
-A lonely wooden fence in a meadow with a magnifying glass resting against one post.
+A curious character with a magnifying glass at a lonely fence, a thought bubble "WHY IS THIS HERE?" and sleepy sheep hidden behind a hill.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Conway's Law
@@ -1312,15 +1313,15 @@ Page: `/laws/conways-law`
 ```text
 Four teams of tiny white robots on four separate islands, each building its own piece of a bridge, the finished bridge having four distinct sections that mirror the shapes of the islands.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/conways-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/conways-law.png`
 
 ```text
-A bridge made of four distinct sections, each shaped like the island it starts from.
+Four team bubbles labelled "TEAM A" to "TEAM D" with dashed arrows to four matching boxes of a system diagram.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Curly's Law
@@ -1332,15 +1333,15 @@ Page: `/laws/curlys-law`
 ```text
 A tiny white robot cowboy at sunset holding up a single finger, one perfectly sharpened tool hanging from its belt.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/curlys-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/curlys-law.png`
 
 ```text
-A cowboy hat beside a single perfectly sharpened tool.
+A cowboy holding up one finger with a speech bubble "ONE THING", a single sharp tool on their belt.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Deutsch Limit
@@ -1350,17 +1351,17 @@ Page: `/laws/deutsch-limit`
 ⬜ **Cover**, 1360x850, save as `public/covers/laws/deutsch-limit.png`
 
 ```text
-A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single violet magnifying lens shows how few of them can be understood at once.
+A tiny white robot squinting at a giant screen crowded with hundreds of tiny glowing symbols, while a single magnifying lens shows how few of them can be understood at once.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/deutsch-limit.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/deutsch-limit.png`
 
 ```text
-A screen crowded with tiny glowing symbols, a single violet magnifying lens focused on just a few.
+A screen crammed with tiny symbols labelled "TOO MANY", a magnifying glass showing just a few labelled "READABLE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Gall's Law
@@ -1372,15 +1373,15 @@ Page: `/laws/galls-law`
 ```text
 A tiny white robot watering a small sapling that has grown into a healthy tree behind it, while beside it a giant tree assembled from scratch out of metal parts lies toppled over.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/galls-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/galls-law.png`
 
 ```text
-A healthy young tree growing from a small sapling, a toppled metal tree lying behind it.
+A healthy tree grown from a sapling labelled "SIMPLE THAT WORKS", next to a toppled metal tree labelled "BUILT ALL AT ONCE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Hofstadter's Law
@@ -1392,15 +1393,15 @@ Page: `/laws/hofstadters-law`
 ```text
 A tiny white robot flipping a giant hourglass over and over, the sand never quite running out, while calendar pages flutter away in the wind.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/hofstadters-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/hofstadters-law.png`
 
 ```text
-A giant hourglass that never quite runs out, calendar pages fluttering around it.
+An hourglass with a speech bubble "IT TAKES LONGER", calendar pages flying away, a little note "EVEN COUNTING THIS LAW".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Hyrum's Law
@@ -1412,15 +1413,15 @@ Page: `/laws/hyrums-law`
 ```text
 A tiny white robot oiling a squeaky old door hinge, while dozens of other robots who had been using the squeak as a doorbell come running out, confused.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/hyrums-law.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/hyrums-law.png`
 
 ```text
-An oil can next to an old door hinge, a small doorbell icon fading away.
+A squeaky door being oiled, while little neighbours run out shouting "THAT WAS OUR DOORBELL!".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### If It Ain't Broke
@@ -1432,15 +1433,15 @@ Page: `/laws/if-it-aint-broke`
 ```text
 A tiny white robot resisting the urge to tinker, sitting on a closed toolbox beside a humble old windmill that is happily turning in the breeze.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/if-it-aint-broke.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/if-it-aint-broke.png`
 
 ```text
-A humble old windmill turning happily in the breeze beside a closed toolbox.
+A happy old windmill turning, a character sitting on a closed toolbox with a sign "WORKS FINE".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Mechanism and Policy
@@ -1450,17 +1451,17 @@ Page: `/laws/mechanism-policy`
 ⬜ **Cover**, 1360x850, save as `public/covers/laws/mechanism-policy.png`
 
 ```text
-A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small violet timetable that decides where each train goes.
+A tiny white robot at a railway junction where the steel tracks and switches are fixed in place, while it holds a small timetable that decides where each train goes.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/mechanism-policy.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/mechanism-policy.png`
 
 ```text
-Fixed steel railway tracks at a junction with a small violet timetable card pinned beside the switch.
+Railway tracks and a switch labelled "MECHANISM", with a timetable card in a character's hand labelled "POLICY".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The Ninety-Ninety Rule
@@ -1472,15 +1473,15 @@ Page: `/laws/ninety-ninety-rule`
 ```text
 A tiny white robot reaching what it thought was the mountain summit, flag in hand, only to see a second, equally tall peak revealed behind it.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/ninety-ninety-rule.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/ninety-ninety-rule.png`
 
 ```text
-A small flag on a mountain summit with a second, equally tall peak looming behind it.
+A climber planting a flag on a peak labelled "90% DONE", only to see a second peak behind labelled "THE OTHER 90%".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The Power of 10
@@ -1490,17 +1491,17 @@ Page: `/laws/power-of-10`
 ⬜ **Cover**, 1360x850, save as `public/covers/laws/power-of-10.png`
 
 ```text
-A tiny white robot astronaut working through a pre-flight checklist of ten glowing violet items beside a small rocket on its launch pad.
+A tiny white robot astronaut working through a pre-flight checklist of ten glowing items beside a small rocket on its launch pad.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/power-of-10.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/power-of-10.png`
 
 ```text
-A clipboard checklist of ten glowing violet ticks beside a small rocket.
+A clipboard with ten checkboxes ticked, a small rocket beside it and a label "SAFETY RULES".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Pristine Sources
@@ -1512,15 +1513,15 @@ Page: `/laws/pristine-sources`
 ```text
 A tiny white robot drinking from a crystal-clear mountain spring right at its source, while far downstream the same river turns murky with debris.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/pristine-sources.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/pristine-sources.png`
 
 ```text
-A crystal-clear mountain spring bubbling out of a rock.
+A clear spring labelled "SOURCE" flowing into a river that turns muddy downstream labelled "COPIES OF COPIES".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Rule of Three
@@ -1530,17 +1531,17 @@ Page: `/laws/rule-of-three`
 ⬜ **Cover**, 1360x850, save as `public/covers/laws/rule-of-three.png`
 
 ```text
-A tiny white robot noticing it has drawn the same star shape three times on a sheet of paper, and carving a reusable violet stamp of that star.
+A tiny white robot noticing it has drawn the same star shape three times on a sheet of paper, and carving a reusable stamp of that star.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/rule-of-three.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/rule-of-three.png`
 
 ```text
-Three identical hand-drawn stars on paper next to a freshly carved violet stamp of the same star.
+Three identical hand-drawn stars labelled "1", "2" and "3", with an arrow to a carved stamp labelled "NOW ABSTRACT".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Uniform Access
@@ -1552,15 +1553,15 @@ Page: `/laws/uniform-access`
 ```text
 A tiny white robot at a vending machine with identical buttons, where some snacks drop out ready-made and others are quietly cooked fresh behind the panel, and the robot cannot tell the difference.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/uniform-access.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/uniform-access.png`
 
 ```text
-A vending machine with a row of identical buttons, one glowing violet.
+A vending machine with identical buttons, one dispensing a ready snack labelled "STORED", another a freshly cooked one labelled "COMPUTED", the customer shrugging happily.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The Unix Philosophy
@@ -1570,17 +1571,17 @@ Page: `/laws/unix-philosophy`
 ⬜ **Cover**, 1360x850, save as `public/covers/laws/unix-philosophy.png`
 
 ```text
-A row of small, simple machines connected by glowing violet pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.
+A row of small, simple machines connected by glowing pipes, each doing exactly one job, wash, cut, sort and pack, while a tiny white robot pours raw material into the first one.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/unix-philosophy.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/unix-philosophy.png`
 
 ```text
-Three small simple machines connected in a row by glowing violet pipes.
+Three small machines connected by pipes labelled "FILTER", "SORT" and "COUNT", with the "|" pipe symbol drawn between them.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Worse is Better
@@ -1592,15 +1593,15 @@ Page: `/laws/worse-is-better`
 ```text
 A small, slightly scruffy sailboat with a happy robot crew already sailing out of the harbour, while a magnificent unfinished golden galleon is still under construction on the dock.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/worse-is-better.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/worse-is-better.png`
 
 ```text
-A small scruffy sailboat sailing away from an unfinished golden galleon on a dock.
+A scruffy little sailboat labelled "SHIPPED" sailing away from a grand unfinished galleon labelled "PERFECT".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### The Zen of Python
@@ -1612,15 +1613,15 @@ Page: `/laws/zen-of-python`
 ```text
 A tiny white robot meditating in a tranquil rock garden, raking clean parallel lines into the sand, a friendly blue-and-yellow snake coiled peacefully on a nearby stone.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/zen-of-python.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/zen-of-python.png`
 
 ```text
-A tranquil raked sand garden with a friendly blue-and-yellow snake coiled on a stone.
+A friendly blue-and-yellow snake meditating in a raked sand garden, a small scroll beside it reading "SIMPLE IS BETTER".
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```
 
 ### Zero-One-Infinity
@@ -1632,13 +1633,13 @@ Page: `/laws/zero-one-infinity`
 ```text
 A tiny white robot at a bakery counter with three shelves: one empty, one holding exactly one cupcake, and one stretching endlessly into the distance, full of cupcakes.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. Shallow depth of field, clean composition with the subject centred and room around it. Landscape 16:10, 1360x850 px.
+Style: cinematic 3D render, slightly stylised and photographic, with a small cute white robot as the recurring character, dramatic studio lighting with deep soft shadows, dark moody background, rich natural colours with one subtle violet accent light, shallow depth of field, subject centred with room around it. No text, letters, numbers or logos anywhere in the image. Landscape 16:10, 1360x850 px.
 ```
 
-⬜ **Card**, 1024x640, save as `public/cards/laws/zero-one-infinity.png`
+⬜ **Card**, 1024x1024, save as `public/cards/laws/zero-one-infinity.png`
 
 ```text
-Three bakery shelves: one empty, one with a single cupcake, one stretching into the distance full of cupcakes.
+Three shelves labelled "0", "1" and "∞": one empty, one with a single cupcake, one stretching off with endless cupcakes.
 
-Style: Soft, high-quality 3D render with a playful claymation feel, rounded friendly shapes, glowing violet and purple accent lighting against a deep charcoal-indigo background, gentle rim light. No text, letters, numbers or logos anywhere in the image. A single bold subject filling most of the frame, simple uncluttered background, strong silhouette that stays readable as a small thumbnail. Landscape 16:10, 1024x640 px.
+Style: hand-drawn children's-book illustration, clean ink outlines with soft watercolour fills, cute and friendly (objects and characters may have simple smiling faces), on a pure white background with generous white space. Where the scene quotes words, draw them as small hand-lettered labels in rounded boxes, spelled exactly as quoted, connected with dashed arrows; no other text. Square 1:1, 1024x1024 px.
 ```

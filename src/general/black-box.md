@@ -2,14 +2,14 @@
 title: Black Box
 description: "A system viewed in terms of its inputs, outputs, and transfer characteristics, without any knowledge of its internal workings."
 icon: Box
-cardPrompt: "A matte-black cube with a colourful cube entering one side and a neatly wrapped violet parcel leaving the other."
+cardPrompt: "A smiling black box with an arrow of raw blocks going in labelled \"INPUT\" and a neat wrapped gift coming out labelled \"OUTPUT\", a question mark floating above it."
 ---
 
 # Black Box System
 
 <CoverImage src="/covers/general/black-box.webp" alt="Black Box">
   <h1>Black Box</h1>
-  <p>A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped violet parcels as they slide out of the other side, with no way to see inside the box.</p>
+  <p>A tiny white robot feeding colourful raw cubes into one side of a sleek matte-black box and catching neatly wrapped parcels as they slide out of the other side, with no way to see inside the box.</p>
 </CoverImage>
 
 > "A black box is any system whose internal workings are hidden from or ignored by an observer, who instead studies it by examining what goes in (inputs) and what comes out (outputs)." — W. Ross Ashby (*An Introduction to Cybernetics*, 1956)

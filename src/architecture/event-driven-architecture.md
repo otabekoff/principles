@@ -2,14 +2,14 @@
 title: Event-Driven Architecture (EDA)
 description: Build highly decoupled, reactive, and scalable systems using events, publishers, and subscribers.
 icon: Zap
-cardPrompt: "A large bell mid-ring with violet sound waves rippling out to tiny houses around it."
+cardPrompt: "A bell labelled \"EVENT\" ringing with dashed arrows to three little houses, each reacting differently: a lamp, a window, an oven."
 ---
 
 # Event-Driven Architecture (EDA)
 
 <CoverImage src="/covers/architecture/event-driven-architecture.webp" alt="Event-Driven Architecture">
   <h1>Event-Driven Architecture</h1>
-  <p>A tiny white robot ringing a large violet bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.</p>
+  <p>A tiny white robot ringing a large bell in a village square, and robots in the surrounding houses each reacting on their own: one opens a window, one lights a lamp, one starts baking.</p>
 </CoverImage>
 
 > **"An event-driven architecture is a software architecture pattern promoting the production, detection, consumption of, and reaction to events."**

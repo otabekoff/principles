@@ -2,14 +2,14 @@
 title: Introduction to SOLID
 description: "A complete guide to the SOLID principles of object-oriented design, their 2000 origin under Robert C. Martin, and Michael Feathers' 2004 mnemonic coin."
 icon: Grid
-cardPrompt: "Five glowing violet pillars side by side holding up a small stone roof."
+cardPrompt: "Five smiling pillars labelled \"S\", \"O\", \"L\", \"I\" and \"D\" holding up a small temple roof."
 ---
 
 # Introduction to SOLID
 
 <CoverImage src="/covers/solid/introduction.webp" alt="SOLID">
   <h1>SOLID</h1>
-  <p>Five tiny white robots each holding up one large glowing violet pillar, together supporting the roof of a small, sturdy temple.</p>
+  <p>Five tiny white robots each holding up one large glowing pillar, together supporting the roof of a small, sturdy temple.</p>
 </CoverImage>
 
 > "The SOLID principles are a set of rules and best practices to follow while designing class structures, intended to combat software rot." — Robert C. Martin

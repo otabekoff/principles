@@ -2,14 +2,14 @@
 title: Test-Driven Development (TDD)
 description: Master the classic Red-Green-Refactor loop and learn how test-driving code designs simpler systems.
 icon: Route
-cardPrompt: "A chalk outline of a suit on fabric with scissors resting beside it."
+cardPrompt: "A circular cycle of three arrows labelled \"RED\", \"GREEN\" and \"REFACTOR\", with a little tailor drawing a chalk outline in the middle."
 ---
 
 # Test-Driven Development (TDD)
 
 <CoverImage src="/covers/testing/test-driven-development.webp" alt="Test-Driven Development">
   <h1>Test-Driven Development</h1>
-  <p>A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-violet cycle wheel hanging on the wall.</p>
+  <p>A tiny white robot tailor first drawing a chalk outline of a suit on fabric, then cutting and sewing exactly along that outline, with a red-green-cycle wheel hanging on the wall.</p>
 </CoverImage>
 
 **Test-Driven Development (TDD)** is an iterative software development process where you write a failing test *before* you write any production code. TDD is not just a testing technique; it is a **design methodology** that helps you understand requirements, keep code simple, and build highly decoupled architectures.

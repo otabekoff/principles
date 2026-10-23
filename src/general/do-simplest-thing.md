@@ -2,7 +2,7 @@
 title: Do The Simplest Thing That Could Possibly Work
 description: Real progress against the real problem is maximized if we just work on what the problem really is.
 icon: CheckCircle
-cardPrompt: "A single wooden plank bridging a narrow creek, lit by a soft violet glow."
+cardPrompt: "A character crossing a stream on a single plank labelled \"SIMPLE\", next to a half-finished suspension bridge labelled \"SOMEDAY\"."
 ---
 
 # Do The Simplest Thing That Could Possibly Work

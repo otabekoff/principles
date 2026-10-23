@@ -2,7 +2,7 @@
 title: Technical Debt
 description: An extensive guide to Ward Cunningham's Technical Debt metaphor, Martin Fowler's Technical Debt Quadrant, and strategies for managing software cruft.
 icon: CircleDollarSign
-cardPrompt: "A duct-taped, patched little bridge with a coin meter ticking beside it."
+cardPrompt: "A wobbly bridge held together with tape labelled \"QUICK FIX\", a coin meter beside it labelled \"INTEREST\", and a rolled-up plan labelled \"PROPER FIX\"."
 ---
 
 # Technical Debt
